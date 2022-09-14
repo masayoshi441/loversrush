@@ -1,0 +1,451 @@
+@charset "utf-8";
+@import "variables";
+/* ===================================================================
+CSS information
+
+ file name  :common.css
+ style info :共通読み込み用
+=================================================================== */
+/* -----------------------------------------------------------
+ =common css
+----------------------------------------------------------- */
+@import url(https://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+@import url("https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+body {
+  min-width: 320px;
+  @include mq {
+    // min-width: $max_width;
+  }
+  // background-color: $bg_color;
+  color: $text-color;
+  font-size: 16px;
+  // font-size: min(toVw(16), 16px);
+  line-height: 1;
+  font-family: $font1;
+  font-weight: 200;
+}
+
+/* default link color
+----------------------------------------------------------- */
+a {
+  color: $link-color;
+  text-decoration: none;
+}
+a:hover {
+  filter: alpha(opacity=70);
+  -moz-opacity: 0.7;
+  opacity: 0.7;
+}
+
+.red {
+  color: #f00;
+}
+
+/* -----------------------------------------------------------
+ =header, glovalnavi
+----------------------------------------------------------- */
+/*最上部からスライドまで*/
+#headerArea {
+  @include mq {
+    #topbody #headerArea {
+      height: inherit;
+    }
+    #secondbody #headerArea {
+      background: none;
+      height: 190px;
+    }
+  }
+}
+
+/*ロゴ、電話番号のエリア*/
+#header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+}
+
+.header__inner {
+  @include mq {
+    position: relative;
+    // width: min(100%, 1366px);
+    width: 100%;
+    height: 120px;
+    margin: 0 auto;
+  }
+}
+
+#hLogo {
+  margin-bottom: 10px;
+  text-align: center;
+  @include mq {
+    position: absolute;
+    left: 45px;
+    top: 18px;
+  }
+  img {
+    width: 80%;
+    @include mq {
+      width: 260px;
+    }
+  }
+}
+#hTel {
+  text-align: center;
+  @include mq {
+    position: absolute;
+    right: 100px;
+    top: 25px;
+  }
+  img {
+    width: min(toVw(280), 280px);
+    margin-bottom: 10px;
+  }
+}
+
+/* -----------------------------------------------------------
+ =slide
+----------------------------------------------------------- */
+#topImg {
+  text-align: center;
+  @include mq {
+    width: 100%;
+    img {
+    }
+  }
+}
+.bxslider {
+  margin: 0px;
+}
+.bx-wrapper {
+  position: relative;
+}
+.bx-wrapper img {
+  width: 100%;
+}
+.bx-viewport {
+  max-height: min(toVw(768), 768px);
+}
+
+#topImg .bx-wrapper .bx-pager,
+#topImg .bx-wrapper .bx-controls-auto {
+  position: absolute;
+  bottom: 25px;
+  a {
+    background-color: #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+  }
+  a.active {
+    background-color: #f9d5d8;
+  }
+}
+
+/* *-------------------------------------------------------------------
+ パンくずナビ
+-------------------------------------------------------------------* */
+.breadlist a {
+  color: #000;
+}
+
+/* -----------------------------------------------------------
+ =contents
+----------------------------------------------------------- */
+#contents {
+  line-height: 1.6;
+  clear: both;
+}
+
+/* -----------------------------------------------------------
+ =main
+----------------------------------------------------------- */
+#main {
+}
+
+#main section {
+}
+
+article h1 {
+}
+
+article h2 {
+}
+
+article h3 {
+}
+
+article h4 {
+}
+
+/* -----------------------------------------------------------
+ 基本ボックス
+----------------------------------------------------------- */
+.mainIn {
+  width: 96%;
+  margin: 0 2%;
+  @include mq(large) {
+    width: 100%;
+    max-width: $max_width;
+    margin: 0 auto;
+  }
+}
+
+/* -----------------------------------------------------------
+ 2列
+----------------------------------------------------------- */
+
+.Box2 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  div {
+    width: 48%;
+    @include mq {
+      margin: 0 0 $pd 0;
+      width: 49%;
+    }
+  }
+}
+
+/* -----------------------------------------------------------
+ 3列
+----------------------------------------------------------- */
+.Box3 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  div {
+    margin: 0 0 $pd 0;
+    width: 48%;
+    @include mq {
+      width: 32%;
+      &:nth-child(3n + 2):last-child {
+        margin-left: auto;
+        margin-right: 34%;
+      }
+    }
+  }
+}
+
+/* -----------------------------------------------------------
+ 4列
+----------------------------------------------------------- */
+.Box4 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  @include mq {
+    justify-content: flex-start;
+  }
+  div {
+    margin: 0 0 $pd 0;
+    width: 48%;
+    @include mq {
+      width: 24%;
+      margin: 0 1.33% $pd 0;
+      &:nth-child(4n) {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+/* -----------------------------------------------------------
+ ボタン
+----------------------------------------------------------- */
+.btn {
+  /*アニメーションの起点とするためrelativeを指定*/
+  position: relative;
+  overflow: hidden;
+  /*ボタンの形状*/
+  text-decoration: none;
+  display: inline-block;
+  font-size: min(toVw(16), 16px);
+  border: 1px solid #666; /* ボーダーの色と太さ */
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 15px 87px;
+  text-align: center;
+  outline: none;
+  /*アニメーションの指定*/
+  transition: ease 0.2s;
+  background-image: url(../images/ashiato.svg);
+  background-size: 14px 12px;
+  background-position: right 20px center;
+  background-repeat: no-repeat;
+}
+
+/*ボタン内spanの形状*/
+.btn span {
+  position: relative;
+  z-index: 3; /*z-indexの数値をあげて文字を背景よりも手前に表示*/
+  color: #333;
+}
+
+.btn:hover span {
+  color: #fff;
+}
+
+/*== 背景が流れる（上から下） */
+.bgtop:before {
+  content: "";
+  /*絶対配置で位置を指定*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  /*色や形状*/
+  background: #333; /*背景色*/
+  width: 100%;
+  height: 0;
+  /*アニメーション*/
+  transition: 0.3s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+}
+
+/*hoverした際の形状*/
+.bgtop:hover:before {
+  height: 100%;
+  background-color: #333;
+}
+
+.bgtop:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+}
+
+.bgtop:hover:after {
+  background-image: url(../images/ashiato-w.svg);
+  background-size: 14px 12px;
+  background-position: right 20px center;
+  background-repeat: no-repeat;
+}
+
+/*アコーディオン*/
+.aclink {
+  cursor: pointer;
+  background: url(../images/yaji@3x.png) no-repeat right 12px center;
+  background-size: 26px;
+  background-color: $main_color;
+  &.ac {
+    background: url(../images/yaji180@3x.png) no-repeat right 12px center;
+    background-size: 26px;
+    background-color: $main_color;
+  }
+}
+
+/* -----------------------------------------------------------
+ =pagetop
+----------------------------------------------------------- */
+.pagetop {
+  display: none;
+  position: fixed;
+  bottom: 50px;
+  right: 10px;
+  z-index: 10;
+  background: $main_color;
+  width: 30px;
+  @include mq {
+    width: 45px;
+  }
+}
+
+/* -----------------------------------------------------------
+ =footer
+----------------------------------------------------------- */
+footer {
+  font-size: 16px;
+  margin-top: -226px;
+  padding-top: 256px;
+  background-image: url(../../images/bg_fot.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  position: relative;
+}
+
+.footer__inner {
+  position: absolute;
+  bottom: 50px;
+  width: 100%;
+  height: min(toVw(390), 390px);
+}
+
+.footer__inner::before {
+  content: "";
+  display: block;
+  width: min(toVw(405), 405px);
+  height: 100%;
+  background: url(../images/fot_cat.png) no-repeat;
+  background-size: 100% auto;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.footer__inner::after {
+  content: "";
+  display: block;
+  width: min(toVw(420), 420px);
+  height: 100%;
+  background: url(../images/fot_dog.png) no-repeat;
+  background-size: 100% auto;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+/*ロゴ、電話番号エリア*/
+#footer {
+  margin: 0 2%;
+  text-align: center;
+
+  @include mq {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+#fLogo {
+  line-height: 1.5;
+  @include mq {
+    padding-top: 10px;
+    line-height: 1.8;
+    font-size: min(toVw(16), 16px);
+  }
+  img {
+    width: 50%;
+    margin: 10px;
+    @include mq {
+      width: min(toVw(263), 263px);
+    }
+  }
+}
+#fLogo p {
+  padding-top: 10px;
+}
+
+#fTel {
+  padding-top: 32px;
+  padding-bottom: 40px;
+  line-height: 1.3;
+  font-size: min(toVw(16), 16px);
+}
+
+/*最下部エリア*/
+#footerCopy {
+  background: $main_color;
+  color: #fff;
+  line-height: 1;
+  font-size: min(toVw(13), 13px);
+  height: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,49 @@
+/* Scss Document */
+// _variables.scss
+
+//size
+$max_width: 1166px;
+$standard-width-pc: 1166;
+$pd: 25px;
+$pd2: 50px;
+$pd3: 75px;
+$pd4: 100px;
+$br: 10px;
+$br2: 20px;
+
+//color
+$text-color: #333333 !default;
+$link-color: #2962ff !default;
+$link-hover-color: darken($link-color, 5%) !default;
+
+$bg_color: #efe6d5;
+$bg_color2: #f5f2e9;
+$main_color: #333333;
+$colorb1: #95cccf;
+$colorp1: #f9d5d8;
+
+//px to vw
+@function toVw($px, $window-width: $standard-width-pc) {
+  @return calc(1vw * $px / $window-width * 100);
+}
+
+// $font1: "Noto Sans JP", sans-serif;
+$font1: "Kosugi Maru", sans-serif;
+
+$mq-breakpoints: (
+  "xsmall": 320px,
+  "small": 600px,
+  "medium": 768px,
+  "large": 1024px,
+  "xlarge": 1280px,
+);
+
+@mixin mq($breakpoint: medium, $rule: min, $subtraction: false) {
+  $breakpoint: map_get($mq-breakpoints, $breakpoint);
+  @if $rule == max and $subtraction {
+    $breakpoint: $breakpoint - 1;
+  }
+  @media screen and (#{$rule}-width: $breakpoint) {
+    @content;
+  }
+}
