@@ -12,7 +12,10 @@ CSS information
 @import url(https://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
 @import url("https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
-
+html {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
 body {
   min-width: 320px;
   @include mq {
@@ -379,10 +382,11 @@ footer {
 .footer__inner::before {
   content: "";
   display: block;
-  width: min(toVw(405), 405px);
+  width: min(toVw(272), 272px);
   height: 100%;
   background: url(../images/fot_cat.png) no-repeat;
   background-size: 100% auto;
+  background-position: bottom;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -391,10 +395,11 @@ footer {
 .footer__inner::after {
   content: "";
   display: block;
-  width: min(toVw(420), 420px);
+  width: min(toVw(238), 238px);
   height: 100%;
   background: url(../images/fot_dog.png) no-repeat;
   background-size: 100% auto;
+  background-position: bottom;
   position: absolute;
   right: 0;
   bottom: 0;

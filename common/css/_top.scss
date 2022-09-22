@@ -150,7 +150,7 @@ CSS information
 }
 
 .top-hotel__photo img {
-  width: min(toVw(549), 549px);
+  width: min(toVw(428), 428px);
 }
 
 .top-hotel__title {
@@ -226,13 +226,13 @@ CSS information
 .top-news__photo {
   // margin-top: 20px;
   position: absolute;
-  top: -190px;
+  top: -350px;
   left: 50%;
   transform: translateX(-50%);
-  width: min(toVw(930), 930px);
+  width: min(toVw(834), 834px);
 }
 .top-news__photo img {
-  width: min(toVw(930), 930px);
+  width: min(toVw(834), 834px);
 }
 
 .top-news h2 {

@@ -6,9 +6,11 @@
 ----------------------------------------------------------- */
 .about-mv {
   height: 500px;
+  width: 100%;
   background-image: url(../../images/about/mv.jpg);
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center 30%;
+  background-size: cover;
 }
 .about-about {
   margin-top: -250px;
@@ -175,7 +177,7 @@
 }
 
 .about-goods__photo img {
-  width: min(toVw(621), 621px);
+  width: min(toVw(353), 353px);
 }
 
 .about-goods__title {

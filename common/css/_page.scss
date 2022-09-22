@@ -204,7 +204,7 @@ hr {
 ----------------------------------------------------------- */
 /*Pagenation*/
 .pagenation {
-    margin: 1em 0;
+    margin-top: 38px;
 }
 .pagenation:after, .pagenation ul:after {
     clear: both;
@@ -226,18 +226,16 @@ hr {
     margin-left: 0;
 }
 .pagenation li.active {
-    background-color: #999999;
-    border-radius: 3px;
+    background-color: #333333;
     color: #FFFFFF;
     cursor: not-allowed;
-    padding: 10px 20px;
+    padding: 3px 7px 3px;
 }
 .pagenation li a {
-    background: none repeat scroll 0 0 #CCCCCC;
-    border-radius: 3px;
+    background: none repeat scroll 0 0 #999999;
     color: #FFFFFF;
     display: block;
-    padding: 10px 20px;
+    padding: 3px 7px 3px;
     text-decoration: none;
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
 }
@@ -248,6 +246,10 @@ hr {
     transition-duration: 500ms;
     transition-property: all;
     transition-timing-function: ease;
+}
+.pagenation li.next a {
+  background-color: #333333;
+  width: 100px;
 }
 
 /* -----------------------------------------------------------
@@ -267,7 +269,7 @@ div.small b {
   font-weight:bold;
 }
 
-@media screen and (min-width:769px) { 
+@media screen and (min-width:769px) {
     div.map1 {
   width:920px;
   height:360px;
@@ -310,7 +312,7 @@ table.inquiry {
 }
 /*通常欄*/
 .inquiry td{
- border:solid 1px #d7d7d7;	
+ border:solid 1px #d7d7d7;
 	padding: 20px 10px;
 }
 .inquiry input {
@@ -318,7 +320,7 @@ table.inquiry {
 }
 /*横の行とテーブル全体*/
 .entry-content .inquiry tr,.entry-content table{
- border:solid 1px #d7d7d7;	
+ border:solid 1px #d7d7d7;
 }
 /*必須の調整*/
 .haveto{
@@ -354,7 +356,7 @@ table.inquiry {
  background:#ffaa56;
  color:#fff;
  font-size:18px;
- font-weight:bold;	 
+ font-weight:bold;
  border-radius:2px;
  margin:25px auto 0;
 cursor:pointer;
@@ -411,7 +413,7 @@ span.wpcf7-not-valid-tip {
 .inquiry tr:first-child th{
  border-top:1px solid #d7d7d7!important;
 }
-/* 必須・任意のサイズ調整 */	
-.inquiry .haveto,.inquiry .any {	
+/* 必須・任意のサイズ調整 */
+.inquiry .haveto,.inquiry .any {
 font-size:10px;
 }}
