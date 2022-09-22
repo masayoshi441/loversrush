@@ -1,0 +1,159 @@
+@charset "utf-8";
+@import "variables";
+
+/* -----------------------------------------------------------
+ 店舗情報
+----------------------------------------------------------- */
+.shop-mv {
+  height: 500px;
+  background-image: url(../../images/shop/mv.jpg);
+  background-repeat: no-repeat;
+  background-position: center 68%;
+  background-size: cover;
+}
+.shop-about {
+  margin-top: -250px;
+  padding-top: 250px;
+  padding-bottom: 634px;
+  background-image: url(../images/bg_2nd_mv.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+.shop-about__inner {
+  margin-top: -146px;
+}
+
+.shop-about__title img {
+  width: min(toVw(314), 314px);
+}
+.shop-about h1 {
+  padding-top: 52px;
+  text-align: center;
+}
+.shop-about h1 img {
+  width: min(toVw(548), 548px);
+}
+
+.shop-about h2 {
+  padding-top: min(toVw(87), 87px);
+  text-align: center;
+  font-size: min(toVw(30), 30px);
+  letter-spacing: 5px;
+}
+
+.shop-about p {
+  padding-top: min(toVw(44), 44px);
+  text-align: center;
+  line-height: 3.2;
+}
+.shop-about__content {
+  background-color: #fff;
+  border-radius: 15px 65px 15px 65px;
+  text-align: center;
+  padding: 80px min(toVw(100), 100px) 0;
+  margin-top: 60px;
+}
+.shop-about__details {
+  .shop-about__detail {
+    display: flex;
+    align-items: center;
+    .shop-about__head {
+      min-width: min(toVw(240), 240px);
+      font-size: min(toVw(20), 20px);
+      color: #fff;
+      background-color: #ee8691;
+      border-radius: 50px;
+      padding: 14.3px 0 15.7px;
+    }
+    .shop-about__data {
+      text-align: left;
+      padding-left: min(toVw(20), 20px);
+      span {
+        color: #ee8691;
+      }
+    }
+    & + .shop-about__detail {
+      margin-top: 30px;
+    }
+  }
+}
+.shop-about__shopimages {
+  display: flex;
+  margin-top: 50px;
+}
+.shop-about__shopimage {
+  & + .shop-about__shopimage {
+    margin-left: 41px;
+  }
+  .shop-about__shoptext {
+    padding-top: 11px;
+    line-height: 1;
+  }
+}
+.shop-about__image {
+  width: min(toVw(800), 800px);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 66px;
+}
+
+/* shop-access
+----------------------------------------------------------- */
+.shop-access {
+  margin-top: -644px;
+  padding-top: 362px;
+  padding-bottom: 88px;
+  background-image: url(../../images/bg_shop_access.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+.shop-access__inner.mainIn {
+}
+.shop-access__title {
+  width: min(toVw(464), 464px);
+}
+.shop-access__map {
+  position: relative;
+  width: 100%;
+  padding-top: 34.2442%;
+}
+.shop-access__mapcontainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.shop-access__location {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+.shop-access__guides {
+  border-radius: 20px;
+  background-color: #fff;
+  margin-top: 40px;
+  display: flex;
+  padding: 34px 50px 36px;
+}
+.shop-access__guide + .shop-access__guide {
+  margin-left: min(toVw(103), 103px);
+}
+.shop-access__guidename {
+  border-radius: 50px;
+  color: #fff;
+  width: 263px;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 12px;
+  &.-kanazawa {
+    background-color: #ee8691;
+  }
+  &.-toyama {
+    background-color: #67b5b9;
+  }
+}
+.shop-access__guidetext {
+  margin-top: 24px;
+}

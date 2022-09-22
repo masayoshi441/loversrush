@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>犬のトリミング｜ペットサロン LOVERS RUSH</title>
+  <!-- standard -->
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="キーワード,キーワード,キーワード" />
+  <!-- common -->
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="stylesheet" href="common/css/styles.css" />
+
+  <!-- sns -->
+  <meta property="og:title" content="タイトル" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="ページのURL" />
+  <meta property="og:image" content="画像のURL" />
+
+  <link href="common/css/jquery.bxslider.css" rel="stylesheet" />
+</head>
+
+<body id="2ndbody">
+  <div id="page">
+    <!-- header ==================================================================== -->
+    <header id="headerArea">
+      <div id="header">
+        <div class="header__inner">
+          <div id="hLogo">
+            <a href="index.html"><img src="common/images/logo.svg" alt="ペットサロン LOVERS RUSH" /></a>
+          </div>
+          <div id="hTel">
+            <a href="tel:0767-52-8215"><img src="common/images/tel.svg" alt="" /></a>
+          </div>
+        </div>
+      </div>
+      <!-- slide ==================================================================== -->
+
+      <!-- spnav ==================================================================== -->
+      <div class="openbtn1"><span></span><span></span><span></span></div>
+      <nav id="g-nav">
+        <div id="g-nav-list">
+          <div class="g-nav-title"><img src="common/images/logo.svg" alt="ペットサロン LOVERS RUSH" /></div>
+          <!--ナビの数が増えた場合縦スクロールするためのdiv※不要なら削除-->
+          <ul>
+            <li>
+              <a href="index.html">ホーム<span>HOME</span></a>
+            </li>
+            <li>
+              <a href="about.html">私たちについて<span>ABOUT</span></a>
+            </li>
+            <li>
+              <a href="dog_trimming.html">犬のトリミング<span>DOG TRIMMING</span></a>
+            </li>
+            <li>
+              <a href="cat_trimming.html">猫のトリミング<span>CAT TRIMMING</span></a>
+            </li>
+            <li>
+              <a href="dog_hotel.html">犬専用ホテル<span>DOG HOTEL</span></a>
+            </li>
+            <li>
+              <a href="cat_hotel.html">猫専用ホテル<span>CAT HOTEL</span></a>
+            </li>
+            <li>
+              <a href="shop.html">店舗情報<span>SHOP</span></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="circle-bg"></div>
+      <!-- /spnav ==================================================================== -->
+    </header>
+    <!-- /header ==================================================================== -->
+    <!-- contents ==================================================================== -->
+    <div id="contents" class="clearfix">
+      <!-- main -->
+      <div id="main">
+        <article>
+          <div class="dogtrim-mv"></div>
+          <section class="dogtrim-about">
+            <div class="dogtrim-about__inner mainIn">
+              <div class="dogtrim-about__title"><img src="images/dog_trimming/text_about.png" alt="ABOUT" /></div>
+              <h1><img src="images/dog_trimming/title_about.png" alt="ラバーズラッシュについて" /></h1>
+              <div class="dogtrim-about__select">
+                <div class="dogtrim-about__button">
+                  <a href="#dogtrim-price">犬のトリミング料金表</a>
+                </div>
+                <div class="dogtrim-about__button">
+                  <a href="#dogtrim-flow">トリミング風景</a>
+                </div>
+              </div>
+              <h2>お客様の大切なワンちゃんを<br>丁寧に手をかけて気持ち良くキレイにいたします。</h2>
+              <p>当店のトリミングは、ワンちゃんたち1頭1頭の状態を見ながら丁寧なトリミングを心がけてます。<br>
+                オプションには、マイクロバブルや、炭酸泉浴などもあり、毛穴ケアから、リラックス効果もお試し頂けます。<br>
+                経験豊富なトリマーが責任を持って、大切なペットをお預かりいたします。</p>
+              <div class="dogtrim-about__cards">
+                <img src="images/dog_trimming/about_image1.png" alt="" class="dogtrim-about__card">
+                <img src="images/dog_trimming/about_image2.png" alt="" class="dogtrim-about__card">
+                <img src="images/dog_trimming/about_image3.png" alt="" class="dogtrim-about__card">
+                <img src="images/dog_trimming/about_image4.png" alt="" class="dogtrim-about__card">
+              </div>
+            </div>
+          </section>
+
+          <section class="dogtrim-price" id="dogtrim-price">
+            <div class="dogtrim-price__inner mainIn">
+              <div class="dogtrim-price__wrap">
+                <div class="dogtrim-price__photo">
+                  <img src="images/dog_trimming/text_pricelist.png" alt="">
+                </div>
+                <h2><img src="images/dog_trimming/title_pricelist.png" alt=""></h2>
+                <div class="dogtrim-price__tabs">
+                  <ul class="dogtrim-price__tablist" role="dogtrim-price-tablist">
+                    <li role="presentation">
+                      <button role="tab" id="dogtrim-price-tab-1" class="tab" aria-selected="true" aria-controls="dogtrim-price-panel-1" tabindex="0">トリミング料金</button>
+                    </li>
+                    <li role="presentation">
+                      <button role="tab" id="dogtrim-price-tab-2" class="tab" aria-selected="false" aria-controls="dogtrim-price-panel-2" tabindex="-1">オプション料金</button>
+                    </li>
+                  </ul>
+                  <p class="caption">ワンちゃんたち1頭1頭の状態を見ながら丁寧なトリミングを心がけてます。 ワンちゃん大好きトリマー達がお待ちしております。 </p>
+                  <div role="tabpanel" id="dogtrim-price-panel-1" class="tab-panel" tabindex="0" aria-labelledby="dogtrim-price-tab-1" aria-hidden="false">
+                    <table>
+                      <thead>
+                        <tr class="mainhead">
+                          <th>（税込価格）</th>
+                          <th>シャンプーコース</th>
+                          <th colspan="2">トリミングコース</th>
+                        </tr>
+                        <tr class="subhead">
+                          <th>犬種</th>
+                          <th>（シャンプー、爪切り、爪ヤスリ、<br>
+                            肉球ケア、耳掃除、ヒゲカット、<br>
+                            肛門腺しぼり、足裏バリカン、<br>
+                            足まわりカット、目のまわりカット）</th>
+                          <th>シャンプーコース＆<br>
+                            全身カット<br>
+                            （バリカン仕上）</th>
+                          <th>シャンプーコース＆<br>
+                            全身カット<br>
+                            （バリカン+シザーカット）</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>チワワ（スムース）</td>
+                          <td>￥3,200 ～</td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>チワワ（ロング）</td>
+                          <td>￥3,800 ～</td>
+                          <td>￥5,300 ～</td>
+                          <td>￥5,800 ～</td>
+                        </tr>
+                        <tr>
+                          <td>Ｍダックス（スムース）</td>
+                          <td>￥3,500 ～</td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>Ｍダックス（ロング）</td>
+                          <td>￥4,200 ～</td>
+                          <td>￥5,900 ～</td>
+                          <td>￥6,500 ～</td>
+                        </tr>
+                        <tr>
+                          <td>ミニピン</td>
+                          <td>￥3,500 ～ </td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>シーズー</td>
+                          <td>（ショート）￥4,200 ～<br>（ロング）￥5,800 ～</td>
+                          <td>￥6,300 ～</td>
+                          <td>￥6,800 ～</td>
+                        </tr>
+                        <tr>
+                          <td>マルチーズ</td>
+                          <td>（ショート）￥4,000 ～<br>（ロング）￥4,500 ～</td>
+                          <td>￥5,900 ～</td>
+                          <td>￥6,500 ～</td>
+                        </tr>
+                        <tr>
+                          <td>ヨーキー</td>
+                          <td>（ショート）￥4,000 ～<br>（ロング）￥4,500 ～</td>
+                          <td>￥5,900 ～</td>
+                          <td>￥6,500 ～</td>
+                        </tr>
+                        <tr>
+                          <td>パピヨン</td>
+                          <td>￥4,200 ～ </td>
+                          <td>￥5,900 ～</td>
+                          <td>￥6,500 ～</td>
+                        </tr>
+                        <tr>
+                          <td>ペキニーズ</td>
+                          <td>￥4,500 ～</td>
+                          <td>￥5,900 ～</td>
+                          <td>￥6,500 ～</td>
+                        </tr>
+                        <tr>
+                          <td>ポメラニアン（3kg）</td>
+                          <td>￥4,500 ～</td>
+                          <td>￥5,900 ～</td>
+                          <td>￥6,500 ～</td>
+                        </tr>
+                        <tr>
+                          <td>ポメラニアン（5kg）</td>
+                          <td>￥5,500 ～</td>
+                          <td>￥7,000 ～ </td>
+                          <td>￥7,500 ～</td>
+                        </tr>
+                        <tr>
+                          <td>スピッツ</td>
+                          <td>￥5,800 ～ </td>
+                          <td>￥7,300 ～ </td>
+                          <td>￥7,800 ～</td>
+                        </tr>
+                        <tr>
+                          <td>パグ</td>
+                          <td>￥4,000 ～ </td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>フレンチブル</td>
+                          <td>￥4,400 ～</td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>ジャックラッセル</td>
+                          <td>（スムース）￥4,000～<br>（ ラフ ）￥4,400～</td>
+                          <td>￥5,900 ～</td>
+                          <td>￥6,500 ～</td>
+                        </tr>
+                        <tr>
+                          <td>ビーグル</td>
+                          <td>￥5,000 ～</td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>キャバリア</td>
+                          <td>￥5,500 ～</td>
+                          <td>￥7,300 ～</td>
+                          <td>￥7,800 ～</td>
+                        </tr>
+                        <tr>
+                          <td>柴犬</td>
+                          <td>（ 6kg ）￥5,400～<br>（ 10kg ）￥5,900～</td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>トイプードル（3kg）<br>体高28cm以下</td>
+                          <td>￥4,800 ～</td>
+                          <td>￥6,300</td>
+                          <td>￥7,300 ～</td>
+                        </tr>
+                        <tr>
+                          <td>トイプードル（5kg）<br>体高33cm以下</td>
+                          <td>￥5,200 ～</td>
+                          <td>￥6,800</td>
+                          <td>￥7,900 ～</td>
+                        </tr>
+                        <tr>
+                          <td>トイプードル（7kg）<br>体高38cm以下</td>
+                          <td>￥5,800 ～ </td>
+                          <td>￥7,600</td>
+                          <td>￥8,800 ～</td>
+                        </tr>
+                        <tr>
+                          <td>ミニチュアプードル</td>
+                          <td>￥5,800 ～</td>
+                          <td>￥7,600</td>
+                          <td>￥8,800 ～</td>
+                        </tr>
+                        <tr>
+                          <td>ビションフリーゼ</td>
+                          <td>￥5,500 ～ </td>
+                          <td>￥6,800 ～</td>
+                          <td>￥7,900 ～</td>
+                        </tr>
+                        <tr>
+                          <td>ウェスティ</td>
+                          <td>￥4,800 ～ </td>
+                          <td>￥6,500 ～</td>
+                          <td>￥7,500 ～</td>
+                        </tr>
+                        <tr>
+                          <td>Ｍシュナウザー</td>
+                          <td>￥4,800 ～</td>
+                          <td>￥6,500 ～</td>
+                          <td>￥7,500 ～</td>
+                        </tr>
+                        <tr>
+                          <td>コーギー</td>
+                          <td>￥6,300 ～</td>
+                          <td>￥7,800 ～</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>シェルティー</td>
+                          <td>￥6,300 ～</td>
+                          <td>￥7,800 ～</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>ボーダーコリー</td>
+                          <td>￥7,000 ～</td>
+                          <td>￥8,800 ～</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>E.コッカー</td>
+                          <td>￥5,800 ～</td>
+                          <td>￥7,500 ～</td>
+                          <td>￥8,300 ～</td>
+                        </tr>
+                        <tr>
+                          <td>A.コッカー</td>
+                          <td>￥6,600 </td>
+                          <td>￥8,300 ～</td>
+                          <td>￥9,100 ～</td>
+                        </tr>
+                        <tr>
+                          <td>ラブラドール.R</td>
+                          <td>￥8,000 ～</td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>ゴールデン.R</td>
+                          <td>￥9,000 ～</td>
+                          <td>￥12,000 ～</td>
+                          <td></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div role="tabpanel" id="dogtrim-price-panel-2" class="tab-panel" tabindex="0" aria-labelledby="dogtrim-price-tab-2" aria-hidden="true">
+                    <table>
+                      <thead>
+                        <tr class="mainhead">
+                          <th>シングルメニュー</th>
+                          <th>小型犬</th>
+                          <th>中型犬</th>
+                          <th>大型犬</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>爪切り＆爪ヤスリ</td>
+                          <td>¥880</td>
+                          <td>¥1,100</td>
+                          <td>¥1,320</td>
+                        </tr>
+                        <tr>
+                          <td>耳掃除（耳毛抜きなし）</td>
+                          <td>¥550</td>
+                          <td>¥880</td>
+                          <td>¥1,100</td>
+                        </tr>
+                        <tr>
+                          <td>耳掃除（耳毛抜きあり）</td>
+                          <td>¥880</td>
+                          <td>¥1,100</td>
+                          <td>¥1,320</td>
+                        </tr>
+                        <tr>
+                          <td>足裏バリカン</td>
+                          <td>¥550</td>
+                          <td>¥880</td>
+                          <td>¥1,100</td>
+                        </tr>
+                        <tr>
+                          <td>プー足バリカン</td>
+                          <td>¥1,100</td>
+                          <td>¥1,650</td>
+                          <td>¥2,200</td>
+                        </tr>
+                        <tr>
+                          <td>ヒゲカット</td>
+                          <td>¥550</td>
+                          <td>¥880</td>
+                          <td>¥1,100</td>
+                        </tr>
+                        <tr>
+                          <td>耳洗浄</td>
+                          <td>¥1,100</td>
+                          <td>¥1,650</td>
+                          <td>¥2,200</td>
+                        </tr>
+                        <tr>
+                          <td>肛門腺絞り</td>
+                          <td>¥550</td>
+                          <td>¥880</td>
+                          <td>¥1,100</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <table>
+                      <thead>
+                        <tr class="mainhead">
+                          <th>オプションメニュー</th>
+                          <th>小型犬</th>
+                          <th colspan="2">中型犬</th>
+                          <th colspan="2">大型犬</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>マイクルバブル<br>毛穴の老廃物や汚れをスッキリ！</td>
+                          <td>¥1,100</td>
+                          <td colspan="2">¥1,650</td>
+                          <td colspan="2">¥3,300</td>
+                        </tr>
+                        <tr>
+                          <td>炭酸泉<br>血流促進、保湿力アップ</td>
+                          <td>¥550</td>
+                          <td class="text-center">（短毛）<br>770</td>
+                          <td class="text-center">（中・長毛）<br>1100</td>
+                          <td class="text-center">（短毛）<br>1100</td>
+                          <td class="text-center">（中・長毛）<br>1650</td>
+                        </tr>
+                        <tr>
+                          <td>オゾンペットシャワー<br>脱臭・細菌やウイルスを殺菌洗浄！</td>
+                          <td>¥250</td>
+                          <td colspan="2">¥350</td>
+                          <td colspan="2">¥550</td>
+                        </tr>
+                        <tr>
+                          <td>アクアゼオ温浴<br>美肌の湯・皮膚トラブルの改善や予防に！</td>
+                          <td>¥1,100</td>
+                          <td colspan="2">¥1,650</td>
+                          <td colspan="2">¥3,300</td>
+                        </tr>
+                        <tr>
+                          <td>デンタルケア（初回・歯ブラシ付）<br>安心安全なアクアゼオ歯磨き</td>
+                          <td>¥1,300</td>
+                          <td colspan="2">¥1,300</td>
+                          <td colspan="2">¥1,500</td>
+                        </tr>
+                        <tr>
+                          <td>デンタルケア（2回目以降）</td>
+                          <td>¥880</td>
+                          <td colspan="2">¥880</td>
+                          <td colspan="2">¥1,100</td>
+                        </tr>
+                        <tr>
+                          <td>薬用シャンプー</td>
+                          <td>¥550</td>
+                          <td class="text-center">（短毛）<br>770</td>
+                          <td class="text-center">（中・長毛）<br>1100</td>
+                          <td class="text-center">（短毛）<br>1100</td>
+                          <td class="text-center">（中・長毛）<br>1650</td>
+                        </tr>
+                        <tr>
+                          <td>クレンジングオイル</td>
+                          <td>￥550～</td>
+                          <td colspan="2">￥1100～</td>
+                          <td colspan="2">￥1650～</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <p class="option">※部分カット（小型・中型犬 ￥550～/ 大型犬 ￥1,100～）<br>
+                    ※毛玉、毛もつれ（小型・中型犬 ￥550～￥2,200/大型犬 ￥1,100～￥3,300）<br>
+                    ※オールシザー・デザインカット （￥1,100～）</p>
+                </div>
+                <div class="dogtrim-price-rules">
+                  <div class="dogtrim-price-rules__photo">
+                    <img src="images/dog_trimming/title_kiyaku.png" alt="">
+                  </div>
+                  <div class="dogtrim-price-rules__text">
+                    <p>○トリミングは予約制です。</p>
+                    <p class="text-red">〇感染予防上、手洗いの徹底はもちろん、使用する道具も念入りに洗浄しています。</p>
+                    <p>○各種ワクチンを１年以内に接種していない場合、体調不良、ノミやダニがいる場合、感染性皮膚病がある場合は他の預かりの動物への感染予防と防止のためお断りさせていただいております。</p>
+                    <p>○毛玉やもつれ、抜け毛が非常に多いなどの場合は、別途料金550円〜3,300（税込）を追加させていただきますので、予めご了承ください。</p>
+                    <p>○ノミ、ダニが多数いるワンちゃん、ネコちゃんはお断りする場合があります。</p>
+                    <p>○MIX犬は大きさや毛種により料金が変わります。</p>
+                    <p>○料金表にない犬種につきましては、お問い合わせください。</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="dogtrim-flow" id="dogtrim-flow">
+            <div class="dogtrim-flow__inner mainIn">
+              <div class="dogtrim-flow__photo">
+                <img src="images/dog_trimming/text_flow.png" alt="">
+              </div>
+              <div class="trim-flow-accordion js-accordion">
+                <div class="trim-flow-accordion__item">
+                  <h2 class="trim-flow-accordion__headline">
+                    <button type="button" class="trim-flow-accordion__tab js-accordion-tab">
+                      Step1　全身のチェック
+                      <span class="trim-flow-accordion__tabicon"></span>
+                    </button>
+                  </h2>
+                  <div class="trim-flow-accordion__panel js-accordion-panel">
+                    <div class="trim-flow-accordion__panel-content">
+                      <div class="trim-flow-accordion__panel-image">
+                        <img src="images/dog_trimming/flow_step1.png" alt="">
+                      </div>
+                      <div class="trim-flow-accordion__panel-text">
+                        <p>ワンちゃんにストレスを与えず、コンディションやご機嫌、怪我の有無、毛もつれ、骨格、構成等を入念にチェックします。</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="trim-flow-accordion__item">
+                  <h2 class="trim-flow-accordion__headline">
+                    <button type="button" class="trim-flow-accordion__tab js-accordion-tab">
+                      Step2　つめ切り、耳掃除
+                      <span class="trim-flow-accordion__tabicon"></span>
+                    </button>
+                  </h2>
+                  <div class="trim-flow-accordion__panel js-accordion-panel">
+                    <div class="trim-flow-accordion__panel-content">
+                      <div class="trim-flow-accordion__panel-image">
+                        <img src="images/dog_trimming/flow_step2a.png" alt="">
+                        <img src="images/dog_trimming/flow_step2b.png" alt="">
+                      </div>
+                      <div class="trim-flow-accordion__panel-text">
+                        <p>爪の血管が長くのびないように、短めに切ります。<br>
+                          ワンちゃんがひっかいてカラダを傷つけないようにヤスリで丁寧に爪の手入れをします。耳の中に毛が生えているワンちゃんは、丁寧に抜き（苦手なワンちゃんには耳毛切りバサミ使用）その後汚れをしっかりふき取ります。<br>
+                          ※垂れ耳のワンちゃんは湿気がこもりやすく、雑菌などが繁殖しやすい状態ですので、清潔に保つことが大切です。</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="trim-flow-accordion__item">
+                  <h2 class="trim-flow-accordion__headline">
+                    <button type="button" class="trim-flow-accordion__tab js-accordion-tab">
+                      Step3　足裏、お腹、肛門まわりのお手入れ
+                      <span class="trim-flow-accordion__tabicon"></span>
+                    </button>
+                  </h2>
+                  <div class="trim-flow-accordion__panel js-accordion-panel">
+                    <div class="trim-flow-accordion__panel-content">
+                      <div class="trim-flow-accordion__panel-image -noimage"></div>
+                      <div class="trim-flow-accordion__panel-text -fulltext">
+                        <p>バリカンで肉球の間に生えた毛を刈ります。<br>
+                          ※肉球にかかる毛はのびるとフローリングなどで滑って関節炎を引き起こす原因にもなります。<br>
+                          お腹やおへその毛をバリカンで浮かせながら刈ります。<br>
+                          ※排泄時の汚れを防ぐとともに、お腹の毛を刈ることで体温調節をしやすくします。排泄時に汚れて不衛生になることを防ぎます。</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="trim-flow-accordion__item">
+                  <h2 class="trim-flow-accordion__headline">
+                    <button type="button" class="trim-flow-accordion__tab js-accordion-tab">
+                      Step4　シャンプー＆コンディショナー
+                      <span class="trim-flow-accordion__tabicon"></span>
+                    </button>
+                  </h2>
+                  <div class="trim-flow-accordion__panel js-accordion-panel">
+                    <div class="trim-flow-accordion__panel-content">
+                      <div class="trim-flow-accordion__panel-image">
+                        <img src="images/dog_trimming/flow_step4.png" alt="">
+                      </div>
+                      <div class="trim-flow-accordion__panel-text">
+                        <p>ワンちゃんの皮膚、枝毛の状態に合わせて、その度使用するシャンプーやコンディショナーを選びます。（10種類以上）<br>
+                          必要に応じて、ペット用クレンジングオイル等も使用し、やさしく汚れを洗い流します。<br>
+                          ワンちゃんがびっくりしないよう、やさしくマッサージしながら洗います。<br>
+                          ※シャンプーの際、肛門腺しぼりも同時に行います。</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="trim-flow-accordion__item">
+                  <h2 class="trim-flow-accordion__headline">
+                    <button type="button" class="trim-flow-accordion__tab js-accordion-tab">
+                      Step5　ケア
+                      <span class="trim-flow-accordion__tabicon"></span>
+                    </button>
+                  </h2>
+                  <div class="trim-flow-accordion__panel js-accordion-panel">
+                    <div class="trim-flow-accordion__panel-content">
+                      <div class="trim-flow-accordion__panel-image -noimage"></div>
+                      <div class="trim-flow-accordion__panel-text -fulltext">
+                        <p>オプションメニューで、炭酸泉浴、マイクロバブル、オゾンペットシャワー、アクアゼオ温浴、デンタルケアなど、気になるところを重点的にケアします。</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="trim-flow-accordion__item">
+                  <h2 class="trim-flow-accordion__headline">
+                    <button type="button" class="trim-flow-accordion__tab js-accordion-tab">
+                      Step6 ドライング
+                      <span class="trim-flow-accordion__tabicon"></span>
+                    </button>
+                  </h2>
+                  <div class="trim-flow-accordion__panel js-accordion-panel">
+                    <div class="trim-flow-accordion__panel-content">
+                      <div class="trim-flow-accordion__panel-image">
+                        <img src="images/dog_trimming/flow_step6.png" alt="">
+                      </div>
+                      <div class="trim-flow-accordion__panel-text">
+                        <p>タオルで拭いたあとはドライヤーの熱やブラシで皮膚を傷つけないように気をつけながら、毛の根元からしっかり乾かします。<br>
+                          その際、フケや赤み、湿疹、脱毛、いぼやできものなどの有無もチェックします。</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="trim-flow-accordion__item">
+                  <h2 class="trim-flow-accordion__headline">
+                    <button type="button" class="trim-flow-accordion__tab js-accordion-tab">
+                      Step7 仕上げ<span class="trim-flow-accordion__tabsubtext">シャンプーベーシックコースの場合は<br>
+                        足回り等を整えて終了となります。</span>
+                      <span class="trim-flow-accordion__tabicon"></span>
+                    </button>
+                  </h2>
+                  <div class="trim-flow-accordion__panel js-accordion-panel">
+                    <div class="trim-flow-accordion__panel-content">
+                      <div class="trim-flow-accordion__panel-image">
+                        <img src="images/dog_trimming/flow_step7.png" alt="">
+                      </div>
+                      <div class="trim-flow-accordion__panel-text">
+                        <p>飼い主様のご要望とワンちゃんの毛質・毛量などを考慮の上、カットしていきます。お家でもお手入れしやすいサマーカットから、最新のデザインカットまで、それぞれのワンちゃんに合ったスタイルをご提案します。<br>
+                          また、ご持参の写真や画像を参考に似合わせカットも致します。</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="trim-flow-accordion__item">
+                  <h2 class="trim-flow-accordion__headline">
+                    <button type="button" class="trim-flow-accordion__tab js-accordion-tab">
+                      Step8　完成<span class="trim-flow-accordion__tabsubtext">（カットコースの場合は、全身をカットしていきます。）</span>
+                      <span class="trim-flow-accordion__tabicon"></span>
+                    </button>
+                  </h2>
+                  <div class="trim-flow-accordion__panel js-accordion-panel">
+                    <div class="trim-flow-accordion__panel-content">
+                      <div class="trim-flow-accordion__panel-image">
+                        <img src="images/dog_trimming/flow_step8.png" alt="">
+                      </div>
+                      <div class="trim-flow-accordion__panel-text">
+                        <p>これでトリミング（シャンプー・カット）終了！<br>
+                          ワンちゃんがとても可愛く変身！！</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="trim-flow-accordion__item">
+                  <h2 class="trim-flow-accordion__headline">
+                    <button type="button" class="trim-flow-accordion__tab js-accordion-tab">
+                      Step9　記念撮影
+                      <span class="trim-flow-accordion__tabicon"></span>
+                    </button>
+                  </h2>
+                  <div class="trim-flow-accordion__panel js-accordion-panel">
+                    <div class="trim-flow-accordion__panel-content">
+                      <div class="trim-flow-accordion__panel-image">
+                        <img src="images/dog_trimming/flow_step9.png" alt="">
+                      </div>
+                      <div class="trim-flow-accordion__panel-text">
+                        <p>店内の撮影ブースで記念撮影が可能です！<br>
+                          カットをして可愛くなったワンちゃんを撮影しよう！</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </article>
+      </div>
+      <!-- / #main -->
+    </div>
+    <!-- /contents ==================================================================== -->
+    <!-- footer ==================================================================== -->
+    <footer>
+      <div class="footer__inner"></div>
+      <p class="pagetop">
+          <a href="#page"><img src="common/images/btn_pagetop.png" alt="ページのTOPへ" /></a>
+        </p>
+      <div id="footer">
+        <div id="fLogo">
+          <a href="index.html"><img src="common/images/logof.svg" alt="サイト名" /></a>
+          <p>〒926-0852　石川県七尾市小島町6-7-4　　TEL.0767-52-8215　AM9:00～PM7:00</p>
+        </div>
+        <div id="fTel">○○から車で〇分和倉温泉宿泊の際に便利です</div>
+
+        <div id="footerCopy">
+          <p class="tCenter">Copyright &copy; Lovers Rush. All Rights Reserved.</p>
+        </div>
+      </div>
+      <!-- / #footer -->
+    </footer>
+    <!-- /footer ==================================================================== -->
+  </div>
+  <!-- / #page -->
+  <!-- slider -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="common/js/jquery.bxslider.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $(".bxslider").bxSlider({
+        auto: true,
+        speed: 1000,
+        pause: 8000,
+        controls: false,
+      });
+    });
+  </script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $(".bxslider2").bxSlider({
+        auto: true,
+        pause: 6000,
+        speed: 1000,
+        minSlides: 4,
+        maxSlides: 4,
+        slideWidth: 500,
+        slideMargin: 50,
+      });
+    });
+  </script>
+  <script type="text/javascript">
+    var TabList = function () {
+      var $el = $('.dogtrim-price__tabs');
+      this.$tablist = $el.find('.dogtrim-price__tablist');
+      this.$tab = $el.find('.tab');
+      this.$panel = $el.find('.tab-panel');
+      this.click();
+      this.keydown();
+    };
+
+    // クリックイベント
+    TabList.prototype.click = function () {
+      var _this = this;
+      this.$tab.on("click", function () {
+        _this.isSelected($(this));
+      });
+    };
+
+    // キーボード操作
+    TabList.prototype.keydown = function () {
+      var _this = this;
+      var tabFocus = 0;
+      this.$tablist.on("keydown", function (e) {
+        // 右に移動
+        if (e.keyCode === 39 || e.keyCode === 37) {
+          _this.$tab[tabFocus].setAttribute("tabindex", -1);
+          if (e.keyCode === 39) {
+            tabFocus++;
+            // 最後にいる場合は、最初に移動します
+            if (tabFocus >= _this.$tab.length) {
+              tabFocus = 0;
+            }
+            // 左に移動
+          } else if (e.keyCode === 37) {
+            tabFocus--;
+            // 最初にいる場合は、最後に移動します
+            if (tabFocus < 0) {
+              tabFocus = _this.$tab.length - 1;
+            }
+          }
+
+          _this.$tab[tabFocus].setAttribute("tabindex", 0);
+          _this.$tab[tabFocus].focus();
+        }
+      });
+    };
+
+    // タブの選択処理
+    TabList.prototype.isSelected = function ($el) {
+      var selectedFlg = ($el.attr('aria-selected') === 'true');
+      if (!selectedFlg) {
+        this.reset();
+        this.select($el);
+      }
+    };
+
+    // リセット
+    TabList.prototype.reset = function () {
+      this.$tab.attr('aria-selected', 'false');
+      this.$panel.attr('aria-hidden', 'true');
+    };
+
+    // 選択処理
+    TabList.prototype.select = function ($el) {
+      $el.attr('aria-selected', 'true');
+      var panelId = $el.attr('aria-controls');
+      var $targetPanel = $('#' + panelId);
+      $targetPanel.attr('aria-hidden', 'false');
+    };
+
+    if ($('.dogtrim-price__tabs').length > 0) {
+      new TabList();
+    }
+  </script>
+  <script type="text/javascript">
+    const defaultOptions = {
+      // アコーディオンのパネルの開閉時のeasingを指定
+      timingFunction: 'ease-out',
+      // アコーディオンのパネルの開閉時のアニメーション時間を指定
+      duration: '.3s',
+      // 複数開けるようにするか
+      multiSelectable: true,
+    };
+
+    class Accordion {
+      constructor(element, options) {
+        const mergedOptions = Object.assign({}, defaultOptions, options);
+
+        // 必須オプションをチェックする
+        if (!options.tabs) {
+          throw TypeError('tabs オプションは必須です');
+        }
+        if (!options.panels) {
+          throw TypeError('panels オプションは必須です');
+        }
+
+        // タブとパネルを取ってくる
+        const tabs = Array.from(element.querySelectorAll(options.tabs));
+        const panels = Array.from(element.querySelectorAll(options.panels));
+
+        // イベントハンドラを設定する
+        const subscriptions = [
+          ...tabs.map((tab) => attachEvent(tab, 'click', this.handleTabClick.bind(this))),
+          attachEvent(window, 'resize', this.handleResize.bind(this)),
+        ]
+
+        this.element = element;
+        this.tabs = tabs;
+        this.panels = panels;
+        this.options = mergedOptions;
+        this.subscriptions = subscriptions;
+        this.expanded = new Set();
+
+        this.prepareAttributes();
+      }
+
+      destroy() {
+        this.subscriptions.forEach((subscription) => {
+          subscription.unsubscribe();
+        })
+      }
+
+      handleTabClick(event) {
+        const tab = event.currentTarget;
+        const tabIndex = this.tabs.indexOf(tab);
+        this.toggleItem(tabIndex, !this.expanded.has(tabIndex));
+        event.preventDefault();
+      }
+
+      handleResize() {
+        this.bindWindowResizeHandler();
+      }
+
+      prepareAttributes() {
+        const randomId = 'accordion-' + Math.random().toString(36).slice(2);
+
+        // アコーディオンコンポーネントのタブに付与する属性
+        this.tabs.forEach((tab, index) => {
+          tab.setAttribute('id', `${randomId}-tab-${index}`);
+          tab.setAttribute('aria-expanded', "false");
+          tab.setAttribute('aria-controls', `${randomId}-panel-${index}`);
+        });
+
+        // アコーディオンコンポーネントのパネルに付与する属性
+        this.panels.forEach((panel, index) => {
+          panel.setAttribute('id', `${randomId}-panel-${index}`);
+          panel.setAttribute('aria-hidden', "true");
+          panel.style.boxSizing = 'border-box';
+          panel.style.overflow = 'hidden';
+          panel.style.maxHeight = '0px';
+        });
+      }
+
+      toggleItem(itemIndex, expand, { noTransition = false } = {}) {
+        const isExpanded = this.expanded.has(itemIndex);
+
+        if (expand === isExpanded) {
+          return;
+        }
+
+        const updateItemAttribute = (itemIndex, expand) => {
+          const targetTab = this.tabs[itemIndex];
+          const targetPanel = this.panels[itemIndex];
+          targetTab.setAttribute('aria-expanded', String(expand));
+          targetPanel.setAttribute('aria-hidden', String(!expand));
+          targetPanel.style.maxHeight = expand ? targetPanel.children[0].clientHeight + 'px' : '0px';
+          targetPanel.style.visibility = expand ? 'visible' : 'hidden';
+          targetPanel.style.transition = noTransition ?
+            '' :
+            `max-height ${this.options.timingFunction} ${this.options.duration}, visibility ${this.options.duration}`;
+          this.expanded[expand ? 'add' : 'delete'](itemIndex);
+        }
+
+        // 複数選択可能の設定がされていない時は開いているパネルをすべて閉じる
+        if (!this.options.multiSelectable && !isExpanded) {
+          this.expanded.forEach((index) => updateItemAttribute(index, false));
+        }
+
+        updateItemAttribute(itemIndex, expand);
+      }
+
+      bindWindowResizeHandler() {
+        // 開いているパネルの高さを再計算する
+        this.expanded.forEach((index) => {
+          const panel = this.panels[index];
+          const resizedHeight = panel.children[0].clientHeight;
+          panel.style.maxHeight = resizedHeight + 'px';
+        });
+      }
+    }
+
+    function attachEvent(element, event, handler, options) {
+      element.addEventListener(event, handler, options);
+      return {
+        unsubscribe() {
+          element.removeEventListener(event, handler);
+        }
+      }
+    }
+
+    Array.from(document.querySelectorAll('.js-accordion')).forEach((el) => {
+      const accordion = new Accordion(el, {
+        tabs: '.js-accordion-tab',
+        panels: '.js-accordion-panel'
+      });
+      accordion.toggleItem(0, true, { noTransition: true });
+    });
+  </script>
+  <script src="common/js/import.js"></script>
+  <script src="common/js/spnavi.js"></script>
+  <script src="common/js/wow.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+</body>
+</html>

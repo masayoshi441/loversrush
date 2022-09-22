@@ -1,0 +1,347 @@
+@charset "utf-8";
+@import "variables";
+
+/* -----------------------------------------------------------
+ 私たちについて
+----------------------------------------------------------- */
+.cattrim-mv {
+  height: 500px;
+  width: 100%;
+  background-image: url(../../images/cat_trimming/mv.jpg);
+  background-repeat: no-repeat;
+  background-position: center 40%;
+  background-size: cover;
+}
+.cattrim-about {
+  margin-top: -250px;
+  padding-top: 250px;
+  padding-bottom: 751px;
+  background-image: url(../images/bg_2nd_mv.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+.cattrim-about__inner {
+  margin-top: -146px;
+}
+
+.cattrim-about__title img {
+  width: min(toVw(914), 914px);
+}
+.cattrim-about__select {
+  max-width: min(toVw(770), 770px);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+.cattrim-about__button {
+  position: relative;
+  display: inline-block;
+  padding: 9px 0;
+  width: min(toVw(375), 375px);
+  font-size: min(toVw(20), 20px);
+  background: #67b5b9;
+  border-radius: 25px;
+  text-align: center;
+  a {
+    color: #fff;
+    letter-spacing: 0.1em;
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -15px;
+    border: 15px solid transparent;
+    border-top: 15px solid #67b5b9;
+  }
+  &::after {
+    right: min(toVw(25), 25px);
+    top: min(toVw(19), 19px);
+    position: absolute;
+    content: "";
+    display: inline-block;
+    background-image: url(../../common/images/ashiato-w.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    width: min(toVw(14), 14px);
+    height: min(toVw(12), 12px);
+  }
+}
+.cattrim-about h1 {
+  padding-top: 52px;
+  text-align: center;
+}
+.cattrim-about h1 img {
+  width: min(toVw(548), 548px);
+}
+
+.cattrim-about h2 {
+  padding-top: min(toVw(97), 97px);
+  text-align: center;
+  font-size: min(toVw(30), 30px);
+  letter-spacing: 5px;
+}
+
+.cattrim-about p {
+  padding-top: 78px;
+  text-align: center;
+  line-height: 3.2;
+}
+.cattrim-about__cards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 75px;
+}
+.cattrim-about__card {
+  width: min(toVw(254), 254px);
+}
+
+/* cattrim-price
+----------------------------------------------------------- */
+.cattrim-price {
+  margin-top: -644px;
+  padding-top: 362px;
+  padding-bottom: 300px;
+  background-image: url(../../images/bg_cattrim_price.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+.cattrim-price__inner.mainIn {
+}
+.cattrim-price__wrap {
+  background-color: #fff;
+  border-radius: 15px 65px 15px 65px;
+  text-align: center;
+  padding: 133px min(toVw(100), 100px) 48px;
+  position: relative;
+  h2 {
+    img {
+      width: min(toVw(548), 548px);
+    }
+  }
+}
+.cattrim-price__photo {
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(toVw(965), 965px);
+  img {
+    width: min(toVw(965), 965px);
+  }
+}
+.cattrim-price__tabs {
+  .caption {
+    margin-top: 50px;
+    margin-bottom: 31px;
+    text-align: center;
+  }
+  .option {
+    margin-top: 16px;
+    text-align: left;
+  }
+}
+.cattrim-price__tablist {
+  max-width: min(toVw(770), 770px);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 48px;
+  display: flex;
+  justify-content: space-between;
+  li {
+    list-style-type: none;
+  }
+  .tab {
+    background-color: #F6C2C8;
+    color: #fff;
+    display: inline-block;
+    width: min(toVw(375), 375px);
+    border-radius: 25px;
+    padding: 17px 0;
+    font-size: min(toVw(20), 20px);
+    letter-spacing: 0.1em;
+    position: relative;
+    &::after {
+      right: min(toVw(25), 25px);
+      top: min(toVw(19), 19px);
+      position: absolute;
+      content: "";
+      display: inline-block;
+      background-image: url(../../common/images/ashiato-w.svg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      vertical-align: middle;
+      width: min(toVw(14), 14px);
+      height: min(toVw(12), 12px);
+    }
+  }
+}
+
+.cattrim-price__tabs .tab-panel {
+  table {
+    width: 100%;
+    text-align: center;
+    &:nth-child(n + 2) {
+      margin-top: 45px;
+    }
+    thead {
+      color: #fff;
+      tr {
+        th {
+          vertical-align: middle;
+          &:first-child {
+            padding-left: min(toVw(23), 23px);
+          }
+        }
+      }
+      .mainhead {
+        background-color: $main_color;
+        font-size: min(toVw(16), 16px);
+        th {
+          padding-top: 22px;
+          padding-bottom: 24px;
+        }
+      }
+      .subhead {
+        background-color: #5c5c5c;
+        font-size: min(toVw(16), 16px);
+        th {
+          padding: 15px 0;
+          &:nth-child(2) {
+            font-size: min(toVw(13), 13px);
+          }
+          &:nth-child(n + 3) {
+            text-align: center;
+          }
+        }
+      }
+    }
+    tbody {
+      tr {
+        &:nth-child(even) {
+          background-color: #f0e8d9;
+        }
+        td {
+          font-size: min(toVw(22), 22px);
+          padding: min(toVw(16), 16px) 0 min(toVw(21), 21px);
+          &:first-child {
+            font-size: min(toVw(16), 16px);
+            padding-left: min(toVw(23), 23px);
+          }
+        }
+        .text-center {
+          text-align: center;
+        }
+      }
+    }
+  }
+  &.-option {
+    table {
+      width: 100%;
+      text-align: left;
+      &:nth-child(n + 2) {
+        margin-top: 45px;
+      }
+      thead {
+        tr {
+          th {
+            vertical-align: middle;
+            width: 50%;
+          }
+        }
+      }
+      tbody {
+        tr {
+          td {
+            &:first-child {
+              padding-left: min(toVw(23), 23px);
+            }
+          }
+        }
+      }
+    }
+
+  }
+}
+
+/*============================
+#cattrim-price-tab-1.tab
+============================*/
+#cattrim-price-tab-1.tab {
+}
+
+/*============================
+#cattrim-price-tab-2.tab
+============================*/
+#cattrim-price-tab-2.tab {
+}
+
+/*============================
+#cattrim-price-panel-1.tab-panel
+============================*/
+#cattrim-price-panel-1.tab-panel {
+}
+
+/*============================
+#cattrim-price-panel-2.tab-panel
+============================*/
+#cattrim-price-panel-2.tab-panel {
+}
+.cattrim-price-rules {
+  margin-top: 53px;
+}
+.cattrim-price-rules__photo {
+  img {
+    width: min(toVw(548), 548px);
+  }
+}
+.cattrim-price-rules__text {
+  text-align: left;
+  margin-top: 44px;
+  p {
+    font-size: min(toVw(15), 15px);
+    line-height: 1.6;
+  }
+  .text-red {
+    color: #ff0000;
+  }
+}
+.tab-panel[aria-hidden="true"] {
+  display: none;
+}
+
+/* cattrim-flow
+----------------------------------------------------------- */
+.cattrim-flow {
+  margin-top: -181px;
+  padding-top: 333px;
+  padding-bottom: 123px;
+  background-image: url(../../images/bg_cattrim_flow.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  position: relative;
+}
+.cattrim-flow__inner.mainIn {
+}
+.cattrim-flow__photo {
+  position: absolute;
+  top: min(toVw(-11), -11px);
+  left: 49%;
+  transform: translateX(-50%);
+  width: min(toVw(943), 943px);
+}
