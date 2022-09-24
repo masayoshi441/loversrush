@@ -13,7 +13,7 @@
 }
 .shop-about {
   margin-top: -250px;
-  padding-top: 250px;
+  padding-top: 270px;
   padding-bottom: 634px;
   background-image: url(../images/bg_2nd_mv.png);
   background-repeat: no-repeat;
@@ -42,7 +42,7 @@
 }
 
 .shop-about p {
-  padding-top: min(toVw(44), 44px);
+  padding-top: min(toVw(31), 31px);
   text-align: center;
   line-height: 3.2;
 }
@@ -50,7 +50,7 @@
   background-color: #fff;
   border-radius: 15px 65px 15px 65px;
   text-align: center;
-  padding: 80px min(toVw(100), 100px) 0;
+  padding: 76px min(toVw(100), 100px) 0;
   margin-top: 60px;
 }
 .shop-about__details {
@@ -63,7 +63,7 @@
       color: #fff;
       background-color: #ee8691;
       border-radius: 50px;
-      padding: 14.3px 0 15.7px;
+      padding: 9.3px 0 8.7px;
     }
     .shop-about__data {
       text-align: left;
@@ -100,8 +100,8 @@
 /* shop-access
 ----------------------------------------------------------- */
 .shop-access {
-  margin-top: -644px;
-  padding-top: 362px;
+  margin-top: -536px;
+  padding-top: 140px;
   padding-bottom: 88px;
   background-image: url(../../images/bg_shop_access.png);
   background-repeat: no-repeat;
@@ -111,6 +111,7 @@
 }
 .shop-access__title {
   width: min(toVw(464), 464px);
+  margin-left: 52px;
 }
 .shop-access__map {
   position: relative;

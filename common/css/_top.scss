@@ -22,22 +22,39 @@ CSS information
   background-repeat: no-repeat;
   background-position: right center;
   background-size: min(toVw(643), 643px) auto;
+  @include mq(medium, max) {
+    background-size: 90% auto;
+    padding-top: 50%;
+    background-position: top center;
+  }
 }
 .top-about h1 {
   color: #fff;
   font-size: min(toVw(30), 30px);
   padding-top: min(toVw(117), 117px);
   letter-spacing: 6px;
+  @include mq(medium, max) {
+    font-size: 16px;
+    white-space: nowrap;
+  }
 }
 .top-about p {
   color: #fff;
   padding-top: 26px;
   width: min(toVw(550), 550px);
   line-height: 2;
+  @include mq(medium, max) {
+    width: 100%;
+    font-size: 11px;
+    white-space: nowrap;
+  }
 }
 
 .top-about__btn {
   padding-top: 46px;
+  @include mq(medium, max) {
+    padding-top: 15px;
+  }
 }
 
 .top-about__photo {
@@ -82,25 +99,42 @@ CSS information
 }
 .top-trim__title img {
   width: min(toVw(609), 609px);
+  @include mq(medium, max) {
+    max-width: 231px;
+    width: 100%;
+  }
 }
 
 .top-trim h2 {
   text-align: center;
   padding-top: 55px;
+  @include mq(medium, max) {
+    padding-top: 20px;
+  }
 }
 
 .top-trim h2 img {
   width: min(toVw(548), 548px);
+  @include mq(medium, max) {
+    max-width: 320px;
+    width: 100%;
+  }
 }
 
 .top-trim p {
   padding-top: 20px;
   text-align: center;
   line-height: 2;
+  @include mq(medium, max) {
+    font-size: 11px;
+  }
 }
 
 .top-trim-cards {
   padding-top: 64px;
+  @include mq(medium, max) {
+    padding-top: 23px;
+  }
 }
 
 .top-trim-cards__inner {
@@ -108,11 +142,20 @@ CSS information
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  @include mq(medium, max) {
+    flex-direction: column;
+  }
 }
 
 .top-trim-card {
   width: 47.8%;
   position: relative;
+  @include mq(medium, max) {
+    width: 100%;
+    & + .top-trim-card {
+      margin-top: 20px;
+    }
+  }
 }
 
 .top-trim-card div {
@@ -126,6 +169,9 @@ CSS information
   justify-content: center;
   align-items: end;
   padding-bottom: 30px;
+  @include mq(medium, max) {
+    padding-bottom: 20px;
+  }
 }
 
 /* top-hotel
@@ -147,10 +193,18 @@ CSS information
   position: absolute;
   top: 60px;
   right: -50px;
+  @include mq(medium, max) {
+    top: 156px;
+    right: 75px;
+  }
 }
 
 .top-hotel__photo img {
   width: min(toVw(428), 428px);
+  @include mq(medium, max) {
+    max-width: 151px;
+    width: 100%;
+  }
 }
 
 .top-hotel__title {
@@ -158,25 +212,42 @@ CSS information
 }
 .top-hotel__title img {
   width: min(toVw(632), 632px);
+  @include mq(medium, max) {
+    max-width: 240px;
+    width: 100%;
+  }
 }
 
 .top-hotel h2 {
   text-align: center;
   padding-top: 55px;
+  @include mq(medium, max) {
+    padding-top: 20px;
+  }
 }
 
 .top-hotel h2 img {
   width: min(toVw(528), 528px);
+  @include mq(medium, max) {
+    max-width: 320px;
+    width: 100%;
+  }
 }
 
 .top-hotel p {
   padding-top: 26px;
   text-align: center;
   line-height: 2;
+  @include mq(medium, max) {
+    font-size: 11px;
+  }
 }
 
 .top-hotel-cards {
   padding-top: 60px;
+  @include mq(medium, max) {
+    padding-top: 24px;
+  }
 }
 
 .top-hotel-cards__inner {
@@ -184,11 +255,20 @@ CSS information
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  @include mq(medium, max) {
+    flex-direction: column;
+  }
 }
 
 .top-hotel-card {
   width: 47.8%;
   position: relative;
+  @include mq(medium, max) {
+    width: 100%;
+    & + .top-hotel-card {
+      margin-top: 20px;
+    }
+  }
 }
 
 .top-hotel-card div {
@@ -202,6 +282,9 @@ CSS information
   justify-content: center;
   align-items: end;
   padding-bottom: 30px;
+  @include mq(medium, max) {
+    padding-bottom: 20px;
+  }
 }
 
 /* top-news
@@ -213,6 +296,9 @@ CSS information
   background-repeat: no-repeat;
   background-position: top center;
   padding-bottom: 282px;
+  @include mq(medium, max) {
+    padding-top: 575px;
+  }
 }
 
 .top-news__wrap {
@@ -221,6 +307,10 @@ CSS information
   text-align: center;
   padding: 0 0 78px 0;
   position: relative;
+  @include mq(medium, max) {
+    padding-bottom: 35px;
+    border-radius: 10px 30px 10px 30px;
+  }
 }
 
 .top-news__photo {
@@ -230,9 +320,18 @@ CSS information
   left: 50%;
   transform: translateX(-50%);
   width: min(toVw(834), 834px);
+  @include mq(medium, max) {
+    max-width: 273px;
+    width: 100%;
+    top: -116px;
+  }
 }
 .top-news__photo img {
   width: min(toVw(834), 834px);
+  @include mq(medium, max) {
+    max-width: 273px;
+    width: 100%;
+  }
 }
 
 .top-news h2 {
@@ -242,6 +341,10 @@ CSS information
 
 .top-news h2 img {
   width: min(toVw(548), 548px);
+  @include mq(medium, max) {
+    max-width: 280px;
+    width: 100%;
+  }
 }
 
 .top-news__lists {
@@ -249,6 +352,14 @@ CSS information
   width: min(toVw(835), 835px);
   padding-top: min(toVw(60), 60px);
   margin-left: min(toVw(125), 125px);
+  @include mq(medium, max) {
+    margin-left: 0;
+    padding: 30px 20px 0;
+    width: 100%;
+    ul {
+      margin-left: 0;
+    }
+  }
 }
 
 .top-news__lists li {
@@ -260,6 +371,10 @@ CSS information
   display: flex;
   flex-wrap: wrap;
   align-items: start;
+  @include mq(medium, max) {
+    background: none;
+    font-size: 11px;
+  }
 }
 .top-news__lists li + li {
   margin-top: 26px;
@@ -274,6 +389,11 @@ CSS information
   border-radius: 5px;
   margin-left: 20px;
   margin-right: 20px;
+  @include mq(medium, max) {
+    font-size: 11px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }
 
 .top-news__lists li a {
@@ -305,6 +425,10 @@ CSS information
 }
 .top-gallerys__title img {
   width: min(toVw(553), 553px);
+  @include mq(medium, max) {
+    max-width: 200px;
+    width: 100%;
+  }
 }
 
 .top-gallerys__lists {
@@ -317,18 +441,29 @@ CSS information
   // flex-wrap: wrap;
   // justify-content: space-between;
   // align-items: center;
+  @include mq(medium, max) {
+    margin: 0;
+    padding: 0;
+    margin-left: 50%;
+  }
 }
 
 .top-gallerys__lists li {
   list-style-type: none;
   // width: 18%;
   padding-top: 0;
+  @include mq(medium, max) {
+    margin-left: -76.5px;
+    margin-right: 76.5px;
+  }
 }
 
 .top-gallerys__lists li img {
   border-radius: 15px 65px 15px 65px;
+  @include mq(medium, max) {
+    border-radius: 10px 30px 10px 30px;
+  }
 }
-
 .top-gallerys__lists li + li {
 }
 
@@ -337,6 +472,11 @@ CSS information
   width: 60px;
   height: 60px;
   bottom: -100px;
+  @include mq(medium, max) {
+    width: 30px;
+    height: 30px;
+    display: block;
+  }
 }
 
 .top-gallerys__lists .bx-wrapper .bx-controls-direction a.bx-prev {

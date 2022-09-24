@@ -14,7 +14,7 @@
 .dogh-about {
   margin-top: -250px;
   padding-top: 250px;
-  padding-bottom: 634px;
+  padding-bottom: 681px;
   background-image: url(../images/bg_2nd_mv.png);
   background-repeat: no-repeat;
   background-position: top center;
@@ -52,7 +52,7 @@
 .dogh-facility {
   margin-top: -644px;
   padding-top: 0;
-  padding-bottom: 488px;
+  padding-bottom: 526px;
   background-image: url(../../images/bg_top-hotel.png);
   background-repeat: no-repeat;
   background-position: top center;
@@ -63,8 +63,8 @@
 
 .dogh-facility__maru1 {
   position: absolute;
-  top: -281px;
-  left: 0;
+  top: -251px;
+  left: 20px;
 }
 .dogh-facility__maru1 img {
   width: min(toVw(200), 200px);
@@ -72,8 +72,8 @@
 
 .dogh-facility__maru2 {
   position: absolute;
-  top: -161px;
-  right: 0;
+  top: -168px;
+  right: 21px;
   @include mq(large, max) {
     top: -20px;
   }
@@ -83,11 +83,11 @@
 }
 
 .dogh-facility__title {
-  padding-top: min(toVw(160), 160px);
+  padding-top: min(toVw(200), 200px);
   text-align: right;
 }
 .dogh-facility__title img {
-  width: min(toVw(609), 609px);
+  width: min(toVw(533), 533px);
 }
 .dogh-facility-hotel {
   display: flex;
@@ -140,7 +140,8 @@
 }
 .dogh-facility-card__text {
   text-align: center;
-  margin-top: 15px;
+  margin-top: 7px;
+  line-height: 1.3;
 }
 
 /* dogh-price
@@ -207,6 +208,9 @@
         .table-head {
           text-align: left;
           padding-left: min(toVw(100), 100px);
+          &.-pl {
+            padding-left: min(toVw(66), 66px);
+          }
         }
         th {
           padding: min(toVw(6), 6px) 0;

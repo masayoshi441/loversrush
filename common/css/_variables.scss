@@ -2,8 +2,8 @@
 // _variables.scss
 
 //size
-$max_width: 1166px;
-$standard-width-pc: 1166;
+$max_width: 1206px;
+$standard-width-pc: 1206;
 $pd: 25px;
 $pd2: 50px;
 $pd3: 75px;
@@ -45,5 +45,23 @@ $mq-breakpoints: (
   }
   @media screen and (#{$rule}-width: $breakpoint) {
     @content;
+  }
+}
+
+.pc {
+  display: block;
+}
+@include mq(medium, max) {
+  .pc {
+    display: none;
+  }
+}
+
+.sp {
+  display: none;
+}
+@include mq(medium, max) {
+  .sp {
+    display: block;
   }
 }

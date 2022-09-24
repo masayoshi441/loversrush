@@ -1,11 +1,29 @@
 @charset "UTF-8";
 /* Scss Document */ /* Scss Document */
-/* -----------------------------------------------------------
- =reset and default css
------------------------------------------------------------ */
 @import url(https://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
 @import url("https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+.pc {
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .pc {
+    display: none;
+  }
+}
+.sp {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .sp {
+    display: block;
+  }
+}
+/* -----------------------------------------------------------
+ =reset and default css
+----------------------------------------------------------- */
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, address, code, del, em, img, q, small, strong, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figcaption, figure, footer, header, menu, nav, section, summary, time, mark {
   margin: 0;
   padding: 0;
@@ -561,6 +579,24 @@ button, input, select, textarea {
 }
 
 /* Scss Document */
+.pc {
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .pc {
+    display: none;
+  }
+}
+.sp {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .sp {
+    display: block;
+  }
+}
 /* ===================================================================
 CSS information
 
@@ -583,6 +619,12 @@ body {
   font-family: "Kosugi Maru", sans-serif;
   font-weight: 200;
 }
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 11px;
+  }
+}
+
 /* default link color
 ----------------------------------------------------------- */
 a {
@@ -621,6 +663,10 @@ a:hover {
   width: 100%;
 }
 
+.header__inner {
+  display: flex;
+  align-items: center;
+}
 @media screen and (min-width: 768px) {
   .header__inner {
     position: relative;
@@ -631,8 +677,12 @@ a:hover {
 }
 
 #hLogo {
-  margin-bottom: 10px;
   text-align: center;
+}
+@media screen and (max-width: 768px) {
+  #hLogo {
+    width: 146px;
+  }
 }
 @media screen and (min-width: 768px) {
   #hLogo {
@@ -653,6 +703,12 @@ a:hover {
 #hTel {
   text-align: center;
 }
+@media screen and (max-width: 768px) {
+  #hTel {
+    margin-top: 20px;
+    width: 126px;
+  }
+}
 @media screen and (min-width: 768px) {
   #hTel {
     position: absolute;
@@ -661,8 +717,13 @@ a:hover {
   }
 }
 #hTel img {
-  width: min(24.0137221269vw, 280px);
+  width: min(23.2172470978vw, 280px);
   margin-bottom: 10px;
+}
+@media screen and (max-width: 768px) {
+  #hTel img {
+    width: 100%;
+  }
 }
 
 /* -----------------------------------------------------------
@@ -690,7 +751,7 @@ a:hover {
 }
 
 .bx-viewport {
-  max-height: min(65.8662092624vw, 768px);
+  max-height: min(63.6815920398vw, 768px);
 }
 
 #topImg .bx-wrapper .bx-pager,
@@ -704,6 +765,13 @@ a:hover {
   width: 20px;
   height: 20px;
   border-radius: 10px;
+}
+@media screen and (max-width: 768px) {
+  #topImg .bx-wrapper .bx-pager a,
+#topImg .bx-wrapper .bx-controls-auto a {
+    width: 10px;
+    height: 10px;
+  }
 }
 #topImg .bx-wrapper .bx-pager a.active,
 #topImg .bx-wrapper .bx-controls-auto a.active {
@@ -732,13 +800,14 @@ a:hover {
  基本ボックス
 ----------------------------------------------------------- */
 .mainIn {
-  width: 96%;
-  margin: 0 2%;
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
 }
 @media screen and (min-width: 1024px) {
   .mainIn {
     width: 100%;
-    max-width: 1166px;
+    max-width: 1206px;
     margin: 0 auto;
   }
 }
@@ -820,7 +889,7 @@ a:hover {
   /*ボタンの形状*/
   text-decoration: none;
   display: inline-block;
-  font-size: min(1.372212693vw, 16px);
+  font-size: min(1.3266998342vw, 16px);
   border: 1px solid #666; /* ボーダーの色と太さ */
   border-radius: 5px;
   background-color: #fff;
@@ -833,6 +902,11 @@ a:hover {
   background-size: 14px 12px;
   background-position: right 20px center;
   background-repeat: no-repeat;
+}
+@media screen and (max-width: 768px) {
+  .btn {
+    padding: 11px 59px;
+  }
 }
 
 /*ボタン内spanの形状*/
@@ -933,39 +1007,57 @@ footer {
   position: absolute;
   bottom: 50px;
   width: 100%;
-  height: min(33.4476843911vw, 390px);
+  height: min(32.3383084577vw, 390px);
 }
 
 .footer__inner::before {
   content: "";
   display: block;
-  width: min(23.3276157804vw, 272px);
+  width: min(22.5538971808vw, 272px);
   height: 100%;
   background: url(../images/fot_cat.png) no-repeat;
   background-size: 100% auto;
   background-position: bottom;
   position: absolute;
-  left: 0;
+  left: 7%;
   bottom: 0;
+}
+@media screen and (max-width: 768px) {
+  .footer__inner::before {
+    background: none;
+  }
 }
 
 .footer__inner::after {
   content: "";
   display: block;
-  width: min(20.4116638079vw, 238px);
+  width: min(19.7346600332vw, 238px);
   height: 100%;
   background: url(../images/fot_dog.png) no-repeat;
   background-size: 100% auto;
   background-position: bottom;
   position: absolute;
-  right: 0;
+  right: 7%;
   bottom: 0;
+}
+@media screen and (max-width: 768px) {
+  .footer__inner::after {
+    left: 0;
+    width: 105px;
+  }
 }
 
 /*ロゴ、電話番号エリア*/
 #footer {
   margin: 0 2%;
   text-align: center;
+}
+@media screen and (max-width: 768px) {
+  #footer {
+    -moz-text-align-last: left;
+         text-align-last: left;
+    margin: 0;
+  }
 }
 @media screen and (min-width: 768px) {
   #footer {
@@ -977,32 +1069,55 @@ footer {
 #fLogo {
   line-height: 1.5;
 }
+@media screen and (max-width: 768px) {
+  #fLogo {
+    padding-top: 0;
+    padding-left: 130px;
+  }
+}
 @media screen and (min-width: 768px) {
   #fLogo {
     padding-top: 10px;
     line-height: 1.8;
-    font-size: min(1.372212693vw, 16px);
+    font-size: min(1.3266998342vw, 16px);
   }
 }
 #fLogo img {
   width: 50%;
   margin: 10px;
 }
+@media screen and (max-width: 768px) {
+  #fLogo img {
+    margin-left: 0;
+  }
+}
 @media screen and (min-width: 768px) {
   #fLogo img {
-    width: min(22.5557461407vw, 263px);
+    width: min(21.807628524vw, 263px);
   }
 }
 
 #fLogo p {
   padding-top: 10px;
 }
+@media screen and (max-width: 768px) {
+  #fLogo p {
+    font-size: 11px;
+  }
+}
 
 #fTel {
   padding-top: 32px;
   padding-bottom: 40px;
   line-height: 1.3;
-  font-size: min(1.372212693vw, 16px);
+  font-size: min(1.3266998342vw, 16px);
+}
+@media screen and (max-width: 768px) {
+  #fTel {
+    padding-top: 9px;
+    padding-bottom: 10px;
+    padding-left: 130px;
+  }
 }
 
 /*最下部エリア*/
@@ -1010,7 +1125,7 @@ footer {
   background: #333333;
   color: #fff;
   line-height: 1;
-  font-size: min(1.114922813vw, 13px);
+  font-size: min(1.0779436153vw, 13px);
   height: 50px;
   display: flex;
   flex-wrap: wrap;
@@ -1018,7 +1133,41 @@ footer {
   align-items: center;
 }
 
+.c-pan {
+  margin-top: -20px;
+}
+
+.c-pan__list {
+  margin-left: 0;
+}
+.c-pan__list span {
+  color: rgba(51, 51, 51, 0.5);
+  font-size: 13px;
+}
+.c-pan__list span a {
+  color: rgba(51, 51, 51, 0.5);
+  font-size: 13px;
+}
+
 /* Scss Document */
+.pc {
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .pc {
+    display: none;
+  }
+}
+.sp {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .sp {
+    display: block;
+  }
+}
 /* ===================================================================
 CSS information
 
@@ -1087,7 +1236,7 @@ nav {
 }
 @media screen and (min-width: 768px) {
   .nav-wrap .nav {
-    width: 1166px;
+    width: 1206px;
     margin: 200px auto 0;
   }
 }
@@ -1118,7 +1267,7 @@ nav {
     background: #333;
   }
   .nav-pc-wrap ul {
-    width: min(100%, 1166px);
+    width: min(100%, 1206px);
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -1133,7 +1282,7 @@ nav {
   }
   .nav-pc-wrap ul li a {
     color: #fff;
-    font-size: min(1.372212693vw, 16px);
+    font-size: min(1.3266998342vw, 16px);
     position: relative;
     display: block;
     padding: 45px 0 24px;
@@ -1146,7 +1295,7 @@ nav {
     top: 23px;
     left: 50%;
     transform: translateX(-50%);
-    font-size: min(1.0291595197vw, 12px);
+    font-size: min(0.9950248756vw, 12px);
     font-family: "Roboto", sans-serif;
     width: 100%;
   }
@@ -1415,6 +1564,12 @@ nav {
   border: 1px solid #707070;
   border-radius: 5px;
 }
+@media screen and (max-width: 768px) {
+  .openbtn1 {
+    top: 10px;
+    right: 10px;
+  }
+}
 
 /*×に変化*/
 .openbtn1 span {
@@ -1459,6 +1614,24 @@ nav {
 }
 
 /* Scss Document */
+.pc {
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .pc {
+    display: none;
+  }
+}
+.sp {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .sp {
+    display: block;
+  }
+}
 /* ===================================================================
 CSS information
 
@@ -1479,25 +1652,50 @@ CSS information
   background-image: url(../../images/image1.png);
   background-repeat: no-repeat;
   background-position: right center;
-  background-size: min(55.1457975986vw, 643px) auto;
+  background-size: min(53.3167495854vw, 643px) auto;
+}
+@media screen and (max-width: 768px) {
+  .top-about__inner {
+    background-size: 90% auto;
+    padding-top: 50%;
+    background-position: top center;
+  }
 }
 
 .top-about h1 {
   color: #fff;
-  font-size: min(2.5728987993vw, 30px);
-  padding-top: min(10.0343053173vw, 117px);
+  font-size: min(2.4875621891vw, 30px);
+  padding-top: min(9.7014925373vw, 117px);
   letter-spacing: 6px;
+}
+@media screen and (max-width: 768px) {
+  .top-about h1 {
+    font-size: 16px;
+    white-space: nowrap;
+  }
 }
 
 .top-about p {
   color: #fff;
   padding-top: 26px;
-  width: min(47.1698113208vw, 550px);
+  width: min(45.6053067993vw, 550px);
   line-height: 2;
+}
+@media screen and (max-width: 768px) {
+  .top-about p {
+    width: 100%;
+    font-size: 11px;
+    white-space: nowrap;
+  }
 }
 
 .top-about__btn {
   padding-top: 46px;
+}
+@media screen and (max-width: 768px) {
+  .top-about__btn {
+    padding-top: 15px;
+  }
 }
 
 .top-about__photo {
@@ -1526,17 +1724,17 @@ CSS information
 }
 
 .top-trim__maru1 img {
-  width: min(22.1269296741vw, 258px);
+  width: min(21.3930348259vw, 258px);
 }
 
 .top-trim__maru2 {
   position: absolute;
   top: 168px;
-  left: min(23.4991423671vw, 274px);
+  left: min(22.71973466vw, 274px);
 }
 
 .top-trim__maru2 img {
-  width: min(17.667238422vw, 206px);
+  width: min(17.0812603648vw, 206px);
 }
 
 .top-trim__title {
@@ -1545,16 +1743,33 @@ CSS information
 }
 
 .top-trim__title img {
-  width: min(52.2298456261vw, 609px);
+  width: min(50.4975124378vw, 609px);
+}
+@media screen and (max-width: 768px) {
+  .top-trim__title img {
+    max-width: 231px;
+    width: 100%;
+  }
 }
 
 .top-trim h2 {
   text-align: center;
   padding-top: 55px;
 }
+@media screen and (max-width: 768px) {
+  .top-trim h2 {
+    padding-top: 20px;
+  }
+}
 
 .top-trim h2 img {
-  width: min(46.9982847341vw, 548px);
+  width: min(45.4394693201vw, 548px);
+}
+@media screen and (max-width: 768px) {
+  .top-trim h2 img {
+    max-width: 320px;
+    width: 100%;
+  }
 }
 
 .top-trim p {
@@ -1562,9 +1777,19 @@ CSS information
   text-align: center;
   line-height: 2;
 }
+@media screen and (max-width: 768px) {
+  .top-trim p {
+    font-size: 11px;
+  }
+}
 
 .top-trim-cards {
   padding-top: 64px;
+}
+@media screen and (max-width: 768px) {
+  .top-trim-cards {
+    padding-top: 23px;
+  }
 }
 
 .top-trim-cards__inner {
@@ -1573,10 +1798,23 @@ CSS information
   justify-content: space-between;
   align-items: center;
 }
+@media screen and (max-width: 768px) {
+  .top-trim-cards__inner {
+    flex-direction: column;
+  }
+}
 
 .top-trim-card {
   width: 47.8%;
   position: relative;
+}
+@media screen and (max-width: 768px) {
+  .top-trim-card {
+    width: 100%;
+  }
+  .top-trim-card + .top-trim-card {
+    margin-top: 20px;
+  }
 }
 
 .top-trim-card div {
@@ -1590,6 +1828,11 @@ CSS information
   justify-content: center;
   align-items: end;
   padding-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+  .top-trim-card div {
+    padding-bottom: 20px;
+  }
 }
 
 /* top-hotel
@@ -1611,9 +1854,21 @@ CSS information
   top: 60px;
   right: -50px;
 }
+@media screen and (max-width: 768px) {
+  .top-hotel__photo {
+    top: 156px;
+    right: 75px;
+  }
+}
 
 .top-hotel__photo img {
-  width: min(36.7066895369vw, 428px);
+  width: min(35.4892205638vw, 428px);
+}
+@media screen and (max-width: 768px) {
+  .top-hotel__photo img {
+    max-width: 151px;
+    width: 100%;
+  }
 }
 
 .top-hotel__title {
@@ -1621,16 +1876,33 @@ CSS information
 }
 
 .top-hotel__title img {
-  width: min(54.2024013722vw, 632px);
+  width: min(52.4046434494vw, 632px);
+}
+@media screen and (max-width: 768px) {
+  .top-hotel__title img {
+    max-width: 240px;
+    width: 100%;
+  }
 }
 
 .top-hotel h2 {
   text-align: center;
   padding-top: 55px;
 }
+@media screen and (max-width: 768px) {
+  .top-hotel h2 {
+    padding-top: 20px;
+  }
+}
 
 .top-hotel h2 img {
-  width: min(45.2830188679vw, 528px);
+  width: min(43.7810945274vw, 528px);
+}
+@media screen and (max-width: 768px) {
+  .top-hotel h2 img {
+    max-width: 320px;
+    width: 100%;
+  }
 }
 
 .top-hotel p {
@@ -1638,9 +1910,19 @@ CSS information
   text-align: center;
   line-height: 2;
 }
+@media screen and (max-width: 768px) {
+  .top-hotel p {
+    font-size: 11px;
+  }
+}
 
 .top-hotel-cards {
   padding-top: 60px;
+}
+@media screen and (max-width: 768px) {
+  .top-hotel-cards {
+    padding-top: 24px;
+  }
 }
 
 .top-hotel-cards__inner {
@@ -1649,10 +1931,23 @@ CSS information
   justify-content: space-between;
   align-items: center;
 }
+@media screen and (max-width: 768px) {
+  .top-hotel-cards__inner {
+    flex-direction: column;
+  }
+}
 
 .top-hotel-card {
   width: 47.8%;
   position: relative;
+}
+@media screen and (max-width: 768px) {
+  .top-hotel-card {
+    width: 100%;
+  }
+  .top-hotel-card + .top-hotel-card {
+    margin-top: 20px;
+  }
 }
 
 .top-hotel-card div {
@@ -1667,6 +1962,11 @@ CSS information
   align-items: end;
   padding-bottom: 30px;
 }
+@media screen and (max-width: 768px) {
+  .top-hotel-card div {
+    padding-bottom: 20px;
+  }
+}
 
 /* top-news
 ----------------------------------------------------------- */
@@ -1678,6 +1978,11 @@ CSS information
   background-position: top center;
   padding-bottom: 282px;
 }
+@media screen and (max-width: 768px) {
+  .top-news {
+    padding-top: 575px;
+  }
+}
 
 .top-news__wrap {
   background-color: #fff;
@@ -1686,33 +1991,68 @@ CSS information
   padding: 0 0 78px 0;
   position: relative;
 }
+@media screen and (max-width: 768px) {
+  .top-news__wrap {
+    padding-bottom: 35px;
+    border-radius: 10px 30px 10px 30px;
+  }
+}
 
 .top-news__photo {
   position: absolute;
   top: -350px;
   left: 50%;
   transform: translateX(-50%);
-  width: min(71.5265866209vw, 834px);
+  width: min(69.1542288557vw, 834px);
+}
+@media screen and (max-width: 768px) {
+  .top-news__photo {
+    max-width: 273px;
+    width: 100%;
+    top: -116px;
+  }
 }
 
 .top-news__photo img {
-  width: min(71.5265866209vw, 834px);
+  width: min(69.1542288557vw, 834px);
+}
+@media screen and (max-width: 768px) {
+  .top-news__photo img {
+    max-width: 273px;
+    width: 100%;
+  }
 }
 
 .top-news h2 {
   text-align: center;
-  padding-top: min(13.8936535163vw, 162px);
+  padding-top: min(13.4328358209vw, 162px);
 }
 
 .top-news h2 img {
-  width: min(46.9982847341vw, 548px);
+  width: min(45.4394693201vw, 548px);
+}
+@media screen and (max-width: 768px) {
+  .top-news h2 img {
+    max-width: 280px;
+    width: 100%;
+  }
 }
 
 .top-news__lists {
   font-size: 15px;
-  width: min(71.6123499142vw, 835px);
-  padding-top: min(5.1457975986vw, 60px);
-  margin-left: min(10.7204116638vw, 125px);
+  width: min(69.2371475954vw, 835px);
+  padding-top: min(4.9751243781vw, 60px);
+  margin-left: min(10.3648424544vw, 125px);
+}
+@media screen and (max-width: 768px) {
+  .top-news__lists {
+    margin-left: 0;
+    padding: 30px 20px 0;
+    width: 100%;
+  }
+  .top-news__lists ul {
+    margin-left: 0;
+  }
 }
 
 .top-news__lists li {
@@ -1724,6 +2064,12 @@ CSS information
   display: flex;
   flex-wrap: wrap;
   align-items: start;
+}
+@media screen and (max-width: 768px) {
+  .top-news__lists li {
+    background: none;
+    font-size: 11px;
+  }
 }
 
 .top-news__lists li + li {
@@ -1740,6 +2086,13 @@ CSS information
   margin-left: 20px;
   margin-right: 20px;
 }
+@media screen and (max-width: 768px) {
+  .top-news__lists span.top-news__cate {
+    font-size: 11px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
 
 .top-news__lists li a {
   display: inline-block;
@@ -1747,7 +2100,7 @@ CSS information
 }
 
 .top-news__btn {
-  padding-top: min(5.5746140652vw, 65px);
+  padding-top: min(5.3897180763vw, 65px);
 }
 
 /* top-gallerys
@@ -1767,7 +2120,13 @@ CSS information
 }
 
 .top-gallerys__title img {
-  width: min(47.4271012007vw, 553px);
+  width: min(45.8540630182vw, 553px);
+}
+@media screen and (max-width: 768px) {
+  .top-gallerys__title img {
+    max-width: 200px;
+    width: 100%;
+  }
 }
 
 .top-gallerys__lists {
@@ -1778,20 +2137,45 @@ CSS information
 .top-gallerys__lists ul {
   margin-left: 175px;
 }
+@media screen and (max-width: 768px) {
+  .top-gallerys__lists ul {
+    margin: 0;
+    padding: 0;
+    margin-left: 50%;
+  }
+}
 
 .top-gallerys__lists li {
   list-style-type: none;
   padding-top: 0;
 }
+@media screen and (max-width: 768px) {
+  .top-gallerys__lists li {
+    margin-left: -76.5px;
+    margin-right: 76.5px;
+  }
+}
 
 .top-gallerys__lists li img {
   border-radius: 15px 65px 15px 65px;
+}
+@media screen and (max-width: 768px) {
+  .top-gallerys__lists li img {
+    border-radius: 10px 30px 10px 30px;
+  }
 }
 
 .top-gallerys__lists .bx-wrapper .bx-controls-direction a {
   width: 60px;
   height: 60px;
   bottom: -100px;
+}
+@media screen and (max-width: 768px) {
+  .top-gallerys__lists .bx-wrapper .bx-controls-direction a {
+    width: 30px;
+    height: 30px;
+    display: block;
+  }
 }
 
 .top-gallerys__lists .bx-wrapper .bx-controls-direction a.bx-prev {
@@ -1813,6 +2197,24 @@ CSS information
 }
 
 /* Scss Document */
+.pc {
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .pc {
+    display: none;
+  }
+}
+.sp {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .sp {
+    display: block;
+  }
+}
 /* -----------------------------------------------------------
  私たちについて
 ----------------------------------------------------------- */
@@ -1823,6 +2225,11 @@ CSS information
   background-repeat: no-repeat;
   background-position: center 30%;
   background-size: cover;
+}
+@media screen and (max-width: 768px) {
+  .about-mv {
+    height: 182px;
+  }
 }
 
 .about-about {
@@ -1839,29 +2246,62 @@ CSS information
 }
 
 .about-about__title img {
-  width: min(34.4768439108vw, 402px);
+  width: min(33.3333333333vw, 402px);
+}
+@media screen and (max-width: 768px) {
+  .about-about__title img {
+    max-width: 145px;
+    width: 100%;
+  }
 }
 
 .about-about h1 {
   padding-top: 52px;
   text-align: center;
 }
+@media screen and (max-width: 768px) {
+  .about-about h1 {
+    padding-top: 16px;
+  }
+}
 
 .about-about h1 img {
-  width: min(46.9982847341vw, 548px);
+  width: min(45.4394693201vw, 548px);
+}
+@media screen and (max-width: 768px) {
+  .about-about h1 img {
+    max-width: 320px;
+    width: 100%;
+  }
 }
 
 .about-about h2 {
-  padding-top: min(7.461406518vw, 87px);
+  padding-top: min(3.4825870647vw, 42px);
   text-align: center;
-  font-size: min(2.5728987993vw, 30px);
+  font-size: min(2.4875621891vw, 30px);
   letter-spacing: 5px;
+}
+@media screen and (max-width: 768px) {
+  .about-about h2 {
+    font-size: 15px;
+    padding-top: 22px;
+  }
 }
 
 .about-about p {
   padding-top: 19px;
   text-align: center;
   line-height: 3.2;
+}
+@media screen and (max-width: 768px) {
+  .about-about p {
+    font-size: 11px;
+    text-align: left;
+    line-height: 1.6;
+    padding-top: 17px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 /* about-trim
@@ -1886,7 +2326,7 @@ CSS information
 }
 
 .about-trim__maru1 img {
-  width: min(22.1269296741vw, 258px);
+  width: min(21.3930348259vw, 258px);
 }
 
 .about-trim__maru2 {
@@ -1901,16 +2341,22 @@ CSS information
 }
 
 .about-trim__maru2 img {
-  width: min(17.667238422vw, 206px);
+  width: min(17.0812603648vw, 206px);
 }
 
 .about-trim__title {
-  padding-top: min(21.9554030875vw, 256px);
+  padding-top: min(21.2271973466vw, 256px);
   text-align: right;
 }
 
 .about-trim__title img {
-  width: min(52.2298456261vw, 609px);
+  width: min(50.4975124378vw, 609px);
+}
+@media screen and (max-width: 768px) {
+  .about-trim__title img {
+    max-width: 231px;
+    width: 100%;
+  }
 }
 
 .about-trim h2 {
@@ -1919,13 +2365,27 @@ CSS information
 }
 
 .about-trim h2 img {
-  width: min(46.9982847341vw, 548px);
+  width: min(45.4394693201vw, 548px);
+}
+@media screen and (max-width: 768px) {
+  .about-trim h2 img {
+    max-width: 320px;
+    width: 100%;
+  }
 }
 
 .about-trim p {
   padding-top: 20px;
   text-align: center;
   line-height: 2;
+}
+@media screen and (max-width: 768px) {
+  .about-trim p {
+    font-size: 11px;
+    line-height: 1.6;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 /* about-hotel
@@ -1945,12 +2405,18 @@ CSS information
 
 .about-hotel__photo {
   position: absolute;
-  top: 90px;
-  right: -50px;
+  top: 110px;
+  right: 9px;
+}
+@media screen and (max-width: 768px) {
+  .about-hotel__photo {
+    top: 157px;
+    right: 56px;
+  }
 }
 
 .about-hotel__photo img {
-  width: min(47.0840480274vw, 549px);
+  width: min(34.8258706468vw, 420px);
 }
 
 .about-hotel__title {
@@ -1958,7 +2424,13 @@ CSS information
 }
 
 .about-hotel__title img {
-  width: min(56.5180102916vw, 659px);
+  width: min(54.6434494196vw, 659px);
+}
+@media screen and (max-width: 768px) {
+  .about-hotel__title img {
+    max-width: 240px;
+    width: 100%;
+  }
 }
 
 .about-hotel h2 {
@@ -1967,13 +2439,26 @@ CSS information
 }
 
 .about-hotel h2 img {
-  width: min(46.9982847341vw, 548px);
+  width: min(45.4394693201vw, 548px);
+}
+@media screen and (max-width: 768px) {
+  .about-hotel h2 img {
+    max-width: 320px;
+    width: 100%;
+  }
 }
 
 .about-hotel p {
   padding-top: 26px;
   text-align: center;
   line-height: 2;
+}
+@media screen and (max-width: 768px) {
+  .about-hotel p {
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 1.6;
+  }
 }
 
 /* about-goods
@@ -1993,34 +2478,69 @@ CSS information
 
 .about-goods__photo {
   position: absolute;
-  top: -76px;
-  left: 0;
+  top: -106px;
+  left: 122px;
+}
+@media screen and (max-width: 768px) {
+  .about-goods__photo {
+    top: 46px;
+    right: 0;
+    left: auto;
+  }
 }
 
 .about-goods__photo img {
-  width: min(30.2744425386vw, 353px);
+  width: min(36.4842454395vw, 440px);
+}
+@media screen and (max-width: 768px) {
+  .about-goods__photo img {
+    max-width: 160px;
+    width: 100%;
+  }
 }
 
 .about-goods__title {
   padding-top: 110px;
   text-align: right;
 }
+@media screen and (max-width: 768px) {
+  .about-goods__title {
+    text-align: left;
+  }
+}
 
 .about-goods__title img {
-  width: min(35.7632933105vw, 417px);
+  width: min(34.5771144279vw, 417px);
+}
+@media screen and (max-width: 768px) {
+  .about-goods__title img {
+    max-width: 151px;
+    width: 100%;
+  }
 }
 
 .about-goods h2 {
   text-align: center;
   margin-top: -10px;
 }
+@media screen and (max-width: 768px) {
+  .about-goods h2 {
+    margin-top: 25px;
+  }
+}
 
 .about-goods h2 img {
-  width: min(46.9982847341vw, 548px);
+  width: min(45.4394693201vw, 548px);
+}
+@media screen and (max-width: 768px) {
+  .about-goods h2 img {
+    max-width: 320px;
+    width: 100%;
+  }
 }
 
 .about-goods__text {
-  padding-top: min(4.2881646655vw, 50px);
+  padding-top: min(4.1459369818vw, 50px);
   text-align: center;
   line-height: 2;
 }
@@ -2040,6 +2560,11 @@ CSS information
   width: 24%;
   position: relative;
 }
+@media screen and (max-width: 768px) {
+  .about-goods-card {
+    width: 50%;
+  }
+}
 
 .about-goods-card p {
   padding-top: 26px;
@@ -2047,10 +2572,33 @@ CSS information
 }
 
 .about-goods-card img {
-  height: min(21.0120068611vw, 245px);
+  height: min(20.3150912106vw, 245px);
+}
+@media screen and (max-width: 768px) {
+  .about-goods-card img {
+    height: auto;
+  }
 }
 
 /* Scss Document */
+.pc {
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .pc {
+    display: none;
+  }
+}
+.sp {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .sp {
+    display: block;
+  }
+}
 /* -----------------------------------------------------------
  私たちについて
 ----------------------------------------------------------- */
@@ -2065,7 +2613,7 @@ CSS information
 .dogh-about {
   margin-top: -250px;
   padding-top: 250px;
-  padding-bottom: 634px;
+  padding-bottom: 681px;
   background-image: url(../images/bg_2nd_mv.png);
   background-repeat: no-repeat;
   background-position: top center;
@@ -2076,7 +2624,7 @@ CSS information
 }
 
 .dogh-about__title img {
-  width: min(58.833619211vw, 686px);
+  width: min(56.8822553897vw, 686px);
 }
 
 .dogh-about h1 {
@@ -2085,18 +2633,18 @@ CSS information
 }
 
 .dogh-about h1 img {
-  width: min(46.9982847341vw, 548px);
+  width: min(45.4394693201vw, 548px);
 }
 
 .dogh-about h2 {
-  padding-top: min(7.461406518vw, 87px);
+  padding-top: min(7.2139303483vw, 87px);
   text-align: center;
-  font-size: min(2.5728987993vw, 30px);
+  font-size: min(2.4875621891vw, 30px);
   letter-spacing: 5px;
 }
 
 .dogh-about p {
-  padding-top: min(6.5180102916vw, 76px);
+  padding-top: min(6.3018242123vw, 76px);
   text-align: center;
   line-height: 3.2;
 }
@@ -2106,7 +2654,7 @@ CSS information
 .dogh-facility {
   margin-top: -644px;
   padding-top: 0;
-  padding-bottom: 488px;
+  padding-bottom: 526px;
   background-image: url(../../images/bg_top-hotel.png);
   background-repeat: no-repeat;
   background-position: top center;
@@ -2118,18 +2666,18 @@ CSS information
 
 .dogh-facility__maru1 {
   position: absolute;
-  top: -281px;
-  left: 0;
+  top: -251px;
+  left: 20px;
 }
 
 .dogh-facility__maru1 img {
-  width: min(17.1526586621vw, 200px);
+  width: min(16.583747927vw, 200px);
 }
 
 .dogh-facility__maru2 {
   position: absolute;
-  top: -161px;
-  right: 0;
+  top: -168px;
+  right: 21px;
 }
 @media screen and (max-width: 1024px) {
   .dogh-facility__maru2 {
@@ -2138,16 +2686,16 @@ CSS information
 }
 
 .dogh-facility__maru2 img {
-  width: min(17.1526586621vw, 200px);
+  width: min(16.583747927vw, 200px);
 }
 
 .dogh-facility__title {
-  padding-top: min(13.7221269297vw, 160px);
+  padding-top: min(16.583747927vw, 200px);
   text-align: right;
 }
 
 .dogh-facility__title img {
-  width: min(52.2298456261vw, 609px);
+  width: min(44.1956882255vw, 533px);
 }
 
 .dogh-facility-hotel {
@@ -2156,10 +2704,10 @@ CSS information
 }
 
 .dogh-facility-hotel__image {
-  width: min(47.8559176672vw, 558px);
+  width: min(46.2686567164vw, 558px);
 }
 .dogh-facility-hotel__image img {
-  width: min(47.8559176672vw, 558px);
+  width: min(46.2686567164vw, 558px);
 }
 .dogh-facility-hotel__image p {
   text-align: center;
@@ -2171,15 +2719,15 @@ CSS information
 }
 
 .dogh-facility-hotel__title {
-  font-size: min(2.0583190395vw, 24px);
+  font-size: min(1.9900497512vw, 24px);
   position: relative;
-  padding-left: min(3.2590051458vw, 38px);
+  padding-left: min(3.1509121061vw, 38px);
   padding-top: 10px;
   letter-spacing: 0.2em;
 }
 .dogh-facility-hotel__title::before {
   left: min(0vw, 0px);
-  top: min(1.372212693vw, 16px);
+  top: min(1.3266998342vw, 16px);
   position: absolute;
   content: "";
   display: inline-block;
@@ -2187,28 +2735,29 @@ CSS information
   background-size: contain;
   background-repeat: no-repeat;
   vertical-align: middle;
-  width: min(2.7444253859vw, 32px);
-  height: min(2.0583190395vw, 24px);
+  width: min(2.6533996683vw, 32px);
+  height: min(1.9900497512vw, 24px);
 }
 
 .dogh-facility-hotel__text {
-  margin-top: min(3.4305317324vw, 40px);
+  margin-top: min(3.3167495854vw, 40px);
   line-height: 2;
 }
 
 .dogh-facility-cards {
   display: flex;
   justify-content: space-between;
-  margin-top: min(6.8610634648vw, 80px);
+  margin-top: min(6.6334991708vw, 80px);
 }
 
 .dogh-facility-card {
-  width: min(21.7838765009vw, 254px);
+  width: min(21.0613598673vw, 254px);
 }
 
 .dogh-facility-card__text {
   text-align: center;
-  margin-top: 15px;
+  margin-top: 7px;
+  line-height: 1.3;
 }
 
 /* dogh-price
@@ -2226,11 +2775,11 @@ CSS information
   background-color: #fff;
   border-radius: 15px 65px 15px 65px;
   text-align: center;
-  padding: 133px min(4.2881646655vw, 50px) 58px;
+  padding: 133px min(4.1459369818vw, 50px) 58px;
   position: relative;
 }
 .dogh-price__wrap h2 img {
-  width: min(46.9982847341vw, 548px);
+  width: min(45.4394693201vw, 548px);
 }
 
 .dogh-price__photo {
@@ -2238,7 +2787,7 @@ CSS information
   top: -100px;
   left: 50%;
   transform: translateX(-50%);
-  width: min(82.7615780446vw, 965px);
+  width: min(80.0165837479vw, 965px);
 }
 
 .dogh-price__pricelist {
@@ -2249,7 +2798,7 @@ CSS information
 }
 .dogh-price__pricelist table caption {
   text-align: center;
-  font-size: min(1.7152658662vw, 20px);
+  font-size: min(1.6583747927vw, 20px);
   letter-spacing: 0.2em;
   margin-bottom: 22px;
 }
@@ -2257,7 +2806,7 @@ CSS information
   text-align: center;
 }
 .dogh-price__pricelist table .first-tr th:first-child {
-  padding-left: min(4.2024013722vw, 49px);
+  padding-left: min(4.0630182421vw, 49px);
   width: 31%;
 }
 .dogh-price__pricelist table .second-tr th {
@@ -2269,14 +2818,17 @@ CSS information
   color: #fff;
 }
 .dogh-price__pricelist table thead tr {
-  font-size: min(1.372212693vw, 16px);
+  font-size: min(1.3266998342vw, 16px);
 }
 .dogh-price__pricelist table thead tr .table-head {
   text-align: left;
-  padding-left: min(8.576329331vw, 100px);
+  padding-left: min(8.2918739635vw, 100px);
+}
+.dogh-price__pricelist table thead tr .table-head.-pl {
+  padding-left: min(5.4726368159vw, 66px);
 }
 .dogh-price__pricelist table thead tr th {
-  padding: min(0.5145797599vw, 6px) 0;
+  padding: min(0.4975124378vw, 6px) 0;
 }
 .dogh-price__pricelist table thead tr th:first-child {
   vertical-align: middle;
@@ -2284,16 +2836,16 @@ CSS information
        text-align-last: left;
 }
 .dogh-price__pricelist table tbody tr {
-  font-size: min(1.8867924528vw, 22px);
+  font-size: min(1.824212272vw, 22px);
 }
 .dogh-price__pricelist table tbody tr td {
-  padding: min(1.5437392796vw, 18px) 0;
+  padding: min(1.4925373134vw, 18px) 0;
   text-align: left;
 }
 .dogh-price__pricelist table tbody tr td:first-child {
   width: 31%;
-  padding-left: min(4.2024013722vw, 49px);
-  font-size: min(1.372212693vw, 16px);
+  padding-left: min(4.0630182421vw, 49px);
+  font-size: min(1.3266998342vw, 16px);
 }
 .dogh-price__pricelist table tbody tr td:nth-child(n+2) {
   width: 18.5%;
@@ -2324,7 +2876,7 @@ CSS information
 }
 
 .dogh-rule__photo {
-  width: min(28.3018867925vw, 330px);
+  width: min(27.3631840796vw, 330px);
 }
 
 .dogh-rule__content {
@@ -2337,15 +2889,15 @@ CSS information
 }
 
 .dogh-rule__title {
-  font-size: min(2.0583190395vw, 24px);
+  font-size: min(1.9900497512vw, 24px);
   position: relative;
-  padding-left: min(3.2590051458vw, 38px);
+  padding-left: min(3.1509121061vw, 38px);
   padding-top: 10px;
   letter-spacing: 0.2em;
 }
 .dogh-rule__title::before {
   left: min(0vw, 0px);
-  top: min(1.372212693vw, 16px);
+  top: min(1.3266998342vw, 16px);
   position: absolute;
   content: "";
   display: inline-block;
@@ -2353,21 +2905,39 @@ CSS information
   background-size: contain;
   background-repeat: no-repeat;
   vertical-align: middle;
-  width: min(2.7444253859vw, 32px);
-  height: min(2.0583190395vw, 24px);
+  width: min(2.6533996683vw, 32px);
+  height: min(1.9900497512vw, 24px);
 }
 
 .dogh-rule__text {
   margin-top: 12px;
-  font-size: min(1.2006861063vw, 14px);
+  font-size: min(1.1608623549vw, 14px);
   line-height: 2.14;
 }
 
 .dogh-rule__image {
-  width: min(41.423670669vw, 483px);
+  width: min(40.0497512438vw, 483px);
 }
 
 /* Scss Document */
+.pc {
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .pc {
+    display: none;
+  }
+}
+.sp {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .sp {
+    display: block;
+  }
+}
 /* -----------------------------------------------------------
  私たちについて
 ----------------------------------------------------------- */
@@ -2381,7 +2951,7 @@ CSS information
 
 .cath-about {
   margin-top: -250px;
-  padding-top: 250px;
+  padding-top: 237px;
   padding-bottom: 634px;
   background-image: url(../images/bg_2nd_mv.png);
   background-repeat: no-repeat;
@@ -2393,7 +2963,7 @@ CSS information
 }
 
 .cath-about__title img {
-  width: min(58.833619211vw, 686px);
+  width: min(56.8822553897vw, 686px);
 }
 
 .cath-about h1 {
@@ -2402,18 +2972,18 @@ CSS information
 }
 
 .cath-about h1 img {
-  width: min(46.9982847341vw, 548px);
+  width: min(45.4394693201vw, 548px);
 }
 
 .cath-about h2 {
-  padding-top: min(7.461406518vw, 87px);
+  padding-top: min(7.2139303483vw, 87px);
   text-align: center;
-  font-size: min(2.5728987993vw, 30px);
+  font-size: min(2.4875621891vw, 30px);
   letter-spacing: 5px;
 }
 
 .cath-about p {
-  padding-top: min(3.7735849057vw, 44px);
+  padding-top: min(3.6484245439vw, 44px);
   text-align: center;
   line-height: 3.2;
 }
@@ -2440,7 +3010,7 @@ CSS information
 }
 
 .cath-facility__maru1 img {
-  width: min(17.1526586621vw, 200px);
+  width: min(16.583747927vw, 200px);
 }
 
 .cath-facility__maru2 {
@@ -2455,16 +3025,16 @@ CSS information
 }
 
 .cath-facility__maru2 img {
-  width: min(17.1526586621vw, 200px);
+  width: min(16.583747927vw, 200px);
 }
 
 .cath-facility__title {
-  padding-top: min(13.7221269297vw, 160px);
+  padding-top: min(19.0713101161vw, 230px);
   text-align: right;
 }
 
 .cath-facility__title img {
-  width: min(52.2298456261vw, 609px);
+  width: min(44.1956882255vw, 533px);
 }
 
 .cath-facility-hotel {
@@ -2473,10 +3043,10 @@ CSS information
 }
 
 .cath-facility-hotel__image {
-  width: min(47.8559176672vw, 558px);
+  width: min(46.2686567164vw, 558px);
 }
 .cath-facility-hotel__image img {
-  width: min(47.8559176672vw, 558px);
+  width: min(46.2686567164vw, 558px);
 }
 .cath-facility-hotel__image p {
   text-align: center;
@@ -2488,15 +3058,15 @@ CSS information
 }
 
 .cath-facility-hotel__title {
-  font-size: min(2.0583190395vw, 24px);
+  font-size: min(1.9900497512vw, 24px);
   position: relative;
-  padding-left: min(3.2590051458vw, 38px);
+  padding-left: min(3.1509121061vw, 38px);
   padding-top: 10px;
   letter-spacing: 0.2em;
 }
 .cath-facility-hotel__title::before {
   left: min(0vw, 0px);
-  top: min(1.372212693vw, 16px);
+  top: min(1.3266998342vw, 16px);
   position: absolute;
   content: "";
   display: inline-block;
@@ -2504,23 +3074,23 @@ CSS information
   background-size: contain;
   background-repeat: no-repeat;
   vertical-align: middle;
-  width: min(2.7444253859vw, 32px);
-  height: min(2.0583190395vw, 24px);
+  width: min(2.6533996683vw, 32px);
+  height: min(1.9900497512vw, 24px);
 }
 
 .cath-facility-hotel__text {
-  margin-top: min(3.4305317324vw, 40px);
+  margin-top: min(3.3167495854vw, 40px);
   line-height: 2;
 }
 
 .cath-facility-cards {
   display: flex;
   justify-content: space-between;
-  margin-top: min(6.8610634648vw, 80px);
+  margin-top: min(6.6334991708vw, 80px);
 }
 
 .cath-facility-card {
-  width: min(21.7838765009vw, 254px);
+  width: min(21.0613598673vw, 254px);
 }
 
 .cath-facility-card__text {
@@ -2543,11 +3113,11 @@ CSS information
   background-color: #fff;
   border-radius: 15px 65px 15px 65px;
   text-align: center;
-  padding: 133px min(8.576329331vw, 100px) 120px;
+  padding: 133px min(8.2918739635vw, 100px) 120px;
   position: relative;
 }
 .cath-price__wrap h2 img {
-  width: min(46.9982847341vw, 548px);
+  width: min(45.4394693201vw, 548px);
 }
 
 .cath-price__photo {
@@ -2555,7 +3125,7 @@ CSS information
   top: -100px;
   left: 50%;
   transform: translateX(-50%);
-  width: min(82.7615780446vw, 965px);
+  width: min(80.0165837479vw, 965px);
 }
 
 .cath-price__pricelist {
@@ -2566,7 +3136,7 @@ CSS information
 }
 .cath-price__pricelist table caption {
   text-align: center;
-  font-size: min(1.7152658662vw, 20px);
+  font-size: min(1.6583747927vw, 20px);
   letter-spacing: 0.2em;
   margin-bottom: 22px;
 }
@@ -2575,10 +3145,10 @@ CSS information
   color: #fff;
 }
 .cath-price__pricelist table thead tr {
-  font-size: min(1.372212693vw, 16px);
+  font-size: min(1.3266998342vw, 16px);
 }
 .cath-price__pricelist table thead tr th {
-  padding: min(1.9725557461vw, 23px) min(4.2024013722vw, 49px);
+  padding: min(1.9071310116vw, 23px) min(4.0630182421vw, 49px);
 }
 .cath-price__pricelist table thead tr th:first-child {
   vertical-align: middle;
@@ -2586,15 +3156,15 @@ CSS information
        text-align-last: left;
 }
 .cath-price__pricelist table tbody tr td {
-  padding: min(1.5437392796vw, 18px) 0;
+  padding: min(1.4925373134vw, 18px) 0;
   text-align: left;
 }
 .cath-price__pricelist table tbody tr td:first-child {
-  padding-left: min(4.2024013722vw, 49px);
-  font-size: min(1.372212693vw, 16px);
+  padding-left: min(4.0630182421vw, 49px);
+  font-size: min(1.3266998342vw, 16px);
 }
 .cath-price__pricelist table tbody tr td span {
-  font-size: min(1.8867924528vw, 22px);
+  font-size: min(1.824212272vw, 22px);
 }
 .cath-price__pricelist table tbody tr:nth-child(even) {
   background-color: #f0e8d9;
@@ -2622,7 +3192,7 @@ CSS information
 }
 
 .cath-rule__photo {
-  width: min(28.3018867925vw, 330px);
+  width: min(27.3631840796vw, 330px);
 }
 
 .cath-rule__content {
@@ -2635,15 +3205,15 @@ CSS information
 }
 
 .cath-rule__title {
-  font-size: min(2.0583190395vw, 24px);
+  font-size: min(1.9900497512vw, 24px);
   position: relative;
-  padding-left: min(3.2590051458vw, 38px);
+  padding-left: min(3.1509121061vw, 38px);
   padding-top: 10px;
   letter-spacing: 0.2em;
 }
 .cath-rule__title::before {
   left: min(0vw, 0px);
-  top: min(1.372212693vw, 16px);
+  top: min(1.3266998342vw, 16px);
   position: absolute;
   content: "";
   display: inline-block;
@@ -2651,21 +3221,39 @@ CSS information
   background-size: contain;
   background-repeat: no-repeat;
   vertical-align: middle;
-  width: min(2.7444253859vw, 32px);
-  height: min(2.0583190395vw, 24px);
+  width: min(2.6533996683vw, 32px);
+  height: min(1.9900497512vw, 24px);
 }
 
 .cath-rule__text {
   margin-top: 12px;
-  font-size: min(1.2006861063vw, 14px);
+  font-size: min(1.1608623549vw, 14px);
   line-height: 2.14;
 }
 
 .cath-rule__image {
-  width: min(41.423670669vw, 483px);
+  width: min(40.0497512438vw, 483px);
 }
 
 /* Scss Document */
+.pc {
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .pc {
+    display: none;
+  }
+}
+.sp {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .sp {
+    display: block;
+  }
+}
 /* -----------------------------------------------------------
  私たちについて
 ----------------------------------------------------------- */
@@ -2692,11 +3280,11 @@ CSS information
 }
 
 .dogtrim-about__title img {
-  width: min(78.3876500858vw, 914px);
+  width: min(75.7877280265vw, 914px);
 }
 
 .dogtrim-about__select {
-  max-width: min(66.0377358491vw, 770px);
+  max-width: min(63.8474295191vw, 770px);
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -2709,8 +3297,8 @@ CSS information
   position: relative;
   display: inline-block;
   padding: 9px 0;
-  width: min(32.1612349914vw, 375px);
-  font-size: min(1.7152658662vw, 20px);
+  width: min(31.0945273632vw, 375px);
+  font-size: min(1.6583747927vw, 20px);
   background: #ee8691;
   border-radius: 25px;
   text-align: center;
@@ -2738,8 +3326,8 @@ CSS information
   border-top: 15px solid #ee8691;
 }
 .dogtrim-about__button::after {
-  right: min(2.1440823328vw, 25px);
-  top: min(1.6295025729vw, 19px);
+  right: min(2.0729684909vw, 25px);
+  top: min(1.5754560531vw, 19px);
   position: absolute;
   content: "";
   display: inline-block;
@@ -2747,8 +3335,8 @@ CSS information
   background-size: contain;
   background-repeat: no-repeat;
   vertical-align: middle;
-  width: min(1.2006861063vw, 14px);
-  height: min(1.0291595197vw, 12px);
+  width: min(1.1608623549vw, 14px);
+  height: min(0.9950248756vw, 12px);
 }
 
 .dogtrim-about h1 {
@@ -2757,13 +3345,13 @@ CSS information
 }
 
 .dogtrim-about h1 img {
-  width: min(46.9982847341vw, 548px);
+  width: min(45.4394693201vw, 548px);
 }
 
 .dogtrim-about h2 {
-  padding-top: min(8.3190394511vw, 97px);
+  padding-top: min(8.0431177446vw, 97px);
   text-align: center;
-  font-size: min(2.5728987993vw, 30px);
+  font-size: min(2.4875621891vw, 30px);
   letter-spacing: 5px;
 }
 
@@ -2780,7 +3368,7 @@ CSS information
 }
 
 .dogtrim-about__card {
-  width: min(21.7838765009vw, 254px);
+  width: min(21.0613598673vw, 254px);
 }
 
 /* dogtrim-price
@@ -2798,11 +3386,11 @@ CSS information
   background-color: #fff;
   border-radius: 15px 65px 15px 65px;
   text-align: center;
-  padding: 133px min(8.576329331vw, 100px) 48px;
+  padding: 133px min(8.2918739635vw, 100px) 48px;
   position: relative;
 }
 .dogtrim-price__wrap h2 img {
-  width: min(46.9982847341vw, 548px);
+  width: min(45.4394693201vw, 548px);
 }
 
 .dogtrim-price__photo {
@@ -2810,10 +3398,10 @@ CSS information
   top: -100px;
   left: 50%;
   transform: translateX(-50%);
-  width: min(82.7615780446vw, 965px);
+  width: min(80.0165837479vw, 965px);
 }
 .dogtrim-price__photo img {
-  width: min(82.7615780446vw, 965px);
+  width: min(80.0165837479vw, 965px);
 }
 
 .dogtrim-price__tabs .caption {
@@ -2827,7 +3415,7 @@ CSS information
 }
 
 .dogtrim-price__tablist {
-  max-width: min(66.0377358491vw, 770px);
+  max-width: min(63.8474295191vw, 770px);
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -2842,16 +3430,16 @@ CSS information
   background-color: #b3dadc;
   color: #fff;
   display: inline-block;
-  width: min(32.1612349914vw, 375px);
+  width: min(31.0945273632vw, 375px);
   border-radius: 25px;
   padding: 17px 0;
-  font-size: min(1.7152658662vw, 20px);
+  font-size: min(1.6583747927vw, 20px);
   letter-spacing: 0.1em;
   position: relative;
 }
 .dogtrim-price__tablist .tab::after {
-  right: min(2.1440823328vw, 25px);
-  top: min(1.6295025729vw, 19px);
+  right: min(2.0729684909vw, 25px);
+  top: min(1.5754560531vw, 19px);
   position: absolute;
   content: "";
   display: inline-block;
@@ -2859,8 +3447,18 @@ CSS information
   background-size: contain;
   background-repeat: no-repeat;
   vertical-align: middle;
-  width: min(1.2006861063vw, 14px);
-  height: min(1.0291595197vw, 12px);
+  width: min(1.1608623549vw, 14px);
+  height: min(0.9950248756vw, 12px);
+}
+
+#dogtrim-price-panel-1 .mainhead th:nth-child(1) {
+  width: 23%;
+}
+#dogtrim-price-panel-1 .mainhead th:nth-child(2) {
+  width: 25%;
+}
+#dogtrim-price-panel-1 .mainhead th:nth-child(3) {
+  width: 36%;
 }
 
 .dogtrim-price__tabs .tab-panel table {
@@ -2877,11 +3475,11 @@ CSS information
   vertical-align: middle;
 }
 .dogtrim-price__tabs .tab-panel table thead tr th:first-child {
-  padding-left: min(1.9725557461vw, 23px);
+  padding-left: min(1.9071310116vw, 23px);
 }
 .dogtrim-price__tabs .tab-panel table thead .mainhead {
   background-color: #333333;
-  font-size: min(1.372212693vw, 16px);
+  font-size: min(1.3266998342vw, 16px);
 }
 .dogtrim-price__tabs .tab-panel table thead .mainhead th {
   padding-top: 22px;
@@ -2889,27 +3487,33 @@ CSS information
 }
 .dogtrim-price__tabs .tab-panel table thead .subhead {
   background-color: #5c5c5c;
-  font-size: min(1.372212693vw, 16px);
+  font-size: min(1.3266998342vw, 16px);
 }
 .dogtrim-price__tabs .tab-panel table thead .subhead th {
   padding: 6px 0;
 }
 .dogtrim-price__tabs .tab-panel table thead .subhead th:nth-child(n+2) {
-  font-size: min(1.114922813vw, 13px);
+  font-size: min(1.0779436153vw, 13px);
 }
 .dogtrim-price__tabs .tab-panel table thead .subhead th:nth-child(n+3) {
-  text-align: center;
+  text-align: left;
+}
+.dogtrim-price__tabs .tab-panel table thead .subhead th:nth-child(4) {
+  width: 19%;
 }
 .dogtrim-price__tabs .tab-panel table tbody tr:nth-child(even) {
   background-color: #f0e8d9;
 }
 .dogtrim-price__tabs .tab-panel table tbody tr td {
-  font-size: min(1.8867924528vw, 22px);
-  padding: min(1.372212693vw, 16px) 0 min(1.8010291595vw, 21px);
+  font-size: min(1.824212272vw, 22px);
+  padding: min(1.3266998342vw, 16px) 0 min(1.7412935323vw, 21px);
+}
+.dogtrim-price__tabs .tab-panel table tbody tr td span {
+  font-size: min(1.3266998342vw, 16px);
 }
 .dogtrim-price__tabs .tab-panel table tbody tr td:first-child {
-  font-size: min(1.372212693vw, 16px);
-  padding-left: min(1.9725557461vw, 23px);
+  font-size: min(1.3266998342vw, 16px);
+  padding-left: min(1.9071310116vw, 23px);
 }
 .dogtrim-price__tabs .tab-panel table tbody tr .text-center {
   text-align: center;
@@ -2932,7 +3536,7 @@ CSS information
 }
 
 .dogtrim-price-rules__photo img {
-  width: min(46.9982847341vw, 548px);
+  width: min(45.4394693201vw, 548px);
 }
 
 .dogtrim-price-rules__text {
@@ -2940,7 +3544,7 @@ CSS information
   margin-top: 44px;
 }
 .dogtrim-price-rules__text p {
-  font-size: min(1.2864493997vw, 15px);
+  font-size: min(1.2437810945vw, 15px);
   line-height: 1.6;
 }
 .dogtrim-price-rules__text .text-red {
@@ -2956,7 +3560,7 @@ CSS information
 }
 
 .cattrim-price__tablist .tab[aria-selected=true] {
-  background-color: #EE8691;
+  background-color: #ee8691;
 }
 
 /* dogtrim-flow
@@ -2973,10 +3577,10 @@ CSS information
 
 .dogtrim-flow__photo {
   position: absolute;
-  top: min(-1.2864493997vw, -15px);
+  top: min(-1.2437810945vw, -15px);
   left: 46%;
   transform: translateX(-50%);
-  width: min(72.5557461407vw, 846px);
+  width: min(70.1492537313vw, 846px);
 }
 
 .trim-flow-accordion {
@@ -2988,16 +3592,16 @@ CSS information
 
 .trim-flow-accordion__item {
   background-color: #fff;
-  border-radius: 15px 65px 15px 65px;
+  border-radius: 15px 40px 15px 40px;
   position: relative;
   z-index: 10;
 }
 .trim-flow-accordion__item + .trim-flow-accordion__item {
-  margin-top: 15px;
+  margin-top: 21px;
 }
 
 .trim-flow-accordion__headline {
-  padding: 39px 42px 30px 80px;
+  padding: 39px 42px 39px 80px;
 }
 
 .dogtrim-flow .trim-flow-accordion__tab {
@@ -3010,9 +3614,23 @@ CSS information
   text-align: left;
   color: #95cccf;
   letter-spacing: 0.2em;
-  font-size: min(2.5728987993vw, 30px);
+  font-size: min(2.4875621891vw, 30px);
   display: flex;
   justify-content: space-between;
+  position: relative;
+}
+.dogtrim-flow .trim-flow-accordion__tab::before {
+  left: min(-2.4875621891vw, -30px);
+  top: min(0.8291873964vw, 10px);
+  position: absolute;
+  content: "";
+  display: inline-block;
+  background-image: url(../../images/dog_trimming/ashiato.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  width: min(1.1608623549vw, 14px);
+  height: min(0.9950248756vw, 12px);
 }
 
 .cattrim-flow .trim-flow-accordion__tab {
@@ -3023,18 +3641,38 @@ CSS information
   transition: background-color 0.3s;
   width: 100%;
   text-align: left;
-  color: #EE8691;
+  color: #ee8691;
   letter-spacing: 0.2em;
-  font-size: min(2.5728987993vw, 30px);
+  font-size: min(2.4875621891vw, 30px);
   display: flex;
   justify-content: space-between;
+  position: relative;
+}
+.cattrim-flow .trim-flow-accordion__tab::before {
+  left: min(-2.4875621891vw, -30px);
+  top: min(0.8291873964vw, 10px);
+  position: absolute;
+  content: "";
+  display: inline-block;
+  background-image: url(../../images/cat_trimming/ashiato.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  width: min(1.1608623549vw, 14px);
+  height: min(0.9950248756vw, 12px);
+}
+.cattrim-flow .trim-flow-accordion__tab.-mb6 {
+  margin-bottom: 6px;
 }
 
 .trim-flow-accordion__tabsubtext {
-  font-size: min(1.2864493997vw, 15px);
+  font-size: min(1.2437810945vw, 15px);
 }
 .trim-flow-accordion__tabsubtext.-cattrim {
-  color: #EE8691;
+  color: #ee8691;
+}
+.trim-flow-accordion__tabsubtext.-ml160 {
+  margin-left: -162px;
 }
 
 .trim-flow-accordion__tabicon {
@@ -3070,10 +3708,10 @@ CSS information
 .trim-flow-accordion__panel-content {
   display: flex;
   justify-content: space-between;
-  padding: 0 100px 30px 81px;
+  padding: 0 90px 30px 81px;
 }
 .trim-flow-accordion__panel-content .trim-flow-accordion__panel-image {
-  width: min(15.4373927959vw, 180px);
+  width: min(14.9253731343vw, 180px);
 }
 .trim-flow-accordion__panel-content .trim-flow-accordion__panel-image img + img {
   margin-top: 10px;
@@ -3093,6 +3731,24 @@ CSS information
 }
 
 /* Scss Document */
+.pc {
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .pc {
+    display: none;
+  }
+}
+.sp {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .sp {
+    display: block;
+  }
+}
 /* -----------------------------------------------------------
  私たちについて
 ----------------------------------------------------------- */
@@ -3107,7 +3763,7 @@ CSS information
 
 .cattrim-about {
   margin-top: -250px;
-  padding-top: 250px;
+  padding-top: 263px;
   padding-bottom: 751px;
   background-image: url(../images/bg_2nd_mv.png);
   background-repeat: no-repeat;
@@ -3119,11 +3775,11 @@ CSS information
 }
 
 .cattrim-about__title img {
-  width: min(78.3876500858vw, 914px);
+  width: min(75.7877280265vw, 914px);
 }
 
 .cattrim-about__select {
-  max-width: min(66.0377358491vw, 770px);
+  max-width: min(63.8474295191vw, 770px);
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -3136,8 +3792,8 @@ CSS information
   position: relative;
   display: inline-block;
   padding: 9px 0;
-  width: min(32.1612349914vw, 375px);
-  font-size: min(1.7152658662vw, 20px);
+  width: min(31.0945273632vw, 375px);
+  font-size: min(1.6583747927vw, 20px);
   background: #67b5b9;
   border-radius: 25px;
   text-align: center;
@@ -3165,8 +3821,8 @@ CSS information
   border-top: 15px solid #67b5b9;
 }
 .cattrim-about__button::after {
-  right: min(2.1440823328vw, 25px);
-  top: min(1.6295025729vw, 19px);
+  right: min(2.0729684909vw, 25px);
+  top: min(1.5754560531vw, 19px);
   position: absolute;
   content: "";
   display: inline-block;
@@ -3174,8 +3830,8 @@ CSS information
   background-size: contain;
   background-repeat: no-repeat;
   vertical-align: middle;
-  width: min(1.2006861063vw, 14px);
-  height: min(1.0291595197vw, 12px);
+  width: min(1.1608623549vw, 14px);
+  height: min(0.9950248756vw, 12px);
 }
 
 .cattrim-about h1 {
@@ -3184,13 +3840,13 @@ CSS information
 }
 
 .cattrim-about h1 img {
-  width: min(46.9982847341vw, 548px);
+  width: min(45.4394693201vw, 548px);
 }
 
 .cattrim-about h2 {
-  padding-top: min(8.3190394511vw, 97px);
+  padding-top: min(8.0431177446vw, 97px);
   text-align: center;
-  font-size: min(2.5728987993vw, 30px);
+  font-size: min(2.4875621891vw, 30px);
   letter-spacing: 5px;
 }
 
@@ -3207,7 +3863,7 @@ CSS information
 }
 
 .cattrim-about__card {
-  width: min(21.7838765009vw, 254px);
+  width: min(21.0613598673vw, 254px);
 }
 
 /* cattrim-price
@@ -3225,11 +3881,11 @@ CSS information
   background-color: #fff;
   border-radius: 15px 65px 15px 65px;
   text-align: center;
-  padding: 133px min(8.576329331vw, 100px) 48px;
+  padding: 133px min(8.2918739635vw, 100px) 48px;
   position: relative;
 }
 .cattrim-price__wrap h2 img {
-  width: min(46.9982847341vw, 548px);
+  width: min(45.4394693201vw, 548px);
 }
 
 .cattrim-price__photo {
@@ -3237,10 +3893,10 @@ CSS information
   top: -100px;
   left: 50%;
   transform: translateX(-50%);
-  width: min(82.7615780446vw, 965px);
+  width: min(80.0165837479vw, 965px);
 }
 .cattrim-price__photo img {
-  width: min(82.7615780446vw, 965px);
+  width: min(80.0165837479vw, 965px);
 }
 
 .cattrim-price__tabs .caption {
@@ -3254,7 +3910,7 @@ CSS information
 }
 
 .cattrim-price__tablist {
-  max-width: min(66.0377358491vw, 770px);
+  max-width: min(63.8474295191vw, 770px);
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -3269,16 +3925,16 @@ CSS information
   background-color: #F6C2C8;
   color: #fff;
   display: inline-block;
-  width: min(32.1612349914vw, 375px);
+  width: min(31.0945273632vw, 375px);
   border-radius: 25px;
   padding: 17px 0;
-  font-size: min(1.7152658662vw, 20px);
+  font-size: min(1.6583747927vw, 20px);
   letter-spacing: 0.1em;
   position: relative;
 }
 .cattrim-price__tablist .tab::after {
-  right: min(2.1440823328vw, 25px);
-  top: min(1.6295025729vw, 19px);
+  right: min(2.0729684909vw, 25px);
+  top: min(1.5754560531vw, 19px);
   position: absolute;
   content: "";
   display: inline-block;
@@ -3286,8 +3942,8 @@ CSS information
   background-size: contain;
   background-repeat: no-repeat;
   vertical-align: middle;
-  width: min(1.2006861063vw, 14px);
-  height: min(1.0291595197vw, 12px);
+  width: min(1.1608623549vw, 14px);
+  height: min(0.9950248756vw, 12px);
 }
 
 .cattrim-price__tabs .tab-panel table {
@@ -3304,11 +3960,11 @@ CSS information
   vertical-align: middle;
 }
 .cattrim-price__tabs .tab-panel table thead tr th:first-child {
-  padding-left: min(1.9725557461vw, 23px);
+  padding-left: min(1.9071310116vw, 23px);
 }
 .cattrim-price__tabs .tab-panel table thead .mainhead {
   background-color: #333333;
-  font-size: min(1.372212693vw, 16px);
+  font-size: min(1.3266998342vw, 16px);
 }
 .cattrim-price__tabs .tab-panel table thead .mainhead th {
   padding-top: 22px;
@@ -3316,13 +3972,13 @@ CSS information
 }
 .cattrim-price__tabs .tab-panel table thead .subhead {
   background-color: #5c5c5c;
-  font-size: min(1.372212693vw, 16px);
+  font-size: min(1.3266998342vw, 16px);
 }
 .cattrim-price__tabs .tab-panel table thead .subhead th {
   padding: 15px 0;
 }
 .cattrim-price__tabs .tab-panel table thead .subhead th:nth-child(2) {
-  font-size: min(1.114922813vw, 13px);
+  font-size: min(1.0779436153vw, 13px);
 }
 .cattrim-price__tabs .tab-panel table thead .subhead th:nth-child(n+3) {
   text-align: center;
@@ -3331,12 +3987,12 @@ CSS information
   background-color: #f0e8d9;
 }
 .cattrim-price__tabs .tab-panel table tbody tr td {
-  font-size: min(1.8867924528vw, 22px);
-  padding: min(1.372212693vw, 16px) 0 min(1.8010291595vw, 21px);
+  font-size: min(1.824212272vw, 22px);
+  padding: min(1.3266998342vw, 16px) 0 min(1.7412935323vw, 21px);
 }
 .cattrim-price__tabs .tab-panel table tbody tr td:first-child {
-  font-size: min(1.372212693vw, 16px);
-  padding-left: min(1.9725557461vw, 23px);
+  font-size: min(1.3266998342vw, 16px);
+  padding-left: min(1.9071310116vw, 23px);
 }
 .cattrim-price__tabs .tab-panel table tbody tr .text-center {
   text-align: center;
@@ -3353,7 +4009,7 @@ CSS information
   width: 50%;
 }
 .cattrim-price__tabs .tab-panel.-option table tbody tr td:first-child {
-  padding-left: min(1.9725557461vw, 23px);
+  padding-left: min(1.9071310116vw, 23px);
 }
 
 /*============================
@@ -3373,7 +4029,7 @@ CSS information
 }
 
 .cattrim-price-rules__photo img {
-  width: min(46.9982847341vw, 548px);
+  width: min(45.4394693201vw, 548px);
 }
 
 .cattrim-price-rules__text {
@@ -3381,7 +4037,7 @@ CSS information
   margin-top: 44px;
 }
 .cattrim-price-rules__text p {
-  font-size: min(1.2864493997vw, 15px);
+  font-size: min(1.2437810945vw, 15px);
   line-height: 1.6;
 }
 .cattrim-price-rules__text .text-red {
@@ -3406,13 +4062,31 @@ CSS information
 
 .cattrim-flow__photo {
   position: absolute;
-  top: min(-0.9433962264vw, -11px);
+  top: min(-0.912106136vw, -11px);
   left: 49%;
   transform: translateX(-50%);
-  width: min(80.8747855918vw, 943px);
+  width: min(78.192371476vw, 943px);
 }
 
 /* Scss Document */
+.pc {
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .pc {
+    display: none;
+  }
+}
+.sp {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .sp {
+    display: block;
+  }
+}
 /* -----------------------------------------------------------
  店舗情報
 ----------------------------------------------------------- */
@@ -3426,7 +4100,7 @@ CSS information
 
 .shop-about {
   margin-top: -250px;
-  padding-top: 250px;
+  padding-top: 270px;
   padding-bottom: 634px;
   background-image: url(../images/bg_2nd_mv.png);
   background-repeat: no-repeat;
@@ -3438,7 +4112,7 @@ CSS information
 }
 
 .shop-about__title img {
-  width: min(26.9296740995vw, 314px);
+  width: min(26.0364842454vw, 314px);
 }
 
 .shop-about h1 {
@@ -3447,18 +4121,18 @@ CSS information
 }
 
 .shop-about h1 img {
-  width: min(46.9982847341vw, 548px);
+  width: min(45.4394693201vw, 548px);
 }
 
 .shop-about h2 {
-  padding-top: min(7.461406518vw, 87px);
+  padding-top: min(7.2139303483vw, 87px);
   text-align: center;
-  font-size: min(2.5728987993vw, 30px);
+  font-size: min(2.4875621891vw, 30px);
   letter-spacing: 5px;
 }
 
 .shop-about p {
-  padding-top: min(3.7735849057vw, 44px);
+  padding-top: min(2.5704809287vw, 31px);
   text-align: center;
   line-height: 3.2;
 }
@@ -3467,7 +4141,7 @@ CSS information
   background-color: #fff;
   border-radius: 15px 65px 15px 65px;
   text-align: center;
-  padding: 80px min(8.576329331vw, 100px) 0;
+  padding: 76px min(8.2918739635vw, 100px) 0;
   margin-top: 60px;
 }
 
@@ -3476,16 +4150,16 @@ CSS information
   align-items: center;
 }
 .shop-about__details .shop-about__detail .shop-about__head {
-  min-width: min(20.5831903945vw, 240px);
-  font-size: min(1.7152658662vw, 20px);
+  min-width: min(19.9004975124vw, 240px);
+  font-size: min(1.6583747927vw, 20px);
   color: #fff;
   background-color: #ee8691;
   border-radius: 50px;
-  padding: 14.3px 0 15.7px;
+  padding: 9.3px 0 8.7px;
 }
 .shop-about__details .shop-about__detail .shop-about__data {
   text-align: left;
-  padding-left: min(1.7152658662vw, 20px);
+  padding-left: min(1.6583747927vw, 20px);
 }
 .shop-about__details .shop-about__detail .shop-about__data span {
   color: #ee8691;
@@ -3508,7 +4182,7 @@ CSS information
 }
 
 .shop-about__image {
-  width: min(68.6106346484vw, 800px);
+  width: min(66.3349917081vw, 800px);
   margin-left: auto;
   margin-right: auto;
   margin-top: 66px;
@@ -3517,8 +4191,8 @@ CSS information
 /* shop-access
 ----------------------------------------------------------- */
 .shop-access {
-  margin-top: -644px;
-  padding-top: 362px;
+  margin-top: -536px;
+  padding-top: 140px;
   padding-bottom: 88px;
   background-image: url(../../images/bg_shop_access.png);
   background-repeat: no-repeat;
@@ -3526,7 +4200,8 @@ CSS information
 }
 
 .shop-access__title {
-  width: min(39.7941680961vw, 464px);
+  width: min(38.4742951907vw, 464px);
+  margin-left: 52px;
 }
 
 .shop-access__map {
@@ -3559,7 +4234,7 @@ CSS information
 }
 
 .shop-access__guide + .shop-access__guide {
-  margin-left: min(8.833619211vw, 103px);
+  margin-left: min(8.5406301824vw, 103px);
 }
 
 .shop-access__guidename {
@@ -3582,6 +4257,24 @@ CSS information
 }
 
 /* Scss Document */
+.pc {
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .pc {
+    display: none;
+  }
+}
+.sp {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .sp {
+    display: block;
+  }
+}
 /* -----------------------------------------------------------
  NEWS
 ----------------------------------------------------------- */
@@ -3605,7 +4298,7 @@ CSS information
 
 .news-about {
   margin-top: -250px;
-  padding-top: 250px;
+  padding-top: 274px;
   padding-bottom: 126px;
   background-image: url(../images/bg_2nd_mv.png);
   background-repeat: no-repeat;
@@ -3617,20 +4310,20 @@ CSS information
 }
 
 .news-about__title img {
-  width: min(28.9879931389vw, 338px);
+  width: min(28.0265339967vw, 338px);
 }
 
 .news-about__wrap {
   background-color: #fff;
   border-radius: 15px 65px 15px 65px;
-  padding: 100px min(8.576329331vw, 100px) 100px min(10.7204116638vw, 125px);
-  margin-top: 106px;
+  padding: 100px min(8.2918739635vw, 100px) 100px min(10.3648424544vw, 125px);
+  margin-top: 75px;
 }
 .news-about__wrap h1 {
   text-align: center;
 }
 .news-about__wrap h1 img {
-  width: min(46.9982847341vw, 548px);
+  width: min(45.4394693201vw, 548px);
 }
 
 .news-about__list {
@@ -3753,6 +4446,24 @@ CSS information
 }
 
 /* Scss Document */
+.pc {
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .pc {
+    display: none;
+  }
+}
+.sp {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .sp {
+    display: block;
+  }
+}
 /* ===================================================================
 CSS information
 

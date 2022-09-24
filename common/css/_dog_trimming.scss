@@ -191,7 +191,21 @@
     }
   }
 }
-
+#dogtrim-price-panel-1 {
+  .mainhead {
+    th {
+      &:nth-child(1) {
+        width: 23%;
+      }
+      &:nth-child(2) {
+        width: 25%;
+      }
+      &:nth-child(3) {
+        width: 36%;
+      }
+    }
+  }
+}
 .dogtrim-price__tabs .tab-panel {
   table {
     width: 100%;
@@ -226,7 +240,15 @@
             font-size: min(toVw(13), 13px);
           }
           &:nth-child(n + 3) {
-            text-align: center;
+            text-align: left;
+          }
+          &:nth-child(3) {
+            // display: flex;
+            // align-items: center;
+            // justify-content: flex-start;
+          }
+          &:nth-child(4) {
+            width: 19%;
           }
         }
       }
@@ -239,6 +261,9 @@
         td {
           font-size: min(toVw(22), 22px);
           padding: min(toVw(16), 16px) 0 min(toVw(21), 21px);
+          span {
+            font-size: min(toVw(16), 16px);
+          }
           &:first-child {
             font-size: min(toVw(16), 16px);
             padding-left: min(toVw(23), 23px);
@@ -301,7 +326,7 @@
   background-color: #67b5b9;
 }
 .cattrim-price__tablist .tab[aria-selected="true"] {
-  background-color: #EE8691;
+  background-color: #ee8691;
 }
 
 /* dogtrim-flow
@@ -332,15 +357,15 @@
 }
 .trim-flow-accordion__item {
   background-color: #fff;
-  border-radius: 15px 65px 15px 65px;
+  border-radius: 15px 40px 15px 40px;
   position: relative;
   z-index: 10;
   & + & {
-    margin-top: 15px;
+    margin-top: 21px;
   }
 }
 .trim-flow-accordion__headline {
-  padding: 39px 42px 30px 80px;
+  padding: 39px 42px 39px 80px;
 }
 .dogtrim-flow .trim-flow-accordion__tab {
   align-items: center;
@@ -353,6 +378,20 @@
   font-size: min(toVw(30), 30px);
   display: flex;
   justify-content: space-between;
+  position: relative;
+  &::before {
+    left: min(toVw(-30), -30px);
+    top: min(toVw(10), 10px);
+    position: absolute;
+    content: "";
+    display: inline-block;
+    background-image: url(../../images/dog_trimming/ashiato.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    width: min(toVw(14), 14px);
+    height: min(toVw(12), 12px);
+  }
 }
 .cattrim-flow .trim-flow-accordion__tab {
   align-items: center;
@@ -360,16 +399,36 @@
   transition: background-color 0.3s;
   width: 100%;
   text-align: left;
-  color: #EE8691;
+  color: #ee8691;
   letter-spacing: 0.2em;
   font-size: min(toVw(30), 30px);
   display: flex;
   justify-content: space-between;
+  position: relative;
+  &::before {
+    left: min(toVw(-30), -30px);
+    top: min(toVw(10), 10px);
+    position: absolute;
+    content: "";
+    display: inline-block;
+    background-image: url(../../images/cat_trimming/ashiato.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    width: min(toVw(14), 14px);
+    height: min(toVw(12), 12px);
+  }
+  &.-mb6 {
+    margin-bottom: 6px;
+  }
 }
 .trim-flow-accordion__tabsubtext {
   font-size: min(toVw(15), 15px);
   &.-cattrim {
-    color: #EE8691;
+    color: #ee8691;
+  }
+  &.-ml160 {
+    margin-left: -162px;
   }
 }
 .trim-flow-accordion__tabicon {
@@ -384,7 +443,7 @@
   &::after {
     background-color: currentColor;
     bottom: 0;
-    content: '';
+    content: "";
     display: inline-block;
     height: 2px;
     left: 0;
@@ -397,9 +456,9 @@
 
   &::after {
     transform: rotate(90deg);
-    transition: transform .3s;
+    transition: transform 0.3s;
   }
-  .trim-flow-accordion__tab[aria-expanded='true'] & {
+  .trim-flow-accordion__tab[aria-expanded="true"] & {
     &::after {
       transform: rotate(0);
     }
@@ -410,7 +469,7 @@
 .trim-flow-accordion__panel-content {
   display: flex;
   justify-content: space-between;
-  padding: 0 100px 30px 81px;
+  padding: 0 90px 30px 81px;
   .trim-flow-accordion__panel-image {
     width: min(toVw(180), 180px);
     img + img {
