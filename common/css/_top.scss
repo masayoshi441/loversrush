@@ -167,7 +167,7 @@ CSS information
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: end;
+  align-items: flex-end;
   padding-bottom: 30px;
   @include mq(medium, max) {
     padding-bottom: 20px;
@@ -280,7 +280,7 @@ CSS information
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: end;
+  align-items: flex-end;
   padding-bottom: 30px;
   @include mq(medium, max) {
     padding-bottom: 20px;
