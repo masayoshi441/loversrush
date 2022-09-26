@@ -16,8 +16,8 @@
   }
 }
 .dogtrim-about {
-  margin-top: -250px;
-  padding-top: 250px;
+  margin-top: -307px;
+  padding-top: 304px;
   padding-bottom: 751px;
   background-image: url(../images/bg_2nd_mv.png);
   background-repeat: no-repeat;
@@ -308,6 +308,7 @@
       }
       &:nth-child(3) {
         width: 36%;
+        padding-left: min(toVw(76), 76px);
         @include mq(medium, max) {
           width: 30%;
         }
@@ -486,7 +487,6 @@
   background-position: top center;
   position: relative;
   @include mq(medium, max) {
-
   }
 }
 .dogtrim-flow__inner.mainIn {
@@ -515,7 +515,7 @@
   border-radius: 15px 40px 15px 40px;
   position: relative;
   z-index: 10;
-  & + & {
+  &:nth-child(n + 3) {
     margin-top: 21px;
   }
 }

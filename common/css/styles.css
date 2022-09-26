@@ -1208,7 +1208,7 @@ nav {
 }
 @media screen and (min-width: 768px) {
   nav {
-    background: #efe6d5;
+    background: #F2EBDE;
   }
 }
 
@@ -1460,7 +1460,7 @@ nav {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  background: #efe6d5;
+  background: #F2EBDE;
   /*丸のスタート位置と形状*/
   transform: scale(0); /*scaleをはじめは0に*/
   right: -50px;
@@ -1745,26 +1745,26 @@ CSS information
 
 .top-trim__maru1 {
   position: absolute;
-  top: 67px;
-  left: 0;
+  top: 47px;
+  left: min(1.4096185738vw, 17px);
 }
 
 .top-trim__maru1 img {
-  width: min(21.3930348259vw, 258px);
+  width: min(20.7296849088vw, 250px);
 }
 
 .top-trim__maru2 {
   position: absolute;
-  top: 168px;
-  left: min(22.71973466vw, 274px);
+  top: 153px;
+  left: min(25.2072968491vw, 304px);
 }
 
 .top-trim__maru2 img {
-  width: min(17.0812603648vw, 206px);
+  width: min(15.92039801vw, 192px);
 }
 
 .top-trim__title {
-  padding-top: 230px;
+  padding-top: 211px;
   text-align: right;
 }
 
@@ -1997,8 +1997,8 @@ CSS information
 /* top-news
 ----------------------------------------------------------- */
 .top-news {
-  margin-top: -1000px;
-  padding-top: 675px;
+  margin-top: -1083px;
+  padding-top: 742px;
   background-image: url(../../images/bg_top-news.png);
   background-repeat: no-repeat;
   background-position: top center;
@@ -2026,7 +2026,7 @@ CSS information
 
 .top-news__photo {
   position: absolute;
-  top: -350px;
+  top: -327px;
   left: 50%;
   transform: translateX(-50%);
   width: min(69.1542288557vw, 834px);
@@ -2259,8 +2259,8 @@ CSS information
 }
 
 .about-about {
-  margin-top: -250px;
-  padding-top: 250px;
+  margin-top: -307px;
+  padding-top: 300px;
   padding-bottom: 670px;
   background-image: url(../images/bg_2nd_mv.png);
   background-repeat: no-repeat;
@@ -2423,7 +2423,7 @@ CSS information
 /* about-hotel
 ----------------------------------------------------------- */
 .about-hotel {
-  margin-top: -720px;
+  margin-top: -755px;
   padding-top: 230px;
   padding-bottom: 250px;
   background-image: url(../../images/bg_top-news.png);
@@ -2498,7 +2498,7 @@ CSS information
 .about-goods {
   margin-top: -100px;
   padding-top: 0;
-  padding-bottom: 126px;
+  padding-bottom: 102px;
   background-image: url(../../images/bg_top_gallery.png);
   background-repeat: no-repeat;
   background-position: top center;
@@ -2648,8 +2648,8 @@ CSS information
 }
 
 .dogh-about {
-  margin-top: -250px;
-  padding-top: 250px;
+  margin-top: -307px;
+  padding-top: 301px;
   padding-bottom: 681px;
   background-image: url(../images/bg_2nd_mv.png);
   background-repeat: no-repeat;
@@ -2886,8 +2886,8 @@ CSS information
 /* dogh-price
 ----------------------------------------------------------- */
 .dogh-price {
-  margin-top: -825px;
-  padding-top: 679px;
+  margin-top: -842px;
+  padding-top: 697px;
   padding-bottom: 256px;
   background-image: url(../../images/bg_top-news.png);
   background-repeat: no-repeat;
@@ -3006,7 +3006,7 @@ CSS information
   width: 18.5%;
 }
 .dogh-price__pricelist table tbody tr:nth-child(even) {
-  background-color: #f0e8d9;
+  background-color: #F2EBDE;
 }
 
 .dogh-price__attention {
@@ -3028,7 +3028,7 @@ CSS information
   background-image: url(../../images/bg_top_gallery.png);
   background-repeat: no-repeat;
   background-position: top center;
-  padding-bottom: 140px;
+  padding-bottom: 175px;
 }
 
 .dogh-rule__inner {
@@ -3154,8 +3154,8 @@ CSS information
 }
 
 .cath-about {
-  margin-top: -250px;
-  padding-top: 237px;
+  margin-top: -307px;
+  padding-top: 290px;
   padding-bottom: 634px;
   background-image: url(../images/bg_2nd_mv.png);
   background-repeat: no-repeat;
@@ -3392,8 +3392,8 @@ CSS information
 ----------------------------------------------------------- */
 .cath-price {
   margin-top: -825px;
-  padding-top: 679px;
-  padding-bottom: 256px;
+  padding-top: 752px;
+  padding-bottom: 280px;
   background-image: url(../../images/bg_top-news.png);
   background-repeat: no-repeat;
   background-position: top center;
@@ -3489,7 +3489,7 @@ CSS information
   font-size: min(1.824212272vw, 22px);
 }
 .cath-price__pricelist table tbody tr:nth-child(even) {
-  background-color: #f0e8d9;
+  background-color: #F2EBDE;
 }
 
 .cath-price__attention {
@@ -3507,7 +3507,7 @@ CSS information
 ----------------------------------------------------------- */
 .cath-rule {
   margin-top: -160px;
-  padding-top: 115px;
+  padding-top: 143px;
   background-image: url(../../images/bg_cath_rule.png);
   background-repeat: no-repeat;
   background-position: top center;
@@ -3638,8 +3638,8 @@ CSS information
 }
 
 .dogtrim-about {
-  margin-top: -250px;
-  padding-top: 250px;
+  margin-top: -307px;
+  padding-top: 304px;
   padding-bottom: 751px;
   background-image: url(../images/bg_2nd_mv.png);
   background-repeat: no-repeat;
@@ -3984,6 +3984,7 @@ CSS information
 }
 #dogtrim-price-panel-1 .mainhead th:nth-child(3) {
   width: 36%;
+  padding-left: min(6.3018242123vw, 76px);
 }
 @media screen and (max-width: 768px) {
   #dogtrim-price-panel-1 .mainhead th:nth-child(3) {
@@ -4168,7 +4169,7 @@ CSS information
   position: relative;
   z-index: 10;
 }
-.trim-flow-accordion__item + .trim-flow-accordion__item {
+.trim-flow-accordion__item:nth-child(n+3) {
   margin-top: 21px;
 }
 
@@ -4416,8 +4417,8 @@ CSS information
 }
 
 .cattrim-about {
-  margin-top: -250px;
-  padding-top: 263px;
+  margin-top: -307px;
+  padding-top: 290px;
   padding-bottom: 751px;
   background-image: url(../images/bg_2nd_mv.png);
   background-repeat: no-repeat;
@@ -4949,8 +4950,8 @@ CSS information
 }
 
 .shop-about {
-  margin-top: -250px;
-  padding-top: 270px;
+  margin-top: -307px;
+  padding-top: 326px;
   padding-bottom: 634px;
   background-image: url(../images/bg_2nd_mv.png);
   background-repeat: no-repeat;
@@ -5122,7 +5123,7 @@ CSS information
 .shop-access {
   margin-top: -536px;
   padding-top: 140px;
-  padding-bottom: 88px;
+  padding-bottom: 215px;
   background-image: url(../../images/bg_shop_access.png);
   background-repeat: no-repeat;
   background-position: top center;
@@ -5176,7 +5177,7 @@ CSS information
   background-color: #fff;
   margin-top: 40px;
   display: flex;
-  padding: 34px 50px 36px;
+  padding: 34px 50px 31px;
 }
 @media screen and (max-width: 768px) {
   .shop-access__guides {
@@ -5200,8 +5201,8 @@ CSS information
   color: #fff;
   width: 263px;
   text-align: center;
-  padding-top: 15px;
-  padding-bottom: 12px;
+  padding-top: 9px;
+  padding-bottom: 7px;
 }
 @media screen and (max-width: 768px) {
   .shop-access__guidename {
@@ -5218,7 +5219,8 @@ CSS information
 }
 
 .shop-access__guidetext {
-  margin-top: 24px;
+  margin-top: 17px;
+  line-height: 2;
 }
 @media screen and (max-width: 768px) {
   .shop-access__guidetext {
@@ -5277,8 +5279,8 @@ CSS information
 }
 
 .news-about {
-  margin-top: -250px;
-  padding-top: 274px;
+  margin-top: -307px;
+  padding-top: 290px;
   padding-bottom: 126px;
   background-image: url(../images/bg_2nd_mv.png);
   background-repeat: no-repeat;

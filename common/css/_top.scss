@@ -77,24 +77,24 @@ CSS information
 
 .top-trim__maru1 {
   position: absolute;
-  top: 67px;
-  left: 0;
+  top: 47px;
+  left: min(toVw(17), 17px);
 }
 .top-trim__maru1 img {
-  width: min(toVw(258), 258px);
+  width: min(toVw(250), 250px);
 }
 
 .top-trim__maru2 {
   position: absolute;
-  top: 168px;
-  left: min(toVw(274), 274px);
+  top: 153px;
+  left: min(toVw(304), 304px);
 }
 .top-trim__maru2 img {
-  width: min(toVw(206), 206px);
+  width: min(toVw(192), 192px);
 }
 
 .top-trim__title {
-  padding-top: 230px;
+  padding-top: 211px;
   text-align: right;
 }
 .top-trim__title img {
@@ -290,8 +290,8 @@ CSS information
 /* top-news
 ----------------------------------------------------------- */
 .top-news {
-  margin-top: -1000px;
-  padding-top: 675px;
+  margin-top: -1083px;
+  padding-top: 742px;
   background-image: url(../../images/bg_top-news.png);
   background-repeat: no-repeat;
   background-position: top center;
@@ -316,7 +316,7 @@ CSS information
 .top-news__photo {
   // margin-top: 20px;
   position: absolute;
-  top: -350px;
+  top: -327px;
   left: 50%;
   transform: translateX(-50%);
   width: min(toVw(834), 834px);
