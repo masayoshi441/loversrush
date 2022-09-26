@@ -11,6 +11,9 @@
   background-repeat: no-repeat;
   background-position: center 60%;
   background-size: cover;
+  @include mq(medium, max) {
+    height: 180px;
+  }
 }
 .news-mv-detail {
   height: 500px;
@@ -19,6 +22,9 @@
   background-repeat: no-repeat;
   background-position: center 30%;
   background-size: cover;
+  @include mq(medium, max) {
+    height: 180px;
+  }
 }
 .news-about {
   margin-top: -250px;
@@ -30,32 +36,59 @@
 }
 .news-about__inner {
   margin-top: -146px;
+  @include mq(medium, max) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .news-about__title img {
   width: min(toVw(338), 338px);
+  @include mq(medium, max) {
+    max-width: 127px;
+    width: 100%;
+  }
 }
 .news-about__wrap {
   background-color: #fff;
   border-radius: 15px 65px 15px 65px;
   padding: 100px min(toVw(100), 100px) 100px min(toVw(125), 125px);
   margin-top: 75px;
+  @include mq(medium, max) {
+    border-radius: 10px 30px 10px 30px;
+    padding: 20px 20px 35px;
+    position: relative;
+    z-index: 5;
+  }
   h1 {
     text-align: center;
     img {
       width: min(toVw(548), 548px);
+      @include mq(medium, max) {
+        max-width: 280px;
+        width: 100%;
+      }
     }
   }
 }
 .news-about__list {
   margin-top: 43px;
+  @include mq(medium, max) {
+    margin-top: 22px;
+    margin-left: 0;
+  }
 }
 .news-about__item {
   display: flex;
   align-items: center;
   font-size: 15px;
-  // @include mq {
-  //   flex-direction: column;
-  // }
+  @include mq(medium, max) {
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 11px;
+    & + .news-about__item {
+      margin-top: 10px;
+    }
+  }
 }
 .news-about__headind {
 }
@@ -69,12 +102,19 @@
   display: inline-block;
   line-height: 1;
   border-radius: 5px;
+  @include mq(medium, max) {
+    font-size: 11px;
+  }
 }
 .news-about__link {
   margin-left: 30px;
   color: #333;
   position: relative;
   padding: 13px 0;
+  @include mq(medium, max) {
+    margin-left: 0;
+    padding: 10px 0;
+  }
   &::before {
     content: "";
     /*絶対配置で下線の位置を決める*/
@@ -87,6 +127,9 @@
     background: #666666;
     /*アニメーションの指定*/
     transition: all 0.3s;
+    @include mq(medium, max) {
+      content: none;
+    }
   }
   &::after {
     content: "";
@@ -101,6 +144,9 @@
     transform: rotate(35deg);
     /*アニメーションの指定*/
     transition: all 0.3s;
+    @include mq(medium, max) {
+      content: none;
+    }
   }
   &:hover {
     &::before {
@@ -135,6 +181,10 @@
   color: #fff;
   border-radius: 10px;
   padding: 26px 0;
+  @include mq(medium, max) {
+    max-width: 100%;
+    padding: 10px 0;
+  }
   a {
     color: #fff;
   }
@@ -157,6 +207,9 @@
     left: 8%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+  }
+  @include mq(medium, max) {
+    margin-right: 5px;
   }
 }
 .news-detail-pagenation__button.-next {

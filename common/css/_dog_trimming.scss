@@ -11,6 +11,9 @@
   background-repeat: no-repeat;
   background-position: center 70%;
   background-size: cover;
+  @include mq(medium, max) {
+    height: 182px;
+  }
 }
 .dogtrim-about {
   margin-top: -250px;
@@ -19,13 +22,37 @@
   background-image: url(../images/bg_2nd_mv.png);
   background-repeat: no-repeat;
   background-position: top center;
+  @include mq(medium, max) {
+    padding-top: 420px;
+  }
 }
 .dogtrim-about__inner {
   margin-top: -146px;
+  @include mq(medium, max) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .dogtrim-about__title img {
   width: min(toVw(914), 914px);
+  @include mq(medium, max) {
+    width: 100%;
+  }
+}
+.dogtrim-about h1 {
+  padding-top: 52px;
+  text-align: center;
+  @include mq(medium, max) {
+    padding-top: 5px;
+  }
+}
+.dogtrim-about h1 img {
+  width: min(toVw(548), 548px);
+  @include mq(medium, max) {
+    max-width: 320px;
+    width: 100%;
+  }
 }
 .dogtrim-about__select {
   max-width: min(toVw(770), 770px);
@@ -35,6 +62,10 @@
   margin-top: 100px;
   display: flex;
   justify-content: space-between;
+  @include mq(medium, max) {
+    margin-top: 20px;
+    max-width: 100%;
+  }
 }
 .dogtrim-about__button {
   position: relative;
@@ -45,9 +76,17 @@
   background: #ee8691;
   border-radius: 25px;
   text-align: center;
+  @include mq(medium, max) {
+    max-width: 150px;
+    width: 100%;
+    padding: 7px 0;
+  }
   a {
     color: #fff;
     letter-spacing: 0.1em;
+    @include mq(medium, max) {
+      font-size: 10px;
+    }
     &::before {
       content: "";
       display: block;
@@ -66,6 +105,11 @@
     margin-left: -15px;
     border: 15px solid transparent;
     border-top: 15px solid #ee8691;
+    @include mq(medium, max) {
+      left: 58%;
+      border: 7px solid transparent;
+      border-top: 7px solid #ee8691;
+    }
   }
   &::after {
     right: min(toVw(25), 25px);
@@ -79,35 +123,51 @@
     vertical-align: middle;
     width: min(toVw(14), 14px);
     height: min(toVw(12), 12px);
+    @include mq(medium, max) {
+      width: 7px;
+      height: 6px;
+      top: 12px;
+    }
   }
 }
-.dogtrim-about h1 {
-  padding-top: 52px;
-  text-align: center;
-}
-.dogtrim-about h1 img {
-  width: min(toVw(548), 548px);
-}
-
 .dogtrim-about h2 {
   padding-top: min(toVw(97), 97px);
   text-align: center;
   font-size: min(toVw(30), 30px);
   letter-spacing: 5px;
+  @include mq(medium, max) {
+    font-size: 15px;
+    text-align: left;
+  }
 }
 
 .dogtrim-about p {
   padding-top: 78px;
   text-align: center;
   line-height: 3.2;
+  @include mq(medium, max) {
+    padding-top: 20px;
+    text-align: left;
+    line-height: 1.6;
+  }
 }
 .dogtrim-about__cards {
   display: flex;
   justify-content: space-between;
   margin-top: 75px;
+  @include mq(medium, max) {
+    flex-wrap: wrap;
+    margin-top: 28px;
+  }
 }
 .dogtrim-about__card {
   width: min(toVw(254), 254px);
+  @include mq(medium, max) {
+    width: 45%;
+    &:nth-child(n + 3) {
+      margin-top: 40px;
+    }
+  }
 }
 
 /* dogtrim-price
@@ -128,9 +188,17 @@
   text-align: center;
   padding: 133px min(toVw(100), 100px) 48px;
   position: relative;
+  @include mq(medium, max) {
+    border-radius: 10px 30px 10px 30px;
+    padding: 57px 20px 12px;
+  }
   h2 {
     img {
       width: min(toVw(548), 548px);
+      @include mq(medium, max) {
+        max-width: 280px;
+        width: 100%;
+      }
     }
   }
 }
@@ -142,6 +210,15 @@
   width: min(toVw(965), 965px);
   img {
     width: min(toVw(965), 965px);
+    @include mq(medium, max) {
+      max-width: 253px;
+      width: 100%;
+    }
+  }
+  @include mq(medium, max) {
+    top: -20px;
+    max-width: 253px;
+    width: 100%;
   }
 }
 .dogtrim-price__tabs {
@@ -149,6 +226,11 @@
     margin-top: 50px;
     margin-bottom: 31px;
     text-align: center;
+    @include mq(medium, max) {
+      margin-top: 20px;
+      margin-bottom: 25px;
+      text-align: left;
+    }
   }
   .option {
     margin-top: 16px;
@@ -163,8 +245,15 @@
   margin-top: 48px;
   display: flex;
   justify-content: space-between;
+  @include mq(medium, max) {
+    margin-top: 30px;
+    max-width: 100%;
+  }
   li {
     list-style-type: none;
+    @include mq(medium, max) {
+      width: 100%;
+    }
   }
   .tab {
     background-color: #b3dadc;
@@ -176,6 +265,11 @@
     font-size: min(toVw(20), 20px);
     letter-spacing: 0.1em;
     position: relative;
+    @include mq(medium, max) {
+      max-width: 130px;
+      width: 100%;
+      padding: 7px 0;
+    }
     &::after {
       right: min(toVw(25), 25px);
       top: min(toVw(19), 19px);
@@ -188,6 +282,12 @@
       vertical-align: middle;
       width: min(toVw(14), 14px);
       height: min(toVw(12), 12px);
+      @include mq(medium, max) {
+        top: 9px;
+        right: 10px;
+        width: 7px;
+        height: 6px;
+      }
     }
   }
 }
@@ -196,19 +296,55 @@
     th {
       &:nth-child(1) {
         width: 23%;
+        @include mq(medium, max) {
+          width: 13%;
+        }
       }
       &:nth-child(2) {
         width: 25%;
+        @include mq(medium, max) {
+          width: 23%;
+        }
       }
       &:nth-child(3) {
         width: 36%;
+        @include mq(medium, max) {
+          width: 30%;
+        }
+      }
+    }
+  }
+}
+.scroll-hint-icon {
+  top: calc(17% - 25px) !important;
+}
+#dogtrim-price-panel-2 {
+  table {
+    thead {
+      tr {
+        th {
+          @include mq(medium, max) {
+            &:nth-child(1) {
+              width: 20%;
+            }
+            &:nth-child(2) {
+              width: 15%;
+            }
+            &:nth-child(3) {
+              width: 15%;
+            }
+            &:nth-child(4) {
+              width: 15%;
+            }
+          }
+        }
       }
     }
   }
 }
 .dogtrim-price__tabs .tab-panel {
   table {
-    width: 100%;
+    width: 965px;
     text-align: left;
     &:nth-child(n + 2) {
       margin-top: 45px;
@@ -218,7 +354,7 @@
       tr {
         th {
           vertical-align: middle;
-          &:first-child {
+          &:nth-child(1) {
             padding-left: min(toVw(23), 23px);
           }
         }
@@ -302,15 +438,25 @@
 }
 .dogtrim-price-rules {
   margin-top: 53px;
+  @include mq(medium, max) {
+    margin-top: 17px;
+  }
 }
 .dogtrim-price-rules__photo {
   img {
     width: min(toVw(548), 548px);
+    @include mq(medium, max) {
+      max-width: 280px;
+      width: 100%;
+    }
   }
 }
 .dogtrim-price-rules__text {
   text-align: left;
   margin-top: 44px;
+  @include mq(medium, max) {
+    margin-top: 14px;
+  }
   p {
     font-size: min(toVw(15), 15px);
     line-height: 1.6;
@@ -339,6 +485,9 @@
   background-repeat: no-repeat;
   background-position: top center;
   position: relative;
+  @include mq(medium, max) {
+
+  }
 }
 .dogtrim-flow__inner.mainIn {
 }
@@ -348,6 +497,12 @@
   left: 46%;
   transform: translateX(-50%);
   width: min(toVw(846), 846px);
+  @include mq(medium, max) {
+    max-width: 309px;
+    width: 100%;
+    top: 0;
+    left: 50%;
+  }
 }
 .trim-flow-accordion {
   max-width: 966px;
@@ -366,6 +521,9 @@
 }
 .trim-flow-accordion__headline {
   padding: 39px 42px 39px 80px;
+  @include mq(medium, max) {
+    padding: 26px 20px 14px;
+  }
 }
 .dogtrim-flow .trim-flow-accordion__tab {
   align-items: center;
@@ -379,6 +537,12 @@
   display: flex;
   justify-content: space-between;
   position: relative;
+  @include mq(medium, max) {
+    font-size: 14px;
+    padding-left: 22px;
+    line-height: 1.5;
+    align-items: flex-start;
+  }
   &::before {
     left: min(toVw(-30), -30px);
     top: min(toVw(10), 10px);
@@ -391,6 +555,12 @@
     vertical-align: middle;
     width: min(toVw(14), 14px);
     height: min(toVw(12), 12px);
+    @include mq(medium, max) {
+      top: 5px;
+      left: 0;
+      width: 7px;
+      height: 6px;
+    }
   }
 }
 .cattrim-flow .trim-flow-accordion__tab {
@@ -405,6 +575,12 @@
   display: flex;
   justify-content: space-between;
   position: relative;
+  @include mq(medium, max) {
+    font-size: 14px;
+    padding-left: 22px;
+    line-height: 1.5;
+    align-items: flex-start;
+  }
   &::before {
     left: min(toVw(-30), -30px);
     top: min(toVw(10), 10px);
@@ -417,6 +593,12 @@
     vertical-align: middle;
     width: min(toVw(14), 14px);
     height: min(toVw(12), 12px);
+    @include mq(medium, max) {
+      top: 5px;
+      left: 0;
+      width: 7px;
+      height: 6px;
+    }
   }
   &.-mb6 {
     margin-bottom: 6px;
@@ -424,11 +606,23 @@
 }
 .trim-flow-accordion__tabsubtext {
   font-size: min(toVw(15), 15px);
+  @include mq(medium, max) {
+    color: #95cccf;
+    font-size: 7px;
+    letter-spacing: 0.2em;
+    padding-left: 22px;
+  }
   &.-cattrim {
     color: #ee8691;
+    @include mq(medium, max) {
+      display: block;
+    }
   }
   &.-ml160 {
     margin-left: -162px;
+    @include mq(medium, max) {
+      margin-left: 0;
+    }
   }
 }
 .trim-flow-accordion__tabicon {
@@ -439,6 +633,10 @@
   pointer-events: none;
   position: relative;
   width: 18px;
+  @include mq(medium, max) {
+    width: 8px;
+    height: 8px;
+  }
   &::before,
   &::after {
     background-color: currentColor;
@@ -470,8 +668,15 @@
   display: flex;
   justify-content: space-between;
   padding: 0 90px 30px 81px;
+  @include mq(medium, max) {
+    padding: 0 20px 22px;
+  }
   .trim-flow-accordion__panel-image {
     width: min(toVw(180), 180px);
+    @include mq(medium, max) {
+      max-width: 90px;
+      width: 100%;
+    }
     img + img {
       margin-top: 10px;
     }
@@ -481,6 +686,9 @@
   }
   .trim-flow-accordion__panel-text {
     width: 73%;
+    @include mq(medium, max) {
+      width: 63%;
+    }
     &.-fulltext {
       width: 100%;
     }

@@ -25,6 +25,10 @@
 }
 .about-about__inner {
   margin-top: -146px;
+  @include mq(medium, max) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .about-about__title img {

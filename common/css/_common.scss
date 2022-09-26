@@ -54,6 +54,10 @@ a:hover {
 ----------------------------------------------------------- */
 /*最上部からスライドまで*/
 #headerArea {
+  @include mq(medium, max) {
+    position: relative;
+    z-index: 50;
+  }
   @include mq {
     #topbody #headerArea {
       height: inherit;
@@ -400,6 +404,9 @@ footer {
   bottom: 50px;
   width: 100%;
   height: min(toVw(390), 390px);
+  @include mq(medium, max) {
+    height: 100%;
+  }
 }
 
 .footer__inner::before {
@@ -505,15 +512,24 @@ footer {
 
 .c-pan {
   margin-top: -20px;
+  @include mq(medium, max) {
+    order: -1;
+  }
 }
 .c-pan__list {
   margin-left: 0;
   span {
     color: rgba(51, 51, 51, 0.5);
     font-size: 13px;
+    @include mq(medium, max) {
+      font-size: 10px;
+    }
     a {
       color: rgba(51, 51, 51, 0.5);
       font-size: 13px;
+      @include mq(medium, max) {
+        font-size: 10px;
+      }
     }
   }
 }

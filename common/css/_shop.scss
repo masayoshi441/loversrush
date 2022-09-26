@@ -10,6 +10,9 @@
   background-repeat: no-repeat;
   background-position: center 68%;
   background-size: cover;
+  @include mq(medium, max) {
+    height: 180px;
+  }
 }
 .shop-about {
   margin-top: -250px;
@@ -21,10 +24,18 @@
 }
 .shop-about__inner {
   margin-top: -146px;
+  @include mq(medium, max) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .shop-about__title img {
   width: min(toVw(314), 314px);
+  @include mq(medium, max) {
+    max-width: 111px;
+    width: 100%;
+  }
 }
 .shop-about h1 {
   padding-top: 52px;
@@ -32,19 +43,32 @@
 }
 .shop-about h1 img {
   width: min(toVw(548), 548px);
+  @include mq(medium, max) {
+    max-width: 320px;
+    width: 100%;
+  }
 }
 
 .shop-about h2 {
   padding-top: min(toVw(87), 87px);
   text-align: center;
   font-size: min(toVw(30), 30px);
-  letter-spacing: 5px;
+  letter-spacing: 0.1em;
+  @include mq(medium, max) {
+    font-size: 15px;
+    text-align: left;
+    white-space: nowrap;
+  }
 }
 
 .shop-about p {
   padding-top: min(toVw(31), 31px);
   text-align: center;
   line-height: 3.2;
+  @include mq(medium, max) {
+    line-height: 1.6;
+    text-align: left;
+  }
 }
 .shop-about__content {
   background-color: #fff;
@@ -52,11 +76,20 @@
   text-align: center;
   padding: 76px min(toVw(100), 100px) 0;
   margin-top: 60px;
+  @include mq(medium, max) {
+    border-radius: 10px 30px 10px 30px;
+    padding: 20px 20px 0;
+    margin-top: 31px;
+  }
 }
 .shop-about__details {
   .shop-about__detail {
     display: flex;
     align-items: center;
+    @include mq(medium, max) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
     .shop-about__head {
       min-width: min(toVw(240), 240px);
       font-size: min(toVw(20), 20px);
@@ -64,26 +97,45 @@
       background-color: #ee8691;
       border-radius: 50px;
       padding: 9.3px 0 8.7px;
+      @include mq(medium, max) {
+        max-width: 120px;
+        width: 100%;
+        font-size: 11px;
+        padding: 6px 0;
+      }
     }
     .shop-about__data {
       text-align: left;
       padding-left: min(toVw(20), 20px);
+      @include mq(medium, max) {
+        padding-top: 9px;
+      }
       span {
         color: #ee8691;
       }
     }
     & + .shop-about__detail {
       margin-top: 30px;
+      @include mq(medium, max) {
+        margin-top: 12px;
+      }
     }
   }
 }
 .shop-about__shopimages {
   display: flex;
   margin-top: 50px;
+  @include mq(medium, max) {
+    flex-direction: column;
+  }
 }
 .shop-about__shopimage {
   & + .shop-about__shopimage {
     margin-left: 41px;
+    @include mq(medium, max) {
+      margin-left: 0;
+      margin-top: 24px;
+    }
   }
   .shop-about__shoptext {
     padding-top: 11px;
@@ -95,6 +147,10 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 66px;
+  @include mq(medium, max) {
+    width: 100%;
+    margin-top: 20px;
+  }
 }
 
 /* shop-access
@@ -112,11 +168,19 @@
 .shop-access__title {
   width: min(toVw(464), 464px);
   margin-left: 52px;
+  @include mq(medium, max) {
+    max-width: 174px;
+    width: 100%;
+    margin-left: 0;
+  }
 }
 .shop-access__map {
   position: relative;
   width: 100%;
   padding-top: 34.2442%;
+  @include mq(medium, max) {
+    padding-top: 63.3333%;
+  }
 }
 .shop-access__mapcontainer {
   position: absolute;
@@ -130,6 +194,9 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 50px;
+  @include mq(medium, max) {
+    margin-top: 16px;
+  }
 }
 .shop-access__guides {
   border-radius: 20px;
@@ -137,9 +204,17 @@
   margin-top: 40px;
   display: flex;
   padding: 34px 50px 36px;
+  @include mq(medium, max) {
+    flex-direction: column;
+    padding: 20px 20px 16px;
+  }
 }
 .shop-access__guide + .shop-access__guide {
   margin-left: min(toVw(103), 103px);
+  @include mq(medium, max) {
+    margin-left: 0;
+    margin-top: 37px;
+  }
 }
 .shop-access__guidename {
   border-radius: 50px;
@@ -148,6 +223,11 @@
   text-align: center;
   padding-top: 15px;
   padding-bottom: 12px;
+  @include mq(medium, max) {
+    width: 171.5px;
+    padding-top: 4.7px;
+    padding-bottom: 5.8px;
+  }
   &.-kanazawa {
     background-color: #ee8691;
   }
@@ -157,4 +237,7 @@
 }
 .shop-access__guidetext {
   margin-top: 24px;
+  @include mq(medium, max) {
+    margin-top: 12px;
+  }
 }

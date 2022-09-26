@@ -20,6 +20,8 @@
   <meta property="og:image" content="画像のURL" />
 
   <link href="common/css/jquery.bxslider.css" rel="stylesheet" />
+  <link href="common/css/scroll-hint.css" rel="stylesheet" />
+  <script src="common/js/scroll-hint.js"></script>
 </head>
 
 <body id="2ndbody">
@@ -93,7 +95,7 @@
               <h2>
                   安心快適環境でお預かりします。<br />
                   窓から外の景色を眺められるお部屋で<br>
-                  他のネコちゃんの姿も見えないプライベート空間となっています。
+                  他のネコちゃんの姿も見えない<br class="sp">プライベート空間となっています。
                 </h2>
               <p>
                 旅行や外出など、どうしてもペットを連れて行けない場合があります。<br />
@@ -151,10 +153,14 @@
             <div class="cath-price__inner mainIn">
               <div class="cath-price__wrap">
                 <div class="cath-price__photo">
-                  <img src="images/cat_hotel/text_price_1.png" alt="PRICE LIST">
+                  <picture>
+                    <source srcset="images/cat_hotel/text_price_1-sp.png" media="(max-width: 768px)">
+                    <img src="images/cat_hotel/text_price_1.png" alt="PRICE LIST">
+                  </picture>
+
                 </div>
                 <h2><img src="images/cat_hotel/title_price_1.png" alt=""></h2>
-                <div class="cath-price__pricelist">
+                <div class="cath-price__pricelist js-scrollable">
                   <table>
                     <caption>1泊料金（お預かりした時間から24時間以内）</caption>
                     <thead>
@@ -266,6 +272,9 @@
         slideMargin: 50,
       });
     });
+  </script>
+  <script type="text/javascript">
+    new ScrollHint('.js-scrollable');
   </script>
   <script src="common/js/import.js"></script>
   <script src="common/js/spnavi.js"></script>

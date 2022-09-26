@@ -20,6 +20,8 @@
   <meta property="og:image" content="画像のURL" />
 
   <link href="common/css/jquery.bxslider.css" rel="stylesheet" />
+  <link href="common/css/scroll-hint.css" rel="stylesheet" />
+  <script src="common/js/scroll-hint.js"></script>
 </head>
 
 <body id="2ndbody">
@@ -92,7 +94,7 @@
               <h1><img src="images/dog_hotel/title_about.png" alt="ラバーズラッシュについて" /></h1>
               <h2>
                   安心快適環境でお預かりします。<br />
-                  広々遊べる野外ドッグラン＆のびのび遊べる室内プレイルーム。
+                  広々遊べる野外ドッグラン＆<br class="sp">のびのび遊べる室内プレイルーム。
                 </h2>
               <p>
                 旅行や外出など、どうしてもペットを連れて行けない場合があります。<br>
@@ -151,10 +153,14 @@
             <div class="dogh-price__inner mainIn">
               <div class="dogh-price__wrap">
                 <div class="dogh-price__photo">
-                  <img src="images/dog_hotel/text_price.png" alt="PRICE LIST">
+                  <picture>
+                    <source srcset="images/dog_hotel/text_price-sp.png" media="(max-width: 768px)">
+                    <img src="images/dog_hotel/text_price.png" alt="PRICE LIST">
+                  </picture>
+
                 </div>
                 <h2><img src="images/dog_hotel/title_price.png" alt=""></h2>
-                <div class="dogh-price__pricelist">
+                <div class="dogh-price__pricelist js-scrollable">
                   <table>
                     <caption>1泊料金（お預かりした時間から24時間以内）</caption>
                     <thead>
@@ -312,6 +318,9 @@
         slideMargin: 50,
       });
     });
+  </script>
+  <script type="text/javascript">
+    new ScrollHint('.js-scrollable');
   </script>
   <script src="common/js/import.js"></script>
   <script src="common/js/spnavi.js"></script>

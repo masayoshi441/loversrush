@@ -20,6 +20,8 @@
   <meta property="og:image" content="画像のURL" />
 
   <link href="common/css/jquery.bxslider.css" rel="stylesheet" />
+  <link href="common/css/scroll-hint.css" rel="stylesheet" />
+  <script src="common/js/scroll-hint.js"></script>
 </head>
 
 <body id="2ndbody">
@@ -98,7 +100,7 @@
                   <a href="#dogtrim-flow">トリミング風景</a>
                 </div>
               </div>
-              <h2>お客様の大切なワンちゃんを<br>丁寧に手をかけて気持ち良くキレイにいたします。</h2>
+              <h2>お客様の大切なワンちゃんを<br>丁寧に手をかけて<br class="sp">気持ち良くキレイにいたします。</h2>
               <p>当店のトリミングは、ワンちゃんたち1頭1頭の状態を見ながら丁寧なトリミングを心がけてます。<br>
                 オプションには、マイクロバブルや、炭酸泉浴などもあり、毛穴ケアから、リラックス効果もお試し頂けます。<br>
                 経験豊富なトリマーが責任を持って、大切なペットをお預かりいたします。</p>
@@ -115,7 +117,10 @@
             <div class="dogtrim-price__inner mainIn">
               <div class="dogtrim-price__wrap">
                 <div class="dogtrim-price__photo">
-                  <img src="images/dog_trimming/text_pricelist.png" alt="">
+                  <picture>
+                    <source srcset="images/dog_trimming/text_pricelist-sp.png" media="(max-width: 768px)">
+                    <img src="images/dog_trimming/text_pricelist.png" alt="">
+                  </picture>
                 </div>
                 <h2><img src="images/dog_trimming/title_pricelist.png" alt=""></h2>
                 <div class="dogtrim-price__tabs">
@@ -128,7 +133,7 @@
                     </li>
                   </ul>
                   <p class="caption">ワンちゃんたち1頭1頭の状態を見ながら丁寧なトリミングを心がけてます。 ワンちゃん大好きトリマー達がお待ちしております。 </p>
-                  <div role="tabpanel" id="dogtrim-price-panel-1" class="tab-panel" tabindex="0" aria-labelledby="dogtrim-price-tab-1" aria-hidden="false">
+                  <div role="tabpanel" id="dogtrim-price-panel-1" class="tab-panel js-scrollable" tabindex="0" aria-labelledby="dogtrim-price-tab-1" aria-hidden="false">
                     <table>
                       <thead>
                         <tr class="mainhead">
@@ -352,7 +357,7 @@
                       </tbody>
                     </table>
                   </div>
-                  <div role="tabpanel" id="dogtrim-price-panel-2" class="tab-panel" tabindex="0" aria-labelledby="dogtrim-price-tab-2" aria-hidden="true">
+                  <div role="tabpanel" id="dogtrim-price-panel-2" class="tab-panel js-scrollable" tabindex="0" aria-labelledby="dogtrim-price-tab-2" aria-hidden="true">
                     <table>
                       <thead>
                         <tr class="mainhead">
@@ -509,7 +514,7 @@
                 <div class="trim-flow-accordion__item">
                   <h2 class="trim-flow-accordion__headline">
                     <button type="button" class="trim-flow-accordion__tab js-accordion-tab">
-                      Step1　全身のチェック
+                      Step1　<br class="sp">全身のチェック
                       <span class="trim-flow-accordion__tabicon"></span>
                     </button>
                   </h2>
@@ -527,7 +532,7 @@
                 <div class="trim-flow-accordion__item">
                   <h2 class="trim-flow-accordion__headline">
                     <button type="button" class="trim-flow-accordion__tab js-accordion-tab">
-                      Step2　つめ切り、耳掃除
+                      Step2　<br class="sp">つめ切り、耳掃除
                       <span class="trim-flow-accordion__tabicon"></span>
                     </button>
                   </h2>
@@ -548,7 +553,7 @@
                 <div class="trim-flow-accordion__item">
                   <h2 class="trim-flow-accordion__headline">
                     <button type="button" class="trim-flow-accordion__tab js-accordion-tab">
-                      Step3　足裏、お腹、肛門まわりのお手入れ
+                      Step3　<br class="sp">足裏、お腹、肛門まわりのお手入れ
                       <span class="trim-flow-accordion__tabicon"></span>
                     </button>
                   </h2>
@@ -567,7 +572,7 @@
                 <div class="trim-flow-accordion__item">
                   <h2 class="trim-flow-accordion__headline">
                     <button type="button" class="trim-flow-accordion__tab js-accordion-tab">
-                      Step4　シャンプー＆コンディショナー
+                      Step4　<br class="sp">シャンプー＆コンディショナー
                       <span class="trim-flow-accordion__tabicon"></span>
                     </button>
                   </h2>
@@ -588,7 +593,7 @@
                 <div class="trim-flow-accordion__item">
                   <h2 class="trim-flow-accordion__headline">
                     <button type="button" class="trim-flow-accordion__tab js-accordion-tab">
-                      Step5　ケア
+                      Step5　<br class="sp">ケア
                       <span class="trim-flow-accordion__tabicon"></span>
                     </button>
                   </h2>
@@ -604,7 +609,7 @@
                 <div class="trim-flow-accordion__item">
                   <h2 class="trim-flow-accordion__headline">
                     <button type="button" class="trim-flow-accordion__tab js-accordion-tab">
-                      Step6 ドライング
+                      Step6 <br class="sp">ドライング
                       <span class="trim-flow-accordion__tabicon"></span>
                     </button>
                   </h2>
@@ -623,10 +628,12 @@
                 <div class="trim-flow-accordion__item">
                   <h2 class="trim-flow-accordion__headline">
                     <button type="button" class="trim-flow-accordion__tab js-accordion-tab">
-                      Step7 仕上げ<span class="trim-flow-accordion__tabsubtext -ml160">シャンプーベーシックコースの場合は<br>
+                      Step7 <br class="sp">仕上げ<span class="trim-flow-accordion__tabsubtext -ml160 pc">シャンプーベーシックコースの場合は<br>
                         足回り等を整えて終了となります。</span>
                       <span class="trim-flow-accordion__tabicon"></span>
                     </button>
+                    <span class="trim-flow-accordion__tabsubtext sp">シャンプーベーシックコースの場合は<br>
+                      足回り等を整えて終了となります。</span>
                   </h2>
                   <div class="trim-flow-accordion__panel js-accordion-panel">
                     <div class="trim-flow-accordion__panel-content">
@@ -643,9 +650,10 @@
                 <div class="trim-flow-accordion__item">
                   <h2 class="trim-flow-accordion__headline">
                     <button type="button" class="trim-flow-accordion__tab js-accordion-tab">
-                      Step8　完成<span class="trim-flow-accordion__tabsubtext">（カットコースの場合は、全身をカットしていきます。）</span>
+                      Step8　<br class="sp">完成<span class="trim-flow-accordion__tabsubtext pc">（カットコースの場合は、全身をカットしていきます。）</span>
                       <span class="trim-flow-accordion__tabicon"></span>
                     </button>
+                    <span class="trim-flow-accordion__tabsubtext sp">（カットコースの場合は、<br>全身をカットしていきます。）</span>
                   </h2>
                   <div class="trim-flow-accordion__panel js-accordion-panel">
                     <div class="trim-flow-accordion__panel-content">
@@ -807,6 +815,9 @@
     if ($('.dogtrim-price__tabs').length > 0) {
       new TabList();
     }
+  </script>
+  <script type="text/javascript">
+    new ScrollHint('.js-scrollable');
   </script>
   <script type="text/javascript">
     const defaultOptions = {

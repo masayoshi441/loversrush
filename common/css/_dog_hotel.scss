@@ -10,6 +10,9 @@
   background-repeat: no-repeat;
   background-position: center 40%;
   background-size: cover;
+  @include mq(medium, max) {
+    height: 180px;
+  }
 }
 .dogh-about {
   margin-top: -250px;
@@ -21,10 +24,18 @@
 }
 .dogh-about__inner {
   margin-top: -146px;
+  @include mq(medium, max) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .dogh-about__title img {
   width: min(toVw(686), 686px);
+  @include mq(medium, max) {
+    max-width: 251px;
+    width: 100%;
+  }
 }
 .dogh-about h1 {
   padding-top: 52px;
@@ -32,6 +43,10 @@
 }
 .dogh-about h1 img {
   width: min(toVw(548), 548px);
+  @include mq(medium, max) {
+    max-width: 320px;
+    width: 100%;
+  }
 }
 
 .dogh-about h2 {
@@ -39,12 +54,21 @@
   text-align: center;
   font-size: min(toVw(30), 30px);
   letter-spacing: 5px;
+  @include mq(medium, max) {
+    font-size: 15px;
+    text-align: left;
+    white-space: nowrap;
+  }
 }
 
 .dogh-about p {
   padding-top: min(toVw(76), 76px);
   text-align: center;
   line-height: 3.2;
+  @include mq(medium, max) {
+    line-height: 1.6;
+    text-align: left;
+  }
 }
 
 /* dogh-facility
@@ -88,15 +112,29 @@
 }
 .dogh-facility__title img {
   width: min(toVw(533), 533px);
+  @include mq(medium, max) {
+    max-width: 200px;
+    width: 100%;
+  }
 }
 .dogh-facility-hotel {
   display: flex;
   justify-content: space-between;
+  @include mq(medium, max) {
+    flex-direction: column;
+  }
 }
 .dogh-facility-hotel__image {
   width: min(toVw(558), 558px);
+  @include mq(medium, max) {
+    width: 100%;
+    margin-top: 26px;
+  }
   img {
     width: min(toVw(558), 558px);
+    @include mq(medium, max) {
+      width: 100%;
+    }
   }
   p {
     text-align: center;
@@ -105,6 +143,10 @@
 }
 .dogh-facility-hotel__textblock {
   width: 49%;
+  @include mq(medium, max) {
+    width: 100%;
+    order: -1;
+  }
 }
 .dogh-facility-hotel__title {
   font-size: min(toVw(24), 24px);
@@ -112,6 +154,10 @@
   padding-left: min(toVw(38), 38px);
   padding-top: 10px;
   letter-spacing: 0.2em;
+  @include mq(medium, max) {
+    font-size: 13px;
+    padding-left: 20px;
+  }
   &::before {
     left: min(toVw(0), 0px);
     top: min(toVw(16), 16px);
@@ -124,6 +170,12 @@
     vertical-align: middle;
     width: min(toVw(32), 32px);
     height: min(toVw(24), 24px);
+    @include mq(medium, max) {
+      top: 14px;
+      left: 0;
+      width: 16px;
+      height: 12px;
+    }
   }
 }
 .dogh-facility-hotel__text {
@@ -134,9 +186,18 @@
   display: flex;
   justify-content: space-between;
   margin-top: min(toVw(80), 80px);
+  @include mq(medium, max) {
+    flex-wrap: wrap;
+  }
 }
 .dogh-facility-card {
   width: min(toVw(254), 254px);
+  @include mq(medium, max) {
+    width: 45%;
+    &:nth-child(n + 3) {
+      margin-top: 19px;
+    }
+  }
 }
 .dogh-facility-card__text {
   text-align: center;
@@ -162,9 +223,17 @@
   text-align: center;
   padding: 133px min(toVw(50), 50px) 58px;
   position: relative;
+  @include mq(medium, max) {
+    border-radius: 10px 30px 10px 30px;
+    padding: 48px 20px 43px;
+  }
   h2 {
     img {
       width: min(toVw(548), 548px);
+      @include mq(medium, max) {
+        max-width: 280px;
+        width: 100%;
+      }
     }
   }
 }
@@ -174,16 +243,28 @@
   left: 50%;
   transform: translateX(-50%);
   width: min(toVw(965), 965px);
+  @include mq(medium, max) {
+    top: -20px;
+  }
 }
 .dogh-price__pricelist {
   margin-top: 38px;
+  @include mq(medium, max) {
+    margin-top: 10px;
+  }
   table {
     width: 100%;
+    @include mq(medium, max) {
+      width: 566px;
+    }
     caption {
       text-align: center;
       font-size: min(toVw(20), 20px);
       letter-spacing: 0.2em;
       margin-bottom: 22px;
+      @include mq(medium, max) {
+        margin-bottom: 7px;
+      }
     }
     .first-tr {
       th {
@@ -247,6 +328,9 @@
   margin-top: 28px;
   text-align: left;
   line-height: 1.6;
+  @include mq(medium, max) {
+    margin-top: 12px;
+  }
 }
 
 /* dogh-rule
@@ -261,16 +345,29 @@
 }
 .dogh-rule__inner {
   padding-left: 50px;
+  @include mq(medium, max) {
+    padding-left: 20px;
+  }
 }
 .dogh-rule__photo {
   width: min(toVw(330), 330px);
+  @include mq(medium, max) {
+    max-width: 114px;
+    width: 100%;
+  }
 }
 .dogh-rule__content {
   display: flex;
   margin-top: 8px;
+  @include mq(medium, max) {
+    flex-direction: column;
+  }
 }
 .dogh-rule__textbox {
   width: 56%;
+  @include mq(medium, max) {
+    width: 100%;
+  }
 }
 .dogh-rule__title {
   font-size: min(toVw(24), 24px);
@@ -278,6 +375,10 @@
   padding-left: min(toVw(38), 38px);
   padding-top: 10px;
   letter-spacing: 0.2em;
+  @include mq(medium, max) {
+    font-size: 13px;
+    padding-left: 21px;
+  }
   &::before {
     left: min(toVw(0), 0px);
     top: min(toVw(16), 16px);
@@ -290,6 +391,11 @@
     vertical-align: middle;
     width: min(toVw(32), 32px);
     height: min(toVw(24), 24px);
+    @include mq(medium, max) {
+      width: 16px;
+      height: 12px;
+      top: 14px;
+    }
   }
 }
 .dogh-rule__text {
@@ -299,4 +405,7 @@
 }
 .dogh-rule__image {
   width: min(toVw(483), 483px);
+  @include mq(medium, max) {
+    width: 100%;
+  }
 }

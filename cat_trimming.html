@@ -20,6 +20,8 @@
   <meta property="og:image" content="画像のURL" />
 
   <link href="common/css/jquery.bxslider.css" rel="stylesheet" />
+  <link href="common/css/scroll-hint.css" rel="stylesheet" />
+  <script src="common/js/scroll-hint.js"></script>
 </head>
 
 <body id="2ndbody">
@@ -115,7 +117,10 @@
             <div class="cattrim-price__inner mainIn">
               <div class="cattrim-price__wrap">
                 <div class="cattrim-price__photo">
-                  <img src="images/cat_trimming/text_price.png" alt="">
+                  <picture>
+                    <source srcset="images/cat_trimming/text_price-sp.png" media="(max-width: 768px)">
+                    <img src="images/cat_trimming/text_price.png" alt="">
+                  </picture>
                 </div>
                 <h2><img src="images/cat_trimming/title_price.png" alt=""></h2>
                 <div class="cattrim-price__tabs">
@@ -128,7 +133,7 @@
                     </li>
                   </ul>
                   <p class="caption">ネコちゃんたち1頭1頭の状態を見ながら丁寧なトリミングを心がけてます。 ネコちゃん大好きトリマー達がお待ちしております。</p>
-                  <div role="tabpanel" id="cattrim-price-panel-1" class="tab-panel" tabindex="0" aria-labelledby="cattrim-price-tab-1" aria-hidden="false">
+                  <div role="tabpanel" id="cattrim-price-panel-1" class="tab-panel js-scrollable" tabindex="0" aria-labelledby="cattrim-price-tab-1" aria-hidden="false">
                     <table>
                       <thead>
                         <tr class="mainhead">
@@ -272,7 +277,7 @@
                 <div class="trim-flow-accordion__item">
                   <h2 class="trim-flow-accordion__headline">
                     <button type="button" class="trim-flow-accordion__tab js-accordion-tab">
-                      Step1　全身のチェック
+                      Step1　<br class="sp">全身のチェック
                       <span class="trim-flow-accordion__tabicon"></span>
                     </button>
                   </h2>
@@ -288,7 +293,7 @@
                 <div class="trim-flow-accordion__item">
                   <h2 class="trim-flow-accordion__headline">
                     <button type="button" class="trim-flow-accordion__tab js-accordion-tab">
-                      Step2　つめ切り、耳掃除
+                      Step2　<br class="sp">つめ切り、耳掃除
                       <span class="trim-flow-accordion__tabicon"></span>
                     </button>
                   </h2>
@@ -307,7 +312,7 @@
                 <div class="trim-flow-accordion__item">
                   <h2 class="trim-flow-accordion__headline">
                     <button type="button" class="trim-flow-accordion__tab js-accordion-tab">
-                      Step3　足裏、お腹、肛門まわりのお手入れ
+                      Step3　<br class="sp">足裏、お腹、肛門まわりのお手入れ
                       <span class="trim-flow-accordion__tabicon"></span>
                     </button>
                   </h2>
@@ -326,7 +331,7 @@
                 <div class="trim-flow-accordion__item">
                   <h2 class="trim-flow-accordion__headline">
                     <button type="button" class="trim-flow-accordion__tab js-accordion-tab">
-                      Step4　シャンプー＆コンディショナー
+                      Step4　<br class="sp">シャンプー＆コンディショナー
                       <span class="trim-flow-accordion__tabicon"></span>
                     </button>
                   </h2>
@@ -345,7 +350,7 @@
                 <div class="trim-flow-accordion__item">
                   <h2 class="trim-flow-accordion__headline">
                     <button type="button" class="trim-flow-accordion__tab js-accordion-tab">
-                      Step5　ケア（オプションメニュー）
+                      Step5　<br class="sp">ケア（オプションメニュー）
                       <span class="trim-flow-accordion__tabicon"></span>
                     </button>
                   </h2>
@@ -361,7 +366,7 @@
                 <div class="trim-flow-accordion__item">
                   <h2 class="trim-flow-accordion__headline">
                     <button type="button" class="trim-flow-accordion__tab js-accordion-tab">
-                      Step6 ドライング
+                      Step6 <br class="sp">ドライング
                       <span class="trim-flow-accordion__tabicon"></span>
                     </button>
                   </h2>
@@ -379,7 +384,7 @@
                 <div class="trim-flow-accordion__item">
                   <h2 class="trim-flow-accordion__headline">
                     <button type="button" class="trim-flow-accordion__tab js-accordion-tab">
-                      Step7 耳掃除
+                      Step7 <br class="sp">耳掃除
                       <span class="trim-flow-accordion__tabicon"></span>
                     </button>
                   </h2>
@@ -397,11 +402,10 @@
                 <div class="trim-flow-accordion__item">
                   <h2 class="trim-flow-accordion__headline">
                     <button type="button" class="trim-flow-accordion__tab js-accordion-tab -mb6">
-                      Step8 仕上げ・完成
+                      Step8 <br class="sp">仕上げ・完成
                       <span class="trim-flow-accordion__tabicon"></span>
                     </button>
-                    <span class="trim-flow-accordion__tabsubtext -cattrim">シャンプーコースの場合は、足まわり等を整えて終了となります。<br>
-                      トリミングコースの場合は、全身をカットしていきます。</span>
+                    <span class="trim-flow-accordion__tabsubtext -cattrim">シャンプーコースの場合は、足まわり等を整えて終了となります。<br>トリミングコースの場合は、全身をカットしていきます。</span>
                   </h2>
                   <div class="trim-flow-accordion__panel js-accordion-panel">
                     <div class="trim-flow-accordion__panel-content">
@@ -419,7 +423,7 @@
                 <div class="trim-flow-accordion__item">
                   <h2 class="trim-flow-accordion__headline">
                     <button type="button" class="trim-flow-accordion__tab js-accordion-tab">
-                      Step9　記念撮影
+                      Step9　<br class="sp">記念撮影
                       <span class="trim-flow-accordion__tabicon"></span>
                     </button>
                   </h2>
@@ -477,6 +481,9 @@
         controls: false,
       });
     });
+  </script>
+  <script type="text/javascript">
+    new ScrollHint('.js-scrollable');
   </script>
   <script type="text/javascript">
     $(document).ready(function () {

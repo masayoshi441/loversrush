@@ -11,6 +11,9 @@
   background-repeat: no-repeat;
   background-position: center 40%;
   background-size: cover;
+  @include mq(medium, max) {
+    height: 180px;
+  }
 }
 .cattrim-about {
   margin-top: -250px;
@@ -22,10 +25,28 @@
 }
 .cattrim-about__inner {
   margin-top: -146px;
+  @include mq(medium, max) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .cattrim-about__title img {
   width: min(toVw(914), 914px);
+  @include mq(medium, max) {
+    width: 100%;
+  }
+}
+.cattrim-about h1 {
+  padding-top: 52px;
+  text-align: center;
+}
+.cattrim-about h1 img {
+  width: min(toVw(548), 548px);
+  @include mq(medium, max) {
+    max-width: 320px;
+    width: 100%;
+  }
 }
 .cattrim-about__select {
   max-width: min(toVw(770), 770px);
@@ -35,6 +56,10 @@
   margin-top: 100px;
   display: flex;
   justify-content: space-between;
+  @include mq(medium, max) {
+    margin-top: 20px;
+    max-width: 100%;
+  }
 }
 .cattrim-about__button {
   position: relative;
@@ -45,9 +70,17 @@
   background: #67b5b9;
   border-radius: 25px;
   text-align: center;
+  @include mq(medium, max) {
+    max-width: 150px;
+    width: 100%;
+    padding: 7px 0;
+  }
   a {
     color: #fff;
     letter-spacing: 0.1em;
+    @include mq(medium, max) {
+      font-size: 10px;
+    }
     &::before {
       content: "";
       display: block;
@@ -66,6 +99,11 @@
     margin-left: -15px;
     border: 15px solid transparent;
     border-top: 15px solid #67b5b9;
+    @include mq(medium, max) {
+      left: 58%;
+      border: 7px solid transparent;
+      border-top: 7px solid #67b5b9;
+    }
   }
   &::after {
     right: min(toVw(25), 25px);
@@ -79,35 +117,51 @@
     vertical-align: middle;
     width: min(toVw(14), 14px);
     height: min(toVw(12), 12px);
+    @include mq(medium, max) {
+      width: 7px;
+      height: 6px;
+      top: 12px;
+    }
   }
 }
-.cattrim-about h1 {
-  padding-top: 52px;
-  text-align: center;
-}
-.cattrim-about h1 img {
-  width: min(toVw(548), 548px);
-}
-
 .cattrim-about h2 {
   padding-top: min(toVw(97), 97px);
   text-align: center;
   font-size: min(toVw(30), 30px);
   letter-spacing: 5px;
+  @include mq(medium, max) {
+    font-size: 15px;
+    text-align: left;
+  }
 }
 
 .cattrim-about p {
   padding-top: 78px;
   text-align: center;
   line-height: 3.2;
+  @include mq(medium, max) {
+    padding-top: 20px;
+    text-align: left;
+    line-height: 1.6;
+  }
 }
 .cattrim-about__cards {
   display: flex;
   justify-content: space-between;
   margin-top: 75px;
+  @include mq(medium, max) {
+    flex-wrap: wrap;
+    margin-top: 28px;
+  }
 }
 .cattrim-about__card {
   width: min(toVw(254), 254px);
+  @include mq(medium, max) {
+    width: 45%;
+    &:nth-child(n + 3) {
+      margin-top: 40px;
+    }
+  }
 }
 
 /* cattrim-price
@@ -128,9 +182,17 @@
   text-align: center;
   padding: 133px min(toVw(100), 100px) 48px;
   position: relative;
+  @include mq(medium, max) {
+    border-radius: 10px 30px 10px 30px;
+    padding: 57px 20px 12px;
+  }
   h2 {
     img {
       width: min(toVw(548), 548px);
+      @include mq(medium, max) {
+        max-width: 280px;
+        width: 100%;
+      }
     }
   }
 }
@@ -142,6 +204,15 @@
   width: min(toVw(965), 965px);
   img {
     width: min(toVw(965), 965px);
+    @include mq(medium, max) {
+      max-width: 253px;
+      width: 100%;
+    }
+  }
+  @include mq(medium, max) {
+    top: -20px;
+    max-width: 253px;
+    width: 100%;
   }
 }
 .cattrim-price__tabs {
@@ -149,6 +220,11 @@
     margin-top: 50px;
     margin-bottom: 31px;
     text-align: center;
+    @include mq(medium, max) {
+      margin-top: 20px;
+      margin-bottom: 25px;
+      text-align: left;
+    }
   }
   .option {
     margin-top: 16px;
@@ -163,8 +239,15 @@
   margin-top: 48px;
   display: flex;
   justify-content: space-between;
+  @include mq(medium, max) {
+    margin-top: 30px;
+    max-width: 100%;
+  }
   li {
     list-style-type: none;
+    @include mq(medium, max) {
+      width: 100%;
+    }
   }
   .tab {
     background-color: #F6C2C8;
@@ -176,6 +259,11 @@
     font-size: min(toVw(20), 20px);
     letter-spacing: 0.1em;
     position: relative;
+    @include mq(medium, max) {
+      max-width: 130px;
+      width: 100%;
+      padding: 7px 0;
+    }
     &::after {
       right: min(toVw(25), 25px);
       top: min(toVw(19), 19px);
@@ -188,13 +276,19 @@
       vertical-align: middle;
       width: min(toVw(14), 14px);
       height: min(toVw(12), 12px);
+      @include mq(medium, max) {
+        top: 9px;
+        right: 10px;
+        width: 7px;
+        height: 6px;
+      }
     }
   }
 }
 
 .cattrim-price__tabs .tab-panel {
   table {
-    width: 100%;
+    width: 965px;
     text-align: center;
     &:nth-child(n + 2) {
       margin-top: 45px;
@@ -292,27 +386,79 @@
 }
 
 /*============================
-#cattrim-price-panel-1.tab-panel
+#cattrim-price-panel-1
 ============================*/
-#cattrim-price-panel-1.tab-panel {
+#cattrim-price-panel-1 {
+  .mainhead {
+    th {
+      &:nth-child(1) {
+        @include mq(medium, max) {
+          width: 5%;
+        }
+      }
+      &:nth-child(2) {
+        @include mq(medium, max) {
+          width: 14%;
+        }
+      }
+      &:nth-child(3) {
+        @include mq(medium, max) {
+          width: 17%;
+        }
+      }
+    }
+  }
 }
 
 /*============================
-#cattrim-price-panel-2.tab-panel
+#cattrim-price-panel-2
 ============================*/
-#cattrim-price-panel-2.tab-panel {
+#cattrim-price-panel-2 {
+  .mainhead {
+    th {
+      &:nth-child(1) {
+        @include mq(medium, max) {
+          width: 15%;
+        }
+      }
+      &:nth-child(2) {
+        @include mq(medium, max) {
+          width: 14%;
+          padding-left: 10px;
+        }
+      }
+    }
+  }
+  tbody {
+    td {
+      @include mq(medium, max) {
+        padding-left: 10px;
+      }
+    }
+  }
 }
+
 .cattrim-price-rules {
   margin-top: 53px;
+  @include mq(medium, max) {
+    margin-top: 17px;
+  }
 }
 .cattrim-price-rules__photo {
   img {
     width: min(toVw(548), 548px);
+    @include mq(medium, max) {
+      max-width: 280px;
+      width: 100%;
+    }
   }
 }
 .cattrim-price-rules__text {
   text-align: left;
   margin-top: 44px;
+  @include mq(medium, max) {
+    margin-top: 14px;
+  }
   p {
     font-size: min(toVw(15), 15px);
     line-height: 1.6;
@@ -344,4 +490,10 @@
   left: 49%;
   transform: translateX(-50%);
   width: min(toVw(943), 943px);
+  @include mq(medium, max) {
+    max-width: 309px;
+    width: 100%;
+    top: 0;
+    left: 50%;
+  } 
 }
