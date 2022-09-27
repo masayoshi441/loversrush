@@ -33,12 +33,22 @@
   background-image: url(../images/bg_2nd_mv.png);
   background-repeat: no-repeat;
   background-position: top center;
+  @include mq(medium, max) {
+    margin-top: -67px;
+    padding-top: 240px;
+    background-image: url(../images/bg_2nd_mv_sp.png);
+  }
 }
 .news-about__inner {
   margin-top: -146px;
   @include mq(medium, max) {
     display: flex;
     flex-direction: column;
+  }
+}
+.news-about__title {
+  @include mq(medium, max) {
+    margin-top: 11px;
   }
 }
 .news-about__title img {
@@ -54,6 +64,7 @@
   padding: 100px min(toVw(100), 100px) 100px min(toVw(125), 125px);
   margin-top: 75px;
   @include mq(medium, max) {
+    margin-top: 30px;
     border-radius: 10px 30px 10px 30px;
     padding: 20px 20px 35px;
     position: relative;

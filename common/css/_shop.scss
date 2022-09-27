@@ -21,12 +21,23 @@
   background-image: url(../images/bg_2nd_mv.png);
   background-repeat: no-repeat;
   background-position: top center;
+  @include mq(medium, max) {
+    margin-top: -67px;
+    padding-top: 240px;
+    background-image: url(../images/bg_2nd_mv_sp.png);
+  }
 }
 .shop-about__inner {
   margin-top: -146px;
   @include mq(medium, max) {
     display: flex;
     flex-direction: column;
+  }
+}
+
+.shop-about__title {
+  @include mq(medium, max) {
+    margin-top: 11px;
   }
 }
 
@@ -40,6 +51,9 @@
 .shop-about h1 {
   padding-top: 52px;
   text-align: center;
+  @include mq(medium, max) {
+    padding-top: 1px;
+  }
 }
 .shop-about h1 img {
   width: min(toVw(548), 548px);
@@ -53,9 +67,11 @@
   padding-top: min(toVw(87), 87px);
   text-align: center;
   font-size: min(toVw(30), 30px);
-  letter-spacing: 0.1em;
+  letter-spacing: 0.2em;
   @include mq(medium, max) {
     font-size: 15px;
+    padding-top: 20px;
+    padding-left: 10px;
     text-align: left;
     white-space: nowrap;
   }
@@ -68,6 +84,7 @@
   @include mq(medium, max) {
     line-height: 1.6;
     text-align: left;
+    padding-left: 10px;
   }
 }
 .shop-about__content {
@@ -79,7 +96,7 @@
   @include mq(medium, max) {
     border-radius: 10px 30px 10px 30px;
     padding: 20px 20px 0;
-    margin-top: 31px;
+    margin-top: 28px;
   }
 }
 .shop-about__details {
@@ -101,14 +118,17 @@
         max-width: 120px;
         width: 100%;
         font-size: 11px;
-        padding: 6px 0;
+        padding: 5px 0 3px;
       }
     }
     .shop-about__data {
       text-align: left;
       padding-left: min(toVw(20), 20px);
       @include mq(medium, max) {
-        padding-top: 9px;
+        padding-top: 7px;
+        &.-nowrap{
+          white-space: nowrap;
+        }
       }
       span {
         color: #ee8691;
@@ -117,7 +137,7 @@
     & + .shop-about__detail {
       margin-top: 30px;
       @include mq(medium, max) {
-        margin-top: 12px;
+        margin-top: 10px;
       }
     }
   }
@@ -127,9 +147,11 @@
   margin-top: 50px;
   @include mq(medium, max) {
     flex-direction: column;
+    margin-top: 22px;
   }
 }
 .shop-about__shopimage {
+  @include mq(medium, max) {}
   & + .shop-about__shopimage {
     margin-left: 41px;
     @include mq(medium, max) {
@@ -140,6 +162,10 @@
   .shop-about__shoptext {
     padding-top: 11px;
     line-height: 1;
+    @include mq(medium, max) {
+      text-align: center;
+      padding-top: 5px;
+    }
   }
 }
 .shop-about__image {
@@ -162,6 +188,11 @@
   background-image: url(../../images/bg_shop_access.png);
   background-repeat: no-repeat;
   background-position: top center;
+  @include mq(medium, max) {
+    margin-top: -575px;
+    padding: 43px 10px 80px;
+    background-image: url(../../images/bg_shop_access-sp.png);
+  }
 }
 .shop-access__inner.mainIn {
 }
@@ -195,7 +226,7 @@
   margin-right: auto;
   margin-top: 50px;
   @include mq(medium, max) {
-    margin-top: 16px;
+    margin-top: 21px;
   }
 }
 .shop-access__guides {
@@ -207,13 +238,14 @@
   @include mq(medium, max) {
     flex-direction: column;
     padding: 20px 20px 16px;
+    margin-top: 16px;
   }
 }
 .shop-access__guide + .shop-access__guide {
   margin-left: min(toVw(103), 103px);
   @include mq(medium, max) {
     margin-left: 0;
-    margin-top: 37px;
+    margin-top: 40px;
   }
 }
 .shop-access__guidename {
@@ -225,8 +257,8 @@
   padding-bottom: 7px;
   @include mq(medium, max) {
     width: 171.5px;
-    padding-top: 4.7px;
-    padding-bottom: 5.8px;
+    padding-top: 1.7px;
+    padding-bottom: 0.8px;
   }
   &.-kanazawa {
     background-color: #ee8691;
@@ -239,6 +271,7 @@
   margin-top: 17px;
   line-height: 2;
   @include mq(medium, max) {
-    margin-top: 12px;
+    margin-top: 7px;
+    line-height: 1.6;
   }
 }

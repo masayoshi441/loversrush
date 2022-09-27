@@ -21,6 +21,11 @@
   background-image: url(../images/bg_2nd_mv.png);
   background-repeat: no-repeat;
   background-position: top center;
+  @include mq(medium, max) {
+    margin-top: -67px;
+    padding-top: 240px;
+    background-image: url(../images/bg_2nd_mv_sp.png);
+  }
 }
 .cath-about__inner {
   margin-top: -146px;
@@ -40,6 +45,9 @@
 .cath-about h1 {
   padding-top: 52px;
   text-align: center;
+  @include mq(medium, max) {
+    padding-top: 2px;
+  }
 }
 .cath-about h1 img {
   width: min(toVw(548), 548px);
@@ -53,9 +61,11 @@
   padding-top: min(toVw(87), 87px);
   text-align: center;
   font-size: min(toVw(30), 30px);
-  letter-spacing: 5px;
+  letter-spacing: 0.2em;
   @include mq(medium, max) {
     font-size: 15px;
+    padding-top: 15px;
+    padding-left: 10px;
     text-align: left;
     white-space: nowrap;
   }
@@ -66,6 +76,8 @@
   text-align: center;
   line-height: 3.2;
   @include mq(medium, max) {
+    padding-left: 10px;
+    padding-top: 21px;
     line-height: 1.6;
     text-align: left;
   }
@@ -80,6 +92,10 @@
   background-image: url(../../images/bg_cath_facility.png);
   background-repeat: no-repeat;
   background-position: top center;
+  @include mq(medium, max) {
+    margin-top: -617px;
+    background-image: url(../../images/bg_cath_facility-sp.png);
+  }
 }
 .cath-facility__inner {
   position: relative;
@@ -89,26 +105,41 @@
   position: absolute;
   top: -203px;
   left: 0;
+  @include mq(large, max) {
+    top: 1px;
+    right: auto;
+    left: 37%;
+  }
 }
 .cath-facility__maru1 img {
   width: min(toVw(200), 200px);
+  @include mq(medium, max) {
+    width: 100px;
+  }
 }
 
 .cath-facility__maru2 {
   position: absolute;
   top: -116px;
   right: 0;
-  @include mq(large, max) {
-    top: -20px;
+  @include mq(medium, max) {
+    top: 72px;
+    left: 6%;
   }
 }
 .cath-facility__maru2 img {
   width: min(toVw(200), 200px);
+  @include mq(medium, max) {
+    width: 100px;
+  }
 }
 
 .cath-facility__title {
   padding-top: min(toVw(230), 230px);
   text-align: right;
+  @include mq(medium, max) {
+    padding-top: 132px;
+  }
 }
 .cath-facility__title img {
   width: min(toVw(533), 533px);
@@ -122,13 +153,16 @@
   justify-content: space-between;
   @include mq(medium, max) {
     flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 12px;
   }
 }
 .cath-facility-hotel__image {
   width: min(toVw(558), 558px);
   @include mq(medium, max) {
     width: 100%;
-    margin-top: 26px;
+    margin-top: 40px;
   }
   img {
     width: min(toVw(558), 558px);
@@ -139,6 +173,10 @@
   p {
     text-align: center;
     margin-top: 13px;
+    @include mq(medium, max) {
+      font-size: 10px;
+      margin-top: 5px;
+    }
   }
 }
 .cath-facility-hotel__textblock {
@@ -181,6 +219,10 @@
 .cath-facility-hotel__text {
   margin-top: min(toVw(40), 40px);
   line-height: 2;
+  @include mq(medium, max) {
+    margin-top: 6px;
+    line-height: 1.6;
+  }
 }
 .cath-facility-cards {
   display: flex;
@@ -188,6 +230,8 @@
   margin-top: min(toVw(80), 80px);
   @include mq(medium, max) {
     flex-wrap: wrap;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 .cath-facility-card {
@@ -196,12 +240,19 @@
     width: 45%;
     &:nth-child(n + 3) {
       margin-top: 19px;
+      @include mq(medium, max) {
+        margin-top: 33px;
+      }
     }
   }
 }
 .cath-facility-card__text {
   text-align: center;
   margin-top: 15px;
+  @include mq(medium, max) {
+    margin-top: 3px;
+    font-size: 10px;
+  }
 }
 
 /* cath-price
@@ -213,6 +264,11 @@
   background-image: url(../../images/bg_top-news.png);
   background-repeat: no-repeat;
   background-position: top center;
+  @include mq(medium, max) {
+    background-image: url(../../images/bg_top-news_sp.png);
+    margin-top: -621px;
+    padding-top: 246px;
+  }
 }
 .cath-price__inner {
 }
@@ -224,7 +280,7 @@
   position: relative;
   @include mq(medium, max) {
     border-radius: 10px 30px 10px 30px;
-    padding: 48px 20px 43px;
+    padding: 48px 20px 23px;
   }
   h2 {
     img {
@@ -243,6 +299,8 @@
   transform: translateX(-50%);
   width: min(toVw(965), 965px);
   @include mq(medium, max) {
+    max-width: 253px;
+    width: 100%;
     top: -20px;
   }
 }
@@ -263,6 +321,7 @@
       margin-bottom: 22px;
       @include mq(medium, max) {
         margin-bottom: 7px;
+        font-size: 10px;
       }
     }
     thead {
@@ -270,9 +329,11 @@
       color: #fff;
       tr {
         font-size: min(toVw(16), 16px);
-
         th {
           padding: min(toVw(23), 23px) min(toVw(49), 49px);
+          @include mq(medium, max) {
+            padding: 15px 0 17px 14px;
+          }
           &:first-child {
             vertical-align: middle;
             text-align-last: left;
@@ -285,6 +346,9 @@
         td {
           padding: min(toVw(18), 18px) 0;
           text-align: left;
+          @include mq(medium, max) {
+            padding: 16px 0;
+          }
           &:first-child {
             padding-left: min(toVw(49), 49px);
             font-size: min(toVw(16), 16px);
@@ -293,6 +357,9 @@
           }
           span {
             font-size: min(toVw(22), 22px);
+            @include mq(medium, max) {
+              font-size: 15px;
+            }
           }
         }
         &:nth-child(even) {
@@ -320,6 +387,13 @@
   background-repeat: no-repeat;
   background-position: top center;
   padding-bottom: 140px;
+  @include mq(medium, max) {
+    margin-top: -230px;
+    padding-top: 27px;
+    padding-left: 10px;
+    padding-bottom: 18px;
+    background-image: url(../../images/bg_cath_rule-sp.png);
+  }
 }
 .cath-rule__inner {
   padding-left: 50px;
@@ -339,6 +413,7 @@
   margin-top: 8px;
   @include mq(medium, max) {
     flex-direction: column;
+    margin-top: -9px;
   }
 }
 .cath-rule__textbox {
@@ -380,10 +455,18 @@
   margin-top: 12px;
   font-size: min(toVw(14), 14px);
   line-height: 2.14;
+  @include mq(medium, max) {
+    font-size: 11px;
+    margin-top: 4px;
+    line-height: 1.6;
+  }
 }
 .cath-rule__image {
   width: min(toVw(483), 483px);
   @include mq(medium, max) {
-    width: 100%;
+    margin-top: 26px;
+    width: 84%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

@@ -665,7 +665,7 @@ a:hover {
 /*ロゴ、電話番号のエリア*/
 #header {
   position: fixed;
-  z-index: 2;
+  z-index: 50;
   width: 100%;
 }
 
@@ -705,13 +705,19 @@ a:hover {
     width: 260px;
   }
 }
+@media screen and (max-width: 768px) {
+  #hLogo img {
+    width: 92%;
+  }
+}
 
 #hTel {
   text-align: center;
 }
 @media screen and (max-width: 768px) {
   #hTel {
-    margin-top: 20px;
+    margin-top: 17px;
+    margin-left: 19px;
     width: 126px;
   }
 }
@@ -911,7 +917,9 @@ a:hover {
 }
 @media screen and (max-width: 768px) {
   .btn {
-    padding: 11px 59px;
+    background-size: 9.1px 7.8px;
+    padding: 10px 53px;
+    background-position: right 12px center;
   }
 }
 
@@ -920,6 +928,11 @@ a:hover {
   position: relative;
   z-index: 3; /*z-indexの数値をあげて文字を背景よりも手前に表示*/
   color: #333;
+}
+@media screen and (max-width: 768px) {
+  .btn span {
+    font-size: 11px;
+  }
 }
 
 .btn:hover span {
@@ -1008,6 +1021,13 @@ footer {
   background-position: top center;
   position: relative;
 }
+@media screen and (max-width: 768px) {
+  footer {
+    background-image: url(../../images/bg_fot_sp.png);
+    margin-top: -120px;
+    padding-top: 104px;
+  }
+}
 
 .footer__inner {
   position: absolute;
@@ -1054,6 +1074,7 @@ footer {
 @media screen and (max-width: 768px) {
   .footer__inner::after {
     left: 0;
+    bottom: -25px;
     width: 105px;
   }
 }
@@ -1099,6 +1120,7 @@ footer {
 }
 @media screen and (max-width: 768px) {
   #fLogo img {
+    width: 68%;
     margin-left: 0;
   }
 }
@@ -1114,6 +1136,7 @@ footer {
 @media screen and (max-width: 768px) {
   #fLogo p {
     font-size: 11px;
+    padding-top: 2px;
   }
 }
 
@@ -1142,6 +1165,11 @@ footer {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+}
+@media screen and (max-width: 768px) {
+  #footerCopy {
+    height: 25px;
+  }
 }
 
 .c-pan {
@@ -1682,9 +1710,11 @@ CSS information
 }
 @media screen and (max-width: 768px) {
   .top-about__inner {
-    background-size: 90% auto;
+    background-size: 79% auto;
     padding-top: 50%;
     background-position: top center;
+    padding-left: 30px;
+    padding-right: 10px;
   }
 }
 
@@ -1693,11 +1723,13 @@ CSS information
   font-size: min(2.4875621891vw, 30px);
   padding-top: min(9.7014925373vw, 117px);
   letter-spacing: 6px;
+  letter-spacing: 0.2em;
 }
 @media screen and (max-width: 768px) {
   .top-about h1 {
     font-size: 16px;
     white-space: nowrap;
+    padding-top: 11px;
   }
 }
 
@@ -1711,7 +1743,8 @@ CSS information
   .top-about p {
     width: 100%;
     font-size: 11px;
-    white-space: nowrap;
+    padding-top: 12px;
+    line-height: 1.6;
   }
 }
 
@@ -1738,6 +1771,13 @@ CSS information
   background-repeat: no-repeat;
   background-position: top center;
 }
+@media screen and (max-width: 768px) {
+  .top-trim {
+    background-image: url(../../images/bg_top-trim_sp.png);
+    margin-top: -590px;
+    padding-top: 0;
+  }
+}
 
 .top-trim__inner {
   position: relative;
@@ -1748,9 +1788,20 @@ CSS information
   top: 47px;
   left: min(1.4096185738vw, 17px);
 }
+@media screen and (max-width: 768px) {
+  .top-trim__maru1 {
+    top: -1px;
+    left: 19px;
+  }
+}
 
 .top-trim__maru1 img {
   width: min(20.7296849088vw, 250px);
+}
+@media screen and (max-width: 768px) {
+  .top-trim__maru1 img {
+    width: 100px;
+  }
 }
 
 .top-trim__maru2 {
@@ -1758,14 +1809,30 @@ CSS information
   top: 153px;
   left: min(25.2072968491vw, 304px);
 }
+@media screen and (max-width: 768px) {
+  .top-trim__maru2 {
+    top: 51px;
+    left: 39%;
+  }
+}
 
 .top-trim__maru2 img {
   width: min(15.92039801vw, 192px);
+}
+@media screen and (max-width: 768px) {
+  .top-trim__maru2 img {
+    width: 80px;
+  }
 }
 
 .top-trim__title {
   padding-top: 211px;
   text-align: right;
+}
+@media screen and (max-width: 768px) {
+  .top-trim__title {
+    padding-top: 150px;
+  }
 }
 
 .top-trim__title img {
@@ -1784,7 +1851,7 @@ CSS information
 }
 @media screen and (max-width: 768px) {
   .top-trim h2 {
-    padding-top: 20px;
+    padding-top: 22px;
   }
 }
 
@@ -1806,6 +1873,9 @@ CSS information
 @media screen and (max-width: 768px) {
   .top-trim p {
     font-size: 11px;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 1.6;
   }
 }
 
@@ -1815,6 +1885,8 @@ CSS information
 @media screen and (max-width: 768px) {
   .top-trim-cards {
     padding-top: 23px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
@@ -1837,6 +1909,7 @@ CSS information
 @media screen and (max-width: 768px) {
   .top-trim-card {
     width: 100%;
+    max-width: 485px;
   }
   .top-trim-card + .top-trim-card {
     margin-top: 20px;
@@ -1864,11 +1937,16 @@ CSS information
 /* top-hotel
 ----------------------------------------------------------- */
 .top-hotel {
-  margin-top: -400px;
+  margin-top: -453px;
   padding-bottom: 720px;
   background-image: url(../../images/bg_top-hotel.png);
   background-repeat: no-repeat;
   background-position: top center;
+}
+@media screen and (max-width: 768px) {
+  .top-hotel {
+    background-image: url(../../images/bg_top-hotel-sp.png);
+  }
 }
 
 .top-hotel__inner {
@@ -1882,8 +1960,8 @@ CSS information
 }
 @media screen and (max-width: 768px) {
   .top-hotel__photo {
-    top: 156px;
-    right: 75px;
+    top: 2px;
+    right: 37px;
   }
 }
 
@@ -1892,13 +1970,18 @@ CSS information
 }
 @media screen and (max-width: 768px) {
   .top-hotel__photo img {
-    max-width: 151px;
+    max-width: 200px;
     width: 100%;
   }
 }
 
 .top-hotel__title {
   padding-top: 320px;
+}
+@media screen and (max-width: 768px) {
+  .top-hotel__title {
+    padding-top: 203px;
+  }
 }
 
 .top-hotel__title img {
@@ -1939,6 +2022,10 @@ CSS information
 @media screen and (max-width: 768px) {
   .top-hotel p {
     font-size: 11px;
+    line-height: 1.6;
+    padding-top: 23px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
@@ -1948,6 +2035,8 @@ CSS information
 @media screen and (max-width: 768px) {
   .top-hotel-cards {
     padding-top: 24px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
@@ -1970,6 +2059,7 @@ CSS information
 @media screen and (max-width: 768px) {
   .top-hotel-card {
     width: 100%;
+    max-width: 485px;
   }
   .top-hotel-card + .top-hotel-card {
     margin-top: 20px;
@@ -2006,7 +2096,9 @@ CSS information
 }
 @media screen and (max-width: 768px) {
   .top-news {
-    padding-top: 575px;
+    background-image: url(../../images/bg_top-news_sp.png);
+    margin-top: -818px;
+    padding-top: 244px;
   }
 }
 
@@ -2019,7 +2111,7 @@ CSS information
 }
 @media screen and (max-width: 768px) {
   .top-news__wrap {
-    padding-bottom: 35px;
+    padding-bottom: 28px;
     border-radius: 10px 30px 10px 30px;
   }
 }
@@ -2053,6 +2145,11 @@ CSS information
   text-align: center;
   padding-top: min(13.4328358209vw, 162px);
 }
+@media screen and (max-width: 768px) {
+  .top-news h2 {
+    padding-top: 59px;
+  }
+}
 
 .top-news h2 img {
   width: min(45.4394693201vw, 548px);
@@ -2073,7 +2170,7 @@ CSS information
 @media screen and (max-width: 768px) {
   .top-news__lists {
     margin-left: 0;
-    padding: 30px 20px 0;
+    padding: 27px 20px 0;
     width: 100%;
   }
   .top-news__lists ul {
@@ -2099,7 +2196,7 @@ CSS information
 }
 
 .top-news__lists li + li {
-  margin-top: 26px;
+  margin-top: 14px;
 }
 
 .top-news__lists span.top-news__cate {
@@ -2115,14 +2212,21 @@ CSS information
 @media screen and (max-width: 768px) {
   .top-news__lists span.top-news__cate {
     font-size: 11px;
-    margin-left: 10px;
+    margin-left: 25px;
     margin-right: 10px;
+    padding: 0 8px;
   }
 }
 
 .top-news__lists li a {
   display: inline-block;
   width: 550px;
+}
+@media screen and (max-width: 768px) {
+  .top-news__lists li a {
+    width: 100%;
+    padding-top: 8px;
+  }
 }
 
 .top-news__btn {
@@ -2138,6 +2242,15 @@ CSS information
   background-repeat: no-repeat;
   background-position: top center;
   padding-bottom: 140px;
+}
+@media screen and (max-width: 768px) {
+  .top-gallerys {
+    background-image: url(../../images/bg_top_gallery-sp.png);
+    margin-top: -248px;
+    padding-top: 49px;
+    padding-bottom: 0;
+    margin-bottom: 0px;
+  }
 }
 
 .top-gallerys__wrap {
@@ -2158,6 +2271,11 @@ CSS information
 .top-gallerys__lists {
   width: 100%;
   padding-top: 75px;
+}
+@media screen and (max-width: 768px) {
+  .top-gallerys__lists {
+    padding-top: 26px;
+  }
 }
 
 .top-gallerys__lists ul {
@@ -2221,6 +2339,11 @@ CSS information
 .top-gallerys__btn {
   padding-top: 65px;
 }
+@media screen and (max-width: 768px) {
+  .top-gallerys__btn {
+    padding-top: 90px;
+  }
+}
 
 /* Scss Document */
 .pc {
@@ -2266,6 +2389,13 @@ CSS information
   background-repeat: no-repeat;
   background-position: top center;
 }
+@media screen and (max-width: 768px) {
+  .about-about {
+    margin-top: -67px;
+    padding-top: 240px;
+    background-image: url(../images/bg_2nd_mv_sp.png);
+  }
+}
 
 .about-about__inner {
   margin-top: -146px;
@@ -2293,7 +2423,7 @@ CSS information
 }
 @media screen and (max-width: 768px) {
   .about-about h1 {
-    padding-top: 16px;
+    padding-top: 0;
   }
 }
 
@@ -2311,12 +2441,13 @@ CSS information
   padding-top: min(3.4825870647vw, 42px);
   text-align: center;
   font-size: min(2.4875621891vw, 30px);
-  letter-spacing: 5px;
+  letter-spacing: 0.2em;
 }
 @media screen and (max-width: 768px) {
   .about-about h2 {
     font-size: 15px;
-    padding-top: 22px;
+    padding-top: 16px;
+    white-space: nowrap;
   }
 }
 
@@ -2330,7 +2461,7 @@ CSS information
     font-size: 11px;
     text-align: left;
     line-height: 1.6;
-    padding-top: 17px;
+    padding-top: 11px;
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -2346,6 +2477,12 @@ CSS information
   background-repeat: no-repeat;
   background-position: top center;
 }
+@media screen and (max-width: 768px) {
+  .about-trim {
+    background-image: url(../../images/about/bg_about_trim-sp.png);
+    margin-top: -625px;
+  }
+}
 
 .about-trim__inner {
   position: relative;
@@ -2356,9 +2493,20 @@ CSS information
   top: 67px;
   left: 0;
 }
+@media screen and (max-width: 768px) {
+  .about-trim__maru1 {
+    top: 9px;
+    left: 5%;
+  }
+}
 
 .about-trim__maru1 img {
   width: min(21.3930348259vw, 258px);
+}
+@media screen and (max-width: 768px) {
+  .about-trim__maru1 img {
+    width: 100px;
+  }
 }
 
 .about-trim__maru2 {
@@ -2368,17 +2516,29 @@ CSS information
 }
 @media screen and (max-width: 1024px) {
   .about-trim__maru2 {
-    top: -20px;
+    top: 62px;
+    right: auto;
+    left: 38%;
   }
 }
 
 .about-trim__maru2 img {
   width: min(17.0812603648vw, 206px);
 }
+@media screen and (max-width: 768px) {
+  .about-trim__maru2 img {
+    width: 80px;
+  }
+}
 
 .about-trim__title {
   padding-top: min(21.2271973466vw, 256px);
   text-align: right;
+}
+@media screen and (max-width: 768px) {
+  .about-trim__title {
+    padding-top: 154px;
+  }
 }
 
 .about-trim__title img {
@@ -2394,6 +2554,11 @@ CSS information
 .about-trim h2 {
   text-align: center;
   padding-top: 14px;
+}
+@media screen and (max-width: 768px) {
+  .about-trim h2 {
+    padding-top: 5px;
+  }
 }
 
 .about-trim h2 img {
@@ -2430,6 +2595,13 @@ CSS information
   background-repeat: no-repeat;
   background-position: top center;
 }
+@media screen and (max-width: 768px) {
+  .about-hotel {
+    background-image: url(../../images/bg_top-news_sp.png);
+    margin-top: -597px;
+    padding-top: 30px;
+  }
+}
 
 .about-hotel__inner {
   position: relative;
@@ -2442,13 +2614,18 @@ CSS information
 }
 @media screen and (max-width: 768px) {
   .about-hotel__photo {
-    top: 157px;
-    right: 56px;
+    top: 127px;
+    right: 36px;
   }
 }
 
 .about-hotel__photo img {
   width: min(34.8258706468vw, 420px);
+}
+@media screen and (max-width: 768px) {
+  .about-hotel__photo img {
+    width: 200px;
+  }
 }
 
 .about-hotel__title {
@@ -2489,6 +2666,7 @@ CSS information
   .about-hotel p {
     padding-left: 10px;
     padding-right: 10px;
+    padding-top: 20px;
     line-height: 1.6;
   }
 }
@@ -2503,6 +2681,13 @@ CSS information
   background-repeat: no-repeat;
   background-position: top center;
 }
+@media screen and (max-width: 768px) {
+  .about-goods {
+    margin-top: -190px;
+    padding-bottom: 77px;
+    background-image: url(../../images/about/bg_about_goods-sp.png);
+  }
+}
 
 .about-goods__inner {
   position: relative;
@@ -2515,8 +2700,8 @@ CSS information
 }
 @media screen and (max-width: 768px) {
   .about-goods__photo {
-    top: 46px;
-    right: 0;
+    top: -23px;
+    right: 13px;
     left: auto;
   }
 }
@@ -2538,6 +2723,7 @@ CSS information
 @media screen and (max-width: 768px) {
   .about-goods__title {
     text-align: left;
+    padding-top: 42px;
   }
 }
 
@@ -2557,7 +2743,7 @@ CSS information
 }
 @media screen and (max-width: 768px) {
   .about-goods h2 {
-    margin-top: 25px;
+    margin-top: 11px;
   }
 }
 
@@ -2576,9 +2762,21 @@ CSS information
   text-align: center;
   line-height: 2;
 }
+@media screen and (max-width: 768px) {
+  .about-goods__text {
+    padding-top: 20px;
+    font-size: 10px;
+  }
+}
 
 .about-goods-cards {
   padding-top: 15px;
+}
+@media screen and (max-width: 768px) {
+  .about-goods-cards {
+    padding-top: 0;
+    margin-top: -8px;
+  }
 }
 
 .about-goods-cards__inner {
@@ -2594,13 +2792,18 @@ CSS information
 }
 @media screen and (max-width: 768px) {
   .about-goods-card {
-    width: 50%;
+    width: 45%;
   }
 }
 
 .about-goods-card p {
   padding-top: 26px;
   text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .about-goods-card p {
+    padding-top: 0;
+  }
 }
 
 .about-goods-card img {
@@ -2655,6 +2858,13 @@ CSS information
   background-repeat: no-repeat;
   background-position: top center;
 }
+@media screen and (max-width: 768px) {
+  .dogh-about {
+    margin-top: -67px;
+    padding-top: 240px;
+    background-image: url(../images/bg_2nd_mv_sp.png);
+  }
+}
 
 .dogh-about__inner {
   margin-top: -146px;
@@ -2680,6 +2890,11 @@ CSS information
   padding-top: 52px;
   text-align: center;
 }
+@media screen and (max-width: 768px) {
+  .dogh-about h1 {
+    padding-top: 1px;
+  }
+}
 
 .dogh-about h1 img {
   width: min(45.4394693201vw, 548px);
@@ -2695,10 +2910,12 @@ CSS information
   padding-top: min(7.2139303483vw, 87px);
   text-align: center;
   font-size: min(2.4875621891vw, 30px);
-  letter-spacing: 5px;
+  letter-spacing: 0.2em;
 }
 @media screen and (max-width: 768px) {
   .dogh-about h2 {
+    padding-top: 17px;
+    padding-left: 10px;
     font-size: 15px;
     text-align: left;
     white-space: nowrap;
@@ -2712,6 +2929,8 @@ CSS information
 }
 @media screen and (max-width: 768px) {
   .dogh-about p {
+    padding-left: 10px;
+    padding-top: 26 px;
     line-height: 1.6;
     text-align: left;
   }
@@ -2727,6 +2946,13 @@ CSS information
   background-repeat: no-repeat;
   background-position: top center;
 }
+@media screen and (max-width: 768px) {
+  .dogh-facility {
+    margin-top: -636px;
+    padding-top: 80px;
+    background-image: url(../../images/dog_hotel/bg_dogh_facility-sp.png);
+  }
+}
 
 .dogh-facility__inner {
   position: relative;
@@ -2737,9 +2963,20 @@ CSS information
   top: -251px;
   left: 20px;
 }
+@media screen and (max-width: 768px) {
+  .dogh-facility__maru1 {
+    top: 1px;
+    left: 6%;
+  }
+}
 
 .dogh-facility__maru1 img {
   width: min(16.583747927vw, 200px);
+}
+@media screen and (max-width: 768px) {
+  .dogh-facility__maru1 img {
+    width: 100px;
+  }
 }
 
 .dogh-facility__maru2 {
@@ -2749,12 +2986,19 @@ CSS information
 }
 @media screen and (max-width: 1024px) {
   .dogh-facility__maru2 {
-    top: -20px;
+    top: -70px;
+    right: auto;
+    left: 37%;
   }
 }
 
 .dogh-facility__maru2 img {
   width: min(16.583747927vw, 200px);
+}
+@media screen and (max-width: 768px) {
+  .dogh-facility__maru2 img {
+    width: 100px;
+  }
 }
 
 .dogh-facility__title {
@@ -2778,6 +3022,8 @@ CSS information
 }
 @media screen and (max-width: 768px) {
   .dogh-facility-hotel {
+    margin-top: 12px;
+    padding-left: 10px;
     flex-direction: column;
   }
 }
@@ -2787,8 +3033,8 @@ CSS information
 }
 @media screen and (max-width: 768px) {
   .dogh-facility-hotel__image {
-    width: 100%;
-    margin-top: 26px;
+    width: 96%;
+    margin-top: 24px;
   }
 }
 .dogh-facility-hotel__image img {
@@ -2802,6 +3048,12 @@ CSS information
 .dogh-facility-hotel__image p {
   text-align: center;
   margin-top: 13px;
+}
+@media screen and (max-width: 768px) {
+  .dogh-facility-hotel__image p {
+    font-size: 10px;
+    margin-top: 5px;
+  }
 }
 
 .dogh-facility-hotel__textblock {
@@ -2853,6 +3105,12 @@ CSS information
   margin-top: min(3.3167495854vw, 40px);
   line-height: 2;
 }
+@media screen and (max-width: 768px) {
+  .dogh-facility-hotel__text {
+    margin-top: 6px;
+    line-height: 1.6;
+  }
+}
 
 .dogh-facility-cards {
   display: flex;
@@ -2862,6 +3120,9 @@ CSS information
 @media screen and (max-width: 768px) {
   .dogh-facility-cards {
     flex-wrap: wrap;
+    margin-top: 29px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
@@ -2882,6 +3143,12 @@ CSS information
   margin-top: 7px;
   line-height: 1.3;
 }
+@media screen and (max-width: 768px) {
+  .dogh-facility-card__text {
+    margin-top: 3px;
+    font-size: 10px;
+  }
+}
 
 /* dogh-price
 ----------------------------------------------------------- */
@@ -2892,6 +3159,13 @@ CSS information
   background-image: url(../../images/bg_top-news.png);
   background-repeat: no-repeat;
   background-position: top center;
+}
+@media screen and (max-width: 768px) {
+  .dogh-price {
+    background-image: url(../../images/bg_top-news_sp.png);
+    margin-top: -666px;
+    padding-top: 256px;
+  }
 }
 
 .dogh-price__wrap {
@@ -2904,7 +3178,7 @@ CSS information
 @media screen and (max-width: 768px) {
   .dogh-price__wrap {
     border-radius: 10px 30px 10px 30px;
-    padding: 48px 20px 43px;
+    padding: 48px 20px 39px;
   }
 }
 .dogh-price__wrap h2 img {
@@ -2926,6 +3200,8 @@ CSS information
 }
 @media screen and (max-width: 768px) {
   .dogh-price__photo {
+    max-width: 253px;
+    width: 100%;
     top: -20px;
   }
 }
@@ -2968,6 +3244,11 @@ CSS information
   width: 18.5%;
   text-align: left;
 }
+@media screen and (max-width: 768px) {
+  .dogh-price__pricelist table .second-tr th {
+    padding-left: 5px;
+  }
+}
 .dogh-price__pricelist table thead {
   background-color: #333333;
   color: #fff;
@@ -2979,11 +3260,26 @@ CSS information
   text-align: left;
   padding-left: min(8.2918739635vw, 100px);
 }
+@media screen and (max-width: 768px) {
+  .dogh-price__pricelist table thead tr .table-head {
+    padding-left: 65px;
+  }
+}
 .dogh-price__pricelist table thead tr .table-head.-pl {
   padding-left: min(5.4726368159vw, 66px);
 }
+@media screen and (max-width: 768px) {
+  .dogh-price__pricelist table thead tr .table-head.-pl {
+    padding-left: 65px;
+  }
+}
 .dogh-price__pricelist table thead tr th {
   padding: min(0.4975124378vw, 6px) 0;
+}
+@media screen and (max-width: 768px) {
+  .dogh-price__pricelist table thead tr th {
+    padding: 5px 0;
+  }
 }
 .dogh-price__pricelist table thead tr th:first-child {
   vertical-align: middle;
@@ -2997,6 +3293,11 @@ CSS information
   padding: min(1.4925373134vw, 18px) 0;
   text-align: left;
 }
+@media screen and (max-width: 768px) {
+  .dogh-price__pricelist table tbody tr td {
+    padding: 12px 0;
+  }
+}
 .dogh-price__pricelist table tbody tr td:first-child {
   width: 31%;
   padding-left: min(4.0630182421vw, 49px);
@@ -3005,8 +3306,18 @@ CSS information
 .dogh-price__pricelist table tbody tr td:nth-child(n+2) {
   width: 18.5%;
 }
+@media screen and (max-width: 768px) {
+  .dogh-price__pricelist table tbody tr td:nth-child(n+2) {
+    padding-left: 5px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .dogh-price__pricelist table tbody tr {
+    font-size: 15px;
+  }
+}
 .dogh-price__pricelist table tbody tr:nth-child(even) {
-  background-color: #F2EBDE;
+  background-color: #f2ebde;
 }
 
 .dogh-price__attention {
@@ -3016,7 +3327,7 @@ CSS information
 }
 @media screen and (max-width: 768px) {
   .dogh-price__attention {
-    margin-top: 12px;
+    margin-top: 8px;
   }
 }
 
@@ -3029,6 +3340,15 @@ CSS information
   background-repeat: no-repeat;
   background-position: top center;
   padding-bottom: 175px;
+}
+@media screen and (max-width: 768px) {
+  .dogh-rule {
+    margin-top: -207px;
+    padding-top: 26px;
+    padding-left: 10px;
+    padding-bottom: 16px;
+    background-image: url(../../images/dog_hotel/bg_dogh_rule-sp.png);
+  }
 }
 
 .dogh-rule__inner {
@@ -3057,6 +3377,7 @@ CSS information
 @media screen and (max-width: 768px) {
   .dogh-rule__content {
     flex-direction: column;
+    margin-top: -6px;
   }
 }
 
@@ -3108,13 +3429,23 @@ CSS information
   font-size: min(1.1608623549vw, 14px);
   line-height: 2.14;
 }
+@media screen and (max-width: 768px) {
+  .dogh-rule__text {
+    font-size: 11px;
+    margin-top: 4px;
+    line-height: 1.6;
+  }
+}
 
 .dogh-rule__image {
   width: min(40.0497512438vw, 483px);
 }
 @media screen and (max-width: 768px) {
   .dogh-rule__image {
-    width: 100%;
+    margin-top: 26px;
+    width: 84%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -3161,6 +3492,13 @@ CSS information
   background-repeat: no-repeat;
   background-position: top center;
 }
+@media screen and (max-width: 768px) {
+  .cath-about {
+    margin-top: -67px;
+    padding-top: 240px;
+    background-image: url(../images/bg_2nd_mv_sp.png);
+  }
+}
 
 .cath-about__inner {
   margin-top: -146px;
@@ -3186,6 +3524,11 @@ CSS information
   padding-top: 52px;
   text-align: center;
 }
+@media screen and (max-width: 768px) {
+  .cath-about h1 {
+    padding-top: 2px;
+  }
+}
 
 .cath-about h1 img {
   width: min(45.4394693201vw, 548px);
@@ -3201,11 +3544,13 @@ CSS information
   padding-top: min(7.2139303483vw, 87px);
   text-align: center;
   font-size: min(2.4875621891vw, 30px);
-  letter-spacing: 5px;
+  letter-spacing: 0.2em;
 }
 @media screen and (max-width: 768px) {
   .cath-about h2 {
     font-size: 15px;
+    padding-top: 15px;
+    padding-left: 10px;
     text-align: left;
     white-space: nowrap;
   }
@@ -3218,6 +3563,8 @@ CSS information
 }
 @media screen and (max-width: 768px) {
   .cath-about p {
+    padding-left: 10px;
+    padding-top: 21px;
     line-height: 1.6;
     text-align: left;
   }
@@ -3233,6 +3580,12 @@ CSS information
   background-repeat: no-repeat;
   background-position: top center;
 }
+@media screen and (max-width: 768px) {
+  .cath-facility {
+    margin-top: -617px;
+    background-image: url(../../images/bg_cath_facility-sp.png);
+  }
+}
 
 .cath-facility__inner {
   position: relative;
@@ -3243,9 +3596,21 @@ CSS information
   top: -203px;
   left: 0;
 }
+@media screen and (max-width: 1024px) {
+  .cath-facility__maru1 {
+    top: 1px;
+    right: auto;
+    left: 37%;
+  }
+}
 
 .cath-facility__maru1 img {
   width: min(16.583747927vw, 200px);
+}
+@media screen and (max-width: 768px) {
+  .cath-facility__maru1 img {
+    width: 100px;
+  }
 }
 
 .cath-facility__maru2 {
@@ -3253,19 +3618,30 @@ CSS information
   top: -116px;
   right: 0;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
   .cath-facility__maru2 {
-    top: -20px;
+    top: 72px;
+    left: 6%;
   }
 }
 
 .cath-facility__maru2 img {
   width: min(16.583747927vw, 200px);
 }
+@media screen and (max-width: 768px) {
+  .cath-facility__maru2 img {
+    width: 100px;
+  }
+}
 
 .cath-facility__title {
   padding-top: min(19.0713101161vw, 230px);
   text-align: right;
+}
+@media screen and (max-width: 768px) {
+  .cath-facility__title {
+    padding-top: 132px;
+  }
 }
 
 .cath-facility__title img {
@@ -3285,6 +3661,9 @@ CSS information
 @media screen and (max-width: 768px) {
   .cath-facility-hotel {
     flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 12px;
   }
 }
 
@@ -3294,7 +3673,7 @@ CSS information
 @media screen and (max-width: 768px) {
   .cath-facility-hotel__image {
     width: 100%;
-    margin-top: 26px;
+    margin-top: 40px;
   }
 }
 .cath-facility-hotel__image img {
@@ -3308,6 +3687,12 @@ CSS information
 .cath-facility-hotel__image p {
   text-align: center;
   margin-top: 13px;
+}
+@media screen and (max-width: 768px) {
+  .cath-facility-hotel__image p {
+    font-size: 10px;
+    margin-top: 5px;
+  }
 }
 
 .cath-facility-hotel__textblock {
@@ -3359,6 +3744,12 @@ CSS information
   margin-top: min(3.3167495854vw, 40px);
   line-height: 2;
 }
+@media screen and (max-width: 768px) {
+  .cath-facility-hotel__text {
+    margin-top: 6px;
+    line-height: 1.6;
+  }
+}
 
 .cath-facility-cards {
   display: flex;
@@ -3368,6 +3759,8 @@ CSS information
 @media screen and (max-width: 768px) {
   .cath-facility-cards {
     flex-wrap: wrap;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
@@ -3382,10 +3775,21 @@ CSS information
     margin-top: 19px;
   }
 }
+@media screen and (max-width: 768px) and (max-width: 768px) {
+  .cath-facility-card:nth-child(n+3) {
+    margin-top: 33px;
+  }
+}
 
 .cath-facility-card__text {
   text-align: center;
   margin-top: 15px;
+}
+@media screen and (max-width: 768px) {
+  .cath-facility-card__text {
+    margin-top: 3px;
+    font-size: 10px;
+  }
 }
 
 /* cath-price
@@ -3398,6 +3802,13 @@ CSS information
   background-repeat: no-repeat;
   background-position: top center;
 }
+@media screen and (max-width: 768px) {
+  .cath-price {
+    background-image: url(../../images/bg_top-news_sp.png);
+    margin-top: -621px;
+    padding-top: 246px;
+  }
+}
 
 .cath-price__wrap {
   background-color: #fff;
@@ -3409,7 +3820,7 @@ CSS information
 @media screen and (max-width: 768px) {
   .cath-price__wrap {
     border-radius: 10px 30px 10px 30px;
-    padding: 48px 20px 43px;
+    padding: 48px 20px 23px;
   }
 }
 .cath-price__wrap h2 img {
@@ -3431,6 +3842,8 @@ CSS information
 }
 @media screen and (max-width: 768px) {
   .cath-price__photo {
+    max-width: 253px;
+    width: 100%;
     top: -20px;
   }
 }
@@ -3460,6 +3873,7 @@ CSS information
 @media screen and (max-width: 768px) {
   .cath-price__pricelist table caption {
     margin-bottom: 7px;
+    font-size: 10px;
   }
 }
 .cath-price__pricelist table thead {
@@ -3472,6 +3886,11 @@ CSS information
 .cath-price__pricelist table thead tr th {
   padding: min(1.9071310116vw, 23px) min(4.0630182421vw, 49px);
 }
+@media screen and (max-width: 768px) {
+  .cath-price__pricelist table thead tr th {
+    padding: 15px 0 17px 14px;
+  }
+}
 .cath-price__pricelist table thead tr th:first-child {
   vertical-align: middle;
   -moz-text-align-last: left;
@@ -3481,12 +3900,22 @@ CSS information
   padding: min(1.4925373134vw, 18px) 0;
   text-align: left;
 }
+@media screen and (max-width: 768px) {
+  .cath-price__pricelist table tbody tr td {
+    padding: 16px 0;
+  }
+}
 .cath-price__pricelist table tbody tr td:first-child {
   padding-left: min(4.0630182421vw, 49px);
   font-size: min(1.3266998342vw, 16px);
 }
 .cath-price__pricelist table tbody tr td span {
   font-size: min(1.824212272vw, 22px);
+}
+@media screen and (max-width: 768px) {
+  .cath-price__pricelist table tbody tr td span {
+    font-size: 15px;
+  }
 }
 .cath-price__pricelist table tbody tr:nth-child(even) {
   background-color: #F2EBDE;
@@ -3512,6 +3941,15 @@ CSS information
   background-repeat: no-repeat;
   background-position: top center;
   padding-bottom: 140px;
+}
+@media screen and (max-width: 768px) {
+  .cath-rule {
+    margin-top: -230px;
+    padding-top: 27px;
+    padding-left: 10px;
+    padding-bottom: 18px;
+    background-image: url(../../images/bg_cath_rule-sp.png);
+  }
 }
 
 .cath-rule__inner {
@@ -3540,6 +3978,7 @@ CSS information
 @media screen and (max-width: 768px) {
   .cath-rule__content {
     flex-direction: column;
+    margin-top: -9px;
   }
 }
 
@@ -3591,13 +4030,23 @@ CSS information
   font-size: min(1.1608623549vw, 14px);
   line-height: 2.14;
 }
+@media screen and (max-width: 768px) {
+  .cath-rule__text {
+    font-size: 11px;
+    margin-top: 4px;
+    line-height: 1.6;
+  }
+}
 
 .cath-rule__image {
   width: min(40.0497512438vw, 483px);
 }
 @media screen and (max-width: 768px) {
   .cath-rule__image {
-    width: 100%;
+    margin-top: 26px;
+    width: 84%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -3647,7 +4096,9 @@ CSS information
 }
 @media screen and (max-width: 768px) {
   .dogtrim-about {
-    padding-top: 420px;
+    margin-top: -67px;
+    padding-top: 240px;
+    background-image: url(../images/bg_2nd_mv_sp.png);
   }
 }
 
@@ -3701,7 +4152,7 @@ CSS information
 }
 @media screen and (max-width: 768px) {
   .dogtrim-about__select {
-    margin-top: 20px;
+    margin-top: 16px;
     max-width: 100%;
   }
 }
@@ -3720,7 +4171,7 @@ CSS information
   .dogtrim-about__button {
     max-width: 150px;
     width: 100%;
-    padding: 7px 0;
+    padding: 5px 0;
   }
 }
 .dogtrim-about__button a {
@@ -3752,7 +4203,7 @@ CSS information
 }
 @media screen and (max-width: 768px) {
   .dogtrim-about__button::before {
-    left: 58%;
+    left: 55%;
     border: 7px solid transparent;
     border-top: 7px solid #ee8691;
   }
@@ -3774,7 +4225,8 @@ CSS information
   .dogtrim-about__button::after {
     width: 7px;
     height: 6px;
-    top: 12px;
+    top: 10px;
+    right: 9px;
   }
 }
 
@@ -3782,10 +4234,12 @@ CSS information
   padding-top: min(8.0431177446vw, 97px);
   text-align: center;
   font-size: min(2.4875621891vw, 30px);
-  letter-spacing: 5px;
+  letter-spacing: 0.2em;
 }
 @media screen and (max-width: 768px) {
   .dogtrim-about h2 {
+    padding-top: 26px;
+    padding-left: 10px;
     font-size: 15px;
     text-align: left;
   }
@@ -3798,7 +4252,8 @@ CSS information
 }
 @media screen and (max-width: 768px) {
   .dogtrim-about p {
-    padding-top: 20px;
+    padding-top: 14px;
+    padding-left: 10px;
     text-align: left;
     line-height: 1.6;
   }
@@ -3812,7 +4267,9 @@ CSS information
 @media screen and (max-width: 768px) {
   .dogtrim-about__cards {
     flex-wrap: wrap;
-    margin-top: 28px;
+    margin-top: 26px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
@@ -3838,6 +4295,13 @@ CSS information
   background-repeat: no-repeat;
   background-position: top center;
 }
+@media screen and (max-width: 768px) {
+  .dogtrim-price {
+    margin-top: -718px;
+    padding-top: 98px;
+    background-image: url(../../images/bg_dogtrim_price-sp.png);
+  }
+}
 
 .dogtrim-price__wrap {
   background-color: #fff;
@@ -3849,7 +4313,7 @@ CSS information
 @media screen and (max-width: 768px) {
   .dogtrim-price__wrap {
     border-radius: 10px 30px 10px 30px;
-    padding: 57px 20px 12px;
+    padding: 50px 20px 28px;
   }
 }
 .dogtrim-price__wrap h2 img {
@@ -4015,6 +4479,11 @@ CSS information
   width: 965px;
   text-align: left;
 }
+@media screen and (max-width: 768px) {
+  .dogtrim-price__tabs .tab-panel table {
+    width: 660px;
+  }
+}
 .dogtrim-price__tabs .tab-panel table:nth-child(n+2) {
   margin-top: 45px;
 }
@@ -4031,13 +4500,29 @@ CSS information
   background-color: #333333;
   font-size: min(1.3266998342vw, 16px);
 }
+@media screen and (max-width: 768px) {
+  .dogtrim-price__tabs .tab-panel table thead .mainhead {
+    font-size: 11px;
+  }
+}
 .dogtrim-price__tabs .tab-panel table thead .mainhead th {
   padding-top: 22px;
   padding-bottom: 24px;
 }
+@media screen and (max-width: 768px) {
+  .dogtrim-price__tabs .tab-panel table thead .mainhead th {
+    padding-top: 14px;
+    padding-bottom: 18px;
+  }
+}
 .dogtrim-price__tabs .tab-panel table thead .subhead {
   background-color: #5c5c5c;
   font-size: min(1.3266998342vw, 16px);
+}
+@media screen and (max-width: 768px) {
+  .dogtrim-price__tabs .tab-panel table thead .subhead {
+    font-size: 11px;
+  }
 }
 .dogtrim-price__tabs .tab-panel table thead .subhead th {
   padding: 6px 0;
@@ -4058,12 +4543,33 @@ CSS information
   font-size: min(1.824212272vw, 22px);
   padding: min(1.3266998342vw, 16px) 0 min(1.7412935323vw, 21px);
 }
+@media screen and (max-width: 768px) {
+  .dogtrim-price__tabs .tab-panel table tbody tr td {
+    padding: 11px 0;
+  }
+}
 .dogtrim-price__tabs .tab-panel table tbody tr td span {
   font-size: min(1.3266998342vw, 16px);
+}
+@media screen and (max-width: 768px) {
+  .dogtrim-price__tabs .tab-panel table tbody tr td span {
+    font-size: 11px;
+  }
 }
 .dogtrim-price__tabs .tab-panel table tbody tr td:first-child {
   font-size: min(1.3266998342vw, 16px);
   padding-left: min(1.9071310116vw, 23px);
+}
+@media screen and (max-width: 768px) {
+  .dogtrim-price__tabs .tab-panel table tbody tr td:first-child {
+    font-size: 11px;
+    padding-left: 14px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .dogtrim-price__tabs .tab-panel table tbody tr td:nth-child(n+2) {
+    font-size: 15px;
+  }
 }
 .dogtrim-price__tabs .tab-panel table tbody tr .text-center {
   text-align: center;
@@ -4086,7 +4592,7 @@ CSS information
 }
 @media screen and (max-width: 768px) {
   .dogtrim-price-rules {
-    margin-top: 17px;
+    margin-top: 15px;
   }
 }
 
@@ -4112,6 +4618,11 @@ CSS information
 .dogtrim-price-rules__text p {
   font-size: min(1.2437810945vw, 15px);
   line-height: 1.6;
+}
+@media screen and (max-width: 768px) {
+  .dogtrim-price-rules__text p {
+    font-size: 11px;
+  }
 }
 .dogtrim-price-rules__text .text-red {
   color: #ff0000;
@@ -4140,6 +4651,15 @@ CSS information
   background-position: top center;
   position: relative;
 }
+@media screen and (max-width: 768px) {
+  .dogtrim-flow {
+    background-image: url(../../images/bg_dogtrim_flow-sp.png);
+    margin-top: -441px;
+    padding-top: 117px;
+    padding-bottom: 84px;
+  }
+}
+
 .dogtrim-flow__photo {
   position: absolute;
   top: min(-1.2437810945vw, -15px);
@@ -4149,10 +4669,10 @@ CSS information
 }
 @media screen and (max-width: 768px) {
   .dogtrim-flow__photo {
-    max-width: 309px;
+    max-width: 305px;
     width: 100%;
-    top: 0;
-    left: 50%;
+    top: -22px;
+    left: 51%;
   }
 }
 
@@ -4168,6 +4688,11 @@ CSS information
   border-radius: 15px 40px 15px 40px;
   position: relative;
   z-index: 10;
+}
+@media screen and (max-width: 768px) {
+  .trim-flow-accordion__item {
+    border-radius: 10px 30px 10px 30px;
+  }
 }
 .trim-flow-accordion__item:nth-child(n+3) {
   margin-top: 21px;
@@ -4424,6 +4949,13 @@ CSS information
   background-repeat: no-repeat;
   background-position: top center;
 }
+@media screen and (max-width: 768px) {
+  .cattrim-about {
+    margin-top: -67px;
+    padding-top: 240px;
+    background-image: url(../images/bg_2nd_mv_sp.png);
+  }
+}
 
 .cattrim-about__inner {
   margin-top: -146px;
@@ -4432,6 +4964,12 @@ CSS information
   .cattrim-about__inner {
     display: flex;
     flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cattrim-about__title {
+    margin-top: 10px;
   }
 }
 
@@ -4447,6 +4985,11 @@ CSS information
 .cattrim-about h1 {
   padding-top: 52px;
   text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .cattrim-about h1 {
+    padding-top: 0;
+  }
 }
 
 .cattrim-about h1 img {
@@ -4489,7 +5032,7 @@ CSS information
   .cattrim-about__button {
     max-width: 150px;
     width: 100%;
-    padding: 7px 0;
+    padding: 5px 0;
   }
 }
 .cattrim-about__button a {
@@ -4521,7 +5064,7 @@ CSS information
 }
 @media screen and (max-width: 768px) {
   .cattrim-about__button::before {
-    left: 58%;
+    left: 55%;
     border: 7px solid transparent;
     border-top: 7px solid #67b5b9;
   }
@@ -4543,7 +5086,8 @@ CSS information
   .cattrim-about__button::after {
     width: 7px;
     height: 6px;
-    top: 12px;
+    top: 10px;
+    right: 9px;
   }
 }
 
@@ -4551,10 +5095,12 @@ CSS information
   padding-top: min(8.0431177446vw, 97px);
   text-align: center;
   font-size: min(2.4875621891vw, 30px);
-  letter-spacing: 5px;
+  letter-spacing: 0.2em;
 }
 @media screen and (max-width: 768px) {
   .cattrim-about h2 {
+    padding-left: 10px;
+    padding-top: 24px;
     font-size: 15px;
     text-align: left;
   }
@@ -4567,7 +5113,8 @@ CSS information
 }
 @media screen and (max-width: 768px) {
   .cattrim-about p {
-    padding-top: 20px;
+    padding-top: 15px;
+    padding-left: 10px;
     text-align: left;
     line-height: 1.6;
   }
@@ -4582,6 +5129,8 @@ CSS information
   .cattrim-about__cards {
     flex-wrap: wrap;
     margin-top: 28px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
@@ -4607,6 +5156,13 @@ CSS information
   background-repeat: no-repeat;
   background-position: top center;
 }
+@media screen and (max-width: 768px) {
+  .cattrim-price {
+    background-image: url(../../images/bg_cattrim_price-sp.png);
+    margin-top: -719px;
+    padding-top: 97px;
+  }
+}
 
 .cattrim-price__wrap {
   background-color: #fff;
@@ -4618,7 +5174,7 @@ CSS information
 @media screen and (max-width: 768px) {
   .cattrim-price__wrap {
     border-radius: 10px 30px 10px 30px;
-    padding: 57px 20px 12px;
+    padding: 50px 20px 12px;
   }
 }
 .cattrim-price__wrap h2 img {
@@ -4696,7 +5252,7 @@ CSS information
   }
 }
 .cattrim-price__tablist .tab {
-  background-color: #F6C2C8;
+  background-color: #f6c2c8;
   color: #fff;
   display: inline-block;
   width: min(31.0945273632vw, 375px);
@@ -4739,6 +5295,11 @@ CSS information
   width: 965px;
   text-align: center;
 }
+@media screen and (max-width: 768px) {
+  .cattrim-price__tabs .tab-panel table {
+    width: 660px;
+  }
+}
 .cattrim-price__tabs .tab-panel table:nth-child(n+2) {
   margin-top: 45px;
 }
@@ -4751,17 +5312,39 @@ CSS information
 .cattrim-price__tabs .tab-panel table thead tr th:first-child {
   padding-left: min(1.9071310116vw, 23px);
 }
+@media screen and (max-width: 768px) {
+  .cattrim-price__tabs .tab-panel table thead tr th:first-child {
+    text-align: left;
+    padding-left: 15px;
+  }
+}
 .cattrim-price__tabs .tab-panel table thead .mainhead {
   background-color: #333333;
   font-size: min(1.3266998342vw, 16px);
+}
+@media screen and (max-width: 768px) {
+  .cattrim-price__tabs .tab-panel table thead .mainhead {
+    font-size: 11px;
+  }
 }
 .cattrim-price__tabs .tab-panel table thead .mainhead th {
   padding-top: 22px;
   padding-bottom: 24px;
 }
+@media screen and (max-width: 768px) {
+  .cattrim-price__tabs .tab-panel table thead .mainhead th {
+    padding-top: 14px;
+    padding-bottom: 18px;
+  }
+}
 .cattrim-price__tabs .tab-panel table thead .subhead {
   background-color: #5c5c5c;
   font-size: min(1.3266998342vw, 16px);
+}
+@media screen and (max-width: 768px) {
+  .cattrim-price__tabs .tab-panel table thead .subhead {
+    font-size: 11px;
+  }
 }
 .cattrim-price__tabs .tab-panel table thead .subhead th {
   padding: 15px 0;
@@ -4779,9 +5362,20 @@ CSS information
   font-size: min(1.824212272vw, 22px);
   padding: min(1.3266998342vw, 16px) 0 min(1.7412935323vw, 21px);
 }
+@media screen and (max-width: 768px) {
+  .cattrim-price__tabs .tab-panel table tbody tr td {
+    font-size: 15px;
+  }
+}
 .cattrim-price__tabs .tab-panel table tbody tr td:first-child {
   font-size: min(1.3266998342vw, 16px);
   padding-left: min(1.9071310116vw, 23px);
+}
+@media screen and (max-width: 768px) {
+  .cattrim-price__tabs .tab-panel table tbody tr td:first-child {
+    text-align: left;
+    padding-left: 15px;
+  }
 }
 .cattrim-price__tabs .tab-panel table tbody tr .text-center {
   text-align: center;
@@ -4812,17 +5406,17 @@ CSS information
 ============================*/
 @media screen and (max-width: 768px) {
   #cattrim-price-panel-1 .mainhead th:nth-child(1) {
-    width: 5%;
+    width: 3%;
   }
 }
 @media screen and (max-width: 768px) {
   #cattrim-price-panel-1 .mainhead th:nth-child(2) {
-    width: 14%;
+    width: 6%;
   }
 }
 @media screen and (max-width: 768px) {
   #cattrim-price-panel-1 .mainhead th:nth-child(3) {
-    width: 17%;
+    width: 8%;
   }
 }
 
@@ -4897,6 +5491,14 @@ CSS information
   background-position: top center;
   position: relative;
 }
+@media screen and (max-width: 768px) {
+  .cattrim-flow {
+    margin-top: -246px;
+    padding-top: 125px;
+    padding-bottom: 84px;
+    background-image: url(../../images/bg_cattrim_flow-sp.png);
+  }
+}
 
 .cattrim-flow__photo {
   position: absolute;
@@ -4909,7 +5511,7 @@ CSS information
   .cattrim-flow__photo {
     max-width: 309px;
     width: 100%;
-    top: 0;
+    top: -32px;
     left: 50%;
   }
 }
@@ -4957,6 +5559,13 @@ CSS information
   background-repeat: no-repeat;
   background-position: top center;
 }
+@media screen and (max-width: 768px) {
+  .shop-about {
+    margin-top: -67px;
+    padding-top: 240px;
+    background-image: url(../images/bg_2nd_mv_sp.png);
+  }
+}
 
 .shop-about__inner {
   margin-top: -146px;
@@ -4965,6 +5574,12 @@ CSS information
   .shop-about__inner {
     display: flex;
     flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .shop-about__title {
+    margin-top: 11px;
   }
 }
 
@@ -4982,6 +5597,11 @@ CSS information
   padding-top: 52px;
   text-align: center;
 }
+@media screen and (max-width: 768px) {
+  .shop-about h1 {
+    padding-top: 1px;
+  }
+}
 
 .shop-about h1 img {
   width: min(45.4394693201vw, 548px);
@@ -4997,11 +5617,13 @@ CSS information
   padding-top: min(7.2139303483vw, 87px);
   text-align: center;
   font-size: min(2.4875621891vw, 30px);
-  letter-spacing: 0.1em;
+  letter-spacing: 0.2em;
 }
 @media screen and (max-width: 768px) {
   .shop-about h2 {
     font-size: 15px;
+    padding-top: 20px;
+    padding-left: 10px;
     text-align: left;
     white-space: nowrap;
   }
@@ -5016,6 +5638,7 @@ CSS information
   .shop-about p {
     line-height: 1.6;
     text-align: left;
+    padding-left: 10px;
   }
 }
 
@@ -5030,7 +5653,7 @@ CSS information
   .shop-about__content {
     border-radius: 10px 30px 10px 30px;
     padding: 20px 20px 0;
-    margin-top: 31px;
+    margin-top: 28px;
   }
 }
 
@@ -5057,7 +5680,7 @@ CSS information
     max-width: 120px;
     width: 100%;
     font-size: 11px;
-    padding: 6px 0;
+    padding: 5px 0 3px;
   }
 }
 .shop-about__details .shop-about__detail .shop-about__data {
@@ -5066,7 +5689,10 @@ CSS information
 }
 @media screen and (max-width: 768px) {
   .shop-about__details .shop-about__detail .shop-about__data {
-    padding-top: 9px;
+    padding-top: 7px;
+  }
+  .shop-about__details .shop-about__detail .shop-about__data.-nowrap {
+    white-space: nowrap;
   }
 }
 .shop-about__details .shop-about__detail .shop-about__data span {
@@ -5077,7 +5703,7 @@ CSS information
 }
 @media screen and (max-width: 768px) {
   .shop-about__details .shop-about__detail + .shop-about__detail {
-    margin-top: 12px;
+    margin-top: 10px;
   }
 }
 
@@ -5088,6 +5714,7 @@ CSS information
 @media screen and (max-width: 768px) {
   .shop-about__shopimages {
     flex-direction: column;
+    margin-top: 22px;
   }
 }
 
@@ -5103,6 +5730,12 @@ CSS information
 .shop-about__shopimage .shop-about__shoptext {
   padding-top: 11px;
   line-height: 1;
+}
+@media screen and (max-width: 768px) {
+  .shop-about__shopimage .shop-about__shoptext {
+    text-align: center;
+    padding-top: 5px;
+  }
 }
 
 .shop-about__image {
@@ -5127,6 +5760,13 @@ CSS information
   background-image: url(../../images/bg_shop_access.png);
   background-repeat: no-repeat;
   background-position: top center;
+}
+@media screen and (max-width: 768px) {
+  .shop-access {
+    margin-top: -575px;
+    padding: 43px 10px 80px;
+    background-image: url(../../images/bg_shop_access-sp.png);
+  }
 }
 
 .shop-access__title {
@@ -5168,7 +5808,7 @@ CSS information
 }
 @media screen and (max-width: 768px) {
   .shop-access__location {
-    margin-top: 16px;
+    margin-top: 21px;
   }
 }
 
@@ -5183,6 +5823,7 @@ CSS information
   .shop-access__guides {
     flex-direction: column;
     padding: 20px 20px 16px;
+    margin-top: 16px;
   }
 }
 
@@ -5192,7 +5833,7 @@ CSS information
 @media screen and (max-width: 768px) {
   .shop-access__guide + .shop-access__guide {
     margin-left: 0;
-    margin-top: 37px;
+    margin-top: 40px;
   }
 }
 
@@ -5207,8 +5848,8 @@ CSS information
 @media screen and (max-width: 768px) {
   .shop-access__guidename {
     width: 171.5px;
-    padding-top: 4.7px;
-    padding-bottom: 5.8px;
+    padding-top: 1.7px;
+    padding-bottom: 0.8px;
   }
 }
 .shop-access__guidename.-kanazawa {
@@ -5224,7 +5865,8 @@ CSS information
 }
 @media screen and (max-width: 768px) {
   .shop-access__guidetext {
-    margin-top: 12px;
+    margin-top: 7px;
+    line-height: 1.6;
   }
 }
 
@@ -5286,6 +5928,13 @@ CSS information
   background-repeat: no-repeat;
   background-position: top center;
 }
+@media screen and (max-width: 768px) {
+  .news-about {
+    margin-top: -67px;
+    padding-top: 240px;
+    background-image: url(../images/bg_2nd_mv_sp.png);
+  }
+}
 
 .news-about__inner {
   margin-top: -146px;
@@ -5294,6 +5943,12 @@ CSS information
   .news-about__inner {
     display: flex;
     flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .news-about__title {
+    margin-top: 11px;
   }
 }
 
@@ -5315,6 +5970,7 @@ CSS information
 }
 @media screen and (max-width: 768px) {
   .news-about__wrap {
+    margin-top: 30px;
     border-radius: 10px 30px 10px 30px;
     padding: 20px 20px 35px;
     position: relative;

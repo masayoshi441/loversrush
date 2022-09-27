@@ -23,7 +23,9 @@
   background-repeat: no-repeat;
   background-position: top center;
   @include mq(medium, max) {
-    padding-top: 420px;
+    margin-top: -67px;
+    padding-top: 240px;
+    background-image: url(../images/bg_2nd_mv_sp.png);
   }
 }
 .dogtrim-about__inner {
@@ -63,7 +65,7 @@
   display: flex;
   justify-content: space-between;
   @include mq(medium, max) {
-    margin-top: 20px;
+    margin-top: 16px;
     max-width: 100%;
   }
 }
@@ -79,7 +81,7 @@
   @include mq(medium, max) {
     max-width: 150px;
     width: 100%;
-    padding: 7px 0;
+    padding: 5px 0;
   }
   a {
     color: #fff;
@@ -106,7 +108,7 @@
     border: 15px solid transparent;
     border-top: 15px solid #ee8691;
     @include mq(medium, max) {
-      left: 58%;
+      left: 55%;
       border: 7px solid transparent;
       border-top: 7px solid #ee8691;
     }
@@ -126,7 +128,8 @@
     @include mq(medium, max) {
       width: 7px;
       height: 6px;
-      top: 12px;
+      top: 10px;
+      right: 9px;
     }
   }
 }
@@ -134,8 +137,10 @@
   padding-top: min(toVw(97), 97px);
   text-align: center;
   font-size: min(toVw(30), 30px);
-  letter-spacing: 5px;
+  letter-spacing: 0.2em;
   @include mq(medium, max) {
+    padding-top: 26px;
+    padding-left: 10px;
     font-size: 15px;
     text-align: left;
   }
@@ -146,7 +151,8 @@
   text-align: center;
   line-height: 3.2;
   @include mq(medium, max) {
-    padding-top: 20px;
+    padding-top: 14px;
+    padding-left: 10px;
     text-align: left;
     line-height: 1.6;
   }
@@ -157,7 +163,9 @@
   margin-top: 75px;
   @include mq(medium, max) {
     flex-wrap: wrap;
-    margin-top: 28px;
+    margin-top: 26px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 .dogtrim-about__card {
@@ -179,6 +187,11 @@
   background-image: url(../../images/bg_dogtrim_price.png);
   background-repeat: no-repeat;
   background-position: top center;
+  @include mq(medium, max) {
+    margin-top: -718px;
+    padding-top: 98px;
+    background-image: url(../../images/bg_dogtrim_price-sp.png);
+  }
 }
 .dogtrim-price__inner.mainIn {
 }
@@ -190,7 +203,7 @@
   position: relative;
   @include mq(medium, max) {
     border-radius: 10px 30px 10px 30px;
-    padding: 57px 20px 12px;
+    padding: 50px 20px 28px;
   }
   h2 {
     img {
@@ -347,6 +360,9 @@
   table {
     width: 965px;
     text-align: left;
+    @include mq(medium, max) {
+      width: 660px;
+    }
     &:nth-child(n + 2) {
       margin-top: 45px;
     }
@@ -363,14 +379,24 @@
       .mainhead {
         background-color: $main_color;
         font-size: min(toVw(16), 16px);
+        @include mq(medium, max) {
+          font-size: 11px;
+        }
         th {
           padding-top: 22px;
           padding-bottom: 24px;
+          @include mq(medium, max) {
+            padding-top: 14px;
+            padding-bottom: 18px;
+          }
         }
       }
       .subhead {
         background-color: #5c5c5c;
         font-size: min(toVw(16), 16px);
+        @include mq(medium, max) {
+          font-size: 11px;
+        }
         th {
           padding: 6px 0;
           &:nth-child(n + 2) {
@@ -398,12 +424,27 @@
         td {
           font-size: min(toVw(22), 22px);
           padding: min(toVw(16), 16px) 0 min(toVw(21), 21px);
+          @include mq(medium, max) {
+            padding: 11px 0;
+          }
           span {
             font-size: min(toVw(16), 16px);
+            @include mq(medium, max) {
+              font-size: 11px;
+            }
           }
           &:first-child {
             font-size: min(toVw(16), 16px);
             padding-left: min(toVw(23), 23px);
+            @include mq(medium, max) {
+              font-size: 11px;
+              padding-left: 14px;
+            }
+          }
+          &:nth-child(n+2){
+            @include mq(medium, max) {
+              font-size: 15px;
+            }
           }
         }
         .text-center {
@@ -440,7 +481,7 @@
 .dogtrim-price-rules {
   margin-top: 53px;
   @include mq(medium, max) {
-    margin-top: 17px;
+    margin-top: 15px;
   }
 }
 .dogtrim-price-rules__photo {
@@ -461,6 +502,9 @@
   p {
     font-size: min(toVw(15), 15px);
     line-height: 1.6;
+    @include mq(medium, max) {
+      font-size: 11px;
+    }
   }
   .text-red {
     color: #ff0000;
@@ -487,6 +531,10 @@
   background-position: top center;
   position: relative;
   @include mq(medium, max) {
+    background-image: url(../../images/bg_dogtrim_flow-sp.png);
+    margin-top: -441px;
+    padding-top: 117px;
+    padding-bottom: 84px;
   }
 }
 .dogtrim-flow__inner.mainIn {
@@ -498,10 +546,10 @@
   transform: translateX(-50%);
   width: min(toVw(846), 846px);
   @include mq(medium, max) {
-    max-width: 309px;
+    max-width: 305px;
     width: 100%;
-    top: 0;
-    left: 50%;
+    top: -22px;
+    left: 51%;
   }
 }
 .trim-flow-accordion {
@@ -515,6 +563,9 @@
   border-radius: 15px 40px 15px 40px;
   position: relative;
   z-index: 10;
+  @include mq(medium, max) {
+    border-radius: 10px 30px 10px 30px;
+  }
   &:nth-child(n + 3) {
     margin-top: 21px;
   }

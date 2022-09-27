@@ -72,7 +72,7 @@ a:hover {
 /*ロゴ、電話番号のエリア*/
 #header {
   position: fixed;
-  z-index: 2;
+  z-index: 50;
   width: 100%;
 }
 
@@ -104,13 +104,17 @@ a:hover {
     @include mq {
       width: 260px;
     }
+    @include mq(medium, max) {
+      width: 92%;
+    }
   }
 }
 #hTel {
   text-align: center;
 
   @include mq(medium, max) {
-    margin-top: 20px;
+    margin-top: 17px;
+    margin-left: 19px;
     width: 126px;
   }
   @include mq {
@@ -303,7 +307,9 @@ article h4 {
   background-position: right 20px center;
   background-repeat: no-repeat;
   @include mq(medium, max) {
-    padding: 11px 59px;
+    background-size: 9.1px 7.8px;
+    padding: 10px 53px;
+    background-position: right 12px center;
   }
 }
 
@@ -312,6 +318,9 @@ article h4 {
   position: relative;
   z-index: 3; /*z-indexの数値をあげて文字を背景よりも手前に表示*/
   color: #333;
+  @include mq(medium, max) {
+    font-size: 11px;
+  }
 }
 
 .btn:hover span {
@@ -397,6 +406,11 @@ footer {
   background-repeat: no-repeat;
   background-position: top center;
   position: relative;
+  @include mq(medium, max) {
+    background-image: url(../../images/bg_fot_sp.png);
+    margin-top: -120px;
+    padding-top: 104px;
+  }
 }
 
 .footer__inner {
@@ -438,6 +452,7 @@ footer {
   bottom: 0;
   @include mq(medium, max) {
     left: 0;
+    bottom: -25px;
     width: 105px;
   }
 }
@@ -471,6 +486,7 @@ footer {
     width: 50%;
     margin: 10px;
     @include mq(medium, max) {
+      width: 68%;
       margin-left: 0;
     }
     @include mq {
@@ -482,6 +498,7 @@ footer {
   padding-top: 10px;
   @include mq(medium, max) {
     font-size: 11px;
+    padding-top: 2px;
   }
 }
 
@@ -508,6 +525,9 @@ footer {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  @include mq(medium, max) {
+    height: 25px;
+  }
 }
 
 .c-pan {

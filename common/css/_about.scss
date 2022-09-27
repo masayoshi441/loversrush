@@ -22,6 +22,11 @@
   background-image: url(../images/bg_2nd_mv.png);
   background-repeat: no-repeat;
   background-position: top center;
+  @include mq(medium, max) {
+    margin-top: -67px;
+    padding-top: 240px;
+    background-image: url(../images/bg_2nd_mv_sp.png);
+  }
 }
 .about-about__inner {
   margin-top: -146px;
@@ -42,7 +47,7 @@
   padding-top: 52px;
   text-align: center;
   @include mq(medium, max) {
-    padding-top: 16px;
+    padding-top: 0 ;
   }
 }
 .about-about h1 img {
@@ -57,10 +62,11 @@
   padding-top: min(toVw(42), 42px);
   text-align: center;
   font-size: min(toVw(30), 30px);
-  letter-spacing: 5px;
+  letter-spacing: 0.2em;
   @include mq(medium, max) {
     font-size: 15px;
-    padding-top: 22px;
+    padding-top: 16px;
+    white-space: nowrap;
   }
 }
 
@@ -72,7 +78,7 @@
     font-size: 11px;
     text-align: left;
     line-height: 1.6;
-    padding-top: 17px;
+    padding-top: 11px;
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -87,6 +93,10 @@
   background-image: url(../../images/bg_top-hotel.png);
   background-repeat: no-repeat;
   background-position: top center;
+  @include mq(medium, max) {
+    background-image: url(../../images/about/bg_about_trim-sp.png);
+    margin-top: -625px;
+  }
 }
 .about-trim__inner {
   position: relative;
@@ -96,9 +106,16 @@
   position: absolute;
   top: 67px;
   left: 0;
+  @include mq(medium, max) {
+    top: 9px;
+    left: 5%;
+  }
 }
 .about-trim__maru1 img {
   width: min(toVw(258), 258px);
+  @include mq(medium, max) {
+    width: 100px;
+  }
 }
 
 .about-trim__maru2 {
@@ -106,16 +123,24 @@
   top: -80px;
   right: 0;
   @include mq(large, max) {
-    top: -20px;
+    top: 62px;
+    right: auto;
+    left: 38%;
   }
 }
 .about-trim__maru2 img {
   width: min(toVw(206), 206px);
+  @include mq(medium, max) {
+    width: 80px;
+  }
 }
 
 .about-trim__title {
   padding-top: min(toVw(256), 256px);
   text-align: right;
+  @include mq(medium, max) {
+    padding-top: 154px;
+  }
 }
 .about-trim__title img {
   width: min(toVw(609), 609px);
@@ -128,6 +153,9 @@
 .about-trim h2 {
   text-align: center;
   padding-top: 14px;
+  @include mq(medium, max) {
+    padding-top: 5px;
+  }
 }
 
 .about-trim h2 img {
@@ -160,6 +188,11 @@
   background-image: url(../../images/bg_top-news.png);
   background-repeat: no-repeat;
   background-position: top center;
+  @include mq(medium, max) {
+    background-image: url(../../images/bg_top-news_sp.png);
+    margin-top: -597px;
+    padding-top: 30px;
+  }
 }
 
 .about-hotel__inner {
@@ -171,13 +204,16 @@
   top: 110px;
   right: 9px;
   @include mq(medium, max) {
-    top: 157px;
-    right: 56px;
+    top: 127px;
+    right: 36px;
   }
 }
 
 .about-hotel__photo img {
   width: min(toVw(420), 420px);
+  @include mq(medium, max) {
+    width: 200px;
+  }
 }
 
 .about-hotel__title {
@@ -211,6 +247,7 @@
   @include mq(medium, max) {
     padding-left: 10px;
     padding-right: 10px;
+    padding-top: 20px;
     line-height: 1.6;
   }
 }
@@ -225,6 +262,11 @@
   background-image: url(../../images/bg_top_gallery.png);
   background-repeat: no-repeat;
   background-position: top center;
+  @include mq(medium, max) {
+    margin-top: -190px;
+    padding-bottom: 77px;
+    background-image: url(../../images/about/bg_about_goods-sp.png);
+  }
 }
 
 .about-goods__inner {
@@ -236,8 +278,8 @@
   top: -106px;
   left: 122px;
   @include mq(medium, max) {
-    top: 46px;
-    right: 0;
+    top: -23px;
+    right: 13px;
     left: auto;
   }
 }
@@ -255,6 +297,7 @@
   text-align: right;
   @include mq(medium, max) {
     text-align: left;
+    padding-top: 42px;
   }
 }
 .about-goods__title img {
@@ -269,7 +312,7 @@
   text-align: center;
   margin-top: -10px;
   @include mq(medium, max) {
-    margin-top: 25px;
+    margin-top: 11px;
   }
 }
 
@@ -285,10 +328,18 @@
   padding-top: min(toVw(50), 50px);
   text-align: center;
   line-height: 2;
+  @include mq(medium, max) {
+    padding-top: 20px;
+    font-size: 10px;
+  }
 }
 
 .about-goods-cards {
   padding-top: 15px;
+  @include mq(medium, max) {
+    padding-top: 0;
+    margin-top: -8px;
+  }
 }
 
 .about-goods-cards__inner {
@@ -302,12 +353,15 @@
   width: 24%;
   position: relative;
   @include mq(medium, max) {
-    width: 50%;
+    width: 45%;
   }
 }
 .about-goods-card p {
   padding-top: 26px;
   text-align: center;
+  @include mq(medium, max) {
+    padding-top: 0;
+  }
 }
 .about-goods-card img {
   height: min(toVw(245), 245px);
