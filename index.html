@@ -123,8 +123,7 @@
         <article>
           <section class="top-about">
             <!-- h1 -->
-            <div class="top-about__inner mainIn">
-
+            <div class="top-about__inner mainIn fade-up fade-in-up">
               <h1>ワンちゃんも猫ちゃんも<br />快適に過ごせる時間を創りたい。</h1>
               <p>
                 人と同じようにペットも一人一人様々な性格があります。<br>
@@ -133,7 +132,7 @@
                 パピーからシニアまで、ペットの気持ちを考えながら、<br class="tab">
                 動物が大好きなスタッフが大切なペットをお預かりいたします。
                 </p>
-              <div class="top-about__btn">
+              <div class="top-about__btn fade-up fade-in-up">
                 <a href="about.html" class="btn bgtop"><span>ラバーズラッシュについて</span></a>
               </div>
             </div>
@@ -146,14 +145,14 @@
               <div class="top-trim__maru2 wow bounceInUp" data-wow-delay=".6s">
                 <img src="images/top_trim_maru2.png" alt="" />
               </div>
-              <div class="top-trim__title"><img src="images/text_trimming.svg" alt="" /></div>
-              <h2><img src="images/title_triming.png" alt="トリミングサービスのご案内" /></h2>
-              <p>
+              <div class="top-trim__title fade-in fade-in-right"><img src="images/text_trimming.svg" alt="" /></div>
+              <h2 class="fade-up fade-in-up"><img src="images/title_triming.png" alt="トリミングサービスのご案内" /></h2>
+              <p class="fade-up fade-in-up">
                   ペットの気持ちを考えながら、ペットにやさしいトリミングを心掛けています。<br  class="pc">
                   パピーからシニアまで経験豊富なトリマーがトリミングしますのでご安心ください。<br>
                   （JKCトリミング競技会.優秀技術賞受賞他）
                 </p>
-              <div class="top-trim-cards">
+              <div class="top-trim-cards fade-up fade-in-up">
                 <div class="top-trim-cards__inner">
                   <div class="top-trim-card">
                     <img src="images/image3.png" alt="" />
@@ -174,16 +173,16 @@
 
           <section class="top-hotel">
             <div class="top-hotel__inner mainIn">
-              <div class="top-hotel__photo">
+              <div class="top-hotel__photo fade-up fade-in-up">
                 <img src="images/image5.png" alt="" />
               </div>
-              <div class="top-hotel__title"><img src="images/text_hotel.svg" alt="" /></div>
-              <h2><img src="images/title_hotel.png" alt="ペットホテルのご案内" /></h2>
-              <p>
+              <div class="top-hotel__title fade-in fade-in-left"><img src="images/text_hotel.svg" alt="" /></div>
+              <h2 class="fade-up fade-in-up"><img src="images/title_hotel.png" alt="ペットホテルのご案内" /></h2>
+              <p class="fade-up fade-in-up">
                 ワンちゃんもネコちゃんも快適に過ごせるようにそれぞれ別々の施設でお預かりいたします。<br>
                 個室のお部屋は怖がりのペットにはうれしい、他のペットの姿が見えないプライベート空間となっています。
                 </p>
-              <div class="top-hotel-cards">
+              <div class="top-hotel-cards fade-up fade-in-up">
                 <div class="top-hotel-cards__inner">
                   <div class="top-hotel-card">
                     <img src="images/image6.png" alt="" />
@@ -204,9 +203,9 @@
 
           <section class="top-news">
             <div class="top-news__inner mainIn">
-              <div class="top-news__wrap">
+              <div class="top-news__wrap fade-up fade-in-up">
                 <div class="top-news__photo">
-                  <img src="images/top-news_image.png" alt="NEWS" />
+                  <img src="images/top-news_image.png" alt="NEWS" class="fade-in fade-in-right" />
                 </div>
                 <h2><img src="images/title_news.png" alt="ラバーズラッシュのお知らせ" /></h2>
                 <div class="top-news__lists">
@@ -226,7 +225,7 @@
 
           <section class="top-gallerys">
             <div class="top-gallerys__inner mainIn">
-              <div class="top-gallerys__title">
+              <div class="top-gallerys__title fade-in fade-in-left">
                 <img src="images/text_gallery.svg" alt="GALLERY" />
               </div>
             </div>
@@ -300,6 +299,21 @@
   <!-- slider -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="common/js/jquery.bxslider.min.js"></script>
+  <script>
+    jQuery(function ($) {
+      var fadeIn = $('.fade-in, .fade-up');
+      $(window).on('scroll', function () {
+        $(fadeIn).each(function () {
+          var offset = $(this).offset().top;
+          var scroll = $(window).scrollTop();
+          var windowHeight = $(window).height();
+          if (scroll > offset - windowHeight + 300) {
+            $(this).addClass("scroll-in");
+          }
+        });
+      });
+    });
+  </script>
   <script type="text/javascript">
     $(document).ready(function () {
       $(".bxslider").bxSlider({

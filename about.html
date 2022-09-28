@@ -85,8 +85,8 @@
           <article>
             <div class="about-mv"></div>
             <section class="about-about">
-              <div class="about-about__inner mainIn">
-                <div class="about-about__title"><img src="images/about/text_about.png" alt="ABOUT" /></div>
+              <div class="about-about__inner mainIn fade-up fade-in-up">
+                <div class="about-about__title fade-in fade-in-left"><img src="images/about/text_about.png" alt="ABOUT" /></div>
                 <div class="c-pan">
                   <ol class="c-pan__list">
                     <span><a href="index.html">TOP</a></span>
@@ -111,14 +111,14 @@
                 <div class="about-trim__maru2 wow bounceInUp" data-wow-delay=".6s">
                   <img src="images/about/about_maru2.png" alt="" />
                 </div>
-                <div class="about-trim__title"><img src="images/about/text_trimming.png" alt="" /></div>
-                <h2><img src="images/about/title_trimming.png" alt="トリミングサービスのご案内" /></h2>
-                <p>
+                <div class="about-trim__title fade-in fade-in-right"><img src="images/about/text_trimming.png" alt="" /></div>
+                <h2 class="fade-up fade-in-up"><img src="images/about/title_trimming.png" alt="トリミングサービスのご案内" /></h2>
+                <p class="fade-up fade-in-up">
                   ペットの気持ちを考えながら、ペットにやさしいトリミングを心掛けています。<br class="pc" />
                   パピーからシニアまで経験豊富なトリマーがトリミングしますのでご安心ください。<br />
                   （JKCトリミング競技会.優秀技術賞受賞他）
                 </p>
-                <div class="top-trim-cards">
+                <div class="top-trim-cards fade-up fade-in-up">
                   <div class="top-trim-cards__inner">
                     <div class="top-trim-card">
                       <img src="images/image3.png" alt="" />
@@ -139,16 +139,16 @@
 
             <section class="about-hotel">
               <div class="about-hotel__inner mainIn">
-                <div class="about-hotel__photo">
+                <div class="about-hotel__photo fade-up fade-in-up">
                   <img src="images/about/about_pethotel.png" alt="" />
                 </div>
-                <div class="about-hotel__title"><img src="images/about/text_hotel.png" alt="" /></div>
-                <h2><img src="images/about/title_hotel.png" alt="ペットホテルのご案内" /></h2>
-                <p>
+                <div class="about-hotel__title fade-in fade-in-left"><img src="images/about/text_hotel.png" alt="" /></div>
+                <h2 class="fade-up fade-in-up"><img src="images/about/title_hotel.png" alt="ペットホテルのご案内" /></h2>
+                <p class="fade-up fade-in-up">
                   ワンちゃんもネコちゃんも快適に過ごせるようにそれぞれ別々の施設でお預かりいたします。<br />
                   個室のお部屋は怖がりのペットにはうれしい、<br class="tab-br">他のペットの姿が見えないプライベート空間となっています。
                 </p>
-                <div class="top-hotel-cards">
+                <div class="top-hotel-cards fade-up fade-in-up">
                   <div class="top-hotel-cards__inner">
                     <div class="top-hotel-card">
                       <img src="images/image6.png" alt="" />
@@ -169,13 +169,13 @@
 
             <section class="about-goods">
               <div class="about-goods__inner mainIn">
-                <div class="about-goods__photo">
+                <div class="about-goods__photo fade-up fade-in-up">
                   <img src="images/about/img_goods.png" alt="" />
                 </div>
-                <div class="about-goods__title"><img src="images/about/text_goods.png" alt="" /></div>
-                <h2><img src="images/about/title_goods.png" alt="グッズ販売" /></h2>
+                <div class="about-goods__title fade-in fade-in-right"><img src="images/about/text_goods.png" alt="" /></div>
+                <h2 class="fade-up fade-in-up"><img src="images/about/title_goods.png" alt="グッズ販売" /></h2>
 
-                <div class="about-goods-cards">
+                <div class="about-goods-cards fade-up fade-in-up">
                   <div class="about-goods-cards__inner">
                     <div class="about-goods-card">
                       <figure><img src="images/about/about_goods1.png" alt="" /></figure>
@@ -228,6 +228,21 @@
     <!-- slider -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="common/js/jquery.bxslider.min.js"></script>
+    <script>
+      jQuery(function ($) {
+        var fadeIn = $('.fade-in, .fade-up');
+        $(window).on('scroll', function () {
+          $(fadeIn).each(function () {
+            var offset = $(this).offset().top;
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+            if (scroll > offset - windowHeight + 300) {
+              $(this).addClass("scroll-in");
+            }
+          });
+        });
+      });
+    </script>
     <script type="text/javascript">
       $(document).ready(function () {
         $(".bxslider").bxSlider({

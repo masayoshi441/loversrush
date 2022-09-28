@@ -88,7 +88,7 @@
             <div class="cattrim-mv"></div>
             <section class="cattrim-about">
               <div class="cattrim-about__inner mainIn">
-                <div class="cattrim-about__title"><img src="images/cat_trimming/text_about.png" alt="ABOUT" /></div>
+                <div class="cattrim-about__title fade-in fade-in-left"><img src="images/cat_trimming/text_about.png" alt="ABOUT" /></div>
                 <div class="c-pan">
                   <ol class="c-pan__list">
                     <span><a href="index.html">TOP</a></span>
@@ -96,8 +96,8 @@
                     <span>猫のトリミング</span>
                   </ol>
                 </div>
-                <h1><img src="images/cat_trimming/title_about.png" alt="ラバーズラッシュについて" /></h1>
-                <div class="cattrim-about__select">
+                <h1 class="fade-up fade-in-up"><img src="images/cat_trimming/title_about.png" alt="ラバーズラッシュについて" /></h1>
+                <div class="cattrim-about__select fade-up fade-in-up">
                   <div class="cattrim-about__button">
                     <a href="#cattrim-price">猫のトリミング料金表</a>
                   </div>
@@ -105,13 +105,13 @@
                     <a href="#cattrim-flow">トリミング風景</a>
                   </div>
                 </div>
-                <h2>お客様の大切なネコちゃんを<br />丁寧に手をかけて<br class="sp" />気持ち良くキレイにいたします。</h2>
-                <p>
+                <h2 class="fade-up fade-in-up">お客様の大切なネコちゃんを<br />丁寧に手をかけて<br class="sp" />気持ち良くキレイにいたします。</h2>
+                <p class="fade-up fade-in-up">
                   当店のトリミングは、ネコちゃんたち1頭1頭の状態を見ながら丁寧なトリミングを心がけてます。<br />
                   オプションには、マイクロバブルや、炭酸泉浴などもあり、<br class="tab-br">毛穴ケアから、リラックス効果もお試し頂けます。<br />
                   経験豊富なトリマーが責任を持って、大切なペットをお預かりいたします。
                 </p>
-                <div class="cattrim-about__cards">
+                <div class="cattrim-about__cards fade-up fade-in-up">
                   <img src="images/cat_trimming/about_image1.png" alt="" class="cattrim-about__card" />
                   <img src="images/cat_trimming/about_image2.png" alt="" class="cattrim-about__card" />
                   <img src="images/cat_trimming/about_image3.png" alt="" class="cattrim-about__card" />
@@ -126,11 +126,11 @@
                   <div class="cattrim-price__photo">
                     <picture>
                       <source srcset="images/cat_trimming/text_price-sp.png" media="(max-width: 768px)" />
-                      <img src="images/cat_trimming/text_price.png" alt="" />
+                      <img class="fade-in fade-in-right" src="images/cat_trimming/text_price.png" alt="" />
                     </picture>
                   </div>
-                  <h2><img src="images/cat_trimming/title_price.png" alt="" /></h2>
-                  <div class="cattrim-price__tabs">
+                  <h2 class="fade-up fade-in-up"><img src="images/cat_trimming/title_price.png" alt="" /></h2>
+                  <div class="cattrim-price__tabs fade-up fade-in-up">
                     <ul class="cattrim-price__tablist" role="cattrim-price-tablist">
                       <li role="presentation">
                         <button role="tab" id="cattrim-price-tab-1" class="tab" aria-selected="true" aria-controls="cattrim-price-panel-1" tabindex="0">トリミング料金</button>
@@ -264,10 +264,10 @@
                     </p>
                   </div>
                   <div class="cattrim-price-rules">
-                    <div class="cattrim-price-rules__photo">
+                    <div class="cattrim-price-rules__photo fade-up fade-in-up">
                       <img src="images/cat_trimming/title_kiyaku.png" alt="" />
                     </div>
-                    <div class="cattrim-price-rules__text">
+                    <div class="cattrim-price-rules__text fade-up fade-in-up">
                       <p>○トリミングは予約制です。</p>
                       <p class="text-red">〇感染予防上、手洗いの徹底はもちろん、使用する道具も念入りに洗浄しています。</p>
                       <p class="text-red">〇当店ではネコちゃんに直接触れるトリミングリードやブラシ等、 一頭ずつ交換しています。</p>
@@ -291,10 +291,10 @@
                 <div class="cattrim-flow__photo">
                   <picture>
                     <source srcset="images/cat_trimming/text_flow-sp.png" media="(max-width: 768px)" />
-                    <img src="images/cat_trimming/text_flow.png" alt="" />
+                    <img class="fade-in fade-in-left" src="images/cat_trimming/text_flow.png" alt="" />
                   </picture>
                 </div>
-                <div class="trim-flow-accordion js-accordion">
+                <div class="trim-flow-accordion js-accordion fade-up fade-in-up">
                   <div class="trim-flow-accordion__item" style="display: none">
                     <h2 class="trim-flow-accordion__headline">
                       <button type="button" class="trim-flow-accordion__tab js-accordion-tab"></button>
@@ -516,6 +516,21 @@
     <!-- slider -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="common/js/jquery.bxslider.min.js"></script>
+    <script>
+      jQuery(function ($) {
+        var fadeIn = $('.fade-in, .fade-up');
+        $(window).on('scroll', function () {
+          $(fadeIn).each(function () {
+            var offset = $(this).offset().top;
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+            if (scroll > offset - windowHeight + 300) {
+              $(this).addClass("scroll-in");
+            }
+          });
+        });
+      });
+    </script>
     <script type="text/javascript">
       $(document).ready(function () {
         $(".bxslider").bxSlider({

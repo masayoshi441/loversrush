@@ -86,7 +86,7 @@
             <div class="news-mv-detail"></div>
             <section class="news-about news-detail">
               <div class="news-about__inner mainIn">
-                <div class="news-about__title"><img src="/images/news/text_about.png" alt="NEWS" /></div>
+                <div class="news-about__title fade-in fade-in-left"><img src="/images/news/text_about.png" alt="NEWS" /></div>
                 <div class="c-pan">
                   <ol class="c-pan__list">
                     <span><a href="/index.html">TOP</a></span>
@@ -96,7 +96,7 @@
                     <span>2022.0.0（日） 〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇</span>
                   </ol>
                 </div>
-                <div class="news-about__wrap"></div>
+                <div class="news-about__wrap fade-up fade-in-up"></div>
                 <div class="news-detail-pagenation">
                   <div class="news-detail-pagenation__button -prev">
                     <a href="">古い投稿</a>
@@ -137,6 +137,21 @@
     <!-- slider -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="/common/js/jquery.bxslider.min.js"></script>
+    <script>
+      jQuery(function ($) {
+        var fadeIn = $('.fade-in, .fade-up');
+        $(window).on('scroll', function () {
+          $(fadeIn).each(function () {
+            var offset = $(this).offset().top;
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+            if (scroll > offset - windowHeight + 300) {
+              $(this).addClass("scroll-in");
+            }
+          });
+        });
+      });
+    </script>
     <script type="text/javascript">
       $(document).ready(function () {
         $(".bxslider").bxSlider({
