@@ -2567,6 +2567,7 @@ CSS information
     background-position: center center;
     float: left;
     position: absolute;
+    z-index: 7;
   }
 }
 
@@ -2577,7 +2578,7 @@ CSS information
   .top-gallerys__btn {
     padding-top: 71px;
     position: relative;
-    z-index: 10;
+    z-index: 5;
   }
 }
 
