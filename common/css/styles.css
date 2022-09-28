@@ -2489,35 +2489,85 @@ CSS information
   }
 }
 
-.feed-prev-btn {
-  background-image: url(../../common/images/btn_prev.png);
-  left: 40%;
+.top-gallerys__lists .bx-wrapper .bx-controls-direction a {
+  width: 60px;
+  height: 60px;
+  bottom: -100px;
+}
+@media screen and (max-width: 680px) {
+  .top-gallerys__lists .bx-wrapper .bx-controls-direction a {
+    width: 30px;
+    height: 30px;
+    display: block;
+    bottom: -60px;
+  }
 }
 
-.feed-next-btn {
-  background-image: url(../../common/images/btn_next.png);
-  right: 40%;
+.top-gallerys__lists .bx-wrapper .bx-controls-direction a.bx-prev {
+  top: inherit;
+  left: inherit;
+  right: 180px;
+  background-position: 0 0;
+  background-image: url(../../common/images/btn_prev.png);
+}
+
+.top-gallerys__lists .bx-wrapper .bx-controls-direction a.bx-next {
+  top: inherit;
+  left: inherit;
+  right: 100px;
+  background-position: -80px 0;
+}
+@media screen and (max-width: 680px) {
+  .top-gallerys__lists .bx-wrapper .bx-controls-direction a.bx-next {
+    right: 135px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .feed-prev-btn {
+    background-image: url(../../common/images/btn_prev.png);
+    left: 40%;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .feed-next-btn {
+    background-image: url(../../common/images/btn_next.png);
+    right: 40%;
+  }
 }
 
 .feed-prev-btn .bx-prev {
-  opacity: 0;
-  display: block;
+  display: none;
+}
+@media screen and (max-width: 680px) {
+  .feed-prev-btn .bx-prev {
+    opacity: 0;
+    display: block;
+  }
 }
 
 .feed-next-btn .bx-next {
-  opacity: 0;
-  display: block;
+  display: none;
+}
+@media screen and (max-width: 680px) {
+  .feed-next-btn .bx-next {
+    opacity: 0;
+    display: block;
+  }
 }
 
-.navi-btn {
-  margin: 20px 0 0;
-  width: 30px;
-  height: 30px;
-  background-size: 30px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  float: left;
-  position: absolute;
+@media screen and (max-width: 680px) {
+  .navi-btn {
+    margin: 20px 0 0;
+    width: 30px;
+    height: 30px;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    float: left;
+    position: absolute;
+  }
 }
 
 .top-gallerys__btn {
