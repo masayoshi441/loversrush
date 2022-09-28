@@ -105,7 +105,10 @@
   position: absolute;
   top: -203px;
   left: 0;
-  @include mq(large, max) {
+  @media screen and (min-width:768px) and ( max-width:1080px) {
+    top: -6.2%;
+  }
+  @include mq(medium, max) {
     top: 1px;
     right: auto;
     left: 37%;
@@ -122,6 +125,9 @@
   position: absolute;
   top: -116px;
   right: 0;
+  @media screen and (min-width:768px) and ( max-width:1080px) {
+    top: -0.2%;
+  }
   @include mq(medium, max) {
     top: 72px;
     left: 6%;
@@ -279,7 +285,7 @@
   padding: 133px min(toVw(100), 100px) 120px;
   position: relative;
   @include mq(medium, max) {
-    border-radius: 10px 30px 10px 30px;
+    border-radius: 4px 22px 4px 22px;
     padding: 48px 20px 23px;
   }
   h2 {
@@ -291,6 +297,16 @@
       }
     }
   }
+  .caption {
+    text-align: center;
+    font-size: min(toVw(20), 20px);
+    margin-bottom: 22px;
+    @include mq(medium, max) {
+      margin-top: 9px;
+      margin-bottom: -4px;
+      font-size: 11px;
+    }
+  }
 }
 .cath-price__photo {
   position: absolute;
@@ -298,6 +314,9 @@
   left: 50%;
   transform: translateX(-50%);
   width: min(toVw(965), 965px);
+  @media screen and (min-width:768px) and ( max-width:1080px) {
+    top: -7%;
+  }
   @include mq(medium, max) {
     max-width: 253px;
     width: 100%;

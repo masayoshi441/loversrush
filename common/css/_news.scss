@@ -63,6 +63,13 @@
   border-radius: 15px 65px 15px 65px;
   padding: 100px min(toVw(100), 100px) 100px min(toVw(125), 125px);
   margin-top: 75px;
+  @media screen and (min-width:768px) and ( max-width:1024px) {
+    border-radius: 10px 30px 10px 30px;
+    padding: 20px 20px 35px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
   @include mq(medium, max) {
     margin-top: 30px;
     border-radius: 10px 30px 10px 30px;
@@ -92,7 +99,7 @@
   display: flex;
   align-items: center;
   font-size: 15px;
-  @include mq(medium, max) {
+  @include mq(large, max) {
     flex-direction: column;
     align-items: flex-start;
     font-size: 11px;
@@ -219,8 +226,8 @@
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
   }
-  @include mq(medium, max) {
-    margin-right: 5px;
+  @include mq(large, max) {
+    margin-right: 10px;
   }
 }
 .news-detail-pagenation__button.-next {

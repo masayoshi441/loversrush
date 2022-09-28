@@ -357,17 +357,20 @@ CSS information
   position: relative;
   @include mq(medium, max) {
     padding-bottom: 28px;
-    border-radius: 10px 30px 10px 30px;
+    border-radius: 4px 22px 4px 22px;
   }
 }
 
 .top-news__photo {
   // margin-top: 20px;
   position: absolute;
-  top: -327px;
+  top: -49.6%;
   left: 50%;
   transform: translateX(-50%);
   width: min(toVw(834), 834px);
+  @media screen and (min-width:768px) and ( max-width:1080px) {
+    top: -36.6%;
+  }
   @include mq(medium, max) {
     max-width: 273px;
     width: 100%;
@@ -469,19 +472,22 @@ CSS information
   background-image: url(../../images/bg_top_gallery.png);
   background-repeat: no-repeat;
   background-position: top center;
-  padding-bottom: 140px;
+  padding-bottom:  min(toVw(140), 140px);
+  @media screen and (min-width:768px) and ( max-width:1024px) {
+    padding-bottom: 80px;
+  }
   @include mq(medium, max) {
     background-image: url(../../images/bg_top_gallery-sp.png);
     margin-top: -248px;
     padding-top: 49px;
-    padding-bottom: 0;
+    padding-bottom: 40px;
     margin-bottom: 0px;
   }
 }
 
 .top-gallerys__wrap {
   text-align: center;
-  padding: 0 0 78px 0;
+  padding: 0 0  min(toVw(78), 78px) 0;
 }
 
 .top-gallerys__title {
@@ -563,5 +569,7 @@ CSS information
   padding-top: 65px;
   @include mq(medium, max) {
     padding-top: 90px;
+    position: relative;
+    z-index: 10;
   }
 }

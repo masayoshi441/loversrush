@@ -7,7 +7,7 @@
   display: block;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .pc {
     display: none;
   }
@@ -16,8 +16,35 @@
   display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .sp {
+    display: block;
+  }
+}
+.tab {
+  display: block;
+}
+
+@media screen and (max-width: 1024px) {
+  .tab {
+    display: none;
+  }
+}
+.tab-2 {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .tab-2 {
+    display: block;
+  }
+}
+.tab-br {
+  display: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .tab-br {
     display: block;
   }
 }
@@ -266,7 +293,7 @@ p.akari image img {
 .mgB_1 {
   margin-bottom: 12.5px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 680px) {
   .mgB_1 {
     margin-bottom: 25px !important;
   }
@@ -275,7 +302,7 @@ p.akari image img {
 .mgB_2 {
   margin-bottom: 25px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 680px) {
   .mgB_2 {
     margin-bottom: 50px !important;
   }
@@ -284,7 +311,7 @@ p.akari image img {
 .mgB_3 {
   margin-bottom: 25px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 680px) {
   .mgB_3 {
     margin-bottom: 75px !important;
   }
@@ -293,7 +320,7 @@ p.akari image img {
 .mgB_4 {
   margin-bottom: 25px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 680px) {
   .mgB_4 {
     margin-bottom: 100px !important;
   }
@@ -429,7 +456,7 @@ p.akari image img {
 .txt16-20 {
   font-size: 1.6rem;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 680px) {
   .txt16-20 {
     font-size: 2rem;
   }
@@ -454,7 +481,7 @@ p.akari image img {
 .txt26-30 {
   font-size: 2.6rem;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 680px) {
   .txt26-30 {
     font-size: 3rem;
   }
@@ -583,7 +610,7 @@ button, input, select, textarea {
   display: block;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .pc {
     display: none;
   }
@@ -592,8 +619,35 @@ button, input, select, textarea {
   display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .sp {
+    display: block;
+  }
+}
+.tab {
+  display: block;
+}
+
+@media screen and (max-width: 1024px) {
+  .tab {
+    display: none;
+  }
+}
+.tab-2 {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .tab-2 {
+    display: block;
+  }
+}
+.tab-br {
+  display: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .tab-br {
     display: block;
   }
 }
@@ -619,7 +673,7 @@ body {
   font-family: "Kosugi Maru", sans-serif;
   font-weight: 200;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   body {
     font-size: 11px;
   }
@@ -646,13 +700,13 @@ a:hover {
  =header, glovalnavi
 ----------------------------------------------------------- */
 /*最上部からスライドまで*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   #headerArea {
     position: relative;
     z-index: 50;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 680px) {
   #headerArea #topbody #headerArea {
     height: inherit;
   }
@@ -673,7 +727,7 @@ a:hover {
   display: flex;
   align-items: center;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 680px) {
   .header__inner {
     position: relative;
     width: 100%;
@@ -685,12 +739,12 @@ a:hover {
 #hLogo {
   text-align: center;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   #hLogo {
     width: 146px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 680px) {
   #hLogo {
     position: absolute;
     left: 45px;
@@ -700,12 +754,12 @@ a:hover {
 #hLogo img {
   width: 80%;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 680px) {
   #hLogo img {
     width: 260px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   #hLogo img {
     width: 92%;
   }
@@ -714,14 +768,14 @@ a:hover {
 #hTel {
   text-align: center;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   #hTel {
     margin-top: 17px;
     margin-left: 19px;
     width: 126px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 680px) {
   #hTel {
     position: absolute;
     right: 100px;
@@ -732,7 +786,7 @@ a:hover {
   width: min(23.2172470978vw, 280px);
   margin-bottom: 10px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   #hTel img {
     width: 100%;
   }
@@ -744,7 +798,7 @@ a:hover {
 #topImg {
   text-align: center;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 680px) {
   #topImg {
     width: 100%;
   }
@@ -778,7 +832,7 @@ a:hover {
   height: 20px;
   border-radius: 10px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   #topImg .bx-wrapper .bx-pager a,
 #topImg .bx-wrapper .bx-controls-auto a {
     width: 10px;
@@ -835,7 +889,7 @@ a:hover {
 .Box2 div {
   width: 48%;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 680px) {
   .Box2 div {
     margin: 0 0 25px 0;
     width: 49%;
@@ -854,7 +908,7 @@ a:hover {
   margin: 0 0 25px 0;
   width: 48%;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 680px) {
   .Box3 div {
     width: 32%;
   }
@@ -872,7 +926,7 @@ a:hover {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 680px) {
   .Box4 {
     justify-content: flex-start;
   }
@@ -881,7 +935,7 @@ a:hover {
   margin: 0 0 25px 0;
   width: 48%;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 680px) {
   .Box4 div {
     width: 24%;
     margin: 0 1.33% 25px 0;
@@ -915,7 +969,7 @@ a:hover {
   background-position: right 20px center;
   background-repeat: no-repeat;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .btn {
     background-size: 9.1px 7.8px;
     padding: 10px 53px;
@@ -929,7 +983,7 @@ a:hover {
   z-index: 3; /*z-indexの数値をあげて文字を背景よりも手前に表示*/
   color: #333;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .btn span {
     font-size: 11px;
   }
@@ -1003,7 +1057,7 @@ a:hover {
   background: #333333;
   width: 30px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 680px) {
   .pagetop {
     width: 45px;
   }
@@ -1021,7 +1075,7 @@ footer {
   background-position: top center;
   position: relative;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   footer {
     background-image: url(../../images/bg_fot_sp.png);
     margin-top: -120px;
@@ -1035,7 +1089,7 @@ footer {
   width: 100%;
   height: min(32.3383084577vw, 390px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .footer__inner {
     height: 100%;
   }
@@ -1053,7 +1107,7 @@ footer {
   left: 7%;
   bottom: 0;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .footer__inner::before {
     background: none;
   }
@@ -1071,7 +1125,7 @@ footer {
   right: 7%;
   bottom: 0;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .footer__inner::after {
     left: 0;
     bottom: -25px;
@@ -1084,14 +1138,14 @@ footer {
   margin: 0 2%;
   text-align: center;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   #footer {
     -moz-text-align-last: left;
          text-align-last: left;
     margin: 0;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 680px) {
   #footer {
     width: 100%;
     margin: 0 auto;
@@ -1101,13 +1155,13 @@ footer {
 #fLogo {
   line-height: 1.5;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   #fLogo {
     padding-top: 0;
     padding-left: 130px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 680px) {
   #fLogo {
     padding-top: 10px;
     line-height: 1.8;
@@ -1118,13 +1172,13 @@ footer {
   width: 50%;
   margin: 10px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   #fLogo img {
     width: 68%;
     margin-left: 0;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 680px) {
   #fLogo img {
     width: min(21.807628524vw, 263px);
   }
@@ -1133,7 +1187,7 @@ footer {
 #fLogo p {
   padding-top: 10px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   #fLogo p {
     font-size: 11px;
     padding-top: 2px;
@@ -1146,7 +1200,7 @@ footer {
   line-height: 1.3;
   font-size: min(1.3266998342vw, 16px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   #fTel {
     padding-top: 9px;
     padding-bottom: 10px;
@@ -1166,7 +1220,7 @@ footer {
   justify-content: center;
   align-items: center;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   #footerCopy {
     height: 25px;
   }
@@ -1175,7 +1229,7 @@ footer {
 .c-pan {
   margin-top: -20px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .c-pan {
     order: -1;
   }
@@ -1188,7 +1242,7 @@ footer {
   color: rgba(51, 51, 51, 0.5);
   font-size: 13px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .c-pan__list span {
     font-size: 10px;
   }
@@ -1197,7 +1251,7 @@ footer {
   color: rgba(51, 51, 51, 0.5);
   font-size: 13px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .c-pan__list span a {
     font-size: 10px;
   }
@@ -1208,7 +1262,7 @@ footer {
   display: block;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .pc {
     display: none;
   }
@@ -1217,8 +1271,35 @@ footer {
   display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .sp {
+    display: block;
+  }
+}
+.tab {
+  display: block;
+}
+
+@media screen and (max-width: 1024px) {
+  .tab {
+    display: none;
+  }
+}
+.tab-2 {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .tab-2 {
+    display: block;
+  }
+}
+.tab-br {
+  display: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .tab-br {
     display: block;
   }
 }
@@ -1234,13 +1315,13 @@ CSS information
 nav {
   margin: 0;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 680px) {
   nav {
     background: #F2EBDE;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 680px) {
   .fixed {
     position: fixed;
     top: 0;
@@ -1275,7 +1356,7 @@ nav {
   width: 100%;
   height: 100%;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 680px) {
   .nav-wrap {
     display: none;
   }
@@ -1288,7 +1369,7 @@ nav {
   overflow-x: hidden;
   overflow-y: auto;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 680px) {
   .nav-wrap .nav {
     width: 1206px;
     margin: 200px auto 0;
@@ -1300,7 +1381,7 @@ nav {
   padding: 0.5em 0;
   line-height: 1.1;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 680px) {
   .nav-wrap li {
     margin: 0 0 2em 100px;
   }
@@ -1309,13 +1390,13 @@ nav {
   color: #fff;
   font-size: 20px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 680px) {
   .nav-wrap li a {
     font-size: 40px;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 680px) {
   .nav-pc-wrap {
     display: block;
     background: #333;
@@ -1363,7 +1444,7 @@ nav {
   background: #333333;
   padding: 8px 8px 20px 8px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 680px) {
   .nav-button-wrap {
     display: none;
     right: 50px;
@@ -1386,7 +1467,7 @@ nav {
   width: 40px;
   height: 27px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 680px) {
   .nav-button {
     width: 60px;
     height: 35px;
@@ -1401,7 +1482,7 @@ nav {
   font-weight: bold;
   left: 0;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 680px) {
   .nav-button:after {
     top: 43px;
     font-size: 14px;
@@ -1413,7 +1494,7 @@ nav {
   color: #fff;
   left: -1px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 680px) {
   .nav-button.active:after {
     left: 2px;
   }
@@ -1426,7 +1507,7 @@ nav {
   height: 5px;
   background-color: #fff;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 680px) {
   .nav-button span {
     height: 7px;
   }
@@ -1437,7 +1518,7 @@ nav {
 .nav-button span:nth-of-type(2) {
   top: 11px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 680px) {
   .nav-button span:nth-of-type(2) {
     top: 14px;
   }
@@ -1452,7 +1533,7 @@ nav {
 .nav-button.active span:nth-of-type(1) {
   transform: translateY(11px) rotate(-45deg);
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 680px) {
   .nav-button.active span:nth-of-type(1) {
     transform: translateY(14px) rotate(-45deg);
   }
@@ -1463,7 +1544,7 @@ nav {
 .nav-button.active span:nth-of-type(3) {
   transform: translateY(-11px) rotate(45deg);
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 680px) {
   .nav-button.active span:nth-of-type(3) {
     transform: translateY(-11px) rotate(45deg);
   }
@@ -1618,7 +1699,7 @@ nav {
   border: 1px solid #707070;
   border-radius: 5px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .openbtn1 {
     top: 10px;
     right: 10px;
@@ -1672,7 +1753,7 @@ nav {
   display: block;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .pc {
     display: none;
   }
@@ -1681,8 +1762,35 @@ nav {
   display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .sp {
+    display: block;
+  }
+}
+.tab {
+  display: block;
+}
+
+@media screen and (max-width: 1024px) {
+  .tab {
+    display: none;
+  }
+}
+.tab-2 {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .tab-2 {
+    display: block;
+  }
+}
+.tab-br {
+  display: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .tab-br {
     display: block;
   }
 }
@@ -1708,7 +1816,7 @@ CSS information
   background-position: right center;
   background-size: min(53.3167495854vw, 643px) auto;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .top-about__inner {
     background-size: 79% auto;
     padding-top: 50%;
@@ -1725,7 +1833,7 @@ CSS information
   letter-spacing: 6px;
   letter-spacing: 0.2em;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .top-about h1 {
     font-size: 16px;
     white-space: nowrap;
@@ -1739,7 +1847,7 @@ CSS information
   width: min(45.6053067993vw, 550px);
   line-height: 2;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .top-about p {
     width: 100%;
     font-size: 11px;
@@ -1751,7 +1859,7 @@ CSS information
 .top-about__btn {
   padding-top: 46px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .top-about__btn {
     padding-top: 15px;
   }
@@ -1771,7 +1879,7 @@ CSS information
   background-repeat: no-repeat;
   background-position: top center;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .top-trim {
     background-image: url(../../images/bg_top-trim_sp.png);
     margin-top: -590px;
@@ -1788,7 +1896,7 @@ CSS information
   top: 47px;
   left: min(1.4096185738vw, 17px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .top-trim__maru1 {
     top: -1px;
     left: 19px;
@@ -1798,7 +1906,7 @@ CSS information
 .top-trim__maru1 img {
   width: min(20.7296849088vw, 250px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .top-trim__maru1 img {
     width: 100px;
   }
@@ -1809,7 +1917,7 @@ CSS information
   top: 153px;
   left: min(25.2072968491vw, 304px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .top-trim__maru2 {
     top: 51px;
     left: 39%;
@@ -1819,7 +1927,7 @@ CSS information
 .top-trim__maru2 img {
   width: min(15.92039801vw, 192px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .top-trim__maru2 img {
     width: 80px;
   }
@@ -1829,7 +1937,7 @@ CSS information
   padding-top: 211px;
   text-align: right;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .top-trim__title {
     padding-top: 150px;
   }
@@ -1838,7 +1946,7 @@ CSS information
 .top-trim__title img {
   width: min(50.4975124378vw, 609px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .top-trim__title img {
     max-width: 231px;
     width: 100%;
@@ -1849,7 +1957,7 @@ CSS information
   text-align: center;
   padding-top: 55px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .top-trim h2 {
     padding-top: 22px;
   }
@@ -1858,7 +1966,7 @@ CSS information
 .top-trim h2 img {
   width: min(45.4394693201vw, 548px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .top-trim h2 img {
     max-width: 320px;
     width: 100%;
@@ -1870,7 +1978,7 @@ CSS information
   text-align: center;
   line-height: 2;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .top-trim p {
     font-size: 11px;
     padding-left: 10px;
@@ -1882,7 +1990,7 @@ CSS information
 .top-trim-cards {
   padding-top: 64px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .top-trim-cards {
     padding-top: 23px;
     padding-left: 10px;
@@ -1896,7 +2004,7 @@ CSS information
   justify-content: space-between;
   align-items: center;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .top-trim-cards__inner {
     flex-direction: column;
   }
@@ -1906,7 +2014,7 @@ CSS information
   width: 47.8%;
   position: relative;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .top-trim-card {
     width: 100%;
     max-width: 485px;
@@ -1928,7 +2036,7 @@ CSS information
   align-items: flex-end;
   padding-bottom: 30px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .top-trim-card div {
     padding-bottom: 20px;
   }
@@ -1943,7 +2051,7 @@ CSS information
   background-repeat: no-repeat;
   background-position: top center;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .top-hotel {
     background-image: url(../../images/bg_top-hotel-sp.png);
   }
@@ -1958,7 +2066,7 @@ CSS information
   top: 60px;
   right: -50px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .top-hotel__photo {
     top: 2px;
     right: 37px;
@@ -1968,7 +2076,7 @@ CSS information
 .top-hotel__photo img {
   width: min(35.4892205638vw, 428px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .top-hotel__photo img {
     max-width: 200px;
     width: 100%;
@@ -1978,7 +2086,7 @@ CSS information
 .top-hotel__title {
   padding-top: 320px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .top-hotel__title {
     padding-top: 203px;
   }
@@ -1987,7 +2095,7 @@ CSS information
 .top-hotel__title img {
   width: min(52.4046434494vw, 632px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .top-hotel__title img {
     max-width: 240px;
     width: 100%;
@@ -1998,7 +2106,7 @@ CSS information
   text-align: center;
   padding-top: 55px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .top-hotel h2 {
     padding-top: 20px;
   }
@@ -2007,7 +2115,7 @@ CSS information
 .top-hotel h2 img {
   width: min(43.7810945274vw, 528px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .top-hotel h2 img {
     max-width: 320px;
     width: 100%;
@@ -2019,7 +2127,7 @@ CSS information
   text-align: center;
   line-height: 2;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .top-hotel p {
     font-size: 11px;
     line-height: 1.6;
@@ -2032,7 +2140,7 @@ CSS information
 .top-hotel-cards {
   padding-top: 60px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .top-hotel-cards {
     padding-top: 24px;
     padding-left: 10px;
@@ -2046,7 +2154,7 @@ CSS information
   justify-content: space-between;
   align-items: center;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .top-hotel-cards__inner {
     flex-direction: column;
   }
@@ -2056,7 +2164,7 @@ CSS information
   width: 47.8%;
   position: relative;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .top-hotel-card {
     width: 100%;
     max-width: 485px;
@@ -2078,7 +2186,7 @@ CSS information
   align-items: flex-end;
   padding-bottom: 30px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .top-hotel-card div {
     padding-bottom: 20px;
   }
@@ -2094,7 +2202,7 @@ CSS information
   background-position: top center;
   padding-bottom: 282px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .top-news {
     background-image: url(../../images/bg_top-news_sp.png);
     margin-top: -818px;
@@ -2109,21 +2217,26 @@ CSS information
   padding: 0 0 78px 0;
   position: relative;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .top-news__wrap {
     padding-bottom: 28px;
-    border-radius: 10px 30px 10px 30px;
+    border-radius: 4px 22px 4px 22px;
   }
 }
 
 .top-news__photo {
   position: absolute;
-  top: -327px;
+  top: -49.6%;
   left: 50%;
   transform: translateX(-50%);
   width: min(69.1542288557vw, 834px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1080px) {
+  .top-news__photo {
+    top: -36.6%;
+  }
+}
+@media screen and (max-width: 680px) {
   .top-news__photo {
     max-width: 273px;
     width: 100%;
@@ -2134,7 +2247,7 @@ CSS information
 .top-news__photo img {
   width: min(69.1542288557vw, 834px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .top-news__photo img {
     max-width: 273px;
     width: 100%;
@@ -2145,7 +2258,7 @@ CSS information
   text-align: center;
   padding-top: min(13.4328358209vw, 162px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .top-news h2 {
     padding-top: 59px;
   }
@@ -2154,7 +2267,7 @@ CSS information
 .top-news h2 img {
   width: min(45.4394693201vw, 548px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .top-news h2 img {
     max-width: 280px;
     width: 100%;
@@ -2167,7 +2280,7 @@ CSS information
   padding-top: min(4.9751243781vw, 60px);
   margin-left: min(10.3648424544vw, 125px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .top-news__lists {
     margin-left: 0;
     padding: 27px 20px 0;
@@ -2188,7 +2301,7 @@ CSS information
   flex-wrap: wrap;
   align-items: start;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .top-news__lists li {
     background: none;
     font-size: 11px;
@@ -2209,7 +2322,7 @@ CSS information
   margin-left: 20px;
   margin-right: 20px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .top-news__lists span.top-news__cate {
     font-size: 11px;
     margin-left: 25px;
@@ -2222,7 +2335,7 @@ CSS information
   display: inline-block;
   width: 550px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .top-news__lists li a {
     width: 100%;
     padding-top: 8px;
@@ -2241,27 +2354,32 @@ CSS information
   background-image: url(../../images/bg_top_gallery.png);
   background-repeat: no-repeat;
   background-position: top center;
-  padding-bottom: 140px;
+  padding-bottom: min(11.6086235489vw, 140px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .top-gallerys {
+    padding-bottom: 80px;
+  }
+}
+@media screen and (max-width: 680px) {
   .top-gallerys {
     background-image: url(../../images/bg_top_gallery-sp.png);
     margin-top: -248px;
     padding-top: 49px;
-    padding-bottom: 0;
+    padding-bottom: 40px;
     margin-bottom: 0px;
   }
 }
 
 .top-gallerys__wrap {
   text-align: center;
-  padding: 0 0 78px 0;
+  padding: 0 0 min(6.4676616915vw, 78px) 0;
 }
 
 .top-gallerys__title img {
   width: min(45.8540630182vw, 553px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .top-gallerys__title img {
     max-width: 200px;
     width: 100%;
@@ -2272,7 +2390,7 @@ CSS information
   width: 100%;
   padding-top: 75px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .top-gallerys__lists {
     padding-top: 26px;
   }
@@ -2281,7 +2399,7 @@ CSS information
 .top-gallerys__lists ul {
   margin-left: 175px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .top-gallerys__lists ul {
     margin: 0;
     padding: 0;
@@ -2293,7 +2411,7 @@ CSS information
   list-style-type: none;
   padding-top: 0;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .top-gallerys__lists li {
     margin-left: -76.5px;
     margin-right: 76.5px;
@@ -2303,7 +2421,7 @@ CSS information
 .top-gallerys__lists li img {
   border-radius: 15px 65px 15px 65px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .top-gallerys__lists li img {
     border-radius: 10px 30px 10px 30px;
   }
@@ -2314,7 +2432,7 @@ CSS information
   height: 60px;
   bottom: -100px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .top-gallerys__lists .bx-wrapper .bx-controls-direction a {
     width: 30px;
     height: 30px;
@@ -2339,9 +2457,11 @@ CSS information
 .top-gallerys__btn {
   padding-top: 65px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .top-gallerys__btn {
     padding-top: 90px;
+    position: relative;
+    z-index: 10;
   }
 }
 
@@ -2350,7 +2470,7 @@ CSS information
   display: block;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .pc {
     display: none;
   }
@@ -2359,8 +2479,35 @@ CSS information
   display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .sp {
+    display: block;
+  }
+}
+.tab {
+  display: block;
+}
+
+@media screen and (max-width: 1024px) {
+  .tab {
+    display: none;
+  }
+}
+.tab-2 {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .tab-2 {
+    display: block;
+  }
+}
+.tab-br {
+  display: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .tab-br {
     display: block;
   }
 }
@@ -2375,7 +2522,7 @@ CSS information
   background-position: center 30%;
   background-size: cover;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .about-mv {
     height: 182px;
   }
@@ -2389,7 +2536,7 @@ CSS information
   background-repeat: no-repeat;
   background-position: top center;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .about-about {
     margin-top: -67px;
     padding-top: 240px;
@@ -2400,7 +2547,7 @@ CSS information
 .about-about__inner {
   margin-top: -146px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .about-about__inner {
     display: flex;
     flex-direction: column;
@@ -2410,7 +2557,7 @@ CSS information
 .about-about__title img {
   width: min(33.3333333333vw, 402px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .about-about__title img {
     max-width: 145px;
     width: 100%;
@@ -2421,7 +2568,7 @@ CSS information
   padding-top: 52px;
   text-align: center;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .about-about h1 {
     padding-top: 0;
   }
@@ -2430,7 +2577,7 @@ CSS information
 .about-about h1 img {
   width: min(45.4394693201vw, 548px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .about-about h1 img {
     max-width: 320px;
     width: 100%;
@@ -2443,7 +2590,7 @@ CSS information
   font-size: min(2.4875621891vw, 30px);
   letter-spacing: 0.2em;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .about-about h2 {
     font-size: 15px;
     padding-top: 16px;
@@ -2456,7 +2603,7 @@ CSS information
   text-align: center;
   line-height: 3.2;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .about-about p {
     font-size: 11px;
     text-align: left;
@@ -2477,7 +2624,7 @@ CSS information
   background-repeat: no-repeat;
   background-position: top center;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .about-trim {
     background-image: url(../../images/about/bg_about_trim-sp.png);
     margin-top: -625px;
@@ -2493,7 +2640,7 @@ CSS information
   top: 67px;
   left: 0;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .about-trim__maru1 {
     top: 9px;
     left: 5%;
@@ -2503,7 +2650,7 @@ CSS information
 .about-trim__maru1 img {
   width: min(21.3930348259vw, 258px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .about-trim__maru1 img {
     width: 100px;
   }
@@ -2514,7 +2661,7 @@ CSS information
   top: -80px;
   right: 0;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 680px) {
   .about-trim__maru2 {
     top: 62px;
     right: auto;
@@ -2525,7 +2672,7 @@ CSS information
 .about-trim__maru2 img {
   width: min(17.0812603648vw, 206px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .about-trim__maru2 img {
     width: 80px;
   }
@@ -2535,7 +2682,7 @@ CSS information
   padding-top: min(21.2271973466vw, 256px);
   text-align: right;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .about-trim__title {
     padding-top: 154px;
   }
@@ -2544,7 +2691,7 @@ CSS information
 .about-trim__title img {
   width: min(50.4975124378vw, 609px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .about-trim__title img {
     max-width: 231px;
     width: 100%;
@@ -2555,7 +2702,7 @@ CSS information
   text-align: center;
   padding-top: 14px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .about-trim h2 {
     padding-top: 5px;
   }
@@ -2564,7 +2711,7 @@ CSS information
 .about-trim h2 img {
   width: min(45.4394693201vw, 548px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .about-trim h2 img {
     max-width: 320px;
     width: 100%;
@@ -2576,7 +2723,7 @@ CSS information
   text-align: center;
   line-height: 2;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .about-trim p {
     font-size: 11px;
     line-height: 1.6;
@@ -2595,7 +2742,7 @@ CSS information
   background-repeat: no-repeat;
   background-position: top center;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .about-hotel {
     background-image: url(../../images/bg_top-news_sp.png);
     margin-top: -597px;
@@ -2612,7 +2759,7 @@ CSS information
   top: 110px;
   right: 9px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .about-hotel__photo {
     top: 127px;
     right: 36px;
@@ -2622,7 +2769,7 @@ CSS information
 .about-hotel__photo img {
   width: min(34.8258706468vw, 420px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .about-hotel__photo img {
     width: 200px;
   }
@@ -2635,7 +2782,7 @@ CSS information
 .about-hotel__title img {
   width: min(54.6434494196vw, 659px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .about-hotel__title img {
     max-width: 240px;
     width: 100%;
@@ -2650,7 +2797,7 @@ CSS information
 .about-hotel h2 img {
   width: min(45.4394693201vw, 548px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .about-hotel h2 img {
     max-width: 320px;
     width: 100%;
@@ -2662,7 +2809,7 @@ CSS information
   text-align: center;
   line-height: 2;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .about-hotel p {
     padding-left: 10px;
     padding-right: 10px;
@@ -2681,7 +2828,7 @@ CSS information
   background-repeat: no-repeat;
   background-position: top center;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .about-goods {
     margin-top: -190px;
     padding-bottom: 77px;
@@ -2698,7 +2845,7 @@ CSS information
   top: -106px;
   left: 122px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .about-goods__photo {
     top: -23px;
     right: 13px;
@@ -2709,7 +2856,7 @@ CSS information
 .about-goods__photo img {
   width: min(36.4842454395vw, 440px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .about-goods__photo img {
     max-width: 160px;
     width: 100%;
@@ -2720,7 +2867,7 @@ CSS information
   padding-top: 110px;
   text-align: right;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .about-goods__title {
     text-align: left;
     padding-top: 42px;
@@ -2730,7 +2877,7 @@ CSS information
 .about-goods__title img {
   width: min(34.5771144279vw, 417px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .about-goods__title img {
     max-width: 151px;
     width: 100%;
@@ -2741,7 +2888,7 @@ CSS information
   text-align: center;
   margin-top: -10px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .about-goods h2 {
     margin-top: 11px;
   }
@@ -2750,7 +2897,7 @@ CSS information
 .about-goods h2 img {
   width: min(45.4394693201vw, 548px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .about-goods h2 img {
     max-width: 320px;
     width: 100%;
@@ -2762,7 +2909,7 @@ CSS information
   text-align: center;
   line-height: 2;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .about-goods__text {
     padding-top: 20px;
     font-size: 10px;
@@ -2772,7 +2919,7 @@ CSS information
 .about-goods-cards {
   padding-top: 15px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .about-goods-cards {
     padding-top: 0;
     margin-top: -8px;
@@ -2790,7 +2937,7 @@ CSS information
   width: 24%;
   position: relative;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .about-goods-card {
     width: 45%;
   }
@@ -2800,7 +2947,7 @@ CSS information
   padding-top: 26px;
   text-align: center;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .about-goods-card p {
     padding-top: 0;
   }
@@ -2809,7 +2956,7 @@ CSS information
 .about-goods-card img {
   height: min(20.3150912106vw, 245px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .about-goods-card img {
     height: auto;
   }
@@ -2820,7 +2967,7 @@ CSS information
   display: block;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .pc {
     display: none;
   }
@@ -2829,8 +2976,35 @@ CSS information
   display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .sp {
+    display: block;
+  }
+}
+.tab {
+  display: block;
+}
+
+@media screen and (max-width: 1024px) {
+  .tab {
+    display: none;
+  }
+}
+.tab-2 {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .tab-2 {
+    display: block;
+  }
+}
+.tab-br {
+  display: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .tab-br {
     display: block;
   }
 }
@@ -2844,7 +3018,7 @@ CSS information
   background-position: center 40%;
   background-size: cover;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .dogh-mv {
     height: 180px;
   }
@@ -2858,7 +3032,7 @@ CSS information
   background-repeat: no-repeat;
   background-position: top center;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .dogh-about {
     margin-top: -67px;
     padding-top: 240px;
@@ -2869,7 +3043,7 @@ CSS information
 .dogh-about__inner {
   margin-top: -146px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .dogh-about__inner {
     display: flex;
     flex-direction: column;
@@ -2879,7 +3053,7 @@ CSS information
 .dogh-about__title img {
   width: min(56.8822553897vw, 686px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .dogh-about__title img {
     max-width: 251px;
     width: 100%;
@@ -2890,7 +3064,7 @@ CSS information
   padding-top: 52px;
   text-align: center;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .dogh-about h1 {
     padding-top: 1px;
   }
@@ -2899,7 +3073,7 @@ CSS information
 .dogh-about h1 img {
   width: min(45.4394693201vw, 548px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .dogh-about h1 img {
     max-width: 320px;
     width: 100%;
@@ -2912,7 +3086,7 @@ CSS information
   font-size: min(2.4875621891vw, 30px);
   letter-spacing: 0.2em;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .dogh-about h2 {
     padding-top: 17px;
     padding-left: 10px;
@@ -2927,7 +3101,7 @@ CSS information
   text-align: center;
   line-height: 3.2;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .dogh-about p {
     padding-left: 10px;
     padding-top: 26 px;
@@ -2946,7 +3120,7 @@ CSS information
   background-repeat: no-repeat;
   background-position: top center;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .dogh-facility {
     margin-top: -636px;
     padding-top: 80px;
@@ -2963,7 +3137,12 @@ CSS information
   top: -251px;
   left: 20px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1080px) {
+  .dogh-facility__maru1 {
+    top: -2.2%;
+  }
+}
+@media screen and (max-width: 680px) {
   .dogh-facility__maru1 {
     top: 1px;
     left: 6%;
@@ -2973,7 +3152,7 @@ CSS information
 .dogh-facility__maru1 img {
   width: min(16.583747927vw, 200px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .dogh-facility__maru1 img {
     width: 100px;
   }
@@ -2984,7 +3163,7 @@ CSS information
   top: -168px;
   right: 21px;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 680px) {
   .dogh-facility__maru2 {
     top: -70px;
     right: auto;
@@ -2995,7 +3174,7 @@ CSS information
 .dogh-facility__maru2 img {
   width: min(16.583747927vw, 200px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .dogh-facility__maru2 img {
     width: 100px;
   }
@@ -3009,7 +3188,7 @@ CSS information
 .dogh-facility__title img {
   width: min(44.1956882255vw, 533px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .dogh-facility__title img {
     max-width: 200px;
     width: 100%;
@@ -3020,7 +3199,7 @@ CSS information
   display: flex;
   justify-content: space-between;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .dogh-facility-hotel {
     margin-top: 12px;
     padding-left: 10px;
@@ -3031,7 +3210,7 @@ CSS information
 .dogh-facility-hotel__image {
   width: min(46.2686567164vw, 558px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .dogh-facility-hotel__image {
     width: 96%;
     margin-top: 24px;
@@ -3040,7 +3219,7 @@ CSS information
 .dogh-facility-hotel__image img {
   width: min(46.2686567164vw, 558px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .dogh-facility-hotel__image img {
     width: 100%;
   }
@@ -3049,7 +3228,7 @@ CSS information
   text-align: center;
   margin-top: 13px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .dogh-facility-hotel__image p {
     font-size: 10px;
     margin-top: 5px;
@@ -3059,7 +3238,7 @@ CSS information
 .dogh-facility-hotel__textblock {
   width: 49%;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .dogh-facility-hotel__textblock {
     width: 100%;
     order: -1;
@@ -3073,7 +3252,7 @@ CSS information
   padding-top: 10px;
   letter-spacing: 0.2em;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .dogh-facility-hotel__title {
     font-size: 13px;
     padding-left: 20px;
@@ -3092,7 +3271,7 @@ CSS information
   width: min(2.6533996683vw, 32px);
   height: min(1.9900497512vw, 24px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .dogh-facility-hotel__title::before {
     top: 14px;
     left: 0;
@@ -3105,7 +3284,7 @@ CSS information
   margin-top: min(3.3167495854vw, 40px);
   line-height: 2;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .dogh-facility-hotel__text {
     margin-top: 6px;
     line-height: 1.6;
@@ -3117,7 +3296,7 @@ CSS information
   justify-content: space-between;
   margin-top: min(6.6334991708vw, 80px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .dogh-facility-cards {
     flex-wrap: wrap;
     margin-top: 29px;
@@ -3129,7 +3308,7 @@ CSS information
 .dogh-facility-card {
   width: min(21.0613598673vw, 254px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .dogh-facility-card {
     width: 45%;
   }
@@ -3143,7 +3322,7 @@ CSS information
   margin-top: 7px;
   line-height: 1.3;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .dogh-facility-card__text {
     margin-top: 3px;
     font-size: 10px;
@@ -3160,7 +3339,7 @@ CSS information
   background-repeat: no-repeat;
   background-position: top center;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .dogh-price {
     background-image: url(../../images/bg_top-news_sp.png);
     margin-top: -666px;
@@ -3175,19 +3354,31 @@ CSS information
   padding: 133px min(4.1459369818vw, 50px) 58px;
   position: relative;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .dogh-price__wrap {
-    border-radius: 10px 30px 10px 30px;
+    border-radius: 4px 22px 4px 22px;
     padding: 48px 20px 39px;
   }
 }
 .dogh-price__wrap h2 img {
   width: min(45.4394693201vw, 548px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .dogh-price__wrap h2 img {
     max-width: 280px;
     width: 100%;
+  }
+}
+.dogh-price__wrap .caption {
+  text-align: center;
+  font-size: min(1.6583747927vw, 20px);
+  margin-bottom: 22px;
+}
+@media screen and (max-width: 680px) {
+  .dogh-price__wrap .caption {
+    margin-top: 9px;
+    margin-bottom: -4px;
+    font-size: 11px;
   }
 }
 
@@ -3198,7 +3389,12 @@ CSS information
   transform: translateX(-50%);
   width: min(80.0165837479vw, 965px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1080px) {
+  .dogh-price__photo {
+    top: -5.5%;
+  }
+}
+@media screen and (max-width: 680px) {
   .dogh-price__photo {
     max-width: 253px;
     width: 100%;
@@ -3209,7 +3405,7 @@ CSS information
 .dogh-price__pricelist {
   margin-top: 38px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .dogh-price__pricelist {
     margin-top: 10px;
   }
@@ -3217,20 +3413,9 @@ CSS information
 .dogh-price__pricelist table {
   width: 100%;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .dogh-price__pricelist table {
     width: 566px;
-  }
-}
-.dogh-price__pricelist table caption {
-  text-align: center;
-  font-size: min(1.6583747927vw, 20px);
-  letter-spacing: 0.2em;
-  margin-bottom: 22px;
-}
-@media screen and (max-width: 768px) {
-  .dogh-price__pricelist table caption {
-    margin-bottom: 7px;
   }
 }
 .dogh-price__pricelist table .first-tr th {
@@ -3244,7 +3429,7 @@ CSS information
   width: 18.5%;
   text-align: left;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .dogh-price__pricelist table .second-tr th {
     padding-left: 5px;
   }
@@ -3260,7 +3445,7 @@ CSS information
   text-align: left;
   padding-left: min(8.2918739635vw, 100px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .dogh-price__pricelist table thead tr .table-head {
     padding-left: 65px;
   }
@@ -3268,7 +3453,7 @@ CSS information
 .dogh-price__pricelist table thead tr .table-head.-pl {
   padding-left: min(5.4726368159vw, 66px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .dogh-price__pricelist table thead tr .table-head.-pl {
     padding-left: 65px;
   }
@@ -3276,7 +3461,7 @@ CSS information
 .dogh-price__pricelist table thead tr th {
   padding: min(0.4975124378vw, 6px) 0;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .dogh-price__pricelist table thead tr th {
     padding: 5px 0;
   }
@@ -3293,7 +3478,7 @@ CSS information
   padding: min(1.4925373134vw, 18px) 0;
   text-align: left;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .dogh-price__pricelist table tbody tr td {
     padding: 12px 0;
   }
@@ -3306,12 +3491,12 @@ CSS information
 .dogh-price__pricelist table tbody tr td:nth-child(n+2) {
   width: 18.5%;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .dogh-price__pricelist table tbody tr td:nth-child(n+2) {
     padding-left: 5px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .dogh-price__pricelist table tbody tr {
     font-size: 15px;
   }
@@ -3325,7 +3510,7 @@ CSS information
   text-align: left;
   line-height: 1.6;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .dogh-price__attention {
     margin-top: 8px;
   }
@@ -3341,7 +3526,7 @@ CSS information
   background-position: top center;
   padding-bottom: 175px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .dogh-rule {
     margin-top: -207px;
     padding-top: 26px;
@@ -3354,7 +3539,7 @@ CSS information
 .dogh-rule__inner {
   padding-left: 50px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .dogh-rule__inner {
     padding-left: 20px;
   }
@@ -3363,7 +3548,7 @@ CSS information
 .dogh-rule__photo {
   width: min(27.3631840796vw, 330px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .dogh-rule__photo {
     max-width: 114px;
     width: 100%;
@@ -3374,7 +3559,7 @@ CSS information
   display: flex;
   margin-top: 8px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .dogh-rule__content {
     flex-direction: column;
     margin-top: -6px;
@@ -3384,7 +3569,7 @@ CSS information
 .dogh-rule__textbox {
   width: 56%;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .dogh-rule__textbox {
     width: 100%;
   }
@@ -3397,7 +3582,7 @@ CSS information
   padding-top: 10px;
   letter-spacing: 0.2em;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .dogh-rule__title {
     font-size: 13px;
     padding-left: 21px;
@@ -3416,7 +3601,7 @@ CSS information
   width: min(2.6533996683vw, 32px);
   height: min(1.9900497512vw, 24px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .dogh-rule__title::before {
     width: 16px;
     height: 12px;
@@ -3429,7 +3614,7 @@ CSS information
   font-size: min(1.1608623549vw, 14px);
   line-height: 2.14;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .dogh-rule__text {
     font-size: 11px;
     margin-top: 4px;
@@ -3440,7 +3625,7 @@ CSS information
 .dogh-rule__image {
   width: min(40.0497512438vw, 483px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .dogh-rule__image {
     margin-top: 26px;
     width: 84%;
@@ -3454,7 +3639,7 @@ CSS information
   display: block;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .pc {
     display: none;
   }
@@ -3463,8 +3648,35 @@ CSS information
   display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .sp {
+    display: block;
+  }
+}
+.tab {
+  display: block;
+}
+
+@media screen and (max-width: 1024px) {
+  .tab {
+    display: none;
+  }
+}
+.tab-2 {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .tab-2 {
+    display: block;
+  }
+}
+.tab-br {
+  display: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .tab-br {
     display: block;
   }
 }
@@ -3478,7 +3690,7 @@ CSS information
   background-position: center 40%;
   background-size: cover;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .cath-mv {
     height: 180px;
   }
@@ -3492,7 +3704,7 @@ CSS information
   background-repeat: no-repeat;
   background-position: top center;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .cath-about {
     margin-top: -67px;
     padding-top: 240px;
@@ -3503,7 +3715,7 @@ CSS information
 .cath-about__inner {
   margin-top: -146px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .cath-about__inner {
     display: flex;
     flex-direction: column;
@@ -3513,7 +3725,7 @@ CSS information
 .cath-about__title img {
   width: min(56.8822553897vw, 686px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .cath-about__title img {
     max-width: 239px;
     width: 100%;
@@ -3524,7 +3736,7 @@ CSS information
   padding-top: 52px;
   text-align: center;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .cath-about h1 {
     padding-top: 2px;
   }
@@ -3533,7 +3745,7 @@ CSS information
 .cath-about h1 img {
   width: min(45.4394693201vw, 548px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .cath-about h1 img {
     max-width: 320px;
     width: 100%;
@@ -3546,7 +3758,7 @@ CSS information
   font-size: min(2.4875621891vw, 30px);
   letter-spacing: 0.2em;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .cath-about h2 {
     font-size: 15px;
     padding-top: 15px;
@@ -3561,7 +3773,7 @@ CSS information
   text-align: center;
   line-height: 3.2;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .cath-about p {
     padding-left: 10px;
     padding-top: 21px;
@@ -3580,7 +3792,7 @@ CSS information
   background-repeat: no-repeat;
   background-position: top center;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .cath-facility {
     margin-top: -617px;
     background-image: url(../../images/bg_cath_facility-sp.png);
@@ -3596,7 +3808,12 @@ CSS information
   top: -203px;
   left: 0;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1080px) {
+  .cath-facility__maru1 {
+    top: -6.2%;
+  }
+}
+@media screen and (max-width: 680px) {
   .cath-facility__maru1 {
     top: 1px;
     right: auto;
@@ -3607,7 +3824,7 @@ CSS information
 .cath-facility__maru1 img {
   width: min(16.583747927vw, 200px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .cath-facility__maru1 img {
     width: 100px;
   }
@@ -3618,7 +3835,12 @@ CSS information
   top: -116px;
   right: 0;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1080px) {
+  .cath-facility__maru2 {
+    top: -0.2%;
+  }
+}
+@media screen and (max-width: 680px) {
   .cath-facility__maru2 {
     top: 72px;
     left: 6%;
@@ -3628,7 +3850,7 @@ CSS information
 .cath-facility__maru2 img {
   width: min(16.583747927vw, 200px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .cath-facility__maru2 img {
     width: 100px;
   }
@@ -3638,7 +3860,7 @@ CSS information
   padding-top: min(19.0713101161vw, 230px);
   text-align: right;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .cath-facility__title {
     padding-top: 132px;
   }
@@ -3647,7 +3869,7 @@ CSS information
 .cath-facility__title img {
   width: min(44.1956882255vw, 533px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .cath-facility__title img {
     max-width: 200px;
     width: 100%;
@@ -3658,7 +3880,7 @@ CSS information
   display: flex;
   justify-content: space-between;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .cath-facility-hotel {
     flex-direction: column;
     padding-left: 10px;
@@ -3670,7 +3892,7 @@ CSS information
 .cath-facility-hotel__image {
   width: min(46.2686567164vw, 558px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .cath-facility-hotel__image {
     width: 100%;
     margin-top: 40px;
@@ -3679,7 +3901,7 @@ CSS information
 .cath-facility-hotel__image img {
   width: min(46.2686567164vw, 558px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .cath-facility-hotel__image img {
     width: 100%;
   }
@@ -3688,7 +3910,7 @@ CSS information
   text-align: center;
   margin-top: 13px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .cath-facility-hotel__image p {
     font-size: 10px;
     margin-top: 5px;
@@ -3698,7 +3920,7 @@ CSS information
 .cath-facility-hotel__textblock {
   width: 49%;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .cath-facility-hotel__textblock {
     width: 100%;
     order: -1;
@@ -3712,7 +3934,7 @@ CSS information
   padding-top: 10px;
   letter-spacing: 0.2em;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .cath-facility-hotel__title {
     font-size: 13px;
     padding-left: 20px;
@@ -3731,7 +3953,7 @@ CSS information
   width: min(2.6533996683vw, 32px);
   height: min(1.9900497512vw, 24px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .cath-facility-hotel__title::before {
     top: 14px;
     left: 0;
@@ -3744,7 +3966,7 @@ CSS information
   margin-top: min(3.3167495854vw, 40px);
   line-height: 2;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .cath-facility-hotel__text {
     margin-top: 6px;
     line-height: 1.6;
@@ -3756,7 +3978,7 @@ CSS information
   justify-content: space-between;
   margin-top: min(6.6334991708vw, 80px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .cath-facility-cards {
     flex-wrap: wrap;
     padding-left: 10px;
@@ -3767,7 +3989,7 @@ CSS information
 .cath-facility-card {
   width: min(21.0613598673vw, 254px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .cath-facility-card {
     width: 45%;
   }
@@ -3775,7 +3997,7 @@ CSS information
     margin-top: 19px;
   }
 }
-@media screen and (max-width: 768px) and (max-width: 768px) {
+@media screen and (max-width: 680px) and (max-width: 680px) {
   .cath-facility-card:nth-child(n+3) {
     margin-top: 33px;
   }
@@ -3785,7 +4007,7 @@ CSS information
   text-align: center;
   margin-top: 15px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .cath-facility-card__text {
     margin-top: 3px;
     font-size: 10px;
@@ -3802,7 +4024,7 @@ CSS information
   background-repeat: no-repeat;
   background-position: top center;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .cath-price {
     background-image: url(../../images/bg_top-news_sp.png);
     margin-top: -621px;
@@ -3817,19 +4039,31 @@ CSS information
   padding: 133px min(8.2918739635vw, 100px) 120px;
   position: relative;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .cath-price__wrap {
-    border-radius: 10px 30px 10px 30px;
+    border-radius: 4px 22px 4px 22px;
     padding: 48px 20px 23px;
   }
 }
 .cath-price__wrap h2 img {
   width: min(45.4394693201vw, 548px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .cath-price__wrap h2 img {
     max-width: 280px;
     width: 100%;
+  }
+}
+.cath-price__wrap .caption {
+  text-align: center;
+  font-size: min(1.6583747927vw, 20px);
+  margin-bottom: 22px;
+}
+@media screen and (max-width: 680px) {
+  .cath-price__wrap .caption {
+    margin-top: 9px;
+    margin-bottom: -4px;
+    font-size: 11px;
   }
 }
 
@@ -3840,7 +4074,12 @@ CSS information
   transform: translateX(-50%);
   width: min(80.0165837479vw, 965px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1080px) {
+  .cath-price__photo {
+    top: -7%;
+  }
+}
+@media screen and (max-width: 680px) {
   .cath-price__photo {
     max-width: 253px;
     width: 100%;
@@ -3851,7 +4090,7 @@ CSS information
 .cath-price__pricelist {
   margin-top: 20px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .cath-price__pricelist {
     margin-top: 10px;
   }
@@ -3859,7 +4098,7 @@ CSS information
 .cath-price__pricelist table {
   width: 100%;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .cath-price__pricelist table {
     width: 500px;
   }
@@ -3870,7 +4109,7 @@ CSS information
   letter-spacing: 0.2em;
   margin-bottom: 22px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .cath-price__pricelist table caption {
     margin-bottom: 7px;
     font-size: 10px;
@@ -3886,7 +4125,7 @@ CSS information
 .cath-price__pricelist table thead tr th {
   padding: min(1.9071310116vw, 23px) min(4.0630182421vw, 49px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .cath-price__pricelist table thead tr th {
     padding: 15px 0 17px 14px;
   }
@@ -3900,7 +4139,7 @@ CSS information
   padding: min(1.4925373134vw, 18px) 0;
   text-align: left;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .cath-price__pricelist table tbody tr td {
     padding: 16px 0;
   }
@@ -3912,7 +4151,7 @@ CSS information
 .cath-price__pricelist table tbody tr td span {
   font-size: min(1.824212272vw, 22px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .cath-price__pricelist table tbody tr td span {
     font-size: 15px;
   }
@@ -3926,7 +4165,7 @@ CSS information
   text-align: left;
   line-height: 1.6;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .cath-price__attention {
     margin-top: 12px;
   }
@@ -3942,7 +4181,7 @@ CSS information
   background-position: top center;
   padding-bottom: 140px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .cath-rule {
     margin-top: -230px;
     padding-top: 27px;
@@ -3955,7 +4194,7 @@ CSS information
 .cath-rule__inner {
   padding-left: 50px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .cath-rule__inner {
     padding-left: 20px;
   }
@@ -3964,7 +4203,7 @@ CSS information
 .cath-rule__photo {
   width: min(27.3631840796vw, 330px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .cath-rule__photo {
     max-width: 114px;
     width: 100%;
@@ -3975,7 +4214,7 @@ CSS information
   display: flex;
   margin-top: 8px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .cath-rule__content {
     flex-direction: column;
     margin-top: -9px;
@@ -3985,7 +4224,7 @@ CSS information
 .cath-rule__textbox {
   width: 56%;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .cath-rule__textbox {
     width: 100%;
   }
@@ -3998,7 +4237,7 @@ CSS information
   padding-top: 10px;
   letter-spacing: 0.2em;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .cath-rule__title {
     font-size: 13px;
     padding-left: 21px;
@@ -4017,7 +4256,7 @@ CSS information
   width: min(2.6533996683vw, 32px);
   height: min(1.9900497512vw, 24px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .cath-rule__title::before {
     width: 16px;
     height: 12px;
@@ -4030,7 +4269,7 @@ CSS information
   font-size: min(1.1608623549vw, 14px);
   line-height: 2.14;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .cath-rule__text {
     font-size: 11px;
     margin-top: 4px;
@@ -4041,7 +4280,7 @@ CSS information
 .cath-rule__image {
   width: min(40.0497512438vw, 483px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .cath-rule__image {
     margin-top: 26px;
     width: 84%;
@@ -4055,7 +4294,7 @@ CSS information
   display: block;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .pc {
     display: none;
   }
@@ -4064,8 +4303,35 @@ CSS information
   display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .sp {
+    display: block;
+  }
+}
+.tab {
+  display: block;
+}
+
+@media screen and (max-width: 1024px) {
+  .tab {
+    display: none;
+  }
+}
+.tab-2 {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .tab-2 {
+    display: block;
+  }
+}
+.tab-br {
+  display: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .tab-br {
     display: block;
   }
 }
@@ -4080,7 +4346,7 @@ CSS information
   background-position: center 70%;
   background-size: cover;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .dogtrim-mv {
     height: 182px;
   }
@@ -4094,7 +4360,7 @@ CSS information
   background-repeat: no-repeat;
   background-position: top center;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .dogtrim-about {
     margin-top: -67px;
     padding-top: 240px;
@@ -4105,7 +4371,7 @@ CSS information
 .dogtrim-about__inner {
   margin-top: -146px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .dogtrim-about__inner {
     display: flex;
     flex-direction: column;
@@ -4115,7 +4381,7 @@ CSS information
 .dogtrim-about__title img {
   width: min(75.7877280265vw, 914px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .dogtrim-about__title img {
     width: 100%;
   }
@@ -4125,7 +4391,7 @@ CSS information
   padding-top: 52px;
   text-align: center;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .dogtrim-about h1 {
     padding-top: 5px;
   }
@@ -4134,7 +4400,7 @@ CSS information
 .dogtrim-about h1 img {
   width: min(45.4394693201vw, 548px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .dogtrim-about h1 img {
     max-width: 320px;
     width: 100%;
@@ -4150,7 +4416,7 @@ CSS information
   display: flex;
   justify-content: space-between;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .dogtrim-about__select {
     margin-top: 16px;
     max-width: 100%;
@@ -4167,7 +4433,7 @@ CSS information
   border-radius: 25px;
   text-align: center;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .dogtrim-about__button {
     max-width: 150px;
     width: 100%;
@@ -4178,7 +4444,7 @@ CSS information
   color: #fff;
   letter-spacing: 0.1em;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .dogtrim-about__button a {
     font-size: 10px;
   }
@@ -4201,7 +4467,7 @@ CSS information
   border: 15px solid transparent;
   border-top: 15px solid #ee8691;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .dogtrim-about__button::before {
     left: 55%;
     border: 7px solid transparent;
@@ -4221,7 +4487,7 @@ CSS information
   width: min(1.1608623549vw, 14px);
   height: min(0.9950248756vw, 12px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .dogtrim-about__button::after {
     width: 7px;
     height: 6px;
@@ -4236,7 +4502,7 @@ CSS information
   font-size: min(2.4875621891vw, 30px);
   letter-spacing: 0.2em;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .dogtrim-about h2 {
     padding-top: 26px;
     padding-left: 10px;
@@ -4250,7 +4516,7 @@ CSS information
   text-align: center;
   line-height: 3.2;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .dogtrim-about p {
     padding-top: 14px;
     padding-left: 10px;
@@ -4264,7 +4530,7 @@ CSS information
   justify-content: space-between;
   margin-top: 75px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .dogtrim-about__cards {
     flex-wrap: wrap;
     margin-top: 26px;
@@ -4276,7 +4542,7 @@ CSS information
 .dogtrim-about__card {
   width: min(21.0613598673vw, 254px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .dogtrim-about__card {
     width: 45%;
   }
@@ -4295,7 +4561,7 @@ CSS information
   background-repeat: no-repeat;
   background-position: top center;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .dogtrim-price {
     margin-top: -718px;
     padding-top: 98px;
@@ -4310,16 +4576,16 @@ CSS information
   padding: 133px min(8.2918739635vw, 100px) 48px;
   position: relative;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .dogtrim-price__wrap {
-    border-radius: 10px 30px 10px 30px;
+    border-radius: 4px 22px 4px 22px;
     padding: 50px 20px 28px;
   }
 }
 .dogtrim-price__wrap h2 img {
   width: min(45.4394693201vw, 548px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .dogtrim-price__wrap h2 img {
     max-width: 280px;
     width: 100%;
@@ -4336,13 +4602,18 @@ CSS information
 .dogtrim-price__photo img {
   width: min(80.0165837479vw, 965px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .dogtrim-price__photo img {
     max-width: 253px;
     width: 100%;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1080px) {
+  .dogtrim-price__photo {
+    top: -2.2%;
+  }
+}
+@media screen and (max-width: 680px) {
   .dogtrim-price__photo {
     top: -20px;
     max-width: 253px;
@@ -4355,7 +4626,7 @@ CSS information
   margin-bottom: 31px;
   text-align: center;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .dogtrim-price__tabs .caption {
     margin-top: 20px;
     margin-bottom: 25px;
@@ -4376,7 +4647,7 @@ CSS information
   display: flex;
   justify-content: space-between;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .dogtrim-price__tablist {
     margin-top: 30px;
     max-width: 100%;
@@ -4385,7 +4656,7 @@ CSS information
 .dogtrim-price__tablist li {
   list-style-type: none;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .dogtrim-price__tablist li {
     width: 100%;
   }
@@ -4401,7 +4672,7 @@ CSS information
   letter-spacing: 0.1em;
   position: relative;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .dogtrim-price__tablist .tab {
     max-width: 130px;
     width: 100%;
@@ -4421,7 +4692,7 @@ CSS information
   width: min(1.1608623549vw, 14px);
   height: min(0.9950248756vw, 12px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .dogtrim-price__tablist .tab::after {
     top: 9px;
     right: 10px;
@@ -4433,7 +4704,7 @@ CSS information
 #dogtrim-price-panel-1 .mainhead th:nth-child(1) {
   width: 23%;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   #dogtrim-price-panel-1 .mainhead th:nth-child(1) {
     width: 13%;
   }
@@ -4441,7 +4712,7 @@ CSS information
 #dogtrim-price-panel-1 .mainhead th:nth-child(2) {
   width: 25%;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   #dogtrim-price-panel-1 .mainhead th:nth-child(2) {
     width: 23%;
   }
@@ -4450,7 +4721,7 @@ CSS information
   width: 36%;
   padding-left: min(6.3018242123vw, 76px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   #dogtrim-price-panel-1 .mainhead th:nth-child(3) {
     width: 30%;
   }
@@ -4460,7 +4731,7 @@ CSS information
   top: calc(17% - 25px) !important;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   #dogtrim-price-panel-2 table thead tr th:nth-child(1) {
     width: 20%;
   }
@@ -4479,7 +4750,7 @@ CSS information
   width: 965px;
   text-align: left;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .dogtrim-price__tabs .tab-panel table {
     width: 660px;
   }
@@ -4500,7 +4771,7 @@ CSS information
   background-color: #333333;
   font-size: min(1.3266998342vw, 16px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .dogtrim-price__tabs .tab-panel table thead .mainhead {
     font-size: 11px;
   }
@@ -4509,7 +4780,7 @@ CSS information
   padding-top: 22px;
   padding-bottom: 24px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .dogtrim-price__tabs .tab-panel table thead .mainhead th {
     padding-top: 14px;
     padding-bottom: 18px;
@@ -4519,7 +4790,7 @@ CSS information
   background-color: #5c5c5c;
   font-size: min(1.3266998342vw, 16px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .dogtrim-price__tabs .tab-panel table thead .subhead {
     font-size: 11px;
   }
@@ -4543,7 +4814,7 @@ CSS information
   font-size: min(1.824212272vw, 22px);
   padding: min(1.3266998342vw, 16px) 0 min(1.7412935323vw, 21px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .dogtrim-price__tabs .tab-panel table tbody tr td {
     padding: 11px 0;
   }
@@ -4551,7 +4822,7 @@ CSS information
 .dogtrim-price__tabs .tab-panel table tbody tr td span {
   font-size: min(1.3266998342vw, 16px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .dogtrim-price__tabs .tab-panel table tbody tr td span {
     font-size: 11px;
   }
@@ -4560,13 +4831,13 @@ CSS information
   font-size: min(1.3266998342vw, 16px);
   padding-left: min(1.9071310116vw, 23px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .dogtrim-price__tabs .tab-panel table tbody tr td:first-child {
     font-size: 11px;
     padding-left: 14px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .dogtrim-price__tabs .tab-panel table tbody tr td:nth-child(n+2) {
     font-size: 15px;
   }
@@ -4590,7 +4861,7 @@ CSS information
 .dogtrim-price-rules {
   margin-top: 53px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .dogtrim-price-rules {
     margin-top: 15px;
   }
@@ -4599,7 +4870,7 @@ CSS information
 .dogtrim-price-rules__photo img {
   width: min(45.4394693201vw, 548px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .dogtrim-price-rules__photo img {
     max-width: 280px;
     width: 100%;
@@ -4610,7 +4881,7 @@ CSS information
   text-align: left;
   margin-top: 44px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .dogtrim-price-rules__text {
     margin-top: 14px;
   }
@@ -4619,7 +4890,7 @@ CSS information
   font-size: min(1.2437810945vw, 15px);
   line-height: 1.6;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .dogtrim-price-rules__text p {
     font-size: 11px;
   }
@@ -4644,14 +4915,14 @@ CSS information
 ----------------------------------------------------------- */
 .dogtrim-flow {
   margin-top: -346px;
-  padding-top: 337px;
+  padding-top: min(27.943615257vw, 337px);
   padding-bottom: 123px;
   background-image: url(../../images/bg_dogtrim_flow.png);
   background-repeat: no-repeat;
   background-position: top center;
   position: relative;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .dogtrim-flow {
     background-image: url(../../images/bg_dogtrim_flow-sp.png);
     margin-top: -441px;
@@ -4667,7 +4938,7 @@ CSS information
   transform: translateX(-50%);
   width: min(70.1492537313vw, 846px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .dogtrim-flow__photo {
     max-width: 305px;
     width: 100%;
@@ -4689,9 +4960,9 @@ CSS information
   position: relative;
   z-index: 10;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .trim-flow-accordion__item {
-    border-radius: 10px 30px 10px 30px;
+    border-radius: 4px 22px 4px 22px;
   }
 }
 .trim-flow-accordion__item:nth-child(n+3) {
@@ -4701,9 +4972,9 @@ CSS information
 .trim-flow-accordion__headline {
   padding: 39px 42px 39px 80px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .trim-flow-accordion__headline {
-    padding: 26px 20px 14px;
+    padding: 22px 20px 11px;
   }
 }
 
@@ -4722,7 +4993,7 @@ CSS information
   justify-content: space-between;
   position: relative;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .dogtrim-flow .trim-flow-accordion__tab {
     font-size: 14px;
     padding-left: 22px;
@@ -4743,10 +5014,10 @@ CSS information
   width: min(1.1608623549vw, 14px);
   height: min(0.9950248756vw, 12px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .dogtrim-flow .trim-flow-accordion__tab::before {
-    top: 5px;
-    left: 0;
+    top: 7px;
+    left: 6px;
     width: 7px;
     height: 6px;
   }
@@ -4767,7 +5038,7 @@ CSS information
   justify-content: space-between;
   position: relative;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .cattrim-flow .trim-flow-accordion__tab {
     font-size: 14px;
     padding-left: 22px;
@@ -4788,7 +5059,7 @@ CSS information
   width: min(1.1608623549vw, 14px);
   height: min(0.9950248756vw, 12px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .cattrim-flow .trim-flow-accordion__tab::before {
     top: 5px;
     left: 0;
@@ -4803,7 +5074,7 @@ CSS information
 .trim-flow-accordion__tabsubtext {
   font-size: min(1.2437810945vw, 15px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .trim-flow-accordion__tabsubtext {
     color: #95cccf;
     font-size: 7px;
@@ -4814,7 +5085,7 @@ CSS information
 .trim-flow-accordion__tabsubtext.-cattrim {
   color: #ee8691;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .trim-flow-accordion__tabsubtext.-cattrim {
     display: block;
   }
@@ -4822,7 +5093,7 @@ CSS information
 .trim-flow-accordion__tabsubtext.-ml160 {
   margin-left: -162px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .trim-flow-accordion__tabsubtext.-ml160 {
     margin-left: 0;
   }
@@ -4837,7 +5108,7 @@ CSS information
   position: relative;
   width: 18px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .trim-flow-accordion__tabicon {
     width: 8px;
     height: 8px;
@@ -4869,7 +5140,7 @@ CSS information
   justify-content: space-between;
   padding: 0 90px 30px 81px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .trim-flow-accordion__panel-content {
     padding: 0 20px 22px;
   }
@@ -4877,7 +5148,7 @@ CSS information
 .trim-flow-accordion__panel-content .trim-flow-accordion__panel-image {
   width: min(14.9253731343vw, 180px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .trim-flow-accordion__panel-content .trim-flow-accordion__panel-image {
     max-width: 90px;
     width: 100%;
@@ -4892,7 +5163,7 @@ CSS information
 .trim-flow-accordion__panel-content .trim-flow-accordion__panel-text {
   width: 73%;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .trim-flow-accordion__panel-content .trim-flow-accordion__panel-text {
     width: 63%;
   }
@@ -4910,7 +5181,7 @@ CSS information
   display: block;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .pc {
     display: none;
   }
@@ -4919,8 +5190,35 @@ CSS information
   display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .sp {
+    display: block;
+  }
+}
+.tab {
+  display: block;
+}
+
+@media screen and (max-width: 1024px) {
+  .tab {
+    display: none;
+  }
+}
+.tab-2 {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .tab-2 {
+    display: block;
+  }
+}
+.tab-br {
+  display: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .tab-br {
     display: block;
   }
 }
@@ -4935,7 +5233,7 @@ CSS information
   background-position: center 40%;
   background-size: cover;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .cattrim-mv {
     height: 180px;
   }
@@ -4949,7 +5247,7 @@ CSS information
   background-repeat: no-repeat;
   background-position: top center;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .cattrim-about {
     margin-top: -67px;
     padding-top: 240px;
@@ -4960,14 +5258,14 @@ CSS information
 .cattrim-about__inner {
   margin-top: -146px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .cattrim-about__inner {
     display: flex;
     flex-direction: column;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .cattrim-about__title {
     margin-top: 10px;
   }
@@ -4976,7 +5274,7 @@ CSS information
 .cattrim-about__title img {
   width: min(75.7877280265vw, 914px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .cattrim-about__title img {
     width: 100%;
   }
@@ -4986,7 +5284,7 @@ CSS information
   padding-top: 52px;
   text-align: center;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .cattrim-about h1 {
     padding-top: 0;
   }
@@ -4995,7 +5293,7 @@ CSS information
 .cattrim-about h1 img {
   width: min(45.4394693201vw, 548px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .cattrim-about h1 img {
     max-width: 320px;
     width: 100%;
@@ -5011,7 +5309,7 @@ CSS information
   display: flex;
   justify-content: space-between;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .cattrim-about__select {
     margin-top: 20px;
     max-width: 100%;
@@ -5028,7 +5326,7 @@ CSS information
   border-radius: 25px;
   text-align: center;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .cattrim-about__button {
     max-width: 150px;
     width: 100%;
@@ -5039,7 +5337,7 @@ CSS information
   color: #fff;
   letter-spacing: 0.1em;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .cattrim-about__button a {
     font-size: 10px;
   }
@@ -5062,7 +5360,7 @@ CSS information
   border: 15px solid transparent;
   border-top: 15px solid #67b5b9;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .cattrim-about__button::before {
     left: 55%;
     border: 7px solid transparent;
@@ -5082,7 +5380,7 @@ CSS information
   width: min(1.1608623549vw, 14px);
   height: min(0.9950248756vw, 12px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .cattrim-about__button::after {
     width: 7px;
     height: 6px;
@@ -5097,7 +5395,7 @@ CSS information
   font-size: min(2.4875621891vw, 30px);
   letter-spacing: 0.2em;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .cattrim-about h2 {
     padding-left: 10px;
     padding-top: 24px;
@@ -5111,7 +5409,7 @@ CSS information
   text-align: center;
   line-height: 3.2;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .cattrim-about p {
     padding-top: 15px;
     padding-left: 10px;
@@ -5125,7 +5423,7 @@ CSS information
   justify-content: space-between;
   margin-top: 75px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .cattrim-about__cards {
     flex-wrap: wrap;
     margin-top: 28px;
@@ -5137,7 +5435,7 @@ CSS information
 .cattrim-about__card {
   width: min(21.0613598673vw, 254px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .cattrim-about__card {
     width: 45%;
   }
@@ -5156,7 +5454,7 @@ CSS information
   background-repeat: no-repeat;
   background-position: top center;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .cattrim-price {
     background-image: url(../../images/bg_cattrim_price-sp.png);
     margin-top: -719px;
@@ -5171,16 +5469,16 @@ CSS information
   padding: 133px min(8.2918739635vw, 100px) 48px;
   position: relative;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .cattrim-price__wrap {
-    border-radius: 10px 30px 10px 30px;
+    border-radius: 4px 22px 4px 22px;
     padding: 50px 20px 12px;
   }
 }
 .cattrim-price__wrap h2 img {
   width: min(45.4394693201vw, 548px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .cattrim-price__wrap h2 img {
     max-width: 280px;
     width: 100%;
@@ -5197,13 +5495,18 @@ CSS information
 .cattrim-price__photo img {
   width: min(80.0165837479vw, 965px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .cattrim-price__photo img {
     max-width: 253px;
     width: 100%;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1080px) {
+  .cattrim-price__photo {
+    top: -5.2%;
+  }
+}
+@media screen and (max-width: 680px) {
   .cattrim-price__photo {
     top: -20px;
     max-width: 253px;
@@ -5216,7 +5519,7 @@ CSS information
   margin-bottom: 31px;
   text-align: center;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .cattrim-price__tabs .caption {
     margin-top: 20px;
     margin-bottom: 25px;
@@ -5237,7 +5540,7 @@ CSS information
   display: flex;
   justify-content: space-between;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .cattrim-price__tablist {
     margin-top: 30px;
     max-width: 100%;
@@ -5246,7 +5549,7 @@ CSS information
 .cattrim-price__tablist li {
   list-style-type: none;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .cattrim-price__tablist li {
     width: 100%;
   }
@@ -5262,7 +5565,7 @@ CSS information
   letter-spacing: 0.1em;
   position: relative;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .cattrim-price__tablist .tab {
     max-width: 130px;
     width: 100%;
@@ -5282,7 +5585,7 @@ CSS information
   width: min(1.1608623549vw, 14px);
   height: min(0.9950248756vw, 12px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .cattrim-price__tablist .tab::after {
     top: 9px;
     right: 10px;
@@ -5295,7 +5598,7 @@ CSS information
   width: 965px;
   text-align: center;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .cattrim-price__tabs .tab-panel table {
     width: 660px;
   }
@@ -5312,7 +5615,7 @@ CSS information
 .cattrim-price__tabs .tab-panel table thead tr th:first-child {
   padding-left: min(1.9071310116vw, 23px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .cattrim-price__tabs .tab-panel table thead tr th:first-child {
     text-align: left;
     padding-left: 15px;
@@ -5322,7 +5625,7 @@ CSS information
   background-color: #333333;
   font-size: min(1.3266998342vw, 16px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .cattrim-price__tabs .tab-panel table thead .mainhead {
     font-size: 11px;
   }
@@ -5331,7 +5634,7 @@ CSS information
   padding-top: 22px;
   padding-bottom: 24px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .cattrim-price__tabs .tab-panel table thead .mainhead th {
     padding-top: 14px;
     padding-bottom: 18px;
@@ -5341,7 +5644,7 @@ CSS information
   background-color: #5c5c5c;
   font-size: min(1.3266998342vw, 16px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .cattrim-price__tabs .tab-panel table thead .subhead {
     font-size: 11px;
   }
@@ -5362,7 +5665,7 @@ CSS information
   font-size: min(1.824212272vw, 22px);
   padding: min(1.3266998342vw, 16px) 0 min(1.7412935323vw, 21px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .cattrim-price__tabs .tab-panel table tbody tr td {
     font-size: 15px;
   }
@@ -5371,7 +5674,7 @@ CSS information
   font-size: min(1.3266998342vw, 16px);
   padding-left: min(1.9071310116vw, 23px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .cattrim-price__tabs .tab-panel table tbody tr td:first-child {
     text-align: left;
     padding-left: 15px;
@@ -5404,17 +5707,17 @@ CSS information
 /*============================
 #cattrim-price-panel-1
 ============================*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   #cattrim-price-panel-1 .mainhead th:nth-child(1) {
     width: 3%;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   #cattrim-price-panel-1 .mainhead th:nth-child(2) {
     width: 6%;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   #cattrim-price-panel-1 .mainhead th:nth-child(3) {
     width: 8%;
   }
@@ -5423,18 +5726,18 @@ CSS information
 /*============================
 #cattrim-price-panel-2
 ============================*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   #cattrim-price-panel-2 .mainhead th:nth-child(1) {
     width: 15%;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   #cattrim-price-panel-2 .mainhead th:nth-child(2) {
     width: 14%;
     padding-left: 10px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   #cattrim-price-panel-2 tbody td {
     padding-left: 10px;
   }
@@ -5443,7 +5746,7 @@ CSS information
 .cattrim-price-rules {
   margin-top: 53px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .cattrim-price-rules {
     margin-top: 17px;
   }
@@ -5452,7 +5755,7 @@ CSS information
 .cattrim-price-rules__photo img {
   width: min(45.4394693201vw, 548px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .cattrim-price-rules__photo img {
     max-width: 280px;
     width: 100%;
@@ -5463,7 +5766,7 @@ CSS information
   text-align: left;
   margin-top: 44px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .cattrim-price-rules__text {
     margin-top: 14px;
   }
@@ -5484,14 +5787,14 @@ CSS information
 ----------------------------------------------------------- */
 .cattrim-flow {
   margin-top: -181px;
-  padding-top: 333px;
+  padding-top: min(27.6119402985vw, 333px);
   padding-bottom: 123px;
   background-image: url(../../images/bg_cattrim_flow.png);
   background-repeat: no-repeat;
   background-position: top center;
   position: relative;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .cattrim-flow {
     margin-top: -246px;
     padding-top: 125px;
@@ -5507,7 +5810,7 @@ CSS information
   transform: translateX(-50%);
   width: min(78.192371476vw, 943px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .cattrim-flow__photo {
     max-width: 309px;
     width: 100%;
@@ -5521,7 +5824,7 @@ CSS information
   display: block;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .pc {
     display: none;
   }
@@ -5530,8 +5833,35 @@ CSS information
   display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .sp {
+    display: block;
+  }
+}
+.tab {
+  display: block;
+}
+
+@media screen and (max-width: 1024px) {
+  .tab {
+    display: none;
+  }
+}
+.tab-2 {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .tab-2 {
+    display: block;
+  }
+}
+.tab-br {
+  display: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .tab-br {
     display: block;
   }
 }
@@ -5545,7 +5875,7 @@ CSS information
   background-position: center 68%;
   background-size: cover;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .shop-mv {
     height: 180px;
   }
@@ -5559,7 +5889,7 @@ CSS information
   background-repeat: no-repeat;
   background-position: top center;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .shop-about {
     margin-top: -67px;
     padding-top: 240px;
@@ -5570,14 +5900,14 @@ CSS information
 .shop-about__inner {
   margin-top: -146px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .shop-about__inner {
     display: flex;
     flex-direction: column;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .shop-about__title {
     margin-top: 11px;
   }
@@ -5586,7 +5916,7 @@ CSS information
 .shop-about__title img {
   width: min(26.0364842454vw, 314px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .shop-about__title img {
     max-width: 111px;
     width: 100%;
@@ -5597,7 +5927,7 @@ CSS information
   padding-top: 52px;
   text-align: center;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .shop-about h1 {
     padding-top: 1px;
   }
@@ -5606,7 +5936,7 @@ CSS information
 .shop-about h1 img {
   width: min(45.4394693201vw, 548px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .shop-about h1 img {
     max-width: 320px;
     width: 100%;
@@ -5619,7 +5949,7 @@ CSS information
   font-size: min(2.4875621891vw, 30px);
   letter-spacing: 0.2em;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .shop-about h2 {
     font-size: 15px;
     padding-top: 20px;
@@ -5634,7 +5964,7 @@ CSS information
   text-align: center;
   line-height: 3.2;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .shop-about p {
     line-height: 1.6;
     text-align: left;
@@ -5649,9 +5979,9 @@ CSS information
   padding: 76px min(8.2918739635vw, 100px) 0;
   margin-top: 60px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .shop-about__content {
-    border-radius: 10px 30px 10px 30px;
+    border-radius: 4px 22px 4px 22px;
     padding: 20px 20px 0;
     margin-top: 28px;
   }
@@ -5661,7 +5991,7 @@ CSS information
   display: flex;
   align-items: center;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .shop-about__details .shop-about__detail {
     flex-direction: column;
     align-items: flex-start;
@@ -5675,7 +6005,7 @@ CSS information
   border-radius: 50px;
   padding: 9.3px 0 8.7px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .shop-about__details .shop-about__detail .shop-about__head {
     max-width: 120px;
     width: 100%;
@@ -5687,7 +6017,7 @@ CSS information
   text-align: left;
   padding-left: min(1.6583747927vw, 20px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .shop-about__details .shop-about__detail .shop-about__data {
     padding-top: 7px;
   }
@@ -5701,7 +6031,7 @@ CSS information
 .shop-about__details .shop-about__detail + .shop-about__detail {
   margin-top: 30px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .shop-about__details .shop-about__detail + .shop-about__detail {
     margin-top: 10px;
   }
@@ -5711,7 +6041,7 @@ CSS information
   display: flex;
   margin-top: 50px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .shop-about__shopimages {
     flex-direction: column;
     margin-top: 22px;
@@ -5721,7 +6051,7 @@ CSS information
 .shop-about__shopimage + .shop-about__shopimage {
   margin-left: 41px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .shop-about__shopimage + .shop-about__shopimage {
     margin-left: 0;
     margin-top: 24px;
@@ -5731,7 +6061,7 @@ CSS information
   padding-top: 11px;
   line-height: 1;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .shop-about__shopimage .shop-about__shoptext {
     text-align: center;
     padding-top: 5px;
@@ -5744,7 +6074,7 @@ CSS information
   margin-right: auto;
   margin-top: 66px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .shop-about__image {
     width: 100%;
     margin-top: 20px;
@@ -5761,7 +6091,7 @@ CSS information
   background-repeat: no-repeat;
   background-position: top center;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .shop-access {
     margin-top: -575px;
     padding: 43px 10px 80px;
@@ -5773,7 +6103,7 @@ CSS information
   width: min(38.4742951907vw, 464px);
   margin-left: 52px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .shop-access__title {
     max-width: 174px;
     width: 100%;
@@ -5786,7 +6116,7 @@ CSS information
   width: 100%;
   padding-top: 34.2442%;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .shop-access__map {
     padding-top: 63.3333%;
   }
@@ -5806,7 +6136,7 @@ CSS information
   margin-right: auto;
   margin-top: 50px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .shop-access__location {
     margin-top: 21px;
   }
@@ -5819,7 +6149,7 @@ CSS information
   display: flex;
   padding: 34px 50px 31px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .shop-access__guides {
     flex-direction: column;
     padding: 20px 20px 16px;
@@ -5830,7 +6160,7 @@ CSS information
 .shop-access__guide + .shop-access__guide {
   margin-left: min(8.5406301824vw, 103px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .shop-access__guide + .shop-access__guide {
     margin-left: 0;
     margin-top: 40px;
@@ -5845,7 +6175,7 @@ CSS information
   padding-top: 9px;
   padding-bottom: 7px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .shop-access__guidename {
     width: 171.5px;
     padding-top: 1.7px;
@@ -5863,7 +6193,7 @@ CSS information
   margin-top: 17px;
   line-height: 2;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .shop-access__guidetext {
     margin-top: 7px;
     line-height: 1.6;
@@ -5875,7 +6205,7 @@ CSS information
   display: block;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .pc {
     display: none;
   }
@@ -5884,8 +6214,35 @@ CSS information
   display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .sp {
+    display: block;
+  }
+}
+.tab {
+  display: block;
+}
+
+@media screen and (max-width: 1024px) {
+  .tab {
+    display: none;
+  }
+}
+.tab-2 {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .tab-2 {
+    display: block;
+  }
+}
+.tab-br {
+  display: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .tab-br {
     display: block;
   }
 }
@@ -5900,7 +6257,7 @@ CSS information
   background-position: center 60%;
   background-size: cover;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .news-mv {
     height: 180px;
   }
@@ -5914,7 +6271,7 @@ CSS information
   background-position: center 30%;
   background-size: cover;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .news-mv-detail {
     height: 180px;
   }
@@ -5928,7 +6285,7 @@ CSS information
   background-repeat: no-repeat;
   background-position: top center;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .news-about {
     margin-top: -67px;
     padding-top: 240px;
@@ -5939,14 +6296,14 @@ CSS information
 .news-about__inner {
   margin-top: -146px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .news-about__inner {
     display: flex;
     flex-direction: column;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .news-about__title {
     margin-top: 11px;
   }
@@ -5955,7 +6312,7 @@ CSS information
 .news-about__title img {
   width: min(28.0265339967vw, 338px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .news-about__title img {
     max-width: 127px;
     width: 100%;
@@ -5968,7 +6325,16 @@ CSS information
   padding: 100px min(8.2918739635vw, 100px) 100px min(10.3648424544vw, 125px);
   margin-top: 75px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .news-about__wrap {
+    border-radius: 10px 30px 10px 30px;
+    padding: 20px 20px 35px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (max-width: 680px) {
   .news-about__wrap {
     margin-top: 30px;
     border-radius: 10px 30px 10px 30px;
@@ -5983,7 +6349,7 @@ CSS information
 .news-about__wrap h1 img {
   width: min(45.4394693201vw, 548px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .news-about__wrap h1 img {
     max-width: 280px;
     width: 100%;
@@ -5993,7 +6359,7 @@ CSS information
 .news-about__list {
   margin-top: 43px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .news-about__list {
     margin-top: 22px;
     margin-left: 0;
@@ -6005,7 +6371,7 @@ CSS information
   align-items: center;
   font-size: 15px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .news-about__item {
     flex-direction: column;
     align-items: flex-start;
@@ -6027,7 +6393,7 @@ CSS information
   line-height: 1;
   border-radius: 5px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .news-about__category {
     font-size: 11px;
   }
@@ -6039,7 +6405,7 @@ CSS information
   position: relative;
   padding: 13px 0;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .news-about__link {
     margin-left: 0;
     padding: 10px 0;
@@ -6058,7 +6424,7 @@ CSS information
   /*アニメーションの指定*/
   transition: all 0.3s;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .news-about__link::before {
     content: none;
   }
@@ -6077,7 +6443,7 @@ CSS information
   /*アニメーションの指定*/
   transition: all 0.3s;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .news-about__link::after {
     content: none;
   }
@@ -6110,7 +6476,7 @@ CSS information
   border-radius: 10px;
   padding: 26px 0;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .news-detail-pagenation__button {
     max-width: 100%;
     padding: 10px 0;
@@ -6139,9 +6505,9 @@ CSS information
   left: 8%;
   transform: translate(-50%, -50%);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .news-detail-pagenation__button.-prev {
-    margin-right: 5px;
+    margin-right: 10px;
   }
 }
 
@@ -6162,7 +6528,7 @@ CSS information
   display: block;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .pc {
     display: none;
   }
@@ -6171,8 +6537,35 @@ CSS information
   display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   .sp {
+    display: block;
+  }
+}
+.tab {
+  display: block;
+}
+
+@media screen and (max-width: 1024px) {
+  .tab {
+    display: none;
+  }
+}
+.tab-2 {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .tab-2 {
+    display: block;
+  }
+}
+.tab-br {
+  display: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .tab-br {
     display: block;
   }
 }
@@ -6182,7 +6575,7 @@ CSS information
  file name  :page.css
  style info :各ページ読み込み用
 =================================================================== */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 680px) {
   .elements {
     /* @include mq */
   }
@@ -6193,12 +6586,12 @@ CSS information
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 680px) {
   .elements2 {
     /* @include mq */
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 680px) and (max-width: 1023px) {
   .elements2 {
     /* @include mq in @include mq(large, max, true) */
   }
@@ -6211,7 +6604,7 @@ hr {
   border-top: 6px solid #333333;
   height: 1px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 680px) {
   hr {
     margin: 0 auto 80px auto;
   }
@@ -6349,7 +6742,7 @@ hr {
   font-weight: normal;
   text-align: left;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 680px) {
   .table_a th {
     display: table-cell;
     padding: 50px 5px;
@@ -6360,7 +6753,7 @@ hr {
   padding: 5px;
   display: block;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 680px) {
   .table_a td {
     display: table-cell;
     padding: 50px 5px;
@@ -6572,7 +6965,7 @@ span.wpcf7-not-valid-tip {
   background: #FADBDB;
   padding: 15px 30px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 680px) {
   .screen-reader-response {
     width: 800px;
   }

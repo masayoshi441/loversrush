@@ -122,7 +122,7 @@
   position: absolute;
   top: -80px;
   right: 0;
-  @include mq(large, max) {
+  @include mq(medium, max) {
     top: 62px;
     right: auto;
     left: 38%;

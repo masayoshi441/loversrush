@@ -33,7 +33,7 @@ $font1: "Kosugi Maru", sans-serif;
 $mq-breakpoints: (
   "xsmall": 320px,
   "small": 600px,
-  "medium": 768px,
+  "medium": 680px,
   "large": 1024px,
   "xlarge": 1280px,
 );
@@ -62,6 +62,33 @@ $mq-breakpoints: (
 }
 @include mq(medium, max) {
   .sp {
+    display: block;
+  }
+}
+
+.tab {
+  display: block;
+}
+@include mq(large, max) {
+  .tab {
+    display: none;
+  }
+}
+
+.tab-2 {
+  display: none;
+}
+@include mq(large, max) {
+  .tab-2 {
+    display: block;
+  }
+}
+
+.tab-br {
+  display: none;
+}
+@media screen and (min-width:768px) and ( max-width:1024px) {
+  .tab-br {
     display: block;
   }
 }

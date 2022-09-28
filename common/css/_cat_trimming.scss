@@ -207,7 +207,7 @@
   padding: 133px min(toVw(100), 100px) 48px;
   position: relative;
   @include mq(medium, max) {
-    border-radius: 10px 30px 10px 30px;
+    border-radius: 4px 22px 4px 22px;
     padding: 50px 20px 12px;
   }
   h2 {
@@ -232,6 +232,9 @@
       max-width: 253px;
       width: 100%;
     }
+  }
+  @media screen and (min-width:768px) and ( max-width:1080px) {
+    top: -5.2%;
   }
   @include mq(medium, max) {
     top: -20px;
@@ -522,7 +525,7 @@
 ----------------------------------------------------------- */
 .cattrim-flow {
   margin-top: -181px;
-  padding-top: 333px;
+  padding-top:  min(toVw(333), 333px);
   padding-bottom: 123px;
   background-image: url(../../images/bg_cattrim_flow.png);
   background-repeat: no-repeat;

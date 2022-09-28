@@ -164,11 +164,9 @@
                     </picture>
                   </div>
                   <h2><img src="images/dog_hotel/title_price.png" alt="" /></h2>
+                  <p class="caption">1泊料金（お預かりした時間から24時間以内）</p>
                   <div class="dogh-price__pricelist js-scrollable">
                     <table>
-                      <caption>
-                        1泊料金（お預かりした時間から24時間以内）
-                      </caption>
                       <thead>
                         <tr class="first-tr">
                           <th rowspan="2">ペットのサイズ</th>
@@ -336,9 +334,13 @@
         });
       });
     </script>
-    <script type="text/javascript">
-      new ScrollHint(".js-scrollable");
-    </script>
+    <script>
+      new ScrollHint('.js-scrollable', {
+        i18n: {
+          scrollable: '横にスクロールできます'
+        }
+      });
+      </script>
     <script src="common/js/import.js"></script>
     <script src="common/js/spnavi.js"></script>
     <script src="common/js/wow.js"></script>

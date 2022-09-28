@@ -106,6 +106,9 @@
   position: absolute;
   top: -251px;
   left: 20px;
+  @media screen and (min-width: 768px) and (max-width: 1080px) {
+    top: -2.2%;
+  }
   @include mq(medium, max) {
     top: 1px;
     left: 6%;
@@ -122,7 +125,7 @@
   position: absolute;
   top: -168px;
   right: 21px;
-  @include mq(large, max) {
+  @include mq(medium, max) {
     top: -70px;
     right: auto;
     left: 37%;
@@ -275,7 +278,7 @@
   padding: 133px min(toVw(50), 50px) 58px;
   position: relative;
   @include mq(medium, max) {
-    border-radius: 10px 30px 10px 30px;
+    border-radius: 4px 22px 4px 22px;
     padding: 48px 20px 39px;
   }
   h2 {
@@ -287,6 +290,16 @@
       }
     }
   }
+  .caption {
+    text-align: center;
+    font-size: min(toVw(20), 20px);
+    margin-bottom: 22px;
+    @include mq(medium, max) {
+      margin-top: 9px;
+      margin-bottom: -4px;
+      font-size: 11px;
+    }
+  }
 }
 .dogh-price__photo {
   position: absolute;
@@ -294,6 +307,9 @@
   left: 50%;
   transform: translateX(-50%);
   width: min(toVw(965), 965px);
+  @media screen and (min-width: 768px) and (max-width: 1080px) {
+    top: -5.5%;
+  }
   @include mq(medium, max) {
     max-width: 253px;
     width: 100%;
@@ -309,15 +325,6 @@
     width: 100%;
     @include mq(medium, max) {
       width: 566px;
-    }
-    caption {
-      text-align: center;
-      font-size: min(toVw(20), 20px);
-      letter-spacing: 0.2em;
-      margin-bottom: 22px;
-      @include mq(medium, max) {
-        margin-bottom: 7px;
-      }
     }
     .first-tr {
       th {

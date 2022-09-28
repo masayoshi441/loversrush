@@ -202,7 +202,7 @@
   padding: 133px min(toVw(100), 100px) 48px;
   position: relative;
   @include mq(medium, max) {
-    border-radius: 10px 30px 10px 30px;
+    border-radius: 4px 22px 4px 22px;
     padding: 50px 20px 28px;
   }
   h2 {
@@ -227,6 +227,9 @@
       max-width: 253px;
       width: 100%;
     }
+  }
+  @media screen and (min-width:768px) and ( max-width:1080px) {
+    top: -2.2%;
   }
   @include mq(medium, max) {
     top: -20px;
@@ -524,7 +527,7 @@
 ----------------------------------------------------------- */
 .dogtrim-flow {
   margin-top: -346px;
-  padding-top: 337px;
+  padding-top:  min(toVw(337), 337px);
   padding-bottom: 123px;
   background-image: url(../../images/bg_dogtrim_flow.png);
   background-repeat: no-repeat;
@@ -564,7 +567,7 @@
   position: relative;
   z-index: 10;
   @include mq(medium, max) {
-    border-radius: 10px 30px 10px 30px;
+    border-radius: 4px 22px 4px 22px;
   }
   &:nth-child(n + 3) {
     margin-top: 21px;
@@ -573,7 +576,7 @@
 .trim-flow-accordion__headline {
   padding: 39px 42px 39px 80px;
   @include mq(medium, max) {
-    padding: 26px 20px 14px;
+    padding: 22px 20px 11px;
   }
 }
 .dogtrim-flow .trim-flow-accordion__tab {
@@ -607,8 +610,8 @@
     width: min(toVw(14), 14px);
     height: min(toVw(12), 12px);
     @include mq(medium, max) {
-      top: 5px;
-      left: 0;
+      top: 7px;
+      left: 6px;
       width: 7px;
       height: 6px;
     }

@@ -108,7 +108,7 @@
                 <h2>お客様の大切なワンちゃんを<br />丁寧に手をかけて<br class="sp" />気持ち良くキレイにいたします。</h2>
                 <p>
                   当店のトリミングは、ワンちゃんたち1頭1頭の状態を見ながら丁寧なトリミングを心がけてます。<br />
-                  オプションには、マイクロバブルや、炭酸泉浴などもあり、毛穴ケアから、リラックス効果もお試し頂けます。<br />
+                  オプションには、マイクロバブルや、炭酸泉浴などもあり、<br class="tab-br">毛穴ケアから、リラックス効果もお試し頂けます。<br />
                   経験豊富なトリマーが責任を持って、大切なペットをお預かりいたします。
                 </p>
                 <div class="dogtrim-about__cards">
@@ -867,9 +867,13 @@
         new TabList();
       }
     </script>
-    <script type="text/javascript">
-      new ScrollHint(".js-scrollable");
-    </script>
+    <script>
+      new ScrollHint('.js-scrollable', {
+        i18n: {
+          scrollable: '横にスクロールできます'
+        }
+      });
+      </script>
     <script type="text/javascript">
       const defaultOptions = {
         // アコーディオンのパネルの開閉時のeasingを指定
