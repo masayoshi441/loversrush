@@ -419,7 +419,7 @@
     tbody {
       tr {
         &:nth-child(even) {
-          background-color: #f0e8d9;
+          background-color: #f2ebde;
         }
         td {
           font-size: min(toVw(22), 22px);
@@ -441,7 +441,7 @@
               padding-left: 14px;
             }
           }
-          &:nth-child(n+2){
+          &:nth-child(n + 2) {
             @include mq(medium, max) {
               font-size: 15px;
             }

@@ -4537,7 +4537,7 @@ CSS information
   width: 19%;
 }
 .dogtrim-price__tabs .tab-panel table tbody tr:nth-child(even) {
-  background-color: #f0e8d9;
+  background-color: #f2ebde;
 }
 .dogtrim-price__tabs .tab-panel table tbody tr td {
   font-size: min(1.824212272vw, 22px);
@@ -5356,7 +5356,7 @@ CSS information
   text-align: center;
 }
 .cattrim-price__tabs .tab-panel table tbody tr:nth-child(even) {
-  background-color: #f0e8d9;
+  background-color: #f2ebde;
 }
 .cattrim-price__tabs .tab-panel table tbody tr td {
   font-size: min(1.824212272vw, 22px);
