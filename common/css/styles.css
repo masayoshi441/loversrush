@@ -821,6 +821,7 @@ a:hover {
     -o-object-fit: cover;
        object-fit: cover;
     background-size: cover;
+    height: 340px;
   }
 }
 
