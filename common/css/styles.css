@@ -1280,6 +1280,8 @@ footer {
 
 .c-pan {
   margin-top: -20px;
+  position: relative;
+  z-index: 3;
 }
 @media screen and (max-width: 680px) {
   .c-pan {

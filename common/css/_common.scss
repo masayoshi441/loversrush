@@ -556,6 +556,8 @@ footer {
 
 .c-pan {
   margin-top: -20px;
+  position: relative;
+  z-index: 3;
   @include mq(medium, max) {
     order: -1;
   }
