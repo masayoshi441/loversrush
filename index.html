@@ -328,6 +328,9 @@
   </script>
   <script type="text/javascript">
     function slider() {
+      $(window).on('resize', function () {
+        sliderSetting();
+      });
       if ($(window).width() > 768) {
         $(".bxslider2").bxSlider({
           auto: true,
@@ -356,9 +359,6 @@
       }
     }
     $(document).ready(function () { // ページ読み込み時
-      slider();
-    });
-    $(window).resize(function () { // ウィンドウがリサイズされたら再読込み
       slider();
     });
   </script>

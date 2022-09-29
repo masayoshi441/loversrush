@@ -92,3 +92,13 @@ $mq-breakpoints: (
     display: block;
   }
 }
+
+.br-safari {
+  display: none;
+}
+::-webkit-full-page-media, :future, :root .br-safari {
+  display: none;
+  @include mq(medium, max) {
+    display: block;
+  }
+}

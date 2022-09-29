@@ -48,6 +48,19 @@
     display: block;
   }
 }
+.br-safari {
+  display: none;
+}
+
+::-webkit-full-page-media, :future, :root .br-safari {
+  display: none;
+}
+@media screen and (max-width: 680px) {
+  ::-webkit-full-page-media, :future, :root .br-safari {
+    display: block;
+  }
+}
+
 /* -----------------------------------------------------------
  =reset and default css
 ----------------------------------------------------------- */
@@ -651,6 +664,19 @@ button, input, select, textarea {
     display: block;
   }
 }
+.br-safari {
+  display: none;
+}
+
+::-webkit-full-page-media, :future, :root .br-safari {
+  display: none;
+}
+@media screen and (max-width: 680px) {
+  ::-webkit-full-page-media, :future, :root .br-safari {
+    display: block;
+  }
+}
+
 /* ===================================================================
 CSS information
 
@@ -1358,6 +1384,19 @@ footer {
     display: block;
   }
 }
+.br-safari {
+  display: none;
+}
+
+::-webkit-full-page-media, :future, :root .br-safari {
+  display: none;
+}
+@media screen and (max-width: 680px) {
+  ::-webkit-full-page-media, :future, :root .br-safari {
+    display: block;
+  }
+}
+
 /* ===================================================================
 CSS information
 
@@ -1849,6 +1888,19 @@ nav {
     display: block;
   }
 }
+.br-safari {
+  display: none;
+}
+
+::-webkit-full-page-media, :future, :root .br-safari {
+  display: none;
+}
+@media screen and (max-width: 680px) {
+  ::-webkit-full-page-media, :future, :root .br-safari {
+    display: block;
+  }
+}
+
 /* ===================================================================
 CSS information
 
@@ -2628,6 +2680,19 @@ CSS information
     display: block;
   }
 }
+.br-safari {
+  display: none;
+}
+
+::-webkit-full-page-media, :future, :root .br-safari {
+  display: none;
+}
+@media screen and (max-width: 680px) {
+  ::-webkit-full-page-media, :future, :root .br-safari {
+    display: block;
+  }
+}
+
 /* -----------------------------------------------------------
  私たちについて
 ----------------------------------------------------------- */
@@ -3125,6 +3190,19 @@ CSS information
     display: block;
   }
 }
+.br-safari {
+  display: none;
+}
+
+::-webkit-full-page-media, :future, :root .br-safari {
+  display: none;
+}
+@media screen and (max-width: 680px) {
+  ::-webkit-full-page-media, :future, :root .br-safari {
+    display: block;
+  }
+}
+
 /* -----------------------------------------------------------
  私たちについて
 ----------------------------------------------------------- */
@@ -3797,6 +3875,19 @@ CSS information
     display: block;
   }
 }
+.br-safari {
+  display: none;
+}
+
+::-webkit-full-page-media, :future, :root .br-safari {
+  display: none;
+}
+@media screen and (max-width: 680px) {
+  ::-webkit-full-page-media, :future, :root .br-safari {
+    display: block;
+  }
+}
+
 /* -----------------------------------------------------------
  私たちについて
 ----------------------------------------------------------- */
@@ -4452,6 +4543,19 @@ CSS information
     display: block;
   }
 }
+.br-safari {
+  display: none;
+}
+
+::-webkit-full-page-media, :future, :root .br-safari {
+  display: none;
+}
+@media screen and (max-width: 680px) {
+  ::-webkit-full-page-media, :future, :root .br-safari {
+    display: block;
+  }
+}
+
 /* -----------------------------------------------------------
  私たちについて
 ----------------------------------------------------------- */
@@ -5055,6 +5159,11 @@ CSS information
   transform: translateX(-50%);
   width: min(70.1492537313vw, 846px);
 }
+@media screen and (min-width: 1450px) {
+  .dogtrim-flow__photo {
+    top: min(-0.8291873964vw, -10px);
+  }
+}
 @media screen and (max-width: 680px) {
   .dogtrim-flow__photo {
     max-width: 305px;
@@ -5109,6 +5218,7 @@ CSS information
   display: flex;
   justify-content: space-between;
   position: relative;
+  white-space: nowrap;
 }
 @media screen and (max-width: 680px) {
   .dogtrim-flow .trim-flow-accordion__tab {
@@ -5154,6 +5264,7 @@ CSS information
   display: flex;
   justify-content: space-between;
   position: relative;
+  white-space: nowrap;
 }
 @media screen and (max-width: 680px) {
   .cattrim-flow .trim-flow-accordion__tab {
@@ -5339,6 +5450,19 @@ CSS information
     display: block;
   }
 }
+.br-safari {
+  display: none;
+}
+
+::-webkit-full-page-media, :future, :root .br-safari {
+  display: none;
+}
+@media screen and (max-width: 680px) {
+  ::-webkit-full-page-media, :future, :root .br-safari {
+    display: block;
+  }
+}
+
 /* -----------------------------------------------------------
  私たちについて
 ----------------------------------------------------------- */
@@ -5927,6 +6051,11 @@ CSS information
   transform: translateX(-50%);
   width: min(78.192371476vw, 943px);
 }
+@media screen and (min-width: 1450px) {
+  .cattrim-flow__photo {
+    top: min(-0.5804311774vw, -7px);
+  }
+}
 @media screen and (max-width: 680px) {
   .cattrim-flow__photo {
     max-width: 309px;
@@ -5982,6 +6111,19 @@ CSS information
     display: block;
   }
 }
+.br-safari {
+  display: none;
+}
+
+::-webkit-full-page-media, :future, :root .br-safari {
+  display: none;
+}
+@media screen and (max-width: 680px) {
+  ::-webkit-full-page-media, :future, :root .br-safari {
+    display: block;
+  }
+}
+
 /* -----------------------------------------------------------
  店舗情報
 ----------------------------------------------------------- */
@@ -6363,6 +6505,19 @@ CSS information
     display: block;
   }
 }
+.br-safari {
+  display: none;
+}
+
+::-webkit-full-page-media, :future, :root .br-safari {
+  display: none;
+}
+@media screen and (max-width: 680px) {
+  ::-webkit-full-page-media, :future, :root .br-safari {
+    display: block;
+  }
+}
+
 /* -----------------------------------------------------------
  NEWS
 ----------------------------------------------------------- */
@@ -6686,6 +6841,19 @@ CSS information
     display: block;
   }
 }
+.br-safari {
+  display: none;
+}
+
+::-webkit-full-page-media, :future, :root .br-safari {
+  display: none;
+}
+@media screen and (max-width: 680px) {
+  ::-webkit-full-page-media, :future, :root .br-safari {
+    display: block;
+  }
+}
+
 /* ===================================================================
 CSS information
 

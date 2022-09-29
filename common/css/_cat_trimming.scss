@@ -546,6 +546,9 @@
   left: 49%;
   transform: translateX(-50%);
   width: min(toVw(943), 943px);
+  @media screen and (min-width:1450px) {
+    top: min(toVw(-7), -7px);
+  }
   @include mq(medium, max) {
     max-width: 309px;
     width: 100%;

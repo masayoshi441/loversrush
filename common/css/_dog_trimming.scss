@@ -228,7 +228,7 @@
       width: 100%;
     }
   }
-  @media screen and (min-width:768px) and ( max-width:1080px) {
+  @media screen and (min-width: 768px) and (max-width: 1080px) {
     top: -2.2%;
   }
   @include mq(medium, max) {
@@ -527,7 +527,7 @@
 ----------------------------------------------------------- */
 .dogtrim-flow {
   margin-top: -346px;
-  padding-top:  min(toVw(337), 337px);
+  padding-top: min(toVw(337), 337px);
   padding-bottom: 123px;
   background-image: url(../../images/bg_dogtrim_flow.png);
   background-repeat: no-repeat;
@@ -548,6 +548,9 @@
   left: 46%;
   transform: translateX(-50%);
   width: min(toVw(846), 846px);
+  @media screen and (min-width: 1450px) {
+    top: min(toVw(-10), -10px);
+  }
   @include mq(medium, max) {
     max-width: 305px;
     width: 100%;
@@ -591,6 +594,7 @@
   display: flex;
   justify-content: space-between;
   position: relative;
+  white-space: nowrap;
   @include mq(medium, max) {
     font-size: 14px;
     padding-left: 22px;
@@ -629,6 +633,7 @@
   display: flex;
   justify-content: space-between;
   position: relative;
+  white-space: nowrap;
   @include mq(medium, max) {
     font-size: 14px;
     padding-left: 22px;
