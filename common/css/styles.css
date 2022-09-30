@@ -6807,6 +6807,11 @@ div.news-about__wrap h1 {
   padding-left: 46px;
   text-align: left;
 }
+@media screen and (max-width: 680px) {
+  div.news-about__wrap h1 {
+    font-size: 16px;
+  }
+}
 
 div.news-about__wrap p {
   margin-top: 15px;
@@ -6816,15 +6821,52 @@ div.news-about__wrap h2 {
   font-size: min(1.6583747927vw, 20px);
   color: #95cccf;
   margin-top: 40px;
+  position: relative;
+  padding-left: min(2.6533996683vw, 32px);
+}
+div.news-about__wrap h2::before {
+  left: min(0vw, 0px);
+  top: min(0.8291873964vw, 10px);
+  position: absolute;
+  content: "";
+  display: inline-block;
+  background-image: url(../../../images/dog_trimming/ashiato.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  width: min(1.1608623549vw, 14px);
+  height: min(0.9950248756vw, 12px);
+}
+@media screen and (max-width: 680px) {
+  div.news-about__wrap h2::before {
+    top: 9px;
+    width: 9px;
+    height: 8px;
+  }
+}
+@media screen and (max-width: 680px) {
+  div.news-about__wrap h2 {
+    padding-left: 15px;
+    font-size: 16px;
+  }
 }
 
 div.news-about__wrap h3 {
   font-size: min(1.6583747927vw, 20px);
   margin-top: 40px;
 }
+@media screen and (max-width: 680px) {
+  div.news-about__wrap h3 {
+    font-size: 16px;
+  }
+}
 
 div.news-about__wrap p strong {
   font-weight: bold;
+}
+
+div.news-about__wrap figure.wp-block-image.size-full {
+  margin-top: 40px;
 }
 
 div.news-about__wrap ul {
@@ -6845,6 +6887,16 @@ div.news-about__wrap p.has-text-align-right {
 
 div.news-about__wrap figure.wp-container-2.wp-block-gallery-1.wp-block-gallery.has-nested-images.columns-default.is-cropped {
   display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(29%, 1fr));
+  gap: 49px 49px;
+  margin-top: 20px;
+}
+@media screen and (max-width: 680px) {
+  div.news-about__wrap figure.wp-container-2.wp-block-gallery-1.wp-block-gallery.has-nested-images.columns-default.is-cropped {
+    grid-template-columns: repeat(auto-fill, minmax(1fr, 1fr));
+    gap: 20px 20px;
+    margin-top: 10px;
+  }
 }
 
 /* Scss Document */
