@@ -6596,7 +6596,7 @@ CSS information
 .news-about__wrap {
   background-color: #fff;
   border-radius: 15px 65px 15px 65px;
-  padding: 100px min(8.2918739635vw, 100px) 100px min(10.3648424544vw, 125px);
+  padding: min(8.2918739635vw, 100px);
   margin-top: 75px;
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -6795,6 +6795,56 @@ CSS information
   top: 50%;
   right: 6%;
   transform: translate(-50%, -50%);
+}
+
+div.news-about__wrap h1 {
+  background-color: #67b5b9;
+  color: #fff;
+  border-radius: 25px;
+  font-size: min(1.6583747927vw, 20px);
+  padding-top: 10px;
+  padding-bottom: 8px;
+  padding-left: 46px;
+  text-align: left;
+}
+
+div.news-about__wrap p {
+  margin-top: 15px;
+}
+
+div.news-about__wrap h2 {
+  font-size: min(1.6583747927vw, 20px);
+  color: #95cccf;
+  margin-top: 40px;
+}
+
+div.news-about__wrap h3 {
+  font-size: min(1.6583747927vw, 20px);
+  margin-top: 40px;
+}
+
+div.news-about__wrap p strong {
+  font-weight: bold;
+}
+
+div.news-about__wrap ul {
+  margin-top: 40px;
+}
+
+div.news-about__wrap ol {
+  margin-top: 40px;
+}
+
+div.news-about__wrap p.has-text-align-center {
+  text-align: center;
+}
+
+div.news-about__wrap p.has-text-align-right {
+  text-align: right;
+}
+
+div.news-about__wrap figure.wp-container-2.wp-block-gallery-1.wp-block-gallery.has-nested-images.columns-default.is-cropped {
+  display: grid;
 }
 
 /* Scss Document */
