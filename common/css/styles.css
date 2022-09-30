@@ -6830,7 +6830,7 @@ div.news-about__wrap h2::before {
   position: absolute;
   content: "";
   display: inline-block;
-  background-image: url(../../../images/dog_trimming/ashiato.svg);
+  background-image: url(../../images/dog_trimming/ashiato.svg);
   background-size: contain;
   background-repeat: no-repeat;
   vertical-align: middle;
