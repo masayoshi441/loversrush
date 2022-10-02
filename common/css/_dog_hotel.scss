@@ -293,7 +293,8 @@
   .caption {
     text-align: center;
     font-size: min(toVw(20), 20px);
-    margin-bottom: 22px;
+    letter-spacing: 0.2em;
+    margin-top: 46px;
     @include mq(medium, max) {
       margin-top: 9px;
       margin-bottom: -4px;
@@ -317,7 +318,7 @@
   }
 }
 .dogh-price__pricelist {
-  margin-top: 38px;
+  margin-top: 18px;
   @include mq(medium, max) {
     margin-top: 10px;
   }

@@ -300,7 +300,8 @@
   .caption {
     text-align: center;
     font-size: min(toVw(20), 20px);
-    margin-bottom: 22px;
+    margin-top: 21px;
+    letter-spacing: 0.2em;
     @include mq(medium, max) {
       margin-top: 9px;
       margin-bottom: -4px;
