@@ -3569,7 +3569,8 @@ CSS information
 .dogh-price__wrap .caption {
   text-align: center;
   font-size: min(1.6583747927vw, 20px);
-  margin-bottom: 22px;
+  letter-spacing: 0.2em;
+  margin-top: 46px;
 }
 @media screen and (max-width: 680px) {
   .dogh-price__wrap .caption {
@@ -3600,7 +3601,7 @@ CSS information
 }
 
 .dogh-price__pricelist {
-  margin-top: 38px;
+  margin-top: 18px;
 }
 @media screen and (max-width: 680px) {
   .dogh-price__pricelist {
@@ -4267,7 +4268,8 @@ CSS information
 .cath-price__wrap .caption {
   text-align: center;
   font-size: min(1.6583747927vw, 20px);
-  margin-bottom: 22px;
+  margin-top: 21px;
+  letter-spacing: 0.2em;
 }
 @media screen and (max-width: 680px) {
   .cath-price__wrap .caption {
