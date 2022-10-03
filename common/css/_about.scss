@@ -350,7 +350,7 @@
 }
 
 .about-goods-card {
-  width: 24%;
+  width: 25%;
   position: relative;
   @include mq(medium, max) {
     width: 45%;
@@ -364,8 +364,14 @@
   }
 }
 .about-goods-card img {
-  height: min(toVw(245), 245px);
+  height: min(toVw(260), 260px);
   @include mq(medium, max) {
     height: auto;
+  }
+  &:first-child {
+    margin-left: 17px;
+    @include mq(medium, max) {
+      margin-left: 0;
+    }
   }
 }

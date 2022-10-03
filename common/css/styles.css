@@ -48,19 +48,6 @@
     display: block;
   }
 }
-.br-safari {
-  display: none;
-}
-
-::-webkit-full-page-media, :future, :root .br-safari {
-  display: none;
-}
-@media screen and (max-width: 680px) {
-  ::-webkit-full-page-media, :future, :root .br-safari {
-    display: block;
-  }
-}
-
 /* -----------------------------------------------------------
  =reset and default css
 ----------------------------------------------------------- */
@@ -664,19 +651,6 @@ button, input, select, textarea {
     display: block;
   }
 }
-.br-safari {
-  display: none;
-}
-
-::-webkit-full-page-media, :future, :root .br-safari {
-  display: none;
-}
-@media screen and (max-width: 680px) {
-  ::-webkit-full-page-media, :future, :root .br-safari {
-    display: block;
-  }
-}
-
 /* ===================================================================
 CSS information
 
@@ -1126,6 +1100,7 @@ footer {
   background-repeat: no-repeat;
   background-position: top center;
   position: relative;
+  z-index: 2;
 }
 @media screen and (max-width: 680px) {
   footer {
@@ -1386,19 +1361,6 @@ footer {
     display: block;
   }
 }
-.br-safari {
-  display: none;
-}
-
-::-webkit-full-page-media, :future, :root .br-safari {
-  display: none;
-}
-@media screen and (max-width: 680px) {
-  ::-webkit-full-page-media, :future, :root .br-safari {
-    display: block;
-  }
-}
-
 /* ===================================================================
 CSS information
 
@@ -1890,19 +1852,6 @@ nav {
     display: block;
   }
 }
-.br-safari {
-  display: none;
-}
-
-::-webkit-full-page-media, :future, :root .br-safari {
-  display: none;
-}
-@media screen and (max-width: 680px) {
-  ::-webkit-full-page-media, :future, :root .br-safari {
-    display: block;
-  }
-}
-
 /* ===================================================================
 CSS information
 
@@ -2682,19 +2631,6 @@ CSS information
     display: block;
   }
 }
-.br-safari {
-  display: none;
-}
-
-::-webkit-full-page-media, :future, :root .br-safari {
-  display: none;
-}
-@media screen and (max-width: 680px) {
-  ::-webkit-full-page-media, :future, :root .br-safari {
-    display: block;
-  }
-}
-
 /* -----------------------------------------------------------
  私たちについて
 ----------------------------------------------------------- */
@@ -3118,7 +3054,7 @@ CSS information
 }
 
 .about-goods-card {
-  width: 24%;
+  width: 25%;
   position: relative;
 }
 @media screen and (max-width: 680px) {
@@ -3138,11 +3074,19 @@ CSS information
 }
 
 .about-goods-card img {
-  height: min(20.3150912106vw, 245px);
+  height: min(21.5588723051vw, 260px);
 }
 @media screen and (max-width: 680px) {
   .about-goods-card img {
     height: auto;
+  }
+}
+.about-goods-card img:first-child {
+  margin-left: 17px;
+}
+@media screen and (max-width: 680px) {
+  .about-goods-card img:first-child {
+    margin-left: 0;
   }
 }
 
@@ -3192,19 +3136,6 @@ CSS information
     display: block;
   }
 }
-.br-safari {
-  display: none;
-}
-
-::-webkit-full-page-media, :future, :root .br-safari {
-  display: none;
-}
-@media screen and (max-width: 680px) {
-  ::-webkit-full-page-media, :future, :root .br-safari {
-    display: block;
-  }
-}
-
 /* -----------------------------------------------------------
  私たちについて
 ----------------------------------------------------------- */
@@ -3878,19 +3809,6 @@ CSS information
     display: block;
   }
 }
-.br-safari {
-  display: none;
-}
-
-::-webkit-full-page-media, :future, :root .br-safari {
-  display: none;
-}
-@media screen and (max-width: 680px) {
-  ::-webkit-full-page-media, :future, :root .br-safari {
-    display: block;
-  }
-}
-
 /* -----------------------------------------------------------
  私たちについて
 ----------------------------------------------------------- */
@@ -4547,19 +4465,6 @@ CSS information
     display: block;
   }
 }
-.br-safari {
-  display: none;
-}
-
-::-webkit-full-page-media, :future, :root .br-safari {
-  display: none;
-}
-@media screen and (max-width: 680px) {
-  ::-webkit-full-page-media, :future, :root .br-safari {
-    display: block;
-  }
-}
-
 /* -----------------------------------------------------------
  私たちについて
 ----------------------------------------------------------- */
@@ -5454,19 +5359,6 @@ CSS information
     display: block;
   }
 }
-.br-safari {
-  display: none;
-}
-
-::-webkit-full-page-media, :future, :root .br-safari {
-  display: none;
-}
-@media screen and (max-width: 680px) {
-  ::-webkit-full-page-media, :future, :root .br-safari {
-    display: block;
-  }
-}
-
 /* -----------------------------------------------------------
  私たちについて
 ----------------------------------------------------------- */
@@ -6115,19 +6007,6 @@ CSS information
     display: block;
   }
 }
-.br-safari {
-  display: none;
-}
-
-::-webkit-full-page-media, :future, :root .br-safari {
-  display: none;
-}
-@media screen and (max-width: 680px) {
-  ::-webkit-full-page-media, :future, :root .br-safari {
-    display: block;
-  }
-}
-
 /* -----------------------------------------------------------
  店舗情報
 ----------------------------------------------------------- */
@@ -6509,19 +6388,6 @@ CSS information
     display: block;
   }
 }
-.br-safari {
-  display: none;
-}
-
-::-webkit-full-page-media, :future, :root .br-safari {
-  display: none;
-}
-@media screen and (max-width: 680px) {
-  ::-webkit-full-page-media, :future, :root .br-safari {
-    display: block;
-  }
-}
-
 /* -----------------------------------------------------------
  NEWS
 ----------------------------------------------------------- */
@@ -6799,7 +6665,7 @@ CSS information
   transform: translate(-50%, -50%);
 }
 
-div.news-about__wrap h1 {
+.news-detail .news-about__inner .news-about__wrap h1 {
   background-color: #67b5b9;
   color: #fff;
   border-radius: 25px;
@@ -6810,7 +6676,7 @@ div.news-about__wrap h1 {
   text-align: left;
 }
 @media screen and (max-width: 680px) {
-  div.news-about__wrap h1 {
+  .news-detail .news-about__inner .news-about__wrap h1 {
     font-size: 16px;
   }
 }
@@ -6947,19 +6813,6 @@ div.news-about__wrap figure.wp-container-2.wp-block-gallery-1.wp-block-gallery.h
     display: block;
   }
 }
-.br-safari {
-  display: none;
-}
-
-::-webkit-full-page-media, :future, :root .br-safari {
-  display: none;
-}
-@media screen and (max-width: 680px) {
-  ::-webkit-full-page-media, :future, :root .br-safari {
-    display: block;
-  }
-}
-
 /* ===================================================================
 CSS information
 

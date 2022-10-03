@@ -430,6 +430,7 @@ footer {
   background-repeat: no-repeat;
   background-position: top center;
   position: relative;
+  z-index: 2;
   @include mq(medium, max) {
     background-image: url(../../images/bg_fot_sp.png);
     margin-top: -120px;
