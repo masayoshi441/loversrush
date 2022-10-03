@@ -4186,7 +4186,7 @@ CSS information
 .cath-price__wrap .caption {
   text-align: center;
   font-size: min(1.6583747927vw, 20px);
-  margin-top: 21px;
+  margin-top: 41px;
   letter-spacing: 0.2em;
 }
 @media screen and (max-width: 680px) {
@@ -6522,6 +6522,11 @@ CSS information
   .news-about__item + .news-about__item {
     margin-top: 10px;
   }
+}
+
+.news-about__headind {
+  display: flex;
+  display: -webkit-flex;
 }
 
 .news-about__category {
