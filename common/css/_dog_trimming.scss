@@ -563,12 +563,12 @@
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
+  z-index: 10;
 }
 .trim-flow-accordion__item {
   background-color: #fff;
   border-radius: 15px 40px 15px 40px;
-  position: relative;
-  z-index: 10;
   @include mq(medium, max) {
     border-radius: 4px 22px 4px 22px;
   }
