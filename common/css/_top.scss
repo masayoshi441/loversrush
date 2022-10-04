@@ -452,6 +452,7 @@ CSS information
 }
 
 .top-news__lists li a {
+  color: #333;
   display: inline-block;
   width: 550px;
   @include mq(medium, max) {

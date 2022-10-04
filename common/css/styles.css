@@ -2390,6 +2390,7 @@ CSS information
 }
 
 .top-news__lists li a {
+  color: #333;
   display: inline-block;
   width: 550px;
 }
@@ -6572,6 +6573,10 @@ CSS information
 
 .news-about__item + .news-about__item {
   margin-top: 27px;
+}
+
+.news-about__list span.news-about__date {
+  padding-right: 10px;
 }
 
 .news-about__list span.news-about__cate {
