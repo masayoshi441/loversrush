@@ -6498,7 +6498,7 @@ CSS information
   padding: min(8.2918739635vw, 100px);
   margin-top: 75px;
 }
-@media screen and (min-width: 1025px) and (max-width: 1110px) {
+@media screen and (min-width: 1025px) and (max-width: 1190px) {
   .news-about__wrap {
     padding: 20px 10px 35px;
   }
@@ -6507,7 +6507,6 @@ CSS information
   .news-about__wrap {
     border-radius: 10px 30px 10px 30px;
     padding: 20px 20px 35px;
-    width: 80%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -6535,8 +6534,8 @@ CSS information
 }
 
 .news-about__wrap .news-about__list {
-  width: 90%;
-  margin-top: 43px;
+  width: 84%;
+  margin-top: 61px;
   margin-left: 44px;
 }
 @media screen and (max-width: 680px) {
@@ -6547,12 +6546,13 @@ CSS information
 }
 
 .news-about__item {
-  background: url(../../images/news_yaji.png) no-repeat right 23px;
+  background: url(../../images/news_yaji.png) no-repeat right 8px;
   background-size: 58px 7px;
   margin-top: 0;
   text-align: left;
   display: flex;
-  align-items: center;
+  align-items: start;
+  flex-wrap: wrap;
   font-size: 15px;
 }
 @media screen and (max-width: 680px) {
@@ -6562,7 +6562,6 @@ CSS information
 }
 @media screen and (max-width: 1024px) {
   .news-about__item {
-    flex-direction: column;
     align-items: flex-start;
     font-size: 11px;
   }
@@ -6571,37 +6570,35 @@ CSS information
   }
 }
 
-.news-about__headind {
-  display: flex;
-  display: -webkit-flex;
+.news-about__item + .news-about__item {
+  margin-top: 27px;
 }
 
-.news-about__category {
-  font-size: 12px;
+.news-about__list span.news-about__cate {
+  display: inline-block;
   color: #fff;
   background-color: #ee8691;
-  width: 70px;
-  padding: 4px 0;
-  text-align: center;
-  display: inline-block;
-  line-height: 1;
+  font-size: 12px;
+  padding: 2px 11px;
   border-radius: 5px;
+  margin-left: 5px;
+  margin-right: 20px;
 }
 @media screen and (max-width: 680px) {
-  .news-about__category {
+  .news-about__list span.news-about__cate {
     font-size: 11px;
+    margin-left: 25px;
+    margin-right: 10px;
+    padding: 0 8px;
   }
 }
 
 .news-about__link {
-  margin-left: 30px;
   color: #333;
-  padding: 13px 0;
 }
 @media screen and (max-width: 1024px) {
   .news-about__link {
     margin-left: 0;
-    padding: 10px 0;
   }
 }
 

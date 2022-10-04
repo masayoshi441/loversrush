@@ -63,13 +63,12 @@
   border-radius: 15px 65px 15px 65px;
   padding: min(toVw(100), 100px);
   margin-top: 75px;
-  @media screen and (min-width: 1025px) and (max-width: 1110px) {
+  @media screen and (min-width: 1025px) and (max-width: 1190px) {
     padding: 20px 10px 35px;
   }
   @media screen and (min-width: 768px) and (max-width: 1024px) {
     border-radius: 10px 30px 10px 30px;
     padding: 20px 20px 35px;
-    width: 80%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -92,8 +91,8 @@
   }
 }
 .news-about__wrap .news-about__list {
-  width: 90%;
-  margin-top: 43px;
+  width: 84%;
+  margin-top: 61px;
   margin-left: 44px;
   @include mq(medium, max) {
     margin-top: 22px;
@@ -101,18 +100,19 @@
   }
 }
 .news-about__item {
-  background: url(../../images/news_yaji.png) no-repeat right 23px;
+  background: url(../../images/news_yaji.png) no-repeat right 8px;
   background-size: 58px 7px;
   margin-top: 0;
   text-align: left;
   display: flex;
-  align-items: center;
+  align-items: start;
+  flex-wrap: wrap;
   font-size: 15px;
   @include mq(medium, max) {
     background: none;
   }
   @include mq(large, max) {
-    flex-direction: column;
+    // flex-direction: column;
     align-items: flex-start;
     font-size: 11px;
     & + .news-about__item {
@@ -120,31 +120,29 @@
     }
   }
 }
-.news-about__headind {
-  display: flex;
-  display: -webkit-flex;
+.news-about__item + .news-about__item {
+  margin-top: 27px;
 }
-.news-about__category {
-  font-size: 12px;
+.news-about__list span.news-about__cate {
+  display: inline-block;
   color: #fff;
   background-color: #ee8691;
-  width: 70px;
-  padding: 4px 0;
-  text-align: center;
-  display: inline-block;
-  line-height: 1;
+  font-size: 12px;
+  padding: 2px 11px;
   border-radius: 5px;
+  margin-left: 5px;
+  margin-right: 20px;
   @include mq(medium, max) {
     font-size: 11px;
+    margin-left: 25px;
+    margin-right: 10px;
+    padding: 0 8px;
   }
 }
 .news-about__link {
-  margin-left: 30px;
   color: #333;
-  padding: 13px 0;
   @include mq(large, max) {
     margin-left: 0;
-    padding: 10px 0;
   }
   // &::before {
   //   content: "";
