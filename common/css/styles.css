@@ -6595,10 +6595,17 @@ CSS information
 
 .news-about__link {
   color: #333;
+  width: 63%;
 }
 @media screen and (max-width: 1024px) {
   .news-about__link {
     margin-left: 0;
+    width: 86%;
+  }
+}
+@media screen and (max-width: 680px) {
+  .news-about__link {
+    width: 100%;
   }
 }
 

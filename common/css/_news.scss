@@ -141,8 +141,13 @@
 }
 .news-about__link {
   color: #333;
+  width: 63%;
   @include mq(large, max) {
     margin-left: 0;
+    width: 86%;
+  }
+  @include mq(medium, max) {
+    width: 100%;
   }
   // &::before {
   //   content: "";
