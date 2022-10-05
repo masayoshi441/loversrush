@@ -269,9 +269,7 @@ div.news-about__wrap {
   color: #fff;
   border-radius: 25px;
   font-size: min(toVw(20), 20px);
-  padding-top: 10px;
-  padding-bottom: 8px;
-  padding-left: 46px;
+  padding: 10px 20px 8px 20px;
   text-align: left;
   @include mq(medium, max) {
     font-size: 16px;
