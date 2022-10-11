@@ -75,7 +75,7 @@
   text-align: center;
   line-height: 3.2;
   @include mq(medium, max) {
-    font-size: 11px;
+    font-size: 12px;
     text-align: left;
     line-height: 1.6;
     padding-top: 11px;
@@ -171,7 +171,7 @@
   text-align: center;
   line-height: 2;
   @include mq(medium, max) {
-    font-size: 11px;
+    font-size: 12px;
     line-height: 1.6;
     padding-left: 10px;
     padding-right: 10px;
@@ -330,7 +330,7 @@
   line-height: 2;
   @include mq(medium, max) {
     padding-top: 20px;
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 

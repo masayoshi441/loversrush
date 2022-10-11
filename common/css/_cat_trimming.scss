@@ -84,7 +84,7 @@
   border-radius: 25px;
   text-align: center;
   @include mq(medium, max) {
-    max-width: 150px;
+    max-width: 157px;
     width: 100%;
     padding: 5px 0;
   }
@@ -92,7 +92,7 @@
     color: #fff;
     letter-spacing: 0.1em;
     @include mq(medium, max) {
-      font-size: 10px;
+      font-size: 11px;
     }
     &::before {
       content: "";
@@ -512,6 +512,9 @@
   p {
     font-size: min(toVw(15), 15px);
     line-height: 1.6;
+    @include mq(medium, max) {
+      font-size: 12px;
+    }
   }
   .text-red {
     color: #ff0000;

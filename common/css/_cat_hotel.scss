@@ -180,7 +180,7 @@
     text-align: center;
     margin-top: 13px;
     @include mq(medium, max) {
-      font-size: 10px;
+      font-size: 12px;
       margin-top: 5px;
     }
   }
@@ -257,7 +257,7 @@
   margin-top: 15px;
   @include mq(medium, max) {
     margin-top: 3px;
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 

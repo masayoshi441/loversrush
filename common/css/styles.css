@@ -1167,8 +1167,7 @@ footer {
 }
 @media screen and (max-width: 680px) {
   #footer {
-    -moz-text-align-last: left;
-         text-align-last: left;
+    text-align: center;
     margin: 0;
   }
 }
@@ -1185,14 +1184,13 @@ footer {
 @media screen and (max-width: 680px) {
   #fLogo {
     padding-top: 0;
-    padding-left: 130px;
   }
 }
 @media screen and (min-width: 680px) {
   #fLogo {
     padding-top: 10px;
     line-height: 1.8;
-    font-size: min(1.3266998342vw, 16px);
+    font-size: min(1.4925373134vw, 18px);
   }
 }
 #fLogo img {
@@ -1216,7 +1214,7 @@ footer {
 }
 @media screen and (max-width: 680px) {
   #fLogo p {
-    font-size: 11px;
+    font-size: 12px;
     padding-top: 2px;
   }
 }
@@ -1225,13 +1223,13 @@ footer {
   padding-top: 32px;
   padding-bottom: 40px;
   line-height: 1.3;
-  font-size: min(1.3266998342vw, 16px);
+  font-size: min(1.4925373134vw, 18px);
 }
 @media screen and (max-width: 680px) {
   #fTel {
+    font-size: 12px;
     padding-top: 9px;
     padding-bottom: 10px;
-    padding-left: 130px;
   }
 }
 
@@ -2038,7 +2036,7 @@ CSS information
 }
 @media screen and (max-width: 680px) {
   .top-trim p {
-    font-size: 11px;
+    font-size: 12px;
     padding-left: 10px;
     padding-right: 10px;
     line-height: 1.6;
@@ -2187,7 +2185,7 @@ CSS information
 }
 @media screen and (max-width: 680px) {
   .top-hotel p {
-    font-size: 11px;
+    font-size: 12px;
     line-height: 1.6;
     padding-top: 23px;
     padding-left: 10px;
@@ -2362,7 +2360,7 @@ CSS information
 @media screen and (max-width: 680px) {
   .top-news__lists li {
     background: none;
-    font-size: 11px;
+    font-size: 12px;
   }
 }
 
@@ -2382,7 +2380,7 @@ CSS information
 }
 @media screen and (max-width: 680px) {
   .top-news__lists span.top-news__cate {
-    font-size: 11px;
+    font-size: 12px;
     margin-left: 25px;
     margin-right: 10px;
     padding: 0 8px;
@@ -2757,7 +2755,7 @@ CSS information
 }
 @media screen and (max-width: 680px) {
   .about-about p {
-    font-size: 11px;
+    font-size: 12px;
     text-align: left;
     line-height: 1.6;
     padding-top: 11px;
@@ -2877,7 +2875,7 @@ CSS information
 }
 @media screen and (max-width: 680px) {
   .about-trim p {
-    font-size: 11px;
+    font-size: 12px;
     line-height: 1.6;
     padding-left: 10px;
     padding-right: 10px;
@@ -3064,7 +3062,7 @@ CSS information
 @media screen and (max-width: 680px) {
   .about-goods__text {
     padding-top: 20px;
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 
@@ -3390,7 +3388,7 @@ CSS information
 }
 @media screen and (max-width: 680px) {
   .dogh-facility-hotel__image p {
-    font-size: 10px;
+    font-size: 12px;
     margin-top: 5px;
   }
 }
@@ -3485,7 +3483,7 @@ CSS information
 @media screen and (max-width: 680px) {
   .dogh-facility-card__text {
     margin-top: 3px;
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 
@@ -4073,7 +4071,7 @@ CSS information
 }
 @media screen and (max-width: 680px) {
   .cath-facility-hotel__image p {
-    font-size: 10px;
+    font-size: 12px;
     margin-top: 5px;
   }
 }
@@ -4171,7 +4169,7 @@ CSS information
 @media screen and (max-width: 680px) {
   .cath-facility-card__text {
     margin-top: 3px;
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 
@@ -4597,7 +4595,7 @@ CSS information
 }
 @media screen and (max-width: 680px) {
   .dogtrim-about__button {
-    max-width: 150px;
+    max-width: 157px;
     width: 100%;
     padding: 5px 0;
   }
@@ -4608,7 +4606,7 @@ CSS information
 }
 @media screen and (max-width: 680px) {
   .dogtrim-about__button a {
-    font-size: 10px;
+    font-size: 11px;
   }
 }
 .dogtrim-about__button a::before {
@@ -5054,7 +5052,7 @@ CSS information
 }
 @media screen and (max-width: 680px) {
   .dogtrim-price-rules__text p {
-    font-size: 11px;
+    font-size: 12px;
   }
 }
 .dogtrim-price-rules__text .text-red {
@@ -5246,7 +5244,7 @@ CSS information
 @media screen and (max-width: 680px) {
   .trim-flow-accordion__tabsubtext {
     color: #95cccf;
-    font-size: 7px;
+    font-size: 11px;
     letter-spacing: 0.2em;
     padding-left: 22px;
   }
@@ -5497,7 +5495,7 @@ CSS information
 }
 @media screen and (max-width: 680px) {
   .cattrim-about__button {
-    max-width: 150px;
+    max-width: 157px;
     width: 100%;
     padding: 5px 0;
   }
@@ -5508,7 +5506,7 @@ CSS information
 }
 @media screen and (max-width: 680px) {
   .cattrim-about__button a {
-    font-size: 10px;
+    font-size: 11px;
   }
 }
 .cattrim-about__button a::before {
@@ -5943,6 +5941,11 @@ CSS information
 .cattrim-price-rules__text p {
   font-size: min(1.2437810945vw, 15px);
   line-height: 1.6;
+}
+@media screen and (max-width: 680px) {
+  .cattrim-price-rules__text p {
+    font-size: 12px;
+  }
 }
 .cattrim-price-rules__text .text-red {
   color: #ff0000;

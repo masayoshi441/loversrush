@@ -153,7 +153,7 @@ CSS information
   text-align: center;
   line-height: 2;
   @include mq(medium, max) {
-    font-size: 11px;
+    font-size: 12px;
     padding-left: 10px;
     padding-right: 10px;
     line-height: 1.6;
@@ -278,7 +278,7 @@ CSS information
   text-align: center;
   line-height: 2;
   @include mq(medium, max) {
-    font-size: 11px;
+    font-size: 12px;
     line-height: 1.6;
     padding-top: 23px;
     padding-left: 10px;
@@ -427,7 +427,7 @@ CSS information
   align-items: start;
   @include mq(medium, max) {
     background: none;
-    font-size: 11px;
+    font-size: 12px;
   }
 }
 .top-news__lists li + li {
@@ -444,7 +444,7 @@ CSS information
   margin-left: 20px;
   margin-right: 20px;
   @include mq(medium, max) {
-    font-size: 11px;
+    font-size: 12px;
     margin-left: 25px;
     margin-right: 10px;
     padding: 0 8px;
