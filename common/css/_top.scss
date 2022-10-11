@@ -26,8 +26,8 @@ CSS information
     background-size: 79% auto;
     padding-top: 50%;
     background-position: top center;
-    padding-left: 30px;
-    padding-right: 10px;
+    padding-left: 20px;
+    padding-right: 15px;
   }
 }
 .top-about h1 {
@@ -49,7 +49,7 @@ CSS information
   line-height: 2;
   @include mq(medium, max) {
     width: 100%;
-    font-size: 11px;
+    font-size: 12px;
     padding-top: 12px;
     line-height: 1.6;
   }

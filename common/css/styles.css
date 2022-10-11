@@ -675,7 +675,7 @@ body {
 }
 @media screen and (max-width: 680px) {
   body {
-    font-size: 11px;
+    font-size: 12px;
   }
 }
 
@@ -1877,8 +1877,8 @@ CSS information
     background-size: 79% auto;
     padding-top: 50%;
     background-position: top center;
-    padding-left: 30px;
-    padding-right: 10px;
+    padding-left: 20px;
+    padding-right: 15px;
   }
 }
 
@@ -1906,7 +1906,7 @@ CSS information
 @media screen and (max-width: 680px) {
   .top-about p {
     width: 100%;
-    font-size: 11px;
+    font-size: 12px;
     padding-top: 12px;
     line-height: 1.6;
   }
@@ -3247,7 +3247,7 @@ CSS information
 @media screen and (max-width: 680px) {
   .dogh-about h2 {
     padding-top: 17px;
-    padding-left: 10px;
+    padding-left: 0px;
     font-size: 15px;
     text-align: left;
     white-space: nowrap;
@@ -3261,8 +3261,8 @@ CSS information
 }
 @media screen and (max-width: 680px) {
   .dogh-about p {
-    padding-left: 10px;
-    padding-top: 26 px;
+    padding-left: 0px;
+    padding-top: 26px;
     line-height: 1.6;
     text-align: left;
   }
@@ -3537,7 +3537,8 @@ CSS information
   .dogh-price__wrap .caption {
     margin-top: 9px;
     margin-bottom: -4px;
-    font-size: 11px;
+    font-size: 12px;
+    white-space: nowrap;
   }
 }
 
@@ -3689,7 +3690,6 @@ CSS information
   .dogh-rule {
     margin-top: -207px;
     padding-top: 26px;
-    padding-left: 10px;
     padding-bottom: 16px;
     background-image: url(../../images/dog_hotel/bg_dogh_rule-sp.png);
   }
@@ -3775,7 +3775,7 @@ CSS information
 }
 @media screen and (max-width: 680px) {
   .dogh-rule__text {
-    font-size: 11px;
+    font-size: 12px;
     margin-top: 4px;
     line-height: 1.6;
   }
@@ -4223,7 +4223,8 @@ CSS information
   .cath-price__wrap .caption {
     margin-top: 9px;
     margin-bottom: -4px;
-    font-size: 11px;
+    font-size: 12px;
+    white-space: nowrap;
   }
 }
 
@@ -4272,7 +4273,7 @@ CSS information
 @media screen and (max-width: 680px) {
   .cath-price__pricelist table caption {
     margin-bottom: 7px;
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 .cath-price__pricelist table thead {
@@ -4431,7 +4432,7 @@ CSS information
 }
 @media screen and (max-width: 680px) {
   .cath-rule__text {
-    font-size: 11px;
+    font-size: 12px;
     margin-top: 4px;
     line-height: 1.6;
   }
@@ -4739,7 +4740,7 @@ CSS information
 @media screen and (max-width: 680px) {
   .dogtrim-price__wrap {
     border-radius: 4px 22px 4px 22px;
-    padding: 50px 20px 28px;
+    padding: 50px 18px 28px;
   }
 }
 .dogtrim-price__wrap h2 img {
@@ -4837,6 +4838,7 @@ CSS information
     max-width: 130px;
     width: 100%;
     padding: 7px 0;
+    font-size: 12px;
   }
 }
 .dogtrim-price__tablist .tab::after {
@@ -5737,6 +5739,7 @@ CSS information
     max-width: 130px;
     width: 100%;
     padding: 7px 0;
+    font-size: 12px;
   }
 }
 .cattrim-price__tablist .tab::after {
@@ -6130,7 +6133,7 @@ CSS information
   .shop-about h2 {
     font-size: 15px;
     padding-top: 20px;
-    padding-left: 10px;
+    padding-left: 1px;
     text-align: left;
     white-space: nowrap;
   }
@@ -6145,7 +6148,7 @@ CSS information
   .shop-about p {
     line-height: 1.6;
     text-align: left;
-    padding-left: 10px;
+    padding-left: 1px;
   }
 }
 
@@ -6186,7 +6189,7 @@ CSS information
   .shop-about__details .shop-about__detail .shop-about__head {
     max-width: 120px;
     width: 100%;
-    font-size: 11px;
+    font-size: 12px;
     padding: 5px 0 3px;
   }
 }
@@ -6329,7 +6332,7 @@ CSS information
 @media screen and (max-width: 680px) {
   .shop-access__guides {
     flex-direction: column;
-    padding: 20px 20px 16px;
+    padding: 20px 14px 16px;
     margin-top: 16px;
   }
 }
@@ -6567,7 +6570,7 @@ CSS information
 @media screen and (max-width: 1024px) {
   .news-about__item {
     align-items: flex-start;
-    font-size: 11px;
+    font-size: 12px;
   }
   .news-about__item + .news-about__item {
     margin-top: 10px;
@@ -6594,7 +6597,7 @@ CSS information
 }
 @media screen and (max-width: 680px) {
   .news-about__list span.news-about__cate {
-    font-size: 11px;
+    font-size: 12px;
     margin-left: 25px;
     margin-right: 10px;
     padding: 0 8px;

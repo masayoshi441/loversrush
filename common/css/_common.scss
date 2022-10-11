@@ -29,7 +29,7 @@ body {
   font-family: $font1;
   font-weight: 200;
   @include mq(medium, max) {
-    font-size: 11px;
+    font-size: 12px;
   }
 }
 

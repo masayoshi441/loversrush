@@ -305,7 +305,8 @@
     @include mq(medium, max) {
       margin-top: 9px;
       margin-bottom: -4px;
-      font-size: 11px;
+      font-size: 12px;
+     white-space: nowrap;
     }
   }
 }
@@ -341,7 +342,7 @@
       margin-bottom: 22px;
       @include mq(medium, max) {
         margin-bottom: 7px;
-        font-size: 10px;
+        font-size: 12px;
       }
     }
     thead {
@@ -476,7 +477,7 @@
   font-size: min(toVw(14), 14px);
   line-height: 2.14;
   @include mq(medium, max) {
-    font-size: 11px;
+    font-size: 12px;
     margin-top: 4px;
     line-height: 1.6;
   }

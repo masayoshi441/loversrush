@@ -203,7 +203,7 @@
   position: relative;
   @include mq(medium, max) {
     border-radius: 4px 22px 4px 22px;
-    padding: 50px 20px 28px;
+    padding: 50px 18px 28px;
   }
   h2 {
     img {
@@ -285,6 +285,7 @@
       max-width: 130px;
       width: 100%;
       padding: 7px 0;
+      font-size: 12px;
     }
     &::after {
       right: min(toVw(25), 25px);
