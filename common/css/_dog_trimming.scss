@@ -384,7 +384,7 @@
         background-color: $main_color;
         font-size: min(toVw(16), 16px);
         @include mq(medium, max) {
-          font-size: 11px;
+          font-size: 12px;
         }
         th {
           padding-top: 22px;
@@ -399,12 +399,15 @@
         background-color: #5c5c5c;
         font-size: min(toVw(16), 16px);
         @include mq(medium, max) {
-          font-size: 11px;
+          font-size: 12px;
         }
         th {
           padding: 6px 0;
           &:nth-child(n + 2) {
             font-size: min(toVw(13), 13px);
+            @include mq(medium, max) {
+              font-size: 12px;
+            }
           }
           &:nth-child(n + 3) {
             text-align: left;
@@ -434,14 +437,14 @@
           span {
             font-size: min(toVw(16), 16px);
             @include mq(medium, max) {
-              font-size: 11px;
+              font-size: 12px;
             }
           }
           &:first-child {
             font-size: min(toVw(16), 16px);
             padding-left: min(toVw(23), 23px);
             @include mq(medium, max) {
-              font-size: 11px;
+              font-size: 12px;
               padding-left: 14px;
             }
           }

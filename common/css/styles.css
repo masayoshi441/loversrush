@@ -4935,7 +4935,7 @@ CSS information
 }
 @media screen and (max-width: 680px) {
   .dogtrim-price__tabs .tab-panel table thead .mainhead {
-    font-size: 11px;
+    font-size: 12px;
   }
 }
 .dogtrim-price__tabs .tab-panel table thead .mainhead th {
@@ -4954,7 +4954,7 @@ CSS information
 }
 @media screen and (max-width: 680px) {
   .dogtrim-price__tabs .tab-panel table thead .subhead {
-    font-size: 11px;
+    font-size: 12px;
   }
 }
 .dogtrim-price__tabs .tab-panel table thead .subhead th {
@@ -4962,6 +4962,11 @@ CSS information
 }
 .dogtrim-price__tabs .tab-panel table thead .subhead th:nth-child(n+2) {
   font-size: min(1.0779436153vw, 13px);
+}
+@media screen and (max-width: 680px) {
+  .dogtrim-price__tabs .tab-panel table thead .subhead th:nth-child(n+2) {
+    font-size: 12px;
+  }
 }
 .dogtrim-price__tabs .tab-panel table thead .subhead th:nth-child(n+3) {
   text-align: left;
@@ -4986,7 +4991,7 @@ CSS information
 }
 @media screen and (max-width: 680px) {
   .dogtrim-price__tabs .tab-panel table tbody tr td span {
-    font-size: 11px;
+    font-size: 12px;
   }
 }
 .dogtrim-price__tabs .tab-panel table tbody tr td:first-child {
@@ -4995,7 +5000,7 @@ CSS information
 }
 @media screen and (max-width: 680px) {
   .dogtrim-price__tabs .tab-panel table tbody tr td:first-child {
-    font-size: 11px;
+    font-size: 12px;
     padding-left: 14px;
   }
 }
@@ -5787,6 +5792,7 @@ CSS information
 }
 @media screen and (max-width: 680px) {
   .cattrim-price__tabs .tab-panel table thead tr th:first-child {
+    font-size: 12px;
     text-align: left;
     padding-left: 15px;
   }
@@ -5797,7 +5803,7 @@ CSS information
 }
 @media screen and (max-width: 680px) {
   .cattrim-price__tabs .tab-panel table thead .mainhead {
-    font-size: 11px;
+    font-size: 12px;
   }
 }
 .cattrim-price__tabs .tab-panel table thead .mainhead th {
@@ -5816,7 +5822,7 @@ CSS information
 }
 @media screen and (max-width: 680px) {
   .cattrim-price__tabs .tab-panel table thead .subhead {
-    font-size: 11px;
+    font-size: 12px;
   }
 }
 .cattrim-price__tabs .tab-panel table thead .subhead th {
@@ -5824,6 +5830,11 @@ CSS information
 }
 .cattrim-price__tabs .tab-panel table thead .subhead th:nth-child(2) {
   font-size: min(1.0779436153vw, 13px);
+}
+@media screen and (max-width: 680px) {
+  .cattrim-price__tabs .tab-panel table thead .subhead th:nth-child(2) {
+    font-size: 12px;
+  }
 }
 .cattrim-price__tabs .tab-panel table thead .subhead th:nth-child(n+3) {
   text-align: center;
@@ -5846,6 +5857,7 @@ CSS information
 }
 @media screen and (max-width: 680px) {
   .cattrim-price__tabs .tab-panel table tbody tr td:first-child {
+    font-size: 12px;
     text-align: left;
     padding-left: 15px;
   }

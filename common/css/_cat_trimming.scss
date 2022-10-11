@@ -233,7 +233,7 @@
       width: 100%;
     }
   }
-  @media screen and (min-width:768px) and ( max-width:1080px) {
+  @media screen and (min-width: 768px) and (max-width: 1080px) {
     top: -5.2%;
   }
   @include mq(medium, max) {
@@ -332,6 +332,7 @@
           &:first-child {
             padding-left: min(toVw(23), 23px);
             @include mq(medium, max) {
+              font-size: 12px;
               text-align: left;
               padding-left: 15px;
             }
@@ -342,7 +343,7 @@
         background-color: $main_color;
         font-size: min(toVw(16), 16px);
         @include mq(medium, max) {
-          font-size: 11px;
+          font-size: 12px;
         }
         th {
           padding-top: 22px;
@@ -357,12 +358,15 @@
         background-color: #5c5c5c;
         font-size: min(toVw(16), 16px);
         @include mq(medium, max) {
-          font-size: 11px;
+          font-size: 12px;
         }
         th {
           padding: 15px 0;
           &:nth-child(2) {
             font-size: min(toVw(13), 13px);
+            @include mq(medium, max) {
+              font-size: 12px;
+            }
           }
           &:nth-child(n + 3) {
             text-align: center;
@@ -385,6 +389,7 @@
             font-size: min(toVw(16), 16px);
             padding-left: min(toVw(23), 23px);
             @include mq(medium, max) {
+              font-size: 12px;
               text-align: left;
               padding-left: 15px;
             }
@@ -529,7 +534,7 @@
 ----------------------------------------------------------- */
 .cattrim-flow {
   margin-top: -181px;
-  padding-top:  min(toVw(333), 333px);
+  padding-top: min(toVw(333), 333px);
   padding-bottom: 123px;
   background-image: url(../../images/bg_cattrim_flow.png);
   background-repeat: no-repeat;
@@ -550,7 +555,7 @@
   left: 49%;
   transform: translateX(-50%);
   width: min(toVw(943), 943px);
-  @media screen and (min-width:1450px) {
+  @media screen and (min-width: 1450px) {
     top: min(toVw(-7), -7px);
   }
   @include mq(medium, max) {
