@@ -1079,7 +1079,7 @@ a:hover {
   position: fixed;
   bottom: 50px;
   right: 10px;
-  z-index: 10;
+  z-index: 15;
   background: #333333;
   width: 30px;
 }
@@ -1100,7 +1100,7 @@ footer {
   background-repeat: no-repeat;
   background-position: top center;
   position: relative;
-  z-index: 2;
+  z-index: 15;
 }
 @media screen and (max-width: 680px) {
   footer {
