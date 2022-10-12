@@ -3581,6 +3581,11 @@ CSS information
 .dogh-price__pricelist table .first-tr th {
   text-align: center;
 }
+@media screen and (max-width: 680px) {
+  .dogh-price__pricelist table .first-tr th {
+    font-size: 12px;
+  }
+}
 .dogh-price__pricelist table .first-tr th:first-child {
   padding-left: min(4.0630182421vw, 49px);
   width: 31%;
@@ -3592,6 +3597,7 @@ CSS information
 @media screen and (max-width: 680px) {
   .dogh-price__pricelist table .second-tr th {
     padding-left: 5px;
+    font-size: 12px;
   }
 }
 .dogh-price__pricelist table thead {
@@ -3647,6 +3653,11 @@ CSS information
   width: 31%;
   padding-left: min(4.0630182421vw, 49px);
   font-size: min(1.3266998342vw, 16px);
+}
+@media screen and (max-width: 680px) {
+  .dogh-price__pricelist table tbody tr td:first-child {
+    font-size: 12px;
+  }
 }
 .dogh-price__pricelist table tbody tr td:nth-child(n+2) {
   width: 18.5%;
@@ -4289,6 +4300,7 @@ CSS information
 @media screen and (max-width: 680px) {
   .cath-price__pricelist table thead tr th {
     padding: 15px 0 17px 14px;
+    font-size: 12px;
   }
 }
 .cath-price__pricelist table thead tr th:first-child {
@@ -4308,6 +4320,11 @@ CSS information
 .cath-price__pricelist table tbody tr td:first-child {
   padding-left: min(4.0630182421vw, 49px);
   font-size: min(1.3266998342vw, 16px);
+}
+@media screen and (max-width: 680px) {
+  .cath-price__pricelist table tbody tr td:first-child {
+    font-size: 12px;
+  }
 }
 .cath-price__pricelist table tbody tr td span {
   font-size: min(1.824212272vw, 22px);

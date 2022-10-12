@@ -306,7 +306,7 @@
       margin-top: 9px;
       margin-bottom: -4px;
       font-size: 12px;
-     white-space: nowrap;
+      white-space: nowrap;
     }
   }
 }
@@ -354,6 +354,7 @@
           padding: min(toVw(23), 23px) min(toVw(49), 49px);
           @include mq(medium, max) {
             padding: 15px 0 17px 14px;
+            font-size: 12px;
           }
           &:first-child {
             vertical-align: middle;
@@ -373,6 +374,9 @@
           &:first-child {
             padding-left: min(toVw(49), 49px);
             font-size: min(toVw(16), 16px);
+            @include mq(medium, max) {
+              font-size: 12px;
+            }
           }
           &:nth-child(n + 2) {
           }
