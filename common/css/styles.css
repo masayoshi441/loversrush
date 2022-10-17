@@ -4903,6 +4903,8 @@ CSS information
 @media screen and (max-width: 680px) {
   #dogtrim-price-panel-1 .mainhead th:nth-child(3) {
     width: 30%;
+    padding-left: 0;
+    text-align: center;
   }
 }
 
@@ -4988,8 +4990,13 @@ CSS information
 .dogtrim-price__tabs .tab-panel table thead .subhead th:nth-child(n+3) {
   text-align: left;
 }
+@media screen and (max-width: 680px) {
+  .dogtrim-price__tabs .tab-panel table thead .subhead th:nth-child(3) {
+    width: 16%;
+  }
+}
 .dogtrim-price__tabs .tab-panel table thead .subhead th:nth-child(4) {
-  width: 19%;
+  width: 18%;
 }
 .dogtrim-price__tabs .tab-panel table tbody tr:nth-child(even) {
   background-color: #f2ebde;
