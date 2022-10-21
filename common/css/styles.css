@@ -2272,11 +2272,13 @@ CSS information
   text-align: center;
   padding: 0 0 78px 0;
   position: relative;
+  min-height: 630px;
 }
 @media screen and (max-width: 680px) {
   .top-news__wrap {
     padding-bottom: 28px;
     border-radius: 4px 22px 4px 22px;
+    min-height: inherit;
   }
 }
 
