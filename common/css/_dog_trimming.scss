@@ -159,6 +159,7 @@
 }
 .dogtrim-about__cards {
   display: flex;
+  align-items: flex-start;
   justify-content: space-between;
   margin-top: 75px;
   @include mq(medium, max) {
@@ -537,7 +538,7 @@
 .dogtrim-flow {
   margin-top: -346px;
   padding-top: min(toVw(337), 337px);
-  padding-bottom: 123px;
+  padding-bottom: 223px;
   background-image: url(../../images/bg_dogtrim_flow.png);
   background-repeat: no-repeat;
   background-position: top center;
@@ -546,7 +547,7 @@
     background-image: url(../../images/bg_dogtrim_flow-sp.png);
     margin-top: -441px;
     padding-top: 117px;
-    padding-bottom: 84px;
+    padding-bottom: 184px;
   }
 }
 .dogtrim-flow__inner.mainIn {

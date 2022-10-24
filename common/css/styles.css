@@ -4707,6 +4707,7 @@ CSS information
 
 .dogtrim-about__cards {
   display: flex;
+  align-items: flex-start;
   justify-content: space-between;
   margin-top: 75px;
 }
@@ -5109,7 +5110,7 @@ CSS information
 .dogtrim-flow {
   margin-top: -346px;
   padding-top: min(27.943615257vw, 337px);
-  padding-bottom: 123px;
+  padding-bottom: 223px;
   background-image: url(../../images/bg_dogtrim_flow.png);
   background-repeat: no-repeat;
   background-position: top center;
@@ -5120,7 +5121,7 @@ CSS information
     background-image: url(../../images/bg_dogtrim_flow-sp.png);
     margin-top: -441px;
     padding-top: 117px;
-    padding-bottom: 84px;
+    padding-bottom: 184px;
   }
 }
 
@@ -5620,6 +5621,7 @@ CSS information
 
 .cattrim-about__cards {
   display: flex;
+  align-items: flex-start;
   justify-content: space-between;
   margin-top: 75px;
 }
@@ -6001,7 +6003,7 @@ CSS information
 .cattrim-flow {
   margin-top: -181px;
   padding-top: min(27.6119402985vw, 333px);
-  padding-bottom: 123px;
+  padding-bottom: 223px;
   background-image: url(../../images/bg_cattrim_flow.png);
   background-repeat: no-repeat;
   background-position: top center;
@@ -6011,7 +6013,7 @@ CSS information
   .cattrim-flow {
     margin-top: -246px;
     padding-top: 125px;
-    padding-bottom: 84px;
+    padding-bottom: 184px;
     background-image: url(../../images/bg_cattrim_flow-sp.png);
   }
 }

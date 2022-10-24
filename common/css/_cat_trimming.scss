@@ -164,6 +164,7 @@
 }
 .cattrim-about__cards {
   display: flex;
+  align-items: flex-start;
   justify-content: space-between;
   margin-top: 75px;
   @include mq(medium, max) {
@@ -535,7 +536,7 @@
 .cattrim-flow {
   margin-top: -181px;
   padding-top: min(toVw(333), 333px);
-  padding-bottom: 123px;
+  padding-bottom: 223px;
   background-image: url(../../images/bg_cattrim_flow.png);
   background-repeat: no-repeat;
   background-position: top center;
@@ -543,7 +544,7 @@
   @include mq(medium, max) {
     margin-top: -246px;
     padding-top: 125px;
-    padding-bottom: 84px;
+    padding-bottom: 184px;
     background-image: url(../../images/bg_cattrim_flow-sp.png);
   }
 }
